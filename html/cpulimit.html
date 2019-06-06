@@ -1,20 +1,20 @@
 <b>cpulimit</b><br><br>
-<b>A tool to throttle the CPU usage of other processes.</b><br><br><b>Homepage: <a href="http://limitcpu.sourceforge.net/">home page</a></b><br><br>
+<b>A tool to throttle the CPU usage of other processes.</b><br><br><b>More information: <a href="http://cpulimit.sourceforge.net/">home page</a></b><br><br>
 - Limit an existing process with PID 1234 to only use 25% of the CPU:
 
-<blockquote>cpulimit -p 1234 -l 25%</blockquote>
-- Limit an existing program by its executable name instead of PID number:
+<blockquote>cpulimit --pid <i>1234</i> --limit <i>25%</i></blockquote>
+- Limit an existing program by its executable name:
 
-<blockquote>cpulimit -e <i>program</i> -l 25</blockquote>
+<blockquote>cpulimit --exe <i>program</i> --limit <i>25</i></blockquote>
 - Launch a given program and limit it to only use 50% of the CPU:
 
-<blockquote>cpulimit -l 50 <i>program</i></blockquote>
+<blockquote>cpulimit --limit <i>50</i> <i>program</i></blockquote>
 - Launch a program, limit its CPU usage to 50% and run cpulimit in the background:
 
-<blockquote>cpulimit -l 50 -b <i>program</i></blockquote>
-- Launch a program and kill its process if the program's CPU usage goes over 50%:
+<blockquote>cpulimit --limit <i>50</i> --background <i>program</i></blockquote>
+- Kill its process if the program's CPU usage goes over 50%:
 
-<blockquote>cpulimit -l 50 -k <i>program</i></blockquote>
-- Launch a program and throttle both it and its child processes so that none go about 25% CPU:
+<blockquote>cpulimit --limit 50 --kill <i>program</i></blockquote>
+- Throttle both it and its child processes so that none go about 25% CPU:
 
-<blockquote>cpulimit -l 25 -m <i>program</i></blockquote>
+<blockquote>cpulimit --limit <i>25</i> --monitor-forks <i>program</i></blockquote>

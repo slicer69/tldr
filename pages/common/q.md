@@ -1,6 +1,7 @@
 # q
 
 > Execute SQL-like queries on .csv and .tsv files.
+> More information: <https://harelba.github.io/q>.
 
 - Query .csv file by specifying the delimiter as ',':
 

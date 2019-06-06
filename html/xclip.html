@@ -12,6 +12,9 @@
 - Copy the contents of a file into the system clipboard:
 
 <blockquote>xclip -sel clip <i>input_file.txt</i></blockquote>
+- Copy the contents of a PNG image into the system clipboard (can be pasted in other programs correctly):
+
+<blockquote>xclip -sel clip -t image/png <i>input_file.png</i></blockquote>
 - Paste the contents of the X11 primary selection area to the console:
 
 <blockquote>xclip -o</blockquote>
