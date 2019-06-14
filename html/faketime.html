@@ -1,0 +1,11 @@
+<b>faketime</b><br><br>
+<b>Fake the system time for a given command.</b><br><br><b>More information: <a href="https://manpages.ubuntu.com/manpages/trusty/man1/faketime.1.html">home page</a></b><br><br>
+- Fake the time to this evening, before printing the result of `date`:
+
+<blockquote>faketime '<i>today 23:30</i>' <i>date</i></blockquote>
+- Open a new `bash` shell, which uses yesterday as the current date:
+
+<blockquote>faketime '<i>yesterday</i>' <i>bash</i></blockquote>
+- Simulate how any program would act next friday night:
+
+<blockquote>faketime '<i>next Friday 1 am</i>' <i>path/to/any/program</i></blockquote>

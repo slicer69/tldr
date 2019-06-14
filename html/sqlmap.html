@@ -5,7 +5,7 @@
 <blockquote>python sqlmap.py -u <i>"http://www.target.com/vuln.php?id=1"</i></blockquote>
 - Send data in a POST request (`--data` implies POST request):
 
-<blockquote>python sqlmap.py -u <i>"http://www.target.com/vuln.php" --data=<i>"id=1"</i></blockquote>
+<blockquote>python sqlmap.py -u <i>"http://www.target.com/vuln.php"</i> --data=<i>"id=1"</i></blockquote>
 - Change the parameter delimiter (& is the default):
 
 <blockquote>python sqlmap.py -u <i>"http://www.target.com/vuln.php"</i> --data=<i>"query=foobar;id=1"</i> --param-del=<i>";"</i></blockquote>

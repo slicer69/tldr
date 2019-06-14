@@ -1,0 +1,20 @@
+<b>fcrackzip</b><br><br>
+<b>ZIP archive password cracking utility.</b><br><br>
+- Brute-force a password with a length of 4 to 8 characters, and contains only alphanumeric characters (order matters):
+
+<blockquote>fcrackzip --brute-force --length 4-8 --charset aA1 <i>archive</i></blockquote>
+- Brute-force a password in verbose mode with a length of 3 characters that only contains lowercase characters, `$` and `%`:
+
+<blockquote>fcrackzip -v --brute-force --length 3 --charset a:$% <i>archive</i></blockquote>
+- Brute-force a password that contains only lowercase and special characters:
+
+<blockquote>fcrackzip --brute-force --length 4 --charset a! <i>archive</i></blockquote>
+- Brute-force a password containing only digits, starting from the password `12345`:
+
+<blockquote>fcrackzip --brute-force --length 5 --charset 1 --init-password 12345 <i>archive</i></blockquote>
+- Crack a password using a wordlist:
+
+<blockquote>fcrackzip --use-unzip --dictionary --init-password <i>wordlist</i> <i>archive</i></blockquote>
+- Benchmark cracking performance:
+
+<blockquote>fcrackzip --benchmark</blockquote>

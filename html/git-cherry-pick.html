@@ -1,5 +1,5 @@
 <b>git cherry-pick</b><br><br>
-<b>Apply the changes introduced by existing commits to the current branch.</b><br><br><b>To apply changes to another branch, first use git-checkout to switch to the desired branch.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-cherry-pick">home page</a></b><br><br>
+<b>Apply the changes introduced by existing commits to the current branch.</b><br><br><b>To apply changes to another branch, first use `git checkout` to switch to the desired branch.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-cherry-pick">home page</a></b><br><br>
 - Apply a commit to the current branch:
 
 <blockquote>git cherry-pick <i>commit</i></blockquote>
@@ -9,3 +9,6 @@
 - Apply multiple (non-sequential) commits to the current branch:
 
 <blockquote>git cherry-pick <i>commit_1</i> <i>commit_2</i></blockquote>
+- Add the changes of a commit to the working directory, without creating a commit:
+
+<blockquote>git cherry-pick -n <i>commit</i></blockquote>
