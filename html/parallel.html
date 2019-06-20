@@ -3,7 +3,7 @@
 - Gzip several files at once, using all cores:
 
 <blockquote>parallel gzip ::: <i>file1</i> <i>file2</i> <i>file3</i></blockquote>
-- Read arguments from stdin, run 4 jobs at once:
+- Read arguments from `stdin`, run 4 jobs at once:
 
 <blockquote>ls *.txt | parallel -j4 gzip</blockquote>
 - Convert JPG images to PNG using replacement strings:
@@ -12,7 +12,7 @@
 - Parallel xargs, cram as many args as possible onto one command:
 
 <blockquote><i>args</i> | parallel -X <i>command</i></blockquote>
-- Break stdin into ~1M blocks, feed each block to stdin of new command:
+- Break stdin into ~1M blocks, feed each block to `stdin` of new command:
 
 <blockquote>cat <i>big_file.txt</i> | parallel --pipe --block 1M <i>command</i></blockquote>
 - Run on multiple machines via SSH:

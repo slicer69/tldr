@@ -9,7 +9,7 @@
 - Query file with header row:
 
 <blockquote>q -d<i>delimiter</i> -H "SELECT * from <i>path/to/file</i>"</blockquote>
-- Read data from stdin; '-' in the query represents the data from stdin:
+- Read data from stdin; '-' in the query represents the data from `stdin`:
 
 <blockquote><i>output</i> | q "select * from -"</blockquote>
 - Join two files (aliased as `f1` and `f2` in the example) on column `c1`, a common column:

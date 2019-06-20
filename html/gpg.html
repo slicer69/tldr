@@ -9,15 +9,15 @@
 - Encrypt doc.txt with only a passphrase (output to doc.txt.gpg):
 
 <blockquote>gpg --symmetric <i>doc.txt</i></blockquote>
-- Decrypt doc.txt.gpg (output to STDOUT):
+- Decrypt doc.txt.gpg (output to `stdout`):
 
 <blockquote>gpg --decrypt <i>doc.txt.gpg</i></blockquote>
 - Import a public key:
 
 <blockquote>gpg --import <i>public.gpg</i></blockquote>
-- Export public key for alice@example.com (output to STDOUT):
+- Export public key for alice@example.com (output to `stdout`):
 
 <blockquote>gpg --export --armor <i>alice@example.com</i></blockquote>
-- Export private key for alice@example.com (output to STDOUT):
+- Export private key for alice@example.com (output to `stdout`):
 
 <blockquote>gpg --export-secret-keys --armor <i>alice@example.com</i></blockquote>

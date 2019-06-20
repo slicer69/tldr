@@ -7,13 +7,17 @@
 
 `cowsay "Hello world!"`
 
+- Use text from standard input for the balloon:
+
+`echo "Hello!" | cowsay`
+
 - List all available characters:
 
 `cowsay -l`
 
 - Print an ASCII dragon saying "Hello!":
 
-`echo "Hello!" | cowsay -f dragon`
+`cowsay -f dragon "Hello!"`
 
 - Print a stoned thinking ASCII cow:
 
