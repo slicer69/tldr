@@ -1,0 +1,11 @@
+<b>fstrim</b><br><br>
+<b>Discard unused blocks on a mounted filesystem.</b><br><br><b>Only supported by flash memory devices such as SSDs and microSD cards.</b><br><br>
+- Trim unused blocks on all mounted partitions that support it:
+
+<blockquote>sudo fstrim --all</blockquote>
+- Trim unused blocks on a specified partition:
+
+<blockquote>sudo fstrim <i>/</i></blockquote>
+- Display statistics after trimming:
+
+<blockquote>sudo fstrim --verbose <i>/</i></blockquote>

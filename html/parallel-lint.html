@@ -1,0 +1,20 @@
+<b>parallel-lint</b><br><br>
+<b>A tool to check the syntax of PHP files in parallel.</b><br><br><b>More information: <a href="https://github.com/JakubOnderka/PHP-Parallel-Lint">home page</a></b><br><br>
+- Lint a specific directory:
+
+<blockquote>parallel-lint <i>path/to/directory</i></blockquote>
+- Lint a directory using the specified number of parallel processes:
+
+<blockquote>parallel-lint -j <i>processes</i> <i>path/to/directory</i></blockquote>
+- Lint a directory, excluding the specified directory:
+
+<blockquote>parallel-lint --exclude <i>path/to/excluded_directory</i> <i>path/to/directory</i></blockquote>
+- Lint a directory of files using a comma-separated list of extension(s):
+
+<blockquote>parallel-lint -e <i>php,html,phpt</i> <i>path/to/directory</i></blockquote>
+- Lint a directory and output the results as JSON:
+
+<blockquote>parallel-lint --json <i>path/to/directory</i></blockquote>
+- Lint a directory and show Git Blame results for rows containing errors:
+
+<blockquote>parallel-lint --blame <i>path/to/directory</i></blockquote>
