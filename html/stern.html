@@ -1,0 +1,20 @@
+<b>stern</b><br><br>
+<b>Tail multiple pods and containers from Kubernetes.</b><br><br><b>More information: <a href="https://github.com/wercker/stern/">home page</a></b><br><br>
+- Tail all pods within a current namespace:
+
+<blockquote>stern .</blockquote>
+- Tail all pods with a specific status:
+
+<blockquote>stern . --container-state <i>running|waiting|terminated</i></blockquote>
+- Tail all pods that matches a given regular expression:
+
+<blockquote>stern <i>pod_query</i></blockquote>
+- Tail matched pods from all namespaces:
+
+<blockquote>stern <i>pod_query</i> --all-namespaces</blockquote>
+- Tail matched pods from 15 minutes ago:
+
+<blockquote>stern <i>pod_query</i> --since <i>15m</i></blockquote>
+- Tail matched pods with a specific label:
+
+<blockquote>stern <i>pod_query</i> --selector <i>release=canary</i></blockquote>

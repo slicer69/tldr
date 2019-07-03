@@ -1,0 +1,17 @@
+<b>solo</b><br><br>
+<b>Interact with Solo hardware security keys.</b><br><br><b>More information: <a href="https://github.com/solokeys/solo-python">home page</a></b><br><br>
+- List connected Solos:
+
+<blockquote>solo ls</blockquote>
+- Update the currently connected Solo's firmware to the latest version:
+
+<blockquote>solo key update</blockquote>
+- Blink the led of a specific Solo:
+
+<blockquote>solo key wink --serial <i>serial_number</i></blockquote>
+- Generate random bytes using the currently connected Solo's secure random number generator:
+
+<blockquote>solo key rng raw</blockquote>
+- Monitor the serial output of a Solo:
+
+<blockquote>solo monitor <i>path/to/serial_port</i></blockquote>

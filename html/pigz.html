@@ -9,6 +9,9 @@
 - Compress a file using no compression and 4 processors:
 
 <blockquote>pigz -0 -p<i>4</i> <i>filename</i></blockquote>
+- Compress a directory using tar:
+
+<blockquote>tar cf - <i>path/to/directory</i> | pigz > <i>filename</i">home page</a>tar.gz</blockquote>
 - Decompress a file:
 
 <blockquote>pigz -d <i>archive.gz</i></blockquote>

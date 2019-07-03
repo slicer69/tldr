@@ -1,0 +1,17 @@
+<b>velero</b><br><br>
+<b>Backup and migrate Kubernetes applications and their persistent volumes.</b><br><br><b>More information: <a href="https://github.com/heptio/velero">home page</a></b><br><br>
+- Create a backup containing all resources:
+
+<blockquote>velero backup create <i>backup_name</i></blockquote>
+- List all backups:
+
+<blockquote>velero backup get</blockquote>
+- Delete a backup:
+
+<blockquote>velero backup delete <i>backup_name</i></blockquote>
+- Create a weekly backup, each living for 90 days (2160 hours):
+
+<blockquote>velero schedule create <i>schedule_name</i> --schedules="<i>@every 7d</i>" --ttl <i>2160h0m0s</i></blockquote>
+- Create a restore from the latest successful backup triggered by specific schedule:
+
+<blockquote>velero restore create --from-schedule <i>schedule_name</i></blockquote>
