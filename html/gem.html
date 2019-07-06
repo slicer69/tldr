@@ -1,17 +1,26 @@
 <b>gem</b><br><br>
 <b>Interact with the package manager for the Ruby programming language.</b><br><br><b>More information: <a href="https://rubygems.org">home page</a></b><br><br>
+- Search for remote gem(s):
+
+<blockquote>gem search <i>regexp</i></blockquote>
+- Search for remote gem(s) and show all available versions:
+
+<blockquote>gem search <i>regexp</i> --all</blockquote>
 - Install latest version of a gem:
 
 <blockquote>gem install <i>gemname</i></blockquote>
 - Install specific version of a gem:
 
-<blockquote>gem install <i>gemname</i> -v <i>1.0.0</i></blockquote>
+<blockquote>gem install <i>gemname</i> --version <i>1.0.0</i></blockquote>
 - Update a gem:
 
 <blockquote>gem update <i>gemname</i></blockquote>
-- List all gems:
+- List all local gems:
 
 <blockquote>gem list</blockquote>
 - Uninstall a gem:
 
 <blockquote>gem uninstall <i>gemname</i></blockquote>
+- Uninstall specific version of a gem:
+
+<blockquote>gem uninstall <i>gemname</i> --version <i>1.0.0</i></blockquote>

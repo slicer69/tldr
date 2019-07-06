@@ -1,0 +1,17 @@
+<b>rbac-lookup</b><br><br>
+<b>Find roles and cluster roles attached to any user, service account or group name in your Kubernetes cluster.</b><br><br><b>More information: <a href="https://github.com/reactiveops/rbac-lookup">home page</a></b><br><br>
+- View all RBAC bindings:
+
+<blockquote>rbac-lookup</blockquote>
+- View RBAC bindings that match a given expression:
+
+<blockquote>rbac-lookup <i>search_term</i></blockquote>
+- View all RBAC bindings along with the source role binding:
+
+<blockquote>rbac-lookup -o wide</blockquote>
+- View all RBAC bindings filtered by subject:
+
+<blockquote>rbac-lookup -k <i>user|group|serviceaccount</i></blockquote>
+- View all RBAC bindings along with IAM roles (if you are using GKE):
+
+<blockquote>rbac-lookup --gke</blockquote>

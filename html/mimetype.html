@@ -1,0 +1,23 @@
+<b>mimetype</b><br><br>
+<b>Automatically determine the MIME type of a file.</b><br><br>
+- Print the MIME type of a given file:
+
+<blockquote>mimetype <i>path/to/file</i></blockquote>
+- Display only the MIME type, and not the filename:
+
+<blockquote>mimetype --brief <i>path/to/file</i></blockquote>
+- Display a description of the MIME type:
+
+<blockquote>mimetype --describe <i>path/to/file</i></blockquote>
+- Determine the MIME type of stdin (does not check a filename):
+
+<blockquote><i>some_command</i> | mimetype --stdin</blockquote>
+- Display debug information about how the MIME type was determined:
+
+<blockquote>mimetype --debug <i>path/to/file</i></blockquote>
+- Display all the possible MIME types of a given file in confidence order:
+
+<blockquote>mimetype --all <i>path/to/file</i></blockquote>
+- Explicitly specify the 2-letter language code of the output:
+
+<blockquote>mimetype --language <i>path/to/file</i></blockquote>
