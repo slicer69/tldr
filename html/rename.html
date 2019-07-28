@@ -1,17 +1,20 @@
 <b>rename</b><br><br>
-<b>Renames multiple files.</b><br><br>
-- Rename files using a Perl Common Regular Expression (substitute 'foo' with 'bar' wherever found):
+<b>Rename multiple files.</b><br><br><b>NOTE: this page refers to the command from the `util-linux` package.</b><br><br><b>For the Perl version, see `file-rename` or `perl-rename`.</b><br><br><b>Warning: This command has no safeguards and will overwrite files without prompting.</b><br><br>
+- Rename files using simple substitutions (substitute 'foo' with 'bar' wherever found):
 
-<blockquote>rename <i>'s/foo/bar/'</i> <i>*</i></blockquote>
+<blockquote>rename <i>foo</i> <i>bar</i> <i>*</i></blockquote>
 - Dry-run - display which renames would occur without performing them:
 
-<blockquote>rename -n <i>'s/foo/bar/'</i> <i>*</i></blockquote>
-- Force renaming even if the operation would overwrite existing files:
+<blockquote>rename -vn <i>foo</i> <i>bar</i> <i>*</i></blockquote>
+- Do not overwrite existing files:
 
-<blockquote>rename -f <i>'s/foo/bar/'</i> <i>*</i></blockquote>
-- Convert filenames to lower case (use `-f` in case-insensitive filesystems to prevent "already exists" errors):
+<blockquote>rename -o <i>foo</i> <i>bar</i> <i>*</i></blockquote>
+- Change file extensions:
 
-<blockquote>rename 'y/A-Z/a-z/' <i>*</i></blockquote>
-- Replace whitespace with underscores:
+<blockquote>rename <i">home page</a>ext</i> <i">home page</a>bak</i> <i>*.ext</i></blockquote>
+- Prepend "foo" to all filenames in the current directory:
 
-<blockquote>rename 's/\s+/_/g' <i>*</i></blockquote>
+<blockquote>rename <i>''</i> <i>'foo'</i> <i>*</i></blockquote>
+- Rename a group of increasingly numbered files zero-padding the numbers up to 3 digits:
+
+<blockquote>rename <i>foo</i> <i>foo00</i> <i>foo?</i> && rename <i>foo</i> <i>foo0</i> <i>foo??</i></blockquote>

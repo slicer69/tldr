@@ -6,3 +6,9 @@
 - Restore a backup, user will be prompted for a password:
 
 <blockquote>mysql -u <i>user</i> --password -e "source <i>filename.sql</i>" <i>database_name</i></blockquote>
+- Backup all databases redirecting the output to a file (user will be prompted for a password):
+
+<blockquote>mysqldump -u <i>user</i> -p --all-databases > <i>filename.sql</i></blockquote>
+- Restore all databases from a backup (user will be prompted for a password):
+
+<blockquote>mysql -u <i>user</i> -p < <i>filename.sql</i></blockquote>

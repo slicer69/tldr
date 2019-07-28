@@ -1,0 +1,17 @@
+<b>rename</b><br><br>
+<b>Rename multiple files.</b><br><br><b>NOTE: this page refers to the command from the `prename` Fedora package.</b><br><br>
+- Rename files using a Perl Common Regular Expression (substitute 'foo' with 'bar' wherever found):
+
+<blockquote>rename <i>'s/foo/bar/'</i> <i>*</i></blockquote>
+- Dry-run - display which renames would occur without performing them:
+
+<blockquote>rename -n <i>'s/foo/bar/'</i> <i>*</i></blockquote>
+- Force renaming even if the operation would remove existing destination files:
+
+<blockquote>rename -f <i>'s/foo/bar/'</i> <i>*</i></blockquote>
+- Convert filenames to lower case (use `-f` in case-insensitive filesystems to prevent "already exists" errors):
+
+<blockquote>rename 'y/A-Z/a-z/' <i>*</i></blockquote>
+- Replace whitespace with underscores:
+
+<blockquote>rename 's/\s+/_/g' <i>*</i></blockquote>

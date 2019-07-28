@@ -1,0 +1,17 @@
+<b>bitcoin-cli</b><br><br>
+<b>Command-line client to interact with the Bitcoin daemon via RPC calls.</b><br><br><b>Uses the configuration defined in `bitcoin.conf`.</b><br><br><b>More information: <a href="https://en.bitcoin.it/wiki/Running_Bitcoin#Command-line_arguments">home page</a></b><br><br>
+- Send a transaction to a given address:
+
+<blockquote>bitcoin-cli sendtoaddress "<i>address</i>" <i>amount</i></blockquote>
+- Generate one or more blocks:
+
+<blockquote>bitcoin-cli generate <i>num_blocks</i></blockquote>
+- Print high-level information about the wallet:
+
+<blockquote>bitcoin-cli getwalletinfo</blockquote>
+- List all outputs from previous transactions available to fund outgoing transactions:
+
+<blockquote>bitcoin-cli listunspent</blockquote>
+- Export the wallet information to a text file:
+
+<blockquote>bitcoin-cli dumpwallet "<i>path/to/file</i>"</blockquote>

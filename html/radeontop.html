@@ -1,0 +1,14 @@
+<b>radeontop</b><br><br>
+<b>Show utilisation of AMD GPUs.</b><br><br><b>More information: <a href="https://github.com/clbr/radeontop">home page</a></b><br><br>
+- Show the utilisation of the default AMD GPU:
+
+<blockquote>sudo radeontop</blockquote>
+- Enable colourised output:
+
+<blockquote>sudo radeontop --colour</blockquote>
+- Select a specific GPU (the bus number is the first number in the output of `lspci`):
+
+<blockquote>sudo radeontop --bus <i>bus_number</i></blockquote>
+- Specify the display refresh rate (higher means more GPU overhead):
+
+<blockquote>sudo radeontop --ticks <i>samples_per_second</i></blockquote>

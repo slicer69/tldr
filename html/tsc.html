@@ -1,0 +1,20 @@
+<b>tsc</b><br><br>
+<b>TypeScript compiler.</b><br><br><b>More information: <a href="https://www.typescriptlang.org/docs/handbook/compiler-options.html">home page</a></b><br><br>
+- Compile a TypeScript file `foobar.ts` into a JavaScript file `foobar.js`:
+
+<blockquote>tsc <i>foobar.ts</i></blockquote>
+- Compile a TypeScript file into JavaScript using a specific target syntax (default is `ES3`):
+
+<blockquote>tsc --target <i>ES5|ES2015|ES2016|ES2017|ES2018|ESNEXT</i> <i>foobar.ts</i></blockquote>
+- Compile a TypeScript file into a JavaScript file with a custom name:
+
+<blockquote>tsc --outFile <i>output.js</i> <i>input.ts</i></blockquote>
+- Compile all `.ts` files of a TypeScript project defined in a `tsconfig.json` file:
+
+<blockquote>tsc --build <i>tsconfig.json</i></blockquote>
+- Run the compiler using command line options and arguments fetched from a text file:
+
+<blockquote>tsc @<i>args.txt</i></blockquote>
+- Type-check multiple JavaScript files, and output only the errors:
+
+<blockquote>tsc --allowJs --checkJs --noEmit <i>src/**/*.js</i></blockquote>

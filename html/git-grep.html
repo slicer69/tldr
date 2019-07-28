@@ -12,3 +12,6 @@
 - Search for a string at a specific point in history:
 
 <blockquote>git grep <i>search_string</i> <i>HEAD~2</i></blockquote>
+- Search for a string across all branches:
+
+<blockquote>git grep <i>search_string</i> $(git rev-list --all)</blockquote>
