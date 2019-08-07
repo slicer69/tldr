@@ -1,17 +1,17 @@
 <b>enscript</b><br><br>
-<b>A tool to convert text files to PostScript, HTML, RTF, ANSI, and overstrikes.</b><br><br><b>More information: <a href="https://www.gnu.org/software/enscript">home page</a></b><br><br>
-- Generate PostScript from a file and output to another:
+<b>Convert text files to PostScript, HTML, RTF, ANSI, and overstrikes.</b><br><br><b>More information: <a href="https://www.gnu.org/software/enscript">home page</a></b><br><br>
+- Generate a PostScript file from a text file:
 
 <blockquote>enscript <i>path/to/input_file</i> --output=<i>path/to/output_file</i></blockquote>
-- Generate a certain output language (eg. "html") from a file and output to another:
+- Generate a file in a different language than PostScript:
 
-<blockquote>enscript <i>path/to/input_file</i> --language=<i>language</i> --output=<i>path/to/output_file</i></blockquote>
-- Generate PostScript from a file and output to another with 1 to 9 column per page in landscape:
+<blockquote>enscript <i>path/to/input_file</i> --language=<i>html|rtf|...</i> --output=<i>path/to/output_file</i></blockquote>
+- Generate a PostScript file with a landscape layout, splitting the page into columns (maximum 9):
 
 <blockquote>enscript <i>path/to/input_file</i> --columns=<i>num</i> --landscape --output=<i>path/to/output_file</i></blockquote>
-- Display available syntax highlighting:
+- Display available syntax highlighting languages and file formats:
 
 <blockquote>enscript --help-highlight</blockquote>
-- Generate PostScript from a file and output to another with syntax highlighting and color for a specified language:
+- Generate a PostScript file with syntax highlighting and color for a specified language:
 
 <blockquote>enscript <i>path/to/input_file</i> --color=1 --highlight=<i>language</i> --output=<i>path/to/output_file</i></blockquote>

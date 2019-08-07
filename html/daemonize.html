@@ -1,0 +1,14 @@
+<b>daemonize</b><br><br>
+<b>Run a command (that does not daemonize itself) as a Unix daemon.</b><br><br><b>More information: <a href="http://software.clapper.org/daemonize/">home page</a></b><br><br>
+- Run a command as a daemon:
+
+<blockquote>daemonize <i>command</i> <i>command_arguments</i></blockquote>
+- Write the pid to the specified file:
+
+<blockquote>daemonize -p <i>path/to/pidfile</i> <i>command</i> <i>command_arguments</i></blockquote>
+- Use a lock file to ensure that only one instance runs at a time:
+
+<blockquote>daemonize -l <i>path/to/lockfile</i> <i>command</i> <i>command_arguments</i></blockquote>
+- Use the specified user account:
+
+<blockquote>sudo daemonize -u <i>user</i> <i>command</i> <i>command_arguments</i></blockquote>

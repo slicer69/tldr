@@ -1,14 +1,14 @@
 <b>enca</b><br><br>
-<b>Detect and convert encoding of text files.</b><br><br><b>More information: <a href="https://github.com/nijel/enca">home page</a></b><br><br>
-- Detect file(s) encoding according to your system's locale:
+<b>Detect and convert the encoding of text files.</b><br><br><b>More information: <a href="https://github.com/nijel/enca">home page</a></b><br><br>
+- Detect file(s) encoding according to the system's locale:
 
-<blockquote>enca <i>file(s)</i></blockquote>
-- Detect file(s) encoding; -L option tells enca the current language; language is in the POSIX/C locale format, e.g. zh_CN, en_US etc:
+<blockquote>enca <i>file1 file2 ...</i></blockquote>
+- Detect file(s) encoding specifying a language in the POSIX/C locale format (e.g. zh_CN, en_US):
 
-<blockquote>enca -L <i>language</i> <i>file(s)</i></blockquote>
-- Convert file(s) to specified encoding:
+<blockquote>enca -L <i>language</i> <i>file1 file2 ...</i></blockquote>
+- Convert file(s) to a specific encoding:
 
-<blockquote>enca -L <i>language</i> -x <i>to_encoding</i> <i>file(s)</i></blockquote>
-- Save original_file as new_file and convert new_file to specified encoding:
+<blockquote>enca -L <i>language</i> -x <i>to_encoding</i> <i>file1 file2 ...</i></blockquote>
+- Create a copy of an existing file using a different encoding:
 
 <blockquote>enca -L <i>language</i> -x <i>to_encoding</i> < <i>original_file</i> > <i>new_file</i></blockquote>
