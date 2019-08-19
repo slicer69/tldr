@@ -1,0 +1,17 @@
+<b>git switch</b><br><br>
+<b>Switch between git branches. Requires git version 2.23+.</b><br><br><b>See also `git checkout`.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-switch/">home page</a></b><br><br>
+- Switch to an existing branch:
+
+<blockquote>git switch <i>branch_name</i></blockquote>
+- Create a new branch and switch to it:
+
+<blockquote>git switch --create <i>branch_name</i></blockquote>
+- Create a new branch based on an existing commit:
+
+<blockquote>git switch --create <i>branch_name</i> <i>commit</i></blockquote>
+- Update all submodules to match the target branch:
+
+<blockquote>git switch --recurse-submodules <i>branch_name</i></blockquote>
+- Automatically merge the current branch and any uncommitted changes into the new branch:
+
+<blockquote>git switch --merge <i>branch_name</i></blockquote>

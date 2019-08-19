@@ -1,0 +1,26 @@
+<b>virsh</b><br><br>
+<b>Manage virsh guest domains.</b><br><br><b>More information: <a href="https://libvirt.org/virshcmdref.html">home page</a></b><br><br><b>NOTE: 'guest_id' can be the id, name or UUID of the guest.</b><br><br>
+- Connect to a hypervisor session:
+
+<blockquote>virsh connect <i>qemu://system</i></blockquote>
+- List all domains:
+
+<blockquote>virsh list --all</blockquote>
+- Dump guest configuration file:
+
+<blockquote>virsh dumpxml <i>guest_id</i> > <i>path/to/guest.xml</i></blockquote>
+- Create a guest from a configuration file:
+
+<blockquote>virsh create <i>path/to/config_file.xml</i></blockquote>
+- Edit a guest's configuration file (editor can be changed with $EDITOR):
+
+<blockquote>virsh edit <i>guest_id</i></blockquote>
+- Start/reboot/shutdown/suspend/resume a guest:
+
+<blockquote>virsh <i>command</i> <i>guest_id</i></blockquote>
+- Save the current state of a guest to a file:
+
+<blockquote>virsh save <i>guest_id</i> <i>filename</i></blockquote>
+- Delete a running guest:
+
+<blockquote>virsh destroy <i>guest_id</i> && virsh undefine <i>guest_id</i></blockquote>

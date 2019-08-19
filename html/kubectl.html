@@ -1,26 +1,26 @@
 <b>kubectl</b><br><br>
-<b>Command line interface for running commands against Kubernetes clusters.</b><br><br><b>More information: <a href="https://kubernetes.io/docs/tasks/tools/install-kubectl">home page</a></b><br><br>
-- List all pods in all namespaces:
+<b>Command line interface for running commands against Kubernetes clusters.</b><br><br><b>More information: <a href="https://kubernetes.io/docs/reference/kubectl/">home page</a></b><br><br>
+- List all information about a resource with more details:
 
-<blockquote>kubectl get pods --all-namespaces</blockquote>
-- List all pods with more information (such as node name):
-
-<blockquote>kubectl get pods -o wide</blockquote>
+<blockquote>kubectl get <i>pod|service|deployment|ingress|...</i> -o wide</blockquote>
 - Update specified pod with the label 'unhealthy' and the value 'true':
 
 <blockquote>kubectl label pods <i>name</i> unhealthy=true</blockquote>
 - List all resources with different types:
 
 <blockquote>kubectl get all</blockquote>
-- Show metrics for all nodes:
+- Display resource (CPU/Memory/Storage) usage of nodes or pods:
 
-<blockquote>kubectl top node</blockquote>
-- Show metrics for all pods in the default namespace:
-
-<blockquote>kubectl top pod</blockquote>
+<blockquote>kubectl top <i>pod|node</i></blockquote>
 - Print the address of the master and cluster services:
 
 <blockquote>kubectl cluster-info</blockquote>
-- Display an explanation of the specific field:
+- Display an explanation of a specific field:
 
-<blockquote>kubectl explain pods.spec.containers</blockquote>
+<blockquote>kubectl explain <i>pods.spec.containers</i></blockquote>
+- Print the logs for a container in a pod or specified resource:
+
+<blockquote>kubectl logs <i>pod_name</i></blockquote>
+- Run command in an existing pod:
+
+<blockquote>kubectl exec <i>pod_name</i> -- <i>ls /</i></blockquote>

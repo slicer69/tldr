@@ -1,0 +1,14 @@
+<b>mosquitto_passwd</b><br><br>
+<b>Manage password files for mosquitto.</b><br><br><b>See also `mosquitto`, the MQTT server that this manages.</b><br><br><b>More information: <a href="https://mosquitto.org/man/mosquitto_passwd-1.html">home page</a></b><br><br>
+- Add a new user to a password file (will prompt to enter the password):
+
+<blockquote>mosquitto_passwd <i>path/to/password_file</i> <i>username</i></blockquote>
+- Create the password file if it doesn't already exist:
+
+<blockquote>mosquitto_passwd -c <i>path/to/password_file</i> <i>username</i></blockquote>
+- Delete the specified username instead:
+
+<blockquote>mosquitto_passwd -D <i>path/to/password_file</i> <i>username</i></blockquote>
+- Upgrade an old plain-text password file to a hashed password file:
+
+<blockquote>mosquitto_passwd -U <i>path/to/password_file</i></blockquote>

@@ -12,6 +12,9 @@
 - Show all messages by a specific unit:
 
 <blockquote>journalctl -u <i>unit</i></blockquote>
+- Filter messages within a time range (either timestamp or placeholders like "yesterday"):
+
+<blockquote>journalctl --since <i>now|today|yesterday|tomorrow</i> --until <i>YYYY-MM-DD HH:MM:SS</i></blockquote>
 - Show all messages by a specific process:
 
 <blockquote>journalctl _PID=<i>pid</i></blockquote>

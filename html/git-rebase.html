@@ -9,6 +9,9 @@
 - Continue a rebase that was interrupted by a merge failure, after editing conflicting files:
 
 <blockquote>git rebase --continue</blockquote>
+- Continue a rebase that was paused due to merge conflicts, by skipping the conflicted commit:
+
+<blockquote>git rebase --skip</blockquote>
 - Abort a rebase in progress (e.g. if it is interrupted by a merge conflict):
 
 <blockquote>git rebase --abort</blockquote>
@@ -18,3 +21,6 @@
 - Reapply the last 5 commits in-place, stopping to allow them to be reordered, omitted, combined or modified:
 
 <blockquote>git rebase -i <i>HEAD~5</i></blockquote>
+- Auto-resolve any conflicts by favoring the working branch version (`theirs` keyword has reversed meaning in this case):
+
+<blockquote>git rebase -X theirs <i>master</i></blockquote>
