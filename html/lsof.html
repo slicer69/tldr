@@ -21,3 +21,6 @@
 - List open files in a directory:
 
 <blockquote>lsof +D <i>path/to/directory</i></blockquote>
+- Find the process that is listening on a local TCP port:
+
+<blockquote>lsof -iTCP:<i>port</i> -sTCP:LISTEN</blockquote>

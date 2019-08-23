@@ -1,0 +1,23 @@
+<b>gcalcli</b><br><br>
+<b>Command line tool to interact with Google Calendar.</b><br><br><b>Requests Google API authorization upon first launch.</b><br><br><b>More information: <a href="https://github.com/insanum/gcalcli">home page</a></b><br><br>
+- List your events for all your calendars over the next 7 days:
+
+<blockquote>gcalcli agenda</blockquote>
+- Show events starting from or between specific dates (also takes relative dates e.g. "tomorrow"):
+
+<blockquote>gcalcli agenda <i>mm/dd</i> [<i>mm/dd</i>]</blockquote>
+- List events from a specific calendar:
+
+<blockquote>gcalcli --calendar <i>calendar_name</i> agenda</blockquote>
+- Display an ASCII calendar of events by week:
+
+<blockquote>gcalcli calw</blockquote>
+- Display an ASCII calendar of events for a month:
+
+<blockquote>gcalcli calm</blockquote>
+- Quick-add an event to your calendar:
+
+<blockquote>gcalcli --calendar <i>calendar_name</i> quick "<i>mm/dd</i> <i>HH:MM</i> <i>event_name</i>"</blockquote>
+- Add an event to calendar. Triggers interactive prompt:
+
+<blockquote>gcalcli --calendar "<i>calendar_name</i>" add</blockquote>
