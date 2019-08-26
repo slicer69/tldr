@@ -1,0 +1,11 @@
+<b>git restore</b><br><br>
+<b>Restore working tree files. Requires git version 2.23+.</b><br><br><b>See also `git checkout`.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-restore/">home page</a></b><br><br>
+- Restore a deleted file from the contents of the current commit (HEAD):
+
+<blockquote>git restore <i>path/to/file</i></blockquote>
+- Restore a file to a version from a different commit:
+
+<blockquote>git restore --source <i>commit</i> <i>path/to/file</i></blockquote>
+- Undo any uncommitted changes to tracked files, reverting to the current HEAD:
+
+<blockquote>git restore .</blockquote>
