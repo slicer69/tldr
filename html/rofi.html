@@ -1,5 +1,5 @@
 <b>rofi</b><br><br>
-<b>An application launcher and window switcher.</b><br><br>
+<b>An application launcher and window switcher.</b><br><br><b>More Information: <a href="https://github.com/davatorium/rofi">home page</a></b><br><br>
 - Show the list of apps:
 
 <blockquote>rofi -show drun</blockquote>
@@ -9,3 +9,6 @@
 - Switch between windows:
 
 <blockquote>rofi -show window</blockquote>
+- Pipe a list of items to stdin and print the selected item to stdout:
+
+<blockquote>printf "<i>Choice1\nChoice2\nChoice3</i>" | rofi -dmenu</blockquote>

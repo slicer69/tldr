@@ -3,13 +3,16 @@
 - Run all tests:
 
 <blockquote>jest</blockquote>
-- Run only tests with a name that matches the regex pattern:
+- Run tests from the test files that match the regex patterns:
 
-<blockquote>jest -t <i>spec_name</i></blockquote>
-- Run only tests relating to uncommitted files:
+<blockquote>jest <i>test_file1</i> <i>test_file2</i></blockquote>
+- Run tests whose names match the regex pattern:
+
+<blockquote>jest --testNamePattern <i>spec_name</i></blockquote>
+- Run tests related to uncommitted files:
 
 <blockquote>jest --onlyChanged</blockquote>
-- Watch files for changes and rerun related tests:
+- Watch files for changes and re-run related tests:
 
 <blockquote>jest --watch</blockquote>
 - Show help:
