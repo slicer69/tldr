@@ -3,7 +3,10 @@
 - Monitor everything on localhost:
 
 <blockquote>tshark</blockquote>
-- Only output captured packets matching a specific wireshark filter:
+- Only capture packets matching a specific capture filter:
+
+<blockquote>tshark -f '<i>udp port 53</i>'</blockquote>
+- Only show packets matching a specific output filter:
 
 <blockquote>tshark -Y '<i>http.request.method == "GET"</i>'</blockquote>
 - Decode a TCP port using a specific protocol (e.g. HTTP):

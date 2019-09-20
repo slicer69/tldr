@@ -1,0 +1,17 @@
+<b>xbacklight</b><br><br>
+<b>Utility to adjust backlight brightness using the RandR extension.</b><br><br><b>More information: <a href="https://gitlab.freedesktop.org/xorg/app/xbacklight">home page</a></b><br><br>
+- Get the current screen brightness as a percentage:
+
+<blockquote>xbacklight</blockquote>
+- Set the screen brightness to 40%:
+
+<blockquote>xbacklight -set <i>40</i></blockquote>
+- Increase current brightness by 25%:
+
+<blockquote>xbacklight -inc <i>25</i></blockquote>
+- Decrease current brightness by 75%:
+
+<blockquote>xbacklight -dec <i>75</i></blockquote>
+- Increase backlight to 100%, over 60 seconds (value given in ms), using 60 steps:
+
+<blockquote>xbacklight -set <i>100</i> -time <i>60000</i> -steps <i>60</i></blockquote>

@@ -1,20 +1,20 @@
 <b>singularity</b><br><br>
 <b>Manage Singularity containers and images.</b><br><br>
-- Download a remote image:
+- Download a remote image from Sylabs Cloud:
 
-<blockquote>singularity pull --name <i>container.simg</i> <i>shub://vsoch/hello-world</i></blockquote>
+<blockquote>singularity pull --name <i>image.sif</i> <i>library://godlovedc/funny/lolcow:latest</i></blockquote>
 - Rebuild a remote image using latest Singularity image format:
 
-<blockquote>singularity build <i>container.simg</i> <i>docker://godlovedc/lolcow</i></blockquote>
+<blockquote>singularity build <i>image.sif</i> <i>docker://godlovedc/lolcow</i></blockquote>
 - Start a container from an image and get a shell inside of it:
 
-<blockquote>singularity shell <i>container.simg</i></blockquote>
+<blockquote>singularity shell <i>image.sif</i></blockquote>
 - Start a container from an image and run a command:
 
-<blockquote>singularity exec <i>container.simg</i> <i>command</i></blockquote>
+<blockquote>singularity exec <i>image.sif</i> <i>command</i></blockquote>
 - Start a container from an image and execute the internal runscript:
 
-<blockquote>singularity run <i>container.simg</i></blockquote>
+<blockquote>singularity run <i>image.sif</i></blockquote>
 - Build a singularity image from a recipe file:
 
-<blockquote>sudo singularity build <i>container.simg</i> <i>recipe</i></blockquote>
+<blockquote>sudo singularity build <i>image.sif</i> <i>recipe</i></blockquote>
