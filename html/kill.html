@@ -6,6 +6,9 @@
 - List available signal names (to be used without the `SIG` prefix):
 
 <blockquote>kill -l</blockquote>
+- Terminate a background job:
+
+<blockquote>kill %<i>job_id</i></blockquote>
 - Terminate a program using the SIGHUP (hang up) signal. Many daemons will reload instead of terminating:
 
 <blockquote>kill -<i>1|HUP</i> <i>process_id</i></blockquote>
