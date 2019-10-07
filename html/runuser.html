@@ -1,0 +1,17 @@
+<b>runuser</b><br><br>
+<b>Run commands as a specific user and group without asking for password (needs root privileges).</b><br><br>
+- Run command as a different user:
+
+<blockquote>runuser <i>user</i> -c '<i>command</i>'</blockquote>
+- Run command as a different user and group:
+
+<blockquote>runuser <i>user</i> -g <i>group</i> -c '<i>command</i>'</blockquote>
+- Start a login shell as a specific user:
+
+<blockquote>runuser <i>user</i> -l</blockquote>
+- Specify a shell for running instead of the default shell (also works for login):
+
+<blockquote>runuser <i>user</i> -s <i>/bin/sh</i></blockquote>
+- Preserve the entire environment of root (only if `--login` is not specified):
+
+<blockquote>runuser <i>user</i> --preserve-environment -c '<i>command</i>'</blockquote>

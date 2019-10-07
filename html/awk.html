@@ -18,3 +18,9 @@
 - Print every third line starting from the first line:
 
 <blockquote>awk 'NR%3==1' <i>filename</i></blockquote>
+- Print all values starting from the third column:
+
+<blockquote>awk '{ s = ""; for (i=3; i <= NF; i++) s = s $i " "; print s }'</blockquote>
+- Print different values based on conditions:
+
+<blockquote>awk '{if ($1 == "foo") print "Exact match foo"; else if ($1 ~ "bar") print "Partial match bar"; else print "Baz"}'</blockquote>

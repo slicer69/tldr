@@ -1,0 +1,17 @@
+<b>hping</b><br><br>
+<b>Command-line oriented TCP/IP packet assembler and analyzer.</b><br><br><b>Inspired by the `ping` command.</b><br><br><b>More information: <a href="http://www.hping.org">home page</a></b><br><br>
+- Ping localhost over TCP:
+
+<blockquote>hping3 <i>localhost</i></blockquote>
+- Ping an IP address over TCP on a specific port:
+
+<blockquote>hping3 -p <i>80</i> -S <i>192.168.1.1</i></blockquote>
+- Ping an IP address over UDP on port 80:
+
+<blockquote>hping3 --udp -p <i>80</i> -S <i>192.168.1.1</i></blockquote>
+- Scan a set of TCP ports on a specific IP address:
+
+<blockquote>hping3 --scan <i>80,3000,9000</i> -S <i>192.168.1.1</i></blockquote>
+- Perform a charge test on port 80:
+
+<blockquote>hping3 --flood -p <i>80</i> -S <i>192.168.1.1</i></blockquote>

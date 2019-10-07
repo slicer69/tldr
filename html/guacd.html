@@ -1,0 +1,14 @@
+<b>guacd</b><br><br>
+<b>Apache Guacamole proxy daemon.</b><br><br><b>Support loader for client plugins to interface between the Guacamole protocol and any arbitrary remote desktop protocol (e.g. RDP, VNC, Other).</b><br><br><b>More information: <a href="https://guacamole.apache.org/">home page</a></b><br><br>
+- Bind to a specific port on localhost:
+
+<blockquote>guacd -b <i>127.0.0.1</i> -l <i>4823</i></blockquote>
+- Start in debug mode, keeping the process in the foreground:
+
+<blockquote>guacd -f -L <i>debug</i></blockquote>
+- Start with TLS support:
+
+<blockquote>guacd -C <i>my-cert.crt</i> -K <i>my-key.pem</i></blockquote>
+- Write the PID to a file:
+
+<blockquote>guacd -p <i>path/to/file.pid</i></blockquote>

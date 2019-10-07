@@ -1,0 +1,20 @@
+<b>git lfs</b><br><br>
+<b>Work with large files in Git repositories.</b><br><br><b>More information: <a href="https://git-lfs.github.com">home page</a></b><br><br>
+- Initialise Git LFS:
+
+<blockquote>git lfs install</blockquote>
+- Track files that match a glob:
+
+<blockquote>git lfs track '<i>*.bin</i>'</blockquote>
+- Change the Git LFS endpoint URL (useful if the LFS server is separate from the Git server):
+
+<blockquote>git config -f .lfsconfig lfs.url <i>lfs_endpoint_url</i></blockquote>
+- List tracked patterns:
+
+<blockquote>git lfs track</blockquote>
+- List tracked files that have been commited:
+
+<blockquote>git lfs ls-files</blockquote>
+- Push all LFS objects to the remote server (useful if errors are encountered):
+
+<blockquote>git lfs push --all <i>remote_name</i> <i>branch_name</i></blockquote>

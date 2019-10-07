@@ -1,0 +1,17 @@
+<b>powerstat</b><br><br>
+<b>Measures the power consumption of a computer that has a battery power source or supports the RAPL interface.</b><br><br><b>More information: <a href="http://manpages.ubuntu.com/manpages/bionic/man8/powerstat.8.html">home page</a></b><br><br>
+- Measure power with the default of 10 samples with an interval of 10 seconds:
+
+<blockquote>powerstat</blockquote>
+- Measure power with custom number of samples and interval duration:
+
+<blockquote>powerstat <i>interval</i> <i>number_of_samples</i></blockquote>
+- Measure power using Intel's RAPL interface:
+
+<blockquote>powerstat -R <i>interval</i> <i>number_of_samples</i></blockquote>
+- Show an histogram of the power measurements:
+
+<blockquote>powerstat -H <i>interval</i> <i>number_of_samples</i></blockquote>
+- Enable all statistics gathering options:
+
+<blockquote>powerstat -a <i>interval</i> <i>number_of_samples</i></blockquote>

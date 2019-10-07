@@ -1,0 +1,11 @@
+<b>ctrlaltdel</b><br><br>
+<b>Utility to control what happens when CTRL+ALT+DEL is pressed.</b><br><br>
+- Get current setting:
+
+<blockquote>ctrlaltdel</blockquote>
+- Set CRTL+ALT+DEL to reboot immediately, without any preparation:
+
+<blockquote>sudo ctrlaltdel hard</blockquote>
+- Set CTRL+ALT+DEL to reboot "normally", giving processes a chance to exit first (send SIGINT to PID1):
+
+<blockquote>sudo ctrlaltdel soft</blockquote>
