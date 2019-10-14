@@ -1,0 +1,14 @@
+<b>jwt</b><br><br>
+<b>A command line tool to work with JSON Web Tokens (JWTs).</b><br><br><b>Encryption algorithms available are HS256,HS384, HS512, RS256, RS384, RS512, ES256, ES384.</b><br><br><b>For more information: <a href="https://github.com/mike-engel/jwt-cli">home page</a></b><br><br>
+- Decode a JWT:
+
+<blockquote>jwt decode <i>jwt_string</i></blockquote>
+- Decode a JWT as a JSON string:
+
+<blockquote>jwt decode -j <i>jwt_string</i></blockquote>
+- Encode a JSON string to a JWT:
+
+<blockquote>jwt encode --alg <i>HS256</i> --secret <i>1234567890</i> '<i>json_string</i>'</blockquote>
+- Encode key pair payload to JWT:
+
+<blockquote>jwt encode --alg <i>HS256</i> --secret <i>1234567890</i> -P key=value</blockquote>

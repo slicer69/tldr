@@ -1,0 +1,17 @@
+<b>btrfs</b><br><br>
+<b>A filesystem based on the copy-on-write (COW) principle for Linux.</b><br><br>
+- Create subvolume:
+
+<blockquote>sudo btrfs subvolume create <i>path/to/subvolume</i></blockquote>
+- List subvolumes:
+
+<blockquote>sudo btrfs subvolume list <i>path/to/mount_point</i></blockquote>
+- Show space usage information:
+
+<blockquote>sudo btrfs filesystem df <i>path/to/mount_point</i></blockquote>
+- Enable quota:
+
+<blockquote>sudo btrfs quota enable <i>path/to/subvolume</i></blockquote>
+- Show quota:
+
+<blockquote>sudo btrfs qgroup show <i>path/to/subvolume</i></blockquote>

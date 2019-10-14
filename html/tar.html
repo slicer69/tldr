@@ -2,25 +2,22 @@
 <b>Archiving utility.</b><br><br><b>Often combined with a compression method, such as gzip or bzip.</b><br><br><b>More information: <a href="https://www.gnu.org/software/tar">home page</a></b><br><br>
 - Create an archive from files:
 
-<blockquote>tar -cf <i>target.tar</i> <i>file1 file2 file3</i></blockquote>
+<blockquote>tar cf <i>target.tar</i> <i>file1 file2 file3</i></blockquote>
 - Create a gzipped archive:
 
-<blockquote>tar -czf <i>target.tar.gz</i> <i>file1 file2 file3</i></blockquote>
-- Extract an archive in a target directory:
+<blockquote>tar czf <i>target.tar.gz</i> <i>file1 file2 file3</i></blockquote>
+- Extract a (compressed) archive into the current directory:
 
-<blockquote>tar -xf <i>source.tar</i> -C <i>directory</i></blockquote>
-- Extract a gzipped archive in the current directory:
+<blockquote>tar xf <i>source.tar[.gz|.bz2|.xz]</i></blockquote>
+- Extract an archive into a target directory:
 
-<blockquote>tar -xzf <i>source.tar.gz</i></blockquote>
-- Extract a bzipped archive in the current directory:
-
-<blockquote>tar -xjf <i>source.tar.bz2</i></blockquote>
+<blockquote>tar xf <i>source.tar</i> -C <i>directory</i></blockquote>
 - Create a compressed archive, using archive suffix to determine the compression program:
 
-<blockquote>tar -caf <i>target.tar.xz</i> <i>file1 file2 file3</i></blockquote>
+<blockquote>tar caf <i>target.tar.xz</i> <i>file1 file2 file3</i></blockquote>
 - List the contents of a tar file:
 
-<blockquote>tar -tvf <i>source.tar</i></blockquote>
+<blockquote>tar tvf <i>source.tar</i></blockquote>
 - Extract files matching a pattern:
 
-<blockquote>tar -xf <i>source.tar</i> --wildcards <i>"*.html"</i></blockquote>
+<blockquote>tar xf <i>source.tar</i> --wildcards <i>"*.html"</i></blockquote>

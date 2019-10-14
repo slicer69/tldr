@@ -1,0 +1,14 @@
+<b>kustomize</b><br><br>
+<b>Kustomize is a tool to easily deploy resources for Kubernetes.</b><br><br><b>More information: <a href="https://github.com/kubernetes-sigs/kustomize">home page</a></b><br><br>
+- Create kustomization file with resources and namespace:
+
+<blockquote>kustomize create --resources <i>deployment.yaml,service.yaml</i> --namespace <i>staging</i></blockquote>
+- Build kustomization file and deploy it with `kubectl`:
+
+<blockquote>kustomize build . | kubectl apply -f -</blockquote>
+- Set an image in the kustomization file:
+
+<blockquote>kustomize edit set image <i>busybox=alpine:3.6</i></blockquote>
+- Search for kubernetes resources in the current directory to be added to the kustomization file:
+
+<blockquote>kustomize create --autodetect</blockquote>

@@ -6,6 +6,9 @@
 - List versions of all matching packages:
 
 <blockquote>rpm -qa '<i>mariadb*</i>'</blockquote>
+- Forcibly install a package regardless of currently installed versions:
+
+<blockquote>rpm -U <i>package_name.rpm</i> --force</blockquote>
 - Identify owner of a file and show version of the package:
 
 <blockquote>rpm -qf <i>/etc/postfix/main.cf</i></blockquote>
@@ -14,7 +17,7 @@
 <blockquote>rpm -ql <i>kernel</i></blockquote>
 - Show scriptlets from an RPM file:
 
-<blockquote>rpm -qp --scripts <i>some.rpm</i></blockquote>
+<blockquote>rpm -qp --scripts <i>package_name.rpm</i></blockquote>
 - Show changed, missing and/or incorrectly installed files of matching packages:
 
 <blockquote>rpm -Va '<i>php-*</i>'</blockquote>

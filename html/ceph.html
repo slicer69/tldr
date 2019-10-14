@@ -1,0 +1,23 @@
+<b>ceph</b><br><br>
+<b>A unified storage system.</b><br><br><b>More information: <a href="https://ceph.io">home page</a></b><br><br>
+- Check cluster health status:
+
+<blockquote>ceph status</blockquote>
+- Check cluster usage stats:
+
+<blockquote>ceph df</blockquote>
+- Get the statistics for the placement groups in a cluster:
+
+<blockquote>ceph pg dump --format <i>plain</i></blockquote>
+- Create a storage pool:
+
+<blockquote>ceph osd pool create <i>pool_name</i> <i>page_number</i></blockquote>
+- Delete a storage pool:
+
+<blockquote>ceph osd pool delete <i>pool_name</i></blockquote>
+- Rename a storage pool:
+
+<blockquote>ceph osd pool rename <i>current_name</i> <i>new_name</i></blockquote>
+- Self-repair pool storage:
+
+<blockquote>ceph pg repair <i>pool_name</i></blockquote>

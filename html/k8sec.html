@@ -1,0 +1,23 @@
+<b>k8sec</b><br><br>
+<b>Command line interface tool to manage Kubernetes secrets.</b><br><br><b>More information: <a href="https://github.com/dtan4/k8sec">home page</a></b><br><br>
+- List all secrets:
+
+<blockquote>k8sec list</blockquote>
+- List a specific secret as a base64-encoded string:
+
+<blockquote>k8sec list <i>secret_name</i> --base64</blockquote>
+- Set a secret's value:
+
+<blockquote>k8sec set <i>secret_name</i> <i>key=value</i></blockquote>
+- Set a base64-encoded value:
+
+<blockquote>k8sec set --base64 <i>secret_name</i> <i>key=encoded_value</i></blockquote>
+- Unset a secret:
+
+<blockquote>k8sec unset <i>secret_name</i></blockquote>
+- Load secrets from a file:
+
+<blockquote>k8sec load -f <i>path/to/file</i> <i>secret_name</i></blockquote>
+- Dump secrets to a file:
+
+<blockquote>k8sec dump -f <i>path/to/file</i> <i>secret_name</i></blockquote>

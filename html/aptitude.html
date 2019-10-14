@@ -9,6 +9,9 @@
 - Search for a package:
 
 <blockquote>aptitude search <i>package</i></blockquote>
+- Search for an installed package (`?installed` is an aptitude search term):
+
+<blockquote>aptitude search '?installed(<i>package</i>)'</blockquote>
 - Remove a package and all packages depending on it:
 
 <blockquote>aptitude remove <i>package</i></blockquote>
@@ -18,3 +21,6 @@
 - Upgrade installed packages (like `aptitude upgrade`) including removing obsolete packages and installing additional packages to meet new package dependencies:
 
 <blockquote>aptitude full-upgrade</blockquote>
+- Put an installed package on hold to prevent it from being automatically upgraded:
+
+<blockquote>aptitude hold '?installed(<i>package</i>)'</blockquote>
