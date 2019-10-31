@@ -1,0 +1,17 @@
+<b>ogr2ogr</b><br><br>
+<b>Convert Simple Features data between file formats.</b><br><br><b>More information: <a href="https://gdal.org/programs/ogr2ogr.html#ogr2ogr">home page</a></b><br><br>
+- Convert a Shapefile into a GeoPackage:
+
+<blockquote>ogr2ogr -f GPKG <i>output</i">home page</a>gpkg <i>input</i">home page</a>shp</blockquote>
+- Change coordinate reference system of a GeoPackage from `EPSG:4326` to `EPSG:3857`:
+
+<blockquote>ogr2ogr -s_srs <i>EPSG:4326</i> -t_srs <i>EPSG:3857</i> -f GPKG <i>output</i">home page</a>gpkg <i>input</i">home page</a>gpkg</blockquote>
+- Convert a CSV file into a GeoPackage, specifying the names of the coordinate columns and assigning a coordinate reference system:
+
+<blockquote>ogr2ogr -f GPKG <i>output</i">home page</a>gpkg <i>input</i">home page</a>csv -oo X_POSSIBLE_NAMES=<i>longitude</i> -oo Y_POSSIBLE_NAMES=<i>latitude</i> -a_srs <i>EPSG:4326</i></blockquote>
+- Load a GeoPackage into a PostGIS database:
+
+<blockquote>ogr2ogr -f "PostgreSQL" PG:dbname="<i>database_name</i>" <i>input</i">home page</a>gpkg</blockquote>
+- Clip layers of a GeoPackage file to the given bounding box:
+
+<blockquote>ogr2ogr -spat <i>min_x</i> <i>min_y</i> <i>max_x</i> <i>max_y</i> -f GPKG <i>output</i">home page</a>gpkg <i>input</i">home page</a>gpkg</blockquote>

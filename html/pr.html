@@ -1,0 +1,20 @@
+<b>pr</b><br><br>
+<b>Paginate or columnate files for printing.</b><br><br><b>More information: <a href="https://www.gnu.org/software/coreutils/manual/html_node/pr-invocation.html">home page</a></b><br><br>
+- Print multiple files with a default header and footer:
+
+<blockquote>pr <i>file1</i> <i>file2</i> <i>file3</i></blockquote>
+- Print with a custom centered header:
+
+<blockquote>pr -h "<i>header</i>" <i>file1</i> <i>file2</i> <i>file3</i></blockquote>
+- Print with numbered lines and a custom date format:
+
+<blockquote>pr -n -D "<i>format</i>" <i>file1</i> <i>file2</i> <i>file3</i></blockquote>
+- Print all files together, one in each column, without a header or footer:
+
+<blockquote>pr -m -T <i>file1</i> <i>file2</i> <i>file3</i></blockquote>
+- Print, beginning at page 2 up to page 5, with a given page length (including header and footer):
+
+<blockquote>pr +<i>2</i>:<i>5</i> -l <i>page_length</i> <i>file1</i> <i>file2</i> <i>file3</i></blockquote>
+- Print with an offset for each line and a truncating custom page width:
+
+<blockquote>pr -o <i>offset</i> -W <i>width</i> <i>file1</i> <i>file2</i> <i>file3</i></blockquote>

@@ -1,0 +1,23 @@
+<b>uvcdynctrl</b><br><br>
+<b>A libwebcam command line tool to manage dynamic controls in uvcvideo.</b><br><br>
+- List all available cameras:
+
+<blockquote>uvcdynctrl -l</blockquote>
+- Specify the device to use (defaults to `video0`):
+
+<blockquote>uvcdynctrl -d <i>device_name</i></blockquote>
+- List available controls:
+
+<blockquote>uvcdynctrl -c</blockquote>
+- Set a new control value (for negative values, add -- before <i>-value</i>):
+
+<blockquote>uvcdynctrl -s <i>control_name</i> <i>value</i></blockquote>
+- Get the current control value:
+
+<blockquote>uvcdynctrl -g <i>control_name</i></blockquote>
+- Save the state of the current controls to a file:
+
+<blockquote>uvcdynctrl -W <i>file_name</i></blockquote>
+- Load the state of the controls from a file:
+
+<blockquote>uvcdynctrl -L <i>file_name</i></blockquote>

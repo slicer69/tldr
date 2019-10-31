@@ -1,0 +1,17 @@
+<b>dockerd</b><br><br>
+<b>A persistent process to start and manage docker containers.</b><br><br><b>More information: <a href="https://docs.docker.com/engine/reference/commandline/dockerd/">home page</a></b><br><br>
+- Run docker daemon:
+
+<blockquote>dockerd</blockquote>
+- Run docker daemon and config it to listen to specific sockets(unix,tcp):
+
+<blockquote>dockerd --host unix://<i>path/to/tmp.sock</i> --host tcp://<i>ip</i></blockquote>
+- Run with specific daemon PID file:
+
+<blockquote>dockerd --pidfile <i>path/to/pid_file</i></blockquote>
+- Run in debug mode:
+
+<blockquote>dockerd --debug</blockquote>
+- Run and set a specific log level:
+
+<blockquote>dockerd --log-level=<i>debug|info|warn|error|fatal</i></blockquote>

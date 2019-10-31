@@ -1,0 +1,17 @@
+<b>dmenu</b><br><br>
+<b>Dynamic menu.</b><br><br><b>Creates a menu from a text input with each item on a new line.</b><br><br>
+- Display a menu of the output of the `ls` command:
+
+<blockquote><i>ls</i> | dmenu</blockquote>
+- Display a menu with custom items seperated by a new line (`\n`):
+
+<blockquote>echo -e "<i>red</i>\n<i>green</i>\n<i>blue</i>" | dmenu</blockquote>
+- Let the user choose between multiple items and save the selected one to a file:
+
+<blockquote>echo -e "<i>red</i>\n<i>green</i>\n<i>blue</i>" | dmenu > <i>color.txt</i></blockquote>
+- Launch dmenu on a specific monitor:
+
+<blockquote>ls | dmenu -m <i>1</i></blockquote>
+- Display dmenu at the bottom of the screen:
+
+<blockquote>ls | dmenu -b</blockquote>

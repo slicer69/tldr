@@ -1,0 +1,17 @@
+<b>zola</b><br><br>
+<b>A fast static site generator in a single binary with everything built-in.</b><br><br><b>More information: <a href="https://www.getzola.org/documentation/getting-started/cli-usage/">home page</a></b><br><br>
+- Create the directory structure used by Zola at the given directory:
+
+<blockquote>zola init <i>my_site</i></blockquote>
+- Build the whole site in the `public` directory after deleting it:
+
+<blockquote>zola build</blockquote>
+- Build the whole site into a different directory:
+
+<blockquote>zola build --output-dir <i>path/to/output_directory/</i></blockquote>
+- Build and serve the site using a local server (default is `127.0.0.1:1111`):
+
+<blockquote>zola serve</blockquote>
+- Build all pages just like the build command would, but without writing any of the results to disk:
+
+<blockquote>zola check</blockquote>

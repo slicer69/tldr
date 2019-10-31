@@ -6,12 +6,12 @@
 - Clone an existing repository and its submodules:
 
 <blockquote>git clone --recursive <i>remote_repository_location</i></blockquote>
-- For cloning from the local machine:
+- Clone a local repository:
 
-<blockquote>git clone -l</blockquote>
-- Do it quietly:
+<blockquote>git clone -l <i>path/to/local/repository</i></blockquote>
+- Clone quietly:
 
-<blockquote>git clone -q</blockquote>
-- Clone an existing repository, and truncate to the specified number of revisions, save your time mostly:
+<blockquote>git clone -q <i>remote_repository_location</i></blockquote>
+- Clone an existing repository only fetching the 10 most recent commits on the default branch (useful to save time):
 
 <blockquote>git clone --depth <i>10</i> <i>remote_repository_location</i></blockquote>

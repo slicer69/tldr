@@ -1,0 +1,20 @@
+<b>rar</b><br><br>
+<b>The RAR archiver. Supports multi-volume archives that can be optionally self-extracting.</b><br><br>
+- Archive 1 or more files:
+
+<blockquote>rar a <i>path/to/archive_name.rar</i> <i>path/to/file1</i> <i>path/to/file2</i> <i>path/to/file3</i></blockquote>
+- Archive a directory:
+
+<blockquote>rar a <i>path/to/archive_name.rar</i> <i>path/to/directory</i></blockquote>
+- Split the archive into parts of equal size (50M):
+
+<blockquote>rar a -v<i>50M</i> -R <i>path/to/archive_name.rar</i> <i>path/to/file_or_directory</i></blockquote>
+- Password protect the resulting archive:
+
+<blockquote>rar a -p<i>password</i> <i>path/to/archive_name.rar</i> <i>path/to/file_or_directory</i></blockquote>
+- Encrypt file data and headers with password:
+
+<blockquote>rar a -hp<i>password</i> <i>path/to/archive_name.rar</i> <i>path/to/file_or_directory</i></blockquote>
+- Use a specific compression level (0-5):
+
+<blockquote>rar a -m<i>compression_level</i> <i>path/to/archive_name.rar</i> <i>path/to/file_or_directory</i></blockquote>

@@ -1,0 +1,23 @@
+<b>copyq</b><br><br>
+<b>Clipboard manager with advanced features.</b><br><br><b>More information: <a href="https://hluk.github.io/CopyQ/">home page</a></b><br><br>
+- Launch CopyQ to store clipboard history:
+
+<blockquote>copyq</blockquote>
+- Show current clipboard content:
+
+<blockquote>copyq clipboard</blockquote>
+- Insert raw text into the clipboard history:
+
+<blockquote>copyq add -- <i>text1</i> <i>text2</i> <i>text3</i></blockquote>
+- Insert text containing escape sequences ('\n', '\t') into the clipboard history:
+
+<blockquote>copyq add <i>firstline\nsecondline</i></blockquote>
+- Print the content of the first 3 items in the clipboard history:
+
+<blockquote>copyq read 0 1 2</blockquote>
+- Copy a file's contents into the clipboard:
+
+<blockquote>copyq copy < <i>file.txt</i></blockquote>
+- Copy a JPEG image into the clipboard:
+
+<blockquote>copyq copy image/jpeg < <i>image.jpg</i></blockquote>

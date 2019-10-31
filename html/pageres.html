@@ -1,0 +1,20 @@
+<b>pageres</b><br><br>
+<b>Capture screenshots of websites in various resolutions.</b><br><br><b>More information: <a href="https://github.com/sindresorhus/pageres-cli">home page</a></b><br><br>
+- Take multiple screenshots of multiple URLs at different resolutions:
+
+<blockquote>pageres <i>https://example.com/</i> <i>https://example2.com/</i> <i>1366x768</i> <i>1600x900</i></blockquote>
+- Provide specific options for a URL, overriding global options:
+
+<blockquote>pageres [<i>https://example.com/</i> <i>1366x768</i> --no-crop] [<i>https://example2.com/</i> <i>1024x768</i>] --crop</blockquote>
+- Provide a custom filename template:
+
+<blockquote>pageres <i>https://example.com/</i> <i>1024x768</i> --filename=<i>'<%= date %> - <%= url %>'</i></blockquote>
+- Capture a specific element on a page:
+
+<blockquote>pageres <i>https://example.com/</i> <i>1366x768</i> --selector='<i">home page</a>page-header</i>'</blockquote>
+- Hide a specific element:
+
+<blockquote>pageres <i>https://example.com/</i> <i>1366x768</i> --hide='<i">home page</a>page-header</i>'</blockquote>
+- Capture a screenshot of a local file:
+
+<blockquote>pageres <i>local_file_path.html</i> <i>1366x768</i></blockquote>
