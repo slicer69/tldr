@@ -1,0 +1,26 @@
+<b>podman</b><br><br>
+<b>Simple management tool for pods, containers and images.</b><br><br><b>Podman provides a Docker-CLI comparable command line. Simply put: `alias docker=podman`.</b><br><br><b>More information: <a href="https://github.com/containers/libpod/blob/master/commands.md">home page</a></b><br><br>
+- Print out information about containers:
+
+<blockquote>podman ps</blockquote>
+- List all containers (both running and stopped):
+
+<blockquote>podman ps --all</blockquote>
+- Start one or more containers:
+
+<blockquote>podman start <i>container_name</i> <i>container_id</i></blockquote>
+- Stop one or more running containers:
+
+<blockquote>podman stop <i>container_name</i> <i>container_id</i></blockquote>
+- Pull an image from a registry (defaults to the Docker Hub):
+
+<blockquote>podman pull <i>image_name</i>:<i>image_tag</i></blockquote>
+- Open a shell inside of an already running container:
+
+<blockquote>podman exec --interactive --tty <i>container_name</i> <i>sh</i></blockquote>
+- Remove one or more stopped containers:
+
+<blockquote>podman rm <i>container_name</i> <i>container_id</i></blockquote>
+- Display the logs of one or more containers and follow log output:
+
+<blockquote>podman logs --follow <i>container_name</i> <i>container_id</i></blockquote>

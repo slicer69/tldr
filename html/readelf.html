@@ -1,0 +1,14 @@
+<b>readelf</b><br><br>
+<b>Displays information about ELF files.</b><br><br><b>More information: <a href="http://man7.org/linux/man-pages/man1/readelf.1.html">home page</a></b><br><br>
+- Display all information about the ELF file:
+
+<blockquote>readelf -all <i>path/to/binary</i></blockquote>
+- Display all the headers present in the ELF file:
+
+<blockquote>readelf --headers <i>path/to/binary</i></blockquote>
+- Display the entries in symbol table section of the ELF file, if it has one:
+
+<blockquote>readelf --symbols <i>path/to/binary</i></blockquote>
+- Display the information contained in the ELF header at the start of the file:
+
+<blockquote>readelf --file-header <i>path/to/binary</i></blockquote>
