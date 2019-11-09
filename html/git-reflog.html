@@ -1,8 +1,11 @@
 <b>git reflog</b><br><br>
-<b>Show when the reference logs were updated in local repository.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-reflog">home page</a></b><br><br>
-- View reflog:
+<b>Show a log of changes to local references like HEAD, branches or tags.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-reflog">home page</a></b><br><br>
+- Show the reflog for HEAD:
 
 <blockquote>git reflog</blockquote>
-- View 5 latest entries in reflog:
+- Show the reflog for a given branch:
+
+<blockquote>git reflog <i>branch_name</i></blockquote>
+- Show only the 5 latest entries in the reflog:
 
 <blockquote>git reflog -n <i>5</i></blockquote>
