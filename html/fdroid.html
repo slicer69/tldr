@@ -1,0 +1,20 @@
+<b>fdroid</b><br><br>
+<b>F-Droid build tool.</b><br><br><b>F-Droid is an installable catalogue of FOSS (Free and Open Source Software) applications for the Android platform.</b><br><br><b>More information: <a href="https://f-droid.org/">home page</a></b><br><br>
+- Build a specific app:
+
+<blockquote>fdroid build <i>app_id</i></blockquote>
+- Build a specific app in a build server VM:
+
+<blockquote>fdroid build <i>app_id</i> --server</blockquote>
+- Publish the app to the local repository:
+
+<blockquote>fdroid publish <i>app_id</i></blockquote>
+- Install the app on every connected device:
+
+<blockquote>fdroid install <i>app_id</i></blockquote>
+- Check if the metadata is formatted correctly:
+
+<blockquote>fdroid lint --format <i>app_id</i></blockquote>
+- Fix the formatting automatically (if possible):
+
+<blockquote>fdroid rewritemeta <i>app_id</i></blockquote>

@@ -6,7 +6,7 @@
 - Check syntax errors on a Perl script:
 
 <blockquote>perl -c <i>script.pl</i></blockquote>
-- Parse and execute a perl statement:
+- Parse and execute a Perl statement:
 
 <blockquote>perl -e <i>perl_statement</i></blockquote>
 - Run a Perl script in debug mode, using `perldebug`:
@@ -21,6 +21,6 @@
 - Run a multi-line find/replace expression on a file, and save the result in another file:
 
 <blockquote>perl -p0e 's/<i>foo\nbar</i>/<i>foobar</i>/g' <i>input_file</i> > <i>output_file</i></blockquote>
-- Run a regular expression on `stdin`, printing out first capture group for each line:
+- Run a regular expression on `stdin`, printing out the first capture group for each line:
 
 <blockquote>cat <i>path/to/input_file</i> | perl -nle 'if (/.*(<i>foo</i>).*/) {print "$1"; last;}'</blockquote>

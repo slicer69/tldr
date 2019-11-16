@@ -1,0 +1,23 @@
+<b>html5validator</b><br><br>
+<b>A command line tool for testing HTML5 validity.</b><br><br><b>More information: <a href="https://github.com/svenkreiss/html5validator">home page</a></b><br><br>
+- Validate a specific file:
+
+<blockquote>html5validator <i>path/to/file</i></blockquote>
+- Validate all HTML files in a specific directory:
+
+<blockquote>html5validator --root <i>path/to/directory</i></blockquote>
+- Show warnings as well as errors:
+
+<blockquote>html5validator --show-warnings <i>path/to/file</i></blockquote>
+- Match multiple files using a glob pattern:
+
+<blockquote>html5validator --root <i>path/to/directory</i> --match "<i>*.html *.php</i>"</blockquote>
+- Ignore specific directory names:
+
+<blockquote>html5validator --root <i>path/to/directory</i> --blacklist "<i>node_modules vendor</i>"</blockquote>
+- Output the results in a specific format:
+
+<blockquote>html5validator --format <i>gnu|xml|json|text</i> <i>path/to/file</i></blockquote>
+- Output the log at a specific verbosity level:
+
+<blockquote>html5validator --root <i>path/to/directory</i> --log <i>debug|info|warning</i></blockquote>

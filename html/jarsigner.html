@@ -1,0 +1,11 @@
+<b>jarsigner</b><br><br>
+<b>Sign and verify Java Archive (JAR) files.</b><br><br><b>More information: <a href="https://docs.oracle.com/javase/9/tools/jarsigner.htm">home page</a></b><br><br>
+- Sign a JAR file:
+
+<blockquote>jarsigner <i>path/to/file.jar</i> <i>keystore_alias</i></blockquote>
+- Sign a JAR file with a specific algorithm:
+
+<blockquote>jarsigner -sigalg <i>algorithm</i> <i>path/to/file.jar</i> <i>keystore_alias</i></blockquote>
+- Verify the signature of a JAR file:
+
+<blockquote>jarsigner -verify <i>path/to/file.jar</i></blockquote>
