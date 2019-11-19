@@ -1,0 +1,14 @@
+<b>rtmpdump</b><br><br>
+<b>A tool to dump media content streamed over the RTMP protocol.</b><br><br><b>More information: <a href="http://rtmpdump.mplayerhq.hu/">home page</a></b><br><br>
+- Download a file:
+
+<blockquote>rtmpdump --rtmp <i>rtmp://example.com/path/to/video</i> -o <i>file.ext</i></blockquote>
+- Download a file from a Flash player:
+
+<blockquote>rtmpdump --rtmp <i>rtmp://example.com/path/to/video</i> --swfVfy <i>http://example.com/player</i> --flashVer "<i>LNX 10,0,32,18</i>" -o <i>file.ext</i></blockquote>
+- Specify connection parameters if they are not detected correctly:
+
+<blockquote>rtmpdump --rtmp <i>rtmp://example.com/path/to/video</i> --app <i>app_name</i> --playpath <i>path/to/video</i> -o <i>file.ext</i></blockquote>
+- Download a file from a server that requires a referrer:
+
+<blockquote>rtmpdump --rtmp <i>rtmp://example.com/path/to/video</i> --pageUrl <i>http://example.com/webpage</i> -o <i>file.ext</i></blockquote>
