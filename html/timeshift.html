@@ -1,0 +1,20 @@
+<b>timeshift</b><br><br>
+<b>System restore utility.</b><br><br><b>More information: <a href="https://github.com/teejee2008/timeshift">home page</a></b><br><br>
+- List snapshots:
+
+<blockquote>sudo timeshift --list</blockquote>
+- Create a new snapshot (if scheduled):
+
+<blockquote>sudo timeshift --check</blockquote>
+- Create a new snapshot (even if not scheduled):
+
+<blockquote>sudo timeshift --create</blockquote>
+- Restore a snapshot (selecting which snapshot to restore interactively):
+
+<blockquote>sudo timeshift --restore</blockquote>
+- Restore a specific snapshot:
+
+<blockquote>sudo timeshift --restore --snapshot '<i>snapshot</i>'</blockquote>
+- Delete a specific snapshot:
+
+<blockquote>sudo timeshift --delete --snapshot '<i>snapshot</i>'</blockquote>

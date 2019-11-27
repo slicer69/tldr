@@ -1,20 +1,20 @@
 <b>chisel</b><br><br>
-<b>Chisel is a tool creating a TCP tunnel. Including both client and server.</b><br><br><b>More information: <a href="https://github.com/jpillora/chisel">home page</a></b><br><br>
-- Run a chisel server:
+<b>Create TCP tunnels. Includes both client and server.</b><br><br><b>More information: <a href="https://github.com/jpillora/chisel">home page</a></b><br><br>
+- Run a Chisel server:
 
 <blockquote>chisel server</blockquote>
-- Run a chisel server listening to a specific port:
+- Run a Chisel server listening to a specific port:
 
 <blockquote>chisel server -p <i>server_port</i></blockquote>
-- Run a chisel server securing the connection using a username and password authentication:
+- Run a chisel server that accepts authenticated connections using username and password:
 
 <blockquote>chisel server --auth <i>username</i>:<i>password</i></blockquote>
-- Connect to a chisel server and tunnel a specific port to a remote server and port:
+- Connect to a Chisel server and tunnel a specific port to a remote server and port:
 
 <blockquote>chisel client <i>server_ip</i>:<i>server_port</i> <i>local_port</i>:<i>remote_server</i>:<i>remote_port</i></blockquote>
-- Connect to a chisel server and tunnel a specific host and port to a remote server and port:
+- Connect to a Chisel server and tunnel a specific host and port to a remote server and port:
 
 <blockquote>chisel client <i>server_ip</i>:<i>server_port</i> <i>local_host</i>:<i>local_port</i>:<i>remote_server</i>:<i>remote_port</i></blockquote>
-- Connect to a chisel server using username and password authentication:
+- Connect to a Chisel server using username and password authentication:
 
 <blockquote>chisel client --auth <i>username</i>:<i>password</i> <i>server_ip</i>:<i>server_port</i> <i>local_port</i>:<i>remote_server</i>:<i>remote_port</i></blockquote>

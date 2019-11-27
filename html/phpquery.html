@@ -1,0 +1,14 @@
+<b>phpquery</b><br><br>
+<b>PHP extension manager for Debian-based OSes.</b><br><br>
+- List available PHP versions:
+
+<blockquote>sudo phpquery -V</blockquote>
+- List available SAPIs for PHP 7.3:
+
+<blockquote>sudo phpquery -v <i>7.3</i> -S</blockquote>
+- List enabled extensions for PHP 7.3 with the cli SAPI:
+
+<blockquote>sudo phpquery -v <i>7.3</i> -s <i>cli</i> -M</blockquote>
+- Check if the json extension is enabled for PHP 7.3 with the apache2 SAPI:
+
+<blockquote>sudo phpquery -v <i>7.3</i> -s <i>apache2</i> -m <i>json</i></blockquote>

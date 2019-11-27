@@ -1,0 +1,20 @@
+<b>influx</b><br><br>
+<b>InfluxDB command-line client.</b><br><br><b>More information: <a href="https://docs.influxdata.com/influxdb/v1.7/tools/shell/">home page</a></b><br><br>
+- Connect to an InfluxDB running on localhost with no credentials:
+
+<blockquote>influx</blockquote>
+- Connect with a specific username (will prompt for a password):
+
+<blockquote>influx -username <i>username</i> -password ""</blockquote>
+- Connect to a specific host:
+
+<blockquote>influx -host <i>hostname</i></blockquote>
+- Use a specific database:
+
+<blockquote>influx -database <i>database_name</i></blockquote>
+- Execute a given command:
+
+<blockquote>influx -execute "<i>influxql_command</i>"</blockquote>
+- Return output in a specific format:
+
+<blockquote>influx -execute "<i>influxql_command</i>" -format <i>json|csv|column</i></blockquote>

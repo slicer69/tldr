@@ -1,0 +1,8 @@
+<b>phpdismod</b><br><br>
+<b>Disable PHP extensions on Debian-based OSes.</b><br><br>
+- Disable the json extension for every SAPI of every PHP version:
+
+<blockquote>sudo phpdismod <i>json</i></blockquote>
+- Disable the json extension for PHP 7.3 with the cli SAPI:
+
+<blockquote>sudo phpdismod -v <i>7.3</i> -s <i>cli</i> <i>json</i></blockquote>
