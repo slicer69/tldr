@@ -1,0 +1,17 @@
+<b>ImageMagick</b><br><br>
+<b>Create, edit, compose, or convert bitmap images.</b><br><br><b>More information: <a href="https://imagemagick.org/">home page</a></b><br><br>
+- Convert file type:
+
+<blockquote>magick <i>image.png</i> <i>image.jpg</i></blockquote>
+- Resize an image, making a new copy:
+
+<blockquote>magick convert -resize <i>100x100</i> <i>image.jpg</i> <i>image.jpg</i></blockquote>
+- Create a GIF using images:
+
+<blockquote>magick <i>*.jpg</i> <i>images.gif</i></blockquote>
+- Create checkerboard pattern:
+
+<blockquote>magick -size <i>640x480</i> pattern:checkerboard <i>checkerboard.png</i></blockquote>
+- Convert images to individual PDF pages:
+
+<blockquote>magick <i>*.jpg</i> +adjoin <i>page-%d.pdf</i></blockquote>

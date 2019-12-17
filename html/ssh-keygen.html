@@ -9,12 +9,15 @@
 - Generate an ed25519 key with 100 key derivation function rounds:
 
 <blockquote>ssh-keygen -t ed25519 -a 100</blockquote>
-- Generate an RSA 4096 bit key with your email as a comment:
+- Generate an RSA 4096 bit key with email as a comment:
 
 <blockquote>ssh-keygen -t rsa -b 4096 -C "<i>email</i>"</blockquote>
 - Retrieve the key fingerprint from a host (useful for confirming the authenticity of the host when first connecting to it via SSH):
 
 <blockquote>ssh-keygen -l -F <i>remote_host</i></blockquote>
+- Remove the keys of a host from the known_hosts file (useful when a known host has a new key):
+
+<blockquote>ssh-keygen -R <i>remote_host</i></blockquote>
 - Retrieve the fingerprint of a key in MD5 Hex:
 
 <blockquote>ssh-keygen -l -E md5 -f ~/.ssh/<i>filename</i></blockquote>

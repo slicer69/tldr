@@ -1,0 +1,14 @@
+<b>multitail</b><br><br>
+<b>Extension of tail.</b><br><br><b>More information: <a href="https://www.vanheusden.com/multitail/examples.php">home page</a></b><br><br>
+- Tail all files matching a pattern in a single stream:
+
+<blockquote>multitail -Q 1 '<i>pattern</i>'</blockquote>
+- Tail all files in a directory in a single stream:
+
+<blockquote>multitail -Q 1 '<i>directory</i>/*'</blockquote>
+- Automatically add new files to a window:
+
+<blockquote>multitail -Q <i>pattern</i></blockquote>
+- Show 5 logfiles while merging 2 and put them in 2 columns with only one in the left column:
+
+<blockquote>multitail -s 2 -sn 1,3 <i>mergefile</i> -I <i>file1</i> <i>file2</i> <i>file3</i> <i>file4</i></blockquote>

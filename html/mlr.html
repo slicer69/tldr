@@ -18,3 +18,6 @@
 - Receive JSON and format the output as vertical JSON:
 
 <blockquote>echo '{"hello":"world", "foo":"bar"}' | mlr --ijson --ojson --jvstack cat</blockquote>
+- Filter lines of a compressed CSV file treating numbers as strings:
+
+<blockquote>mlr --prepipe 'gunzip' --csv filter -S '$<i>fieldName</i> =~ "<i>regexp</i>"' <i>example.csv.gz</i></blockquote>

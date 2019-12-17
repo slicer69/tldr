@@ -1,0 +1,17 @@
+<b>a2query</b><br><br>
+<b>Retrieve runtime configuration from Apache on Debian-based OSes.</b><br><br><b>More information: <a href="https://manpages.debian.org/buster/apache2/a2query.1.en.html">home page</a></b><br><br>
+- List enabled Apache modules:
+
+<blockquote>sudo a2query -m</blockquote>
+- Check if a specific module is installed:
+
+<blockquote>sudo a2query -m <i>module_name</i></blockquote>
+- List enabled virtual hosts:
+
+<blockquote>sudo a2query -s</blockquote>
+- Display the currently enabled Multi Processing Module:
+
+<blockquote>sudo a2query -M</blockquote>
+- Display the Apache version:
+
+<blockquote>sudo a2query -v</blockquote>

@@ -1,0 +1,20 @@
+<b>nkf</b><br><br>
+<b>Network kanji filter.</b><br><br><b>Converts kanji code from one encoding to another.</b><br><br>
+- Convert to UTF-8 encoding:
+
+<blockquote>nkf -w <i>path/to/file.txt</i></blockquote>
+- Convert to SHIFT_JIS encoding:
+
+<blockquote>nkf -s <i>path/to/file.txt</i></blockquote>
+- Convert to UTF-8 encoding and overwrite the file:
+
+<blockquote>nkf -w --overwrite <i>path/to/file.txt</i></blockquote>
+- Set new line code to LF and overwrite (unix type):
+
+<blockquote>nkf -d --overwrite <i>path/to/file.txt</i></blockquote>
+- Set new line code to CRLF and overwrite (windows type):
+
+<blockquote>nkf -c --overwrite <i>path/to/file.txt</i></blockquote>
+- Decrypt mime file and overwrite:
+
+<blockquote>nkf -m --overwrite <i>path/to/file.txt</i></blockquote>

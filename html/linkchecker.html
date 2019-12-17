@@ -1,0 +1,14 @@
+<b>linkchecker</b><br><br>
+<b>Command line client to check HTML documents and websites for broken links.</b><br><br><b>More information: <a href="https://linkchecker.github.io/linkchecker/">home page</a></b><br><br>
+- Find broken links on https://example.com/:
+
+<blockquote>linkchecker <i>https://example.com/</i></blockquote>
+- Also check URLs that point to external domains:
+
+<blockquote>linkchecker --check-extern <i>https://example.com/</i></blockquote>
+- Ignore URLs that match a specific regex:
+
+<blockquote>linkchecker --ignore-url <i>regex</i> <i>https://example.com/</i></blockquote>
+- Output results to a CSV file:
+
+<blockquote>linkchecker --file-output <i>csv</i>/<i>path/to/file</i> <i>https://example.com/</i></blockquote>

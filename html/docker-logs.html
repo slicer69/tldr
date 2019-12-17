@@ -1,0 +1,17 @@
+<b>docker logs</b><br><br>
+<b>Print container logs.</b><br><br><b>More information: <a href="https://docs.docker.com/engine/reference/commandline/logs">home page</a></b><br><br>
+- Print logs from a container:
+
+<blockquote>docker logs <i>container_name</i></blockquote>
+- Print logs and follow them:
+
+<blockquote>docker logs -f <i>container_name</i></blockquote>
+- Print last 5 lines:
+
+<blockquote>docker logs <i>container_name</i> --tail <i>5</i></blockquote>
+- Print logs and append them with timestamps:
+
+<blockquote>docker logs -t <i>container_name</i></blockquote>
+- Print logs from a certain point in time of container execution (i.e. 23m, 10s, 2013-01-02T13:23:37):
+
+<blockquote>docker logs <i>container_name</i> --until <i>time</i></blockquote>
