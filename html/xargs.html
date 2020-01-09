@@ -1,9 +1,12 @@
 <b>xargs</b><br><br>
-<b>Execute a command with piped arguments coming from another command, a file, etc.</b><br><br><b>The input is treated as a single block of text and split into separate arguments on spaces, tabs, newlines and end-of-file.</b><br><br>
-- Main usage pattern:
+<b>Execute a command with piped arguments coming from another command, a file, etc.</b><br><br><b>The input is treated as a single block of text and split into separate pieces on spaces, tabs, newlines and end-of-file.</b><br><br>
+- Run a command using the input data as arguments:
 
 <blockquote><i>arguments_source</i> | xargs <i>command</i></blockquote>
-- Delete all files with a `.backup` extension. `-print0` on find uses a null character to split the files, and `-0` changes the delimiter to the null character (useful if there's whitespace in filenames):
+- Run multiple chained commands on the input data:
+
+<blockquote><i>arguments_source</i> | xargs sh -c "<i>command1</i> && <i>command2</i> | <i>command3</i>"</blockquote>
+- Delete all files with a `.backup` extension (`-print0` uses a null character to split file names, and `-0` uses it as delimiter):
 
 <blockquote>find . -name <i>'*.backup'</i> -print0 | xargs -0 rm -v</blockquote>
 - Execute the command once for each input line, replacing any occurrences of the placeholder (here marked as `_`) with the input line:

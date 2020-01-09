@@ -1,0 +1,8 @@
+<b>xdg-user-dirs-update</b><br><br>
+<b>Update XDG user directories.</b><br><br><b>More information: <a href="https://manpages.ubuntu.com/manpages/bionic/man1/xdg-user-dirs-update.1.html">home page</a></b><br><br>
+- Change XDG's DESKTOP directory to the specified directory (must be absolute):
+
+<blockquote>xdg-user-dirs-update --set DESKTOP "<i>path/to/directory</i>"</blockquote>
+- Write the result to the specified dry-run-file instead of the `user-dirs.dirs` file:
+
+<blockquote>xdg-user-dirs-update --dummy-output "<i>path/to/dry_run_file</i>" --set <i>xdg_user_directory</i> "<i>path/to/directory</i>"</blockquote>

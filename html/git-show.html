@@ -1,6 +1,6 @@
 <b>git show</b><br><br>
 <b>Show various types of git objects (commits, tags, etc.).</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-show">home page</a></b><br><br>
-- Show information about the latest commit (message, changes, and other metadata):
+- Show information about the latest commit (hash, message, changes, and other metadata):
 
 <blockquote>git show</blockquote>
 - Show information about a given commit:
@@ -12,9 +12,12 @@
 - Show information about the 3rd commit from the tip of a branch:
 
 <blockquote>git show <i>branch</i>~<i>3</i></blockquote>
-- Show a commit's hash and message in a single line, suppressing the diff output:
+- Show a commit's message in a single line, suppressing the diff output:
 
 <blockquote>git show --oneline -s <i>commit</i></blockquote>
+- Show only the list of the files changed in a commit:
+
+<blockquote>git show --stat <i>commit</i></blockquote>
 - Show the contents of a file as it was at a given revision (e.g. branch, tag or commit):
 
 <blockquote>git show <i>revision</i>:<i>path/to/file</i></blockquote>

@@ -1,11 +1,14 @@
 <b>su</b><br><br>
 <b>Switch shell to another user.</b><br><br>
-- Switch to superuser (admin password required):
+- Switch to superuser (requires the root password):
 
 <blockquote>su</blockquote>
-- Switch to user <i>username</i> (password required):
+- Switch to a given user (requires the user's password):
 
 <blockquote>su <i>username</i></blockquote>
-- Switch to user <i>username</i> and simulate a full login shell:
+- Switch to a given user and simulate a full login shell:
 
 <blockquote>su - <i>username</i></blockquote>
+- Execute a command as another user:
+
+<blockquote>su - <i>username</i> -c "<i>command</i>"</blockquote>

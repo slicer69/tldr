@@ -1,5 +1,17 @@
 <b>fuser</b><br><br>
-<b>Display process IDs currently using files or sockets.</b><br><br><b>Require admin privileges.</b><br><br>
-- Identify process using a TCP socket:
+<b>Display process IDs currently using files or sockets.</b><br><br>
+- Find which processes are accessing a file or directory:
 
-<blockquote>fuser -n tcp <i>port</i></blockquote>
+<blockquote>fuser <i>path/to/file_or_directory</i></blockquote>
+- Show more fields (`USER`, `PID`, `ACCESS` and `COMMAND`):
+
+<blockquote>fuser --verbose <i>path/to/file_or_directory</i></blockquote>
+- Identify processes using a TCP socket:
+
+<blockquote>fuser --namespace tcp <i>port</i></blockquote>
+- Kill all processes accessing a file or directory (sends the `SIGKILL` signal):
+
+<blockquote>fuser --kill <i>path/to/file_or_directory</i></blockquote>
+- Find which processes are accessing the filesystem containing a specific file or directory:
+
+<blockquote>fuser --mount <i>path/to/file_or_directory</i></blockquote>

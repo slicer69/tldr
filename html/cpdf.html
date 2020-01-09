@@ -1,0 +1,26 @@
+<b>cpdf</b><br><br>
+<b>CLI to manipulate existing PDF files in a variety of ways.</b><br><br><b>More information: <a href="https://www.coherentpdf.com/cpdfmanual/cpdfmanual.html">home page</a></b><br><br>
+- Select pages 1, 2, 3 and 6 from a source document and write those to a destination document:
+
+<blockquote>cpdf <i>path/to/source_document.pdf</i> <i>1-3,6</i> -o <i>path/to/destination_document.pdf</i></blockquote>
+- Merge two documents into a new one:
+
+<blockquote>cpdf -merge <i>path/to/source_document_one.pdf</i> <i>path/to/source_document_two.pdf</i> -o <i>path/to/destination_document.pdf</i></blockquote>
+- Show the bookmarks of a document:
+
+<blockquote>cpdf -list-bookmarks <i>path/to/document.pdf</i></blockquote>
+- Split a document into ten-page chunks, writing them to chunk001.pdf, chunk002.pdf, etc:
+
+<blockquote>cpdf -split <i>path/to/document.pdf</i> -o <i>path/to/chunk%%%.pdf</i> -chunk <i>10</i></blockquote>
+- Encrypt a document using 128bit encryption, providing `fred` as owner password and `joe` as user password:
+
+<blockquote>cpdf -encrypt <i>128bit</i> <i>fred</i> <i>joe</i> <i>path/to/source_document.pdf</i> -o <i>path/to/encrypted_document.pdf</i></blockquote>
+- Decrypt a document using the owner password `fred`:
+
+<blockquote>cpdf -decrypt <i>path/to/encrypted_document.pdf</i> owner=<i>fred</i> -o <i>path/to/decrypted_document.pdf</i></blockquote>
+- Show the annotations of a document:
+
+<blockquote>cpdf -list-annotations <i>path/to/document.pdf</i></blockquote>
+- Create a new document from an existing one with additional metadata:
+
+<blockquote>cpdf -set-metadata <i>path/to/metadata.xml</i> <i>path/to/source_document.pdf</i> -o <i>path/to/destination_document.pdf</i></blockquote>

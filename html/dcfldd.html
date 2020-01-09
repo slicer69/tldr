@@ -1,0 +1,8 @@
+<b>dcfldd</b><br><br>
+<b>Enhanced version of dd for forensics and security.</b><br><br><b>More information: <a href="http://dcfldd.sourceforge.net/">home page</a></b><br><br>
+- Copy a disk to a raw image file and hash the image using SHA256:
+
+<blockquote>dcfldd if=/dev/<i>disk_device</i> of=<i>file.img</i> hash=sha256 hashlog=<i>file.hash</i></blockquote>
+- Copy a disk to a raw image file, hashing each 1GB chunk:
+
+<blockquote>dcfldd if=/dev/<i>disk_device</i> of=<i>file.img</i> hash=<i>hash_algorithm</i> hashlog=<i>file.hash</i> hashwindow=<i>1G</i></blockquote>

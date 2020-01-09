@@ -1,0 +1,14 @@
+<b>stress</b><br><br>
+<b>A tool to stress test CPU, memory, and IO on a Linux system.</b><br><br>
+- Spawn 4 workers to stress test CPU:
+
+<blockquote>stress -c <i>4</i></blockquote>
+- Spawn 2 workers to stress test IO and timeout after 5 seconds:
+
+<blockquote>stress -i <i>2</i> -t <i>5</i></blockquote>
+- Spawn 2 workers to stress test memory (each worker allocates 256M bytes):
+
+<blockquote>stress -m <i>2</i> --vm-bytes <i>256M</i></blockquote>
+- Spawn 2 workers spinning on write()/unlink() (each worker writes 1G bytes):
+
+<blockquote>stress -d <i>2</i> --hdd-bytes <i>1GB</i></blockquote>
