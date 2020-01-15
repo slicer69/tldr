@@ -1,0 +1,20 @@
+<b>ansible-vault</b><br><br>
+<b>Encrypts & decrypts values, data structures and files within Ansible projects.</b><br><br><b>More information: <a href="https://docs.ansible.com/ansible/latest/user_guide/vault.html#id17">home page</a></b><br><br>
+- Create a new encrypted vault file with a prompt for a password:
+
+<blockquote>ansible-vault create <i>vault_file</i></blockquote>
+- Create a new encrypted vault file using a vault key file to encrypt it:
+
+<blockquote>ansible-vault create --vault-password-file=<i>password_file</i> <i>vault_file</i></blockquote>
+- Encrypt an existing file using an optional password file:
+
+<blockquote>ansible-vault encrypt --vault-password-file=<i>password_file</i> <i>vault_file</i></blockquote>
+- Encrypt a string using Ansible's encrypted string format, displaying interactive prompts:
+
+<blockquote>ansible-vault encrypt_string</blockquote>
+- View an encrypted file, using a password file to decrypt:
+
+<blockquote>ansible-vault view --vault-password-file=<i>password_file</i> <i>vault_file</i></blockquote>
+- Re-key already encrypted vault file with a new password file:
+
+<blockquote>ansible-vault rekey --vault-password-file=<i>old_password_file</i> --new-vault-password-file=<i>new_password_file</i> <i>vault_file</i></blockquote>

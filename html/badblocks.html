@@ -9,3 +9,12 @@
 - Search an unmounted disk for bad blocks with a destructive write test:
 
 <blockquote>sudo badblocks -w <i>/dev/sda</i></blockquote>
+- Search an unmounted disk for bad blocks with a destructive write test and show verbose status:
+
+<blockquote>sudo badblocks -svw <i>/dev/sda</i></blockquote>
+- Search an unmounted disk in desctructive mode and output found blocks to a file:
+
+<blockquote>sudo badblocks -o <i>/path/to/file</i> -w <i>/dev/sda</i></blockquote>
+- Search an unmounted disk in desctructive mode with improved speed using 4K block size and 64K block count:
+
+<blockquote>sudo badblocks -w -b <i>4096</i> -c <i>65536</i> <i>/dev/sda</i></blockquote>

@@ -3,18 +3,21 @@
 - Give the [u]ser who owns a file the right to e[x]ecute it:
 
 <blockquote>chmod u+x <i>file</i></blockquote>
-- Give the user rights to [r]ead and [w]rite to a file/directory:
+- Give the [u]ser rights to [r]ead and [w]rite to a file/directory:
 
 <blockquote>chmod u+rw <i>file_or_directory</i></blockquote>
-- Remove executable rights from the [g]roup:
+- Remove e[x]ecutable rights from the [g]roup:
 
 <blockquote>chmod g-x <i>file</i></blockquote>
-- Give [a]ll users rights to read and execute:
+- Give [a]ll users rights to [r]ead and e[x]ecute:
 
 <blockquote>chmod a+rx <i>file</i></blockquote>
-- Give [o]thers (not in the file owner's group) the same rights as the group:
+- Give [o]thers (not in the file owner's group) the same rights as the [g]roup:
 
 <blockquote>chmod o=g <i>file</i></blockquote>
+- Remove all rights from [o]thers:
+
+<blockquote>chmod o= <i>file</i></blockquote>
 - Change permissions recursively giving [g]roup and [o]thers the abililty to [w]rite:
 
 <blockquote>chmod -R g+w,o+w <i>directory</i></blockquote>

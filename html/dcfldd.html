@@ -5,4 +5,4 @@
 <blockquote>dcfldd if=/dev/<i>disk_device</i> of=<i>file.img</i> hash=sha256 hashlog=<i>file.hash</i></blockquote>
 - Copy a disk to a raw image file, hashing each 1GB chunk:
 
-<blockquote>dcfldd if=/dev/<i>disk_device</i> of=<i>file.img</i> hash=<i>hash_algorithm</i> hashlog=<i>file.hash</i> hashwindow=<i>1G</i></blockquote>
+<blockquote>dcfldd if=/dev/<i>disk_device</i> of=<i>file.img</i> hash=<i>sha512|sha384|sha256|sha1|md5</i> hashlog=<i>file.hash</i> hashwindow=<i>1G</i></blockquote>

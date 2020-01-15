@@ -9,6 +9,9 @@
 - Show only processes owned by given user:
 
 <blockquote>top -u <i>user_name</i></blockquote>
+- Show the individual threads of a given process:
+
+<blockquote>top -Hp <i>process_id</i></blockquote>
 - Show only the processes with the given PID(s), passed as a comma-separated list. (Normally you wouldn't know PIDs off hand. This example picks the PIDs from the process name):
 
 <blockquote>top -p $(pgrep -d ',' <i>process_name</i>)</blockquote>
