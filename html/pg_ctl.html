@@ -1,14 +1,17 @@
 <b>pg_ctl</b><br><br>
 <b>Utility for controlling a PostgreSQL server and database cluster.</b><br><br><b>More information: <a href="https://www.postgresql.org/docs/current/app-pg-ctl.html">home page</a></b><br><br>
-- Start a PostgreSQL server:
-
-<blockquote>pg_ctl -D <i>data_directory</i> -l <i>log_file_name</i></blockquote>
-- Initialize a PostgreSQL database cluster:
+- Initialize a new PostgreSQL database cluster:
 
 <blockquote>pg_ctl -D <i>data_directory</i> init</blockquote>
+- Start a PostgreSQL server:
+
+<blockquote>pg_ctl -D <i>data_directory</i> start</blockquote>
 - Stop a PostgreSQL server:
 
 <blockquote>pg_ctl -D <i>data_directory</i> stop</blockquote>
 - Restart a PostgreSQL server:
 
 <blockquote>pg_ctl -D <i>data_directory</i> restart</blockquote>
+- Reload the PostgreSQL server configuration:
+
+<blockquote>pg_ctl -D <i>data_directory</i> reload</blockquote>

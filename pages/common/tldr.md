@@ -7,10 +7,10 @@
 
 `tldr {{command}}`
 
-- Show the tar tldr page for linux:
+- Show the tar tldr page for Linux:
 
 `tldr -p {{linux}} {{tar}}`
 
 - Get help for a git subcommand:
 
-`tldr {{git checkout}}`
+`tldr {{git-checkout}}`

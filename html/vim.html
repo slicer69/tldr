@@ -1,26 +1,26 @@
 <b>vim</b><br><br>
-<b>Vi IMproved, a programmer's text editor, provides several modes for different kinds of text manipulation.</b><br><br><b>Pressing `i` enters edit mode. `<Esc>` goes back to normal mode, which doesn't allow regular text insertion.</b><br><br><b>More information: <a href="https://www.vim.org">home page</a></b><br><br>
+<b>Vim (Vi IMproved), a command-line text editor, provides several modes for different kinds of text manipulation.</b><br><br><b>Pressing `i` enters edit mode. `<Esc>` goes back to normal mode, which doesn't allow regular text insertion.</b><br><br><b>More information: <a href="https://www.vim.org">home page</a></b><br><br>
 - Open a file:
 
-<blockquote>vim <i>file</i></blockquote>
-- Enter text editing mode (insert mode):
+<blockquote>vim <i>path/to/file</i></blockquote>
+- View Vim's help manual:
 
-<blockquote><Esc>i</blockquote>
-- Copy ("yank") or cut ("delete") the current line (paste it with `P`):
+<blockquote>:help<Enter></blockquote>
+- Save a file:
 
-<blockquote><Esc><i>yy|dd</i></blockquote>
-- Undo the last operation:
-
-<blockquote><Esc>u</blockquote>
-- Search for a pattern in the file (press `n`/`N` to go to next/previous match):
-
-<blockquote><Esc>/<i>search_pattern</i><Enter></blockquote>
-- Perform a regex substitution in the whole file:
-
-<blockquote><Esc>:%s/<i>pattern</i>/<i>replacement</i>/g<Enter></blockquote>
-- Save (write) the file, and quit:
-
-<blockquote><Esc>:wq<Enter></blockquote>
+<blockquote>:write<Enter></blockquote>
 - Quit without saving:
 
-<blockquote><Esc>:q!<Enter></blockquote>
+<blockquote>:quit!<Enter></blockquote>
+- Open a file at a specified line number:
+
+<blockquote>vim +<i>line_number</i> <i>path/to/file</i></blockquote>
+- Undo the last operation:
+
+<blockquote>u</blockquote>
+- Search for a pattern in the file (press `n`/`N` to go to next/previous match):
+
+<blockquote>/<i>search_pattern</i><Enter></blockquote>
+- Perform a regex substitution in the whole file:
+
+<blockquote>:%s/<i>pattern</i>/<i>replacement</i>/g<Enter></blockquote>

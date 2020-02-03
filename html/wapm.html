@@ -1,0 +1,26 @@
+<b>wapm</b><br><br>
+<b>The WebAssembly package manager.</b><br><br><b>More information: <a href="https://wapm.io/help/reference">home page</a></b><br><br>
+- Interactively create a new wapm.toml file:
+
+<blockquote>wapm init</blockquote>
+- Download all the packages listed as dependencies in wapm.toml:
+
+<blockquote>wapm install</blockquote>
+- Download a specific version of a package and add it to the list of dependencies in wapm.toml:
+
+<blockquote>wapm install <i>package_name</i>@<i>version</i></blockquote>
+- Download a package and install it globally:
+
+<blockquote>wapm install --global <i>package_name</i></blockquote>
+- Uninstall a package and remove it from the list of dependencies in wapm.toml:
+
+<blockquote>wapm uninstall <i>package_name</i></blockquote>
+- Print a tree of locally-installed dependencies:
+
+<blockquote>wapm list</blockquote>
+- List top-level globally installed packages:
+
+<blockquote>wapm list --global</blockquote>
+- Execute a package command using the Wasmer runtime:
+
+<blockquote>wapm run <i>command_name</i> <i>arguments</i></blockquote>

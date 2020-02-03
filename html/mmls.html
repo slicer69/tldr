@@ -1,0 +1,14 @@
+<b>mmls</b><br><br>
+<b>Display the partition layout of a volume system.</b><br><br><b>More information: <a href="https://wiki.sleuthkit.org/index.php?title=Mmls">home page</a></b><br><br>
+- Display the partition table stored in an image file:
+
+<blockquote>mmls <i>path/to/image_file</i></blockquote>
+- Display the partition table with an additional column for the partition size:
+
+<blockquote>mmls -B -i <i>path/to/image_file</i></blockquote>
+- Display the partition table in a split EWF image:
+
+<blockquote>mmls -i ewf <i>image.e01</i> <i>image.e02</i></blockquote>
+- Display nested partition tables:
+
+<blockquote>mmls -t <i>nested_table_type</i> -o <i>offset</i> <i>path/to/image_file</i></blockquote>

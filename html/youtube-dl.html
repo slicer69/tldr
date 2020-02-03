@@ -12,6 +12,9 @@
 - Download the audio from a video and convert it to an MP3:
 
 <blockquote>youtube-dl -x --audio-format <i>mp3</i> <i>url</i></blockquote>
+- Download the best quality audio and video and merge them:
+
+<blockquote>youtube-dl -f bestvideo+bestaudio <i>url</i></blockquote>
 - Download video(s) as MP4 files with custom filenames:
 
 <blockquote>youtube-dl --format <i>mp4</i> -o <i>"%(title)s by %(uploader)s on %(upload_date)s in %(playlist)s.%(ext)s"</i> <i>url</i></blockquote>

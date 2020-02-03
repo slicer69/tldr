@@ -1,0 +1,14 @@
+<b>rc-update</b><br><br>
+<b>Add and remove OpenRC services to and from runlevels.</b><br><br><b>See also `openrc`.</b><br><br>
+- List all services and the runlevels they are added to:
+
+<blockquote>rc-update show</blockquote>
+- Add a service to a runlevel:
+
+<blockquote>sudo rc-update add <i>service_name</i> <i>runlevel</i></blockquote>
+- Delete a service from a runlevel:
+
+<blockquote>sudo rc-update delete <i>service_name</i> <i>runlevel</i></blockquote>
+- Delete a service from all runlevels:
+
+<blockquote>sudo rc-update --all delete <i>service_name</i></blockquote>

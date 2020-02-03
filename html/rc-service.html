@@ -1,0 +1,23 @@
+<b>rc-service</b><br><br>
+<b>Locate and run OpenRC services with arguments.</b><br><br><b>See also `openrc`.</b><br><br>
+- Show a service's status:
+
+<blockquote>rc-service <i>service_name</i> status</blockquote>
+- Start a service:
+
+<blockquote>sudo rc-service <i>service_name</i> start</blockquote>
+- Stop a service:
+
+<blockquote>sudo rc-servie <i>service_name</i> stop</blockquote>
+- Restart a service:
+
+<blockquote>sudo rc-service <i>service_name</i> restart</blockquote>
+- Simulate running a service's custom command:
+
+<blockquote>sudo rc-service --dry-run <i>service_name</i> <i>command_name</i></blockquote>
+- Actually run a service's custom command:
+
+<blockquote>sudo rc-service <i>service_name</i> <i>command_name</i></blockquote>
+- Resolve the location of a service definition on disk:
+
+<blockquote>sudo rc-service --resolve <i>service_name</i></blockquote>
