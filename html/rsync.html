@@ -6,7 +6,7 @@
 - Transfer file from remote host to local:
 
 <blockquote>rsync <i>remote_host</i>:<i>path/to/remote_file</i> <i>path/to/local_directory</i></blockquote>
-- Transfer file in archive (to preserve attributes) and compressed (zipped) mode with verbose and human-readable progress:
+- Transfer file in [a]rchive (to preserve attributes) and compressed ([z]ipped) mode with [v]erbose and [h]uman-readable [p]rogress:
 
 <blockquote>rsync -azvhP <i>path/to/local_file</i> <i>remote_host</i>:<i>path/to/remote_directory</i></blockquote>
 - Transfer a directory and all its children from a remote to local:
@@ -15,9 +15,9 @@
 - Transfer directory contents (but not the directory itself) from a remote to local:
 
 <blockquote>rsync -r <i>remote_host</i>:<i>path/to/remote_directory</i>/ <i>path/to/local_directory</i></blockquote>
-- Transfer only updated files from remote host:
+- Transfer a directory [r]ecursively, in [a]rchive to preserve attributes, resolving contained soft[l]inks , and ignoring already transferred files [u]nless newer:
 
-<blockquote>rsync -ru <i>remote_host</i>:<i>path/to/remote_directory</i> <i>path/to/local_directory</i></blockquote>
+<blockquote>rsync -rauL <i>remote_host</i>:<i>path/to/remote_file</i> <i>path/to/local_directory</i></blockquote>
 - Transfer file over SSH and delete local files that do not exist on remote host:
 
 <blockquote>rsync -e ssh --delete <i>remote_host</i>:<i>path/to/remote_file</i> <i>path/to/local_file</i></blockquote>

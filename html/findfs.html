@@ -1,0 +1,14 @@
+<b>findfs</b><br><br>
+<b>Finds a filesystem by label or UUID.</b><br><br><b>More information: <a href="https://mirrors.edge.kernel.org/pub/linux/utils/util-linux">home page</a></b><br><br>
+- Search block devices by filesystem label:
+
+<blockquote>findfs LABEL=<i>label</i></blockquote>
+- Search by filesystem UUID:
+
+<blockquote>findfs UUID=<i>uuid</i></blockquote>
+- Search by partition label (GPT or MAC partition table):
+
+<blockquote>findfs PARTLABEL=<i>partition_label</i></blockquote>
+- Search by partition UUID (GPT partition table only):
+
+<blockquote>findfs PARTUUID=<i>partition_uuid</i></blockquote>

@@ -1,26 +1,26 @@
 <b>tmux</b><br><br>
-<b>Multiplex several virtual consoles.</b><br><br><b>More information: <a href="https://github.com/tmux/tmux">home page</a></b><br><br>
-- Start a new tmux session:
+<b>Terminal multiplexer. It allows multiple sessions with windows, panes, and more.</b><br><br><b>More information: <a href="https://github.com/tmux/tmux">home page</a></b><br><br>
+- Start a new session:
 
 <blockquote>tmux</blockquote>
-- Start a new named tmux session:
+- Start a new named session:
 
-<blockquote>tmux new -s <i>name</i></blockquote>
-- List sessions:
+<blockquote>tmux new-session -s <i>name</i></blockquote>
+- List existing sessions:
 
 <blockquote>tmux ls</blockquote>
-- Attach to a session:
+- Attach to the most recently used session:
 
-<blockquote>tmux a</blockquote>
+<blockquote>tmux attach-session</blockquote>
 - Attach to a named session:
 
-<blockquote>tmux a -t <i>name</i></blockquote>
-- Detach from session:
+<blockquote>tmux attach-session -t <i>name</i></blockquote>
+- Detach from the current session (with prefix Ctrl-B):
 
-<blockquote>Ctrl + B, D</blockquote>
-- Kill session:
+<blockquote>Ctrl-B d</blockquote>
+- Kill a session by name:
 
 <blockquote>tmux kill-session -t <i>name</i></blockquote>
-- Kill session when attached:
+- Kill the current session (with prefix Ctrl-B):
 
-<blockquote>Ctrl + B, x (then hit 'y' for yes)</blockquote>
+<blockquote>Ctrl-B :kill-session<Enter></blockquote>

@@ -1,12 +1,12 @@
 <b>tree</b><br><br>
 <b>Show the contents of the current directory as a tree.</b><br><br>
-- Show files and directories up to 'num' levels of depth (where 1 means the current directory):
+- Print files and directories up to 'num' levels of depth (where 1 means the current directory):
 
 <blockquote>tree -L <i>num</i></blockquote>
-- Show directories only:
+- Print directories only:
 
 <blockquote>tree -d</blockquote>
-- Show hidden files too:
+- Print hidden files too:
 
 <blockquote>tree -a</blockquote>
 - Print the tree without indentation lines, showing the full path instead (use `-N` to not escape whitespace and special characters):
@@ -21,3 +21,6 @@
 - Ignore entries that match a wildcard (glob) pattern:
 
 <blockquote>tree -I <i>*.txt</i></blockquote>
+- Print the tree ignoring the given directories:
+
+<blockquote>tree -I '<i>directory_name1|directory_name2</i>'</blockquote>
