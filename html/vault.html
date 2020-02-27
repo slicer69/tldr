@@ -15,6 +15,9 @@
 - Read a value from the vault, using the generic back-end called "secret":
 
 <blockquote>vault read secret/<i>hello</i></blockquote>
+- Read a specific field from the value:
+
+<blockquote>vault read -field=<i>field_name</i> secret/<i>hello</i></blockquote>
 - Seal (lock) the Vault server, by removing the encryption key of the data store from memory:
 
 <blockquote>vault seal</blockquote>

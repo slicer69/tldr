@@ -6,6 +6,9 @@
 - Create a gzipped archive:
 
 <blockquote>tar czf <i>target.tar.gz</i> <i>file1</i> <i>file2</i> <i>file3</i></blockquote>
+- Create a gzipped archive from a directory using relative paths:
+
+<blockquote>tar czf <i>target.tar.gz</i> -C <i>path/to/directory</i> .</blockquote>
 - Extract a (compressed) archive into the current directory:
 
 <blockquote>tar xf <i>source.tar[.gz|.bz2|.xz]</i></blockquote>
