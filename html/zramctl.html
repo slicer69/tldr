@@ -1,9 +1,12 @@
 <b>zramctl</b><br><br>
-<b>Setup and control zram devices.</b><br><br><b>Use `mke2fs` or `mkswap` to format zram devices to partitions.</b><br><br>
+<b>Setup and control zram devices.</b><br><br><b>Use `mkfs` or `mkswap` to format zram devices to partitions.</b><br><br>
 - Check if zram is enabled:
 
 <blockquote>lsmod | grep -i zram</blockquote>
-- Enable zram with 2 devices (use `zramctl` to configure the devices further):
+- Enable zram with a dynamic number of devices (use `zramctl` to configure devices further):
+
+<blockquote>sudo modprobe zram</blockquote>
+- Enable zram with exactly 2 devices:
 
 <blockquote>sudo modprobe zram num_devices=<i>2</i></blockquote>
 - Find and initialise the next free zram device to a 2GB virtual drive using LZ4 compression:
