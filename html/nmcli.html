@@ -1,20 +1,14 @@
 <b>nmcli</b><br><br>
 <b>A command line tool for controlling NetworkManager.</b><br><br>
-- List all NetworkManager connections (shows name, uuid, type and device):
+- Check the nmcli version:
 
-<blockquote>nmcli connection</blockquote>
-- Print the available Wi-Fi access points:
+<blockquote>nmcli --version</blockquote>
+- Call general help:
 
-<blockquote>nmcli device wifi</blockquote>
-- Connect to the Wi-Fi network with a specified name and password:
+<blockquote>nmcli --help</blockquote>
+- Call help on a command:
 
-<blockquote>nmcli device wifi connect <i>name</i> password <i>password</i></blockquote>
-- Activate a connection by specifying an uuid:
+<blockquote>nmcli <i>command</i> --help</blockquote>
+- Execute an `nmcli` command:
 
-<blockquote>nmcli connection up uuid <i>uuid</i></blockquote>
-- Deactivate a connection:
-
-<blockquote>nmcli connection down uuid <i>uuid</i></blockquote>
-- Print statuses of network interfaces:
-
-<blockquote>nmcli device status</blockquote>
+<blockquote>nmcli <i>command</i></blockquote>

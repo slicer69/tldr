@@ -9,9 +9,9 @@
 - Open the project manager even if the current directory contains a `project.godot` file:
 
 <blockquote>godot -p</blockquote>
-- Export a project for a given target (the target must be defined in the project):
+- Export a project for a given export preset (the preset must be defined in the project):
 
-<blockquote>godot --export <i>target</i></blockquote>
-- Execute a standalone GDScript file:
+<blockquote>godot --export <i>preset</i> <i>output_path</i></blockquote>
+- Execute a standalone GDScript file (the script must inherit from `SceneTree` or `MainLoop`):
 
 <blockquote>godot -s <i>script.gd</i></blockquote>

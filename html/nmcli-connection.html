@@ -1,0 +1,20 @@
+<b>nmcli connection</b><br><br>
+<b>Connection management with NetworkManager.</b><br><br>
+- List all NetworkManager connections (shows name, uuid, type and device):
+
+<blockquote>nmcli connection</blockquote>
+- Activate a connection by specifying an uuid:
+
+<blockquote>nmcli connection up uuid <i>uuid</i></blockquote>
+- Deactivate a connection:
+
+<blockquote>nmcli connection down uuid <i>uuid</i></blockquote>
+- Create an auto-configured dual stack connection:
+
+<blockquote>nmcli connection add ifname <i>interface_name</i> type <i>ethernet</i> ipv4.method <i>auto</i> ipv6.method <i>auto</i></blockquote>
+- Create a static IPv6-only connection:
+
+<blockquote>nmcli connection add ifname <i>interface_name</i> type <i>ethernet</i> ip6 <i>2001:db8::2/64</i> gw6 <i>2001:db8::1</i> ipv6.dns <i>2001:db8::1</i> ipv4.method <i>ignore</i></blockquote>
+- Create a static IPv4-only connection:
+
+<blockquote>nmcli connection add ifname <i>interface_name</i> type <i>ethernet</i> ip4 <i>10.0.0.7/8</i> gw4 <i>10.0.0.1</i> ipv4.dns <i>10.0.0.1</i> ipv6.method <i>ignore</i></blockquote>

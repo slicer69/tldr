@@ -1,17 +1,26 @@
 <b>aws</b><br><br>
-<b>The official CLI tool for Amazon Web Services.</b><br><br><b>More information: <a href="https://aws.amazon.com/cli">home page</a></b><br><br>
-- List all IAM users:
+<b>The official CLI tool for Amazon Web Services.</b><br><br><b>Wizard, SSO, Resource Autocompletion, and YAML options are v2 only.</b><br><br><b>More information: <a href="https://aws.amazon.com/cli">home page</a></b><br><br>
+- Configure the AWS Command Line:
 
-<blockquote>aws iam list-users</blockquote>
-- List all EC2 instances from a specific region:
+<blockquote>aws configure wizard</blockquote>
+- Configure the AWS Command Line using SSO:
 
-<blockquote>aws ec2 describe-instances --region <i>us-east-1</i></blockquote>
-- Receive message from a specific SQS queue:
-
-<blockquote>aws sqs receive-message --queue-url <i>https://queue.amazonaws.com/546123/Test</i></blockquote>
-- Publish message to the specific SNS topic:
-
-<blockquote>aws sns publish --topic-arn <i>arn:aws:sns:us-east-1:54633:testTopic</i> --message "Message"</blockquote>
-- To see help text for the AWS command:
+<blockquote>aws configure sso</blockquote>
+- See help text for the AWS command:
 
 <blockquote>aws <i>command</i> help</blockquote>
+- Get the caller identity (used to troubleshoot permissions):
+
+<blockquote>aws sts get-caller-identity</blockquote>
+- List AWS resources in a region and output in yaml:
+
+<blockquote>aws dynamodb list-tables --region <i>us-east-1</i> --output yaml</blockquote>
+- Use auto prompt to help with a command:
+
+<blockquote>aws iam create-user --cli-auto-prompt</blockquote>
+- Get an interactive wizard for an AWS resource:
+
+<blockquote>aws dynamodb wizard <i>new-table</i></blockquote>
+- Generate a JSON CLI Skeleton (useful for infrastructure as code):
+
+<blockquote>aws dynamodb update-table --generate-cli-skeleton</blockquote>

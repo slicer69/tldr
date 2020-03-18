@@ -15,3 +15,9 @@
 - Execute SQL statements in a script file (batch file):
 
 <blockquote>mysql -e "source <i>filename.sql</i>" <i>database_name</i></blockquote>
+- Restore a database from a backup (user will be prompted for a password):
+
+<blockquote>mysql --user <i>user</i> --password <i>database_name</i> < <i>path/to/backup.sql</i></blockquote>
+- Restore all databases from a backup (user will be prompted for a password):
+
+<blockquote>mysql --user <i>user</i> --password < <i>path/to/backup.sql</i></blockquote>

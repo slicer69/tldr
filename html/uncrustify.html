@@ -1,0 +1,20 @@
+<b>uncrustify</b><br><br>
+<b>C, C++, C#, D, Java and Pawn source code formatter.</b><br><br><b>More information: <a href="https://github.com/uncrustify/uncrustify">home page</a></b><br><br>
+- Format a single file:
+
+<blockquote>uncrustify -f <i>path/to/file.cpp</i> -o <i>path/to/output.cpp</i></blockquote>
+- Read filenames from stdin, and take backups before writing output back to the original filepaths:
+
+<blockquote>find . -name "*.cpp" | uncrustify -F - --replace</blockquote>
+- Don't make backups (useful if files are under version control):
+
+<blockquote>find . -name "*.cpp" | uncrustify -F - --no-backup</blockquote>
+- Use a custom configuration file and write the result to stdout:
+
+<blockquote>uncrustify -c <i>path/to/uncrustify.cfg</i> -f <i>path/to/file.cpp</i></blockquote>
+- Explicitly set a configuration variable's value:
+
+<blockquote>uncrustify --set <i>option</i>=<i>value</i></blockquote>
+- Generate a new configuration file:
+
+<blockquote>uncrustify --update-config -o <i>path/to/new.cfg</i></blockquote>
