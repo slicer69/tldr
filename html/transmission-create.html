@@ -1,0 +1,17 @@
+<b>transmission-create</b><br><br>
+<b>A CLI utility to create BitTorrent .torrent files.</b><br><br><b>More information: <a href="https://linux.die.net/man/1/transmission-create">home page</a></b><br><br>
+- Create a torrent with 2048 KB as the piece size:
+
+<blockquote>transmission-create -o <i>path/to/example.torrent</i> --tracker <i>tracker_announce_url</i> --piecesize <i>2048</i> <i>path/to/file_or_directory</i></blockquote>
+- Create a private torrent with a 2048 KB piece size:
+
+<blockquote>transmission-create -p -o <i>path/to/example.torrent</i> --tracker <i>tracker_announce_url</i> --piecesize <i>2048</i> <i>path/to/file_or_directory</i></blockquote>
+- Create a torrent with a comment:
+
+<blockquote>transmission-create -o <i>path/to/example.torrent</i> --tracker <i>tracker_url1</i> -c <i>comment</i> <i>path/to/file_or_directory</i></blockquote>
+- Create a torrent with multiple trackers:
+
+<blockquote>transmission-create -o <i>path/to/example.torrent</i> --tracker <i>tracker_url1</i> --tracker <i>tracker_url2</i> <i>path/to/file_or_directory</i></blockquote>
+- Show help page:
+
+<blockquote>transmission-create --help</blockquote>

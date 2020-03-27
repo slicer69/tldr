@@ -1,0 +1,8 @@
+<b>ssh-agent</b><br><br>
+<b>Spawn an SSH Agent process.</b><br><br><b>An SSH Agent holds SSH keys decrypted in memory until removed or the process is killed.</b><br><br><b>See also `ssh-add`, which can add and manage keys held by an SSH Agent.</b><br><br>
+- Start an SSH Agent for the current shell:
+
+<blockquote>eval $(ssh-agent)</blockquote>
+- Kill the currently running agent:
+
+<blockquote>ssh-agent -k</blockquote>

@@ -8,7 +8,7 @@
 <blockquote>qpdf --empty --pages <i>file1.pdf</i> <i>file2.pdf</i> <i>file3.pdf</i> -- <i>output.pdf</i></blockquote>
 - Merge (concatenate) given pages from a list of PDF files and save the result as a new PDF:
 
-<blockquote>qpdf --empty --pages <i>file1.pdf</i> <i>1,6-8</i> --pages <i>file2.pdf</i> <i>3,4,5</i> -- <i>output.pdf</i></blockquote>
+<blockquote>qpdf --empty --pages <i>file1.pdf</i> <i>1,6-8</i> <i>file2.pdf</i> <i>3,4,5</i> -- <i>output.pdf</i></blockquote>
 - Write each group of n pages to a separate output file with a given filename pattern:
 
 <blockquote>qpdf --split-pages=n <i>input.pdf</i> <i>out_%d.pdf</i></blockquote>

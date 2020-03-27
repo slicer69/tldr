@@ -1,0 +1,17 @@
+<b>mktorrent</b><br><br>
+<b>A CLI utility to create BitTorrent metainfo files.</b><br><br><b>More information: <a href="https://github.com/Rudde/mktorrent">home page</a></b><br><br>
+- Create a torrent with 2^21 KB as the piece size:
+
+<blockquote>mktorrent -a <i>tracker_announce_url</i> -l <i>21</i> -o <i>path/to/example.torrent</i> <i>path/to/file_or_directory</i></blockquote>
+- Create a private torrent with a 2^21 KB piece size:
+
+<blockquote>mktorrent -p -a <i>tracker_announce_url</i> -l <i>21</i> -o <i>path/to/example.torrent</i> <i>path/to/file_or_directory</i></blockquote>
+- Create a torrent with a comment:
+
+<blockquote>mktorrent -c "<i>comment</i>" -a <i>tracker_announce_url</i> -l <i>21</i> -o <i>path/to/example.torrent</i> <i>path/to/file_or_directory</i></blockquote>
+- Create a torrent with multiple trackers:
+
+<blockquote>mktorrent -a <i>tracker_announce_url,tracker_announce_url_2</i> -l <i>21</i> -o <i>path/to/example.torrent</i> <i>path/to/file_or_directory</i></blockquote>
+- Create a torrent with web seed URLs:
+
+<blockquote>mktorrent -a <i>tracker_announce_url</i> -w <i>web_seed_url</i> -l <i>21</i> -o <i>path/to/example.torrent</i> <i>path/to/file_or_directory</i></blockquote>

@@ -1,0 +1,20 @@
+<b>zoxide</b><br><br>
+<b>Keep track of the most frequently used directories.</b><br><br><b>Uses a ranking algorithm to navigate to the best match.</b><br><br><b>More information: <a href="https://github.com/ajeetdsouza/zoxide">home page</a></b><br><br>
+- Go to the highest-ranked directory that contains "foo" in the name:
+
+<blockquote>zoxide query <i>foo</i></blockquote>
+- Go to the highest-ranked directory that contains "foo" and then "bar":
+
+<blockquote>zoxide query <i>foo</i> <i>bar</i></blockquote>
+- Start an interactive directory search (requires `fzf`):
+
+<blockquote>zoxide query --interactive</blockquote>
+- Add a directory or increment its rank:
+
+<blockquote>zoxide add <i>path/to/dir</i></blockquote>
+- Remove a directory from `zoxide`'s database:
+
+<blockquote>zoxide remove <i>path/to/dir</i></blockquote>
+- Generate shell configuration for command aliases (`z`, `za`, `zi`, `zq`, `zr`):
+
+<blockquote>zoxide init <i>bash|fish|zsh</i></blockquote>

@@ -1,0 +1,20 @@
+<b>ip address</b><br><br>
+<b>IP Address management subcommand.</b><br><br>
+- List network interfaces and their associated IP addresses:
+
+<blockquote>ip address</blockquote>
+- Filter to show only active network interfaces:
+
+<blockquote>ip address show up</blockquote>
+- Display information about a specific network interface:
+
+<blockquote>ip address show dev <i>network_interface</i></blockquote>
+- Add an IP address to a network interface:
+
+<blockquote>ip address add <i>ip_address</i> dev <i>network_interface</i></blockquote>
+- Remove an IP address from a network interface:
+
+<blockquote>ip address delete <i>ip_address</i> dev <i>network_interface</i></blockquote>
+- Delete all IP addresses in a given scope from a network interface:
+
+<blockquote>ip address flush dev <i>network_interface</i> scope <i>global|host|link</i></blockquote>

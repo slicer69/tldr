@@ -1,0 +1,20 @@
+<b>hdparm</b><br><br>
+<b>Get and set SATA and IDE hard drive parameters.</b><br><br>
+- Request the identification info of a given device:
+
+<blockquote>sudo hdparm -I /dev/<i>device</i></blockquote>
+- Get the Advanced Power Management level:
+
+<blockquote>sudo hdparm -B /dev/<i>device</i></blockquote>
+- Set the Advanced Power Management value (values 1-127 permit spin-down, and values 128-254 do not):
+
+<blockquote>sudo hdparm -B <i>1</i> /dev/<i>device</i></blockquote>
+- Display the device's current power mode status:
+
+<blockquote>sudo hdparm -C /dev/<i>device</i></blockquote>
+- Force a drive to immediately enter standby mode (usually causes a drive to spin down):
+
+<blockquote>sudo hdparm -y /dev/<i>device</i></blockquote>
+- Put the drive into idle (low-power) mode, also setting its standby timeout:
+
+<blockquote>sudo hdparm -S <i>standby_timeout</i> <i>device</i></blockquote>
