@@ -1,0 +1,26 @@
+<b>wpscan</b><br><br>
+<b>Wordpress vulnerability scanner.</b><br><br><b>More information: <a href="https://github.com/wpscanteam/wpscan">home page</a></b><br><br>
+- Update the vulnerability database:
+
+<blockquote>wpscan --update</blockquote>
+- Scan a Wordpress website:
+
+<blockquote>wpscan --url <i>url</i></blockquote>
+- Scan a Wordpress website, using random user agents and passive detection:
+
+<blockquote>wpscan --url <i>url</i> --stealthy</blockquote>
+- Scan a Wordpress website, checking for vulnerable plugins and specifying the path to the `wp-content` directory:
+
+<blockquote>wpscan --url <i>url</i> --enumerate <i>vp</i> --wp-content-dir <i>remote/path/to/wp-content</i></blockquote>
+- Scan a Wordpress website through a proxy:
+
+<blockquote>wpscan --url <i>url</i> --proxy <i>protocol://ip:port</i> --proxy-auth <i>username:password</i></blockquote>
+- Perform user identifiers enumeration on a Wordpress website:
+
+<blockquote>wpscan --url <i>url</i> --enumerate <i>u</i></blockquote>
+- Execute a password guessing attack on a Wordpress website:
+
+<blockquote>wpscan --url <i>url</i> --usernames <i>username|path/to/usernames.txt</i> --passwords <i>path/to/passwords.txt</i> threads <i>20</i></blockquote>
+- Scan a Wordpress website, collecting vulnerability data from the WPVulnDB (https://wpvulndb.com/):
+
+<blockquote>wpscan --url <i>url</i> --api-token <i>token</i></blockquote>

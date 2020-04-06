@@ -1,0 +1,17 @@
+<b>cewl</b><br><br>
+<b>URL spidering tool for making a cracking wordlist from web content.</b><br><br><b>More information: <a href="https://digi.ninja/projects/cewl.php">home page</a></b><br><br>
+- Create a wordlist file from the given URL up to 2 links depth:
+
+<blockquote>cewl --depth <i>2</i> --write <i>path/to/wordlist.txt</i> <i>url</i></blockquote>
+- Output an alpha-numeric wordlist from the given URL with words of minimum 5 characters:
+
+<blockquote>cewl --with-numbers --min_word_length <i>5</i> <i>url</i></blockquote>
+- Output a wordlist from the given URL in debug mode including email addresses:
+
+<blockquote>cewl --debug --email <i>url</i></blockquote>
+- Output a wordlist from the given URL using HTTP Basic or Digest authentication:
+
+<blockquote>cewl --auth_type <i>basic|digest</i> --auth_user <i>username</i> --auth_pass <i>password</i> <i>url</i></blockquote>
+- Output a wordlist from the given URL through a proxy:
+
+<blockquote>cewl --proxy_host <i>host</i> --proxy_port <i>port</i> <i>url</i></blockquote>

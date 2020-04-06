@@ -1,0 +1,20 @@
+<b>dirsearch</b><br><br>
+<b>Web path scanner.</b><br><br><b>More information: <a href="https://github.com/maurosoria/dirsearch">home page</a></b><br><br>
+- Scan a web server for common paths with common extensions:
+
+<blockquote>dirsearch --url <i>url</i> --extensions-list</blockquote>
+- Scan a list of web servers for common paths with the `.php` extension:
+
+<blockquote>dirsearch --url-list <i>path/to/url-list.txt</i> --extensions <i>php</i></blockquote>
+- Scan a web server for user-defined paths with common extensions:
+
+<blockquote>dirsearch --url <i>url</i> --extensions-list --wordlist <i>path/to/url-paths.txt</i></blockquote>
+- Scan a web server using a cookie:
+
+<blockquote>dirsearch --url <i>url</i> --extensions <i>php</i> --cookie <i>cookie</i></blockquote>
+- Scan a web server using the `HEAD` HTTP method:
+
+<blockquote>dirsearch --url <i>url</i> --extensions <i>php</i> --http-method <i>HEAD</i></blockquote>
+- Scan a web server, saving the results to a `.json` file:
+
+<blockquote>dirsearch --url <i>url</i> --extensions <i>php</i> --json-report <i>path/to/report.json</i></blockquote>

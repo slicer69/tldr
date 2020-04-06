@@ -1,0 +1,17 @@
+<b>stripe</b><br><br>
+<b>Interact with your Stripe account.</b><br><br><b>More information: <a href="https://github.com/stripe/stripe-cli">home page</a></b><br><br>
+- Log all activity on your account:
+
+<blockquote>stripe logs tail</blockquote>
+- Listen for events, filtering on events with the name `charge.succeeded` and forwarding them to localhost:3000/events:
+
+<blockquote>stripe listen --events="<i>charge.succeeded</i>" --forward-to="<i>localhost:3000/events</i>"</blockquote>
+- Send a test webhook event:
+
+<blockquote>stripe trigger <i>charge.succeeded</i></blockquote>
+- Create a customer:
+
+<blockquote>stripe customers create --email="<i>test@example.com</i>" --name="<i>Jenny Rosen</i>"</blockquote>
+- Print to JSON and use `jq` to parse events:
+
+<blockquote>stripe listen --print-json | jq .type</blockquote>

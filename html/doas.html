@@ -1,0 +1,17 @@
+<b>doas</b><br><br>
+<b>Executes a command as another user.</b><br><br><b>More information: <a href="https://man.openbsd.org/doas">home page</a></b><br><br>
+- Run a command as root:
+
+<blockquote>doas <i>command</i></blockquote>
+- Run a command as another user:
+
+<blockquote>doas -u <i>user</i> <i>command</i></blockquote>
+- Launch the default shell as root:
+
+<blockquote>doas -s</blockquote>
+- Parse a config file and check if the execution of a command as another user is allowed:
+
+<blockquote>doas -C <i>config_file</i> <i>command</i></blockquote>
+- Make `doas` request a password even after it was supplied earlier:
+
+<blockquote>doas -L</blockquote>

@@ -1,0 +1,20 @@
+<b>git mergetool</b><br><br>
+<b>Run merge conflict resolution tools to resolve merge conflicts.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-mergetool">home page</a></b><br><br>
+- Launch the default merge tool to resolve conflicts:
+
+<blockquote>git mergetool</blockquote>
+- List valid merge tools:
+
+<blockquote>git mergetool --tool-help</blockquote>
+- Launch the merge tool identified by a name:
+
+<blockquote>git mergetool --tool <i>tool_name</i></blockquote>
+- Don't prompt before each invocation of the merge tool:
+
+<blockquote>git mergetool --no-prompt</blockquote>
+- Explicitly use the GUI merge tool (see the `merge.guitool` config variable):
+
+<blockquote>git mergetool --gui</blockquote>
+- Explicitly use the regular merge tool (see the `merge.tool` config variable):
+
+<blockquote>git mergetool --no-gui</blockquote>

@@ -1,0 +1,23 @@
+<b>dnsrecon</b><br><br>
+<b>DNS enumeration tool.</b><br><br><b>More information: <a href="https://github.com/darkoperator/dnsrecon">home page</a></b><br><br>
+- Scan a domain and save the results to a SQLite database:
+
+<blockquote>dnsrecon --domain <i>example.com</i> --db <i>path/to/database.sqlite</i></blockquote>
+- Scan a domain, specifying the nameserver and performing a zone transfer:
+
+<blockquote>dnsrecon --domain <i>example.com</i> --name_server <i>nameserver.example.com</i> --type axfr</blockquote>
+- Scan a domain, using a dictionary of subdomains and hostnames for bruteforcing:
+
+<blockquote>dnsrecon --domain <i>example.com</i> --dictionary <i>path/to/dictionary.txt</i> --type brt</blockquote>
+- Scan a domain, performing a reverse lookup of IP ranges from the SPF record and saving the results to a JSON file:
+
+<blockquote>dnsrecon --domain <i>example.com</i> -s --json</blockquote>
+- Scan a domain, performing a Google enumeration and saving the results to a CSV file:
+
+<blockquote>dnsrecon --domain <i>example.com</i> -g --csv</blockquote>
+- Scan a domain, performing DNS cache snooping:
+
+<blockquote>dnsrecon --domain <i>example.com</i> --type snoop --name_server <i>nameserver.example.com</i> --dictionary <i>path/to/dictionary.txt</i></blockquote>
+- Scan a domain, performing zone walking:
+
+<blockquote>dnsrecon --domain <i>example.com</i> --type zonewalk</blockquote>

@@ -1,0 +1,14 @@
+<b>pidof</b><br><br>
+<b>Gets the ID of a process using its name.</b><br><br>
+- List all process IDs with given name:
+
+<blockquote>pidof <i>bash</i></blockquote>
+- List a single process ID with given name:
+
+<blockquote>pidof -s <i>bash</i></blockquote>
+- List process IDs including scripts with given name:
+
+<blockquote>pidof -x <i>script.py</i></blockquote>
+- Kill all processes with given name:
+
+<blockquote>kill "$(pidof <i>name</i>)" </blockquote>

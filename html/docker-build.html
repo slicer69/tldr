@@ -1,0 +1,20 @@
+<b>docker build</b><br><br>
+<b>Build an image from a Dockerfile.</b><br><br><b>More information: <a href="https://docs.docker.com/engine/reference/commandline/build/">home page</a></b><br><br>
+- Build a docker image using the Dockerfile in the current directory:
+
+<blockquote>docker build .</blockquote>
+- Build a docker image from a Dockerfile at a specified URL:
+
+<blockquote>docker build <i>github.com/creack/docker-firefox</i></blockquote>
+- Build a docker image and tag it:
+
+<blockquote>docker build --tag <i>name:tag</i> .</blockquote>
+- Do not use the cache when building the image:
+
+<blockquote>docker build --no-cache --tag <i>name:tag</i> .</blockquote>
+- Build a docker image using a specific Dockerfile:
+
+<blockquote>docker build --file <i>Dockerfile</i> .</blockquote>
+- Build with custom build-time variables:
+
+<blockquote>docker build --build-arg <i>HTTP_PROXY=http://10.20.30.2:1234</i> --build-arg <i>FTP_PROXY=http://40.50.60.5:4567</i> .</blockquote>

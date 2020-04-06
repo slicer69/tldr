@@ -1,0 +1,11 @@
+<b>avahi-browse</b><br><br>
+<b>Displays services and hosts exposed on the local network via mDNS/DNS-SD.</b><br><br><b>Avahi is compatible with Bonjour (Zeroconf) found in Apple devices.</b><br><br><b>More information: <a href="https://www.avahi.org/">home page</a></b><br><br>
+- List all services available on the local network along with their addresses and ports while ignoring local ones:
+
+<blockquote>avahi-browse --all --resolve --ignore-local</blockquote>
+- Limit your search to a particular domain:
+
+<blockquote>avahi-browse --all --domain=<i>domain</i></blockquote>
+- List all domains:
+
+<blockquote>avahi-browse --browse-domains</blockquote>

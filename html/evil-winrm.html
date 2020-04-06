@@ -1,0 +1,26 @@
+<b>evil-winrm</b><br><br>
+<b>Windows Remote Management (WinRM) shell for pentesting.</b><br><br><b>Once connected, we get a PowerShell prompt on the target host.</b><br><br><b>More information: <a href="https://github.com/Hackplayers/evil-winrm">home page</a></b><br><br>
+- Connect to a host:
+
+<blockquote>evil-winrm --ip <i>ip</i> --user <i>user</i> --password <i>password</i></blockquote>
+- Connect to a host, passing the password hash:
+
+<blockquote>evil-winrm --ip <i>ip</i> --user <i>user</i> --hash <i>nt_hash</i></blockquote>
+- Connect to a host, specifying folders for scripts and executables:
+
+<blockquote>evil-winrm --ip <i>ip</i> --user <i>user</i> --password <i>password</i> --scripts <i>path/to/scripts</i> --executables <i>path/to/executables</i></blockquote>
+- Connect to a host, using SSL:
+
+<blockquote>evil-winrm --ip <i>ip</i> --user <i>user</i> --password <i>password</i> --ssl --pub-key <i>path/to/pubkey</i> --priv-key <i>path/to/privkey</i></blockquote>
+- Upload a file to the host:
+
+<blockquote>PS > upload <i>path/to/local/file</i> <i>path/to/remote/file</i></blockquote>
+- Get a list of loaded PowerShell functions:
+
+<blockquote>PS > menu</blockquote>
+- Load a PowerShell script from the `--scripts` folder:
+
+<blockquote>PS > <i>script.ps1</i></blockquote>
+- Invoke a binary on the host from the `--executables` folder:
+
+<blockquote>PS > Invoke-Binary <i>binary.exe</i></blockquote>

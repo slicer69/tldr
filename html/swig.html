@@ -1,0 +1,14 @@
+<b>swig</b><br><br>
+<b>Generate bindings between C / C++ code and various high level languages such as Javascript, Python, C#, and more.</b><br><br><b>It uses special .i or .swg files to generate the bindings (C/C++ with SWIG directives, then outputs a C/C++ file that contains all of the wrapper code needed to build an extension module.</b><br><br>
+- Generate a binding between C++ and Python:
+
+<blockquote>swig -c++ -python -o <i>path/to/output_wrapper.cpp</i> <i>path/to/swig_file.i</i></blockquote>
+- Generate a binding between C++ and Go:
+
+<blockquote>swig -go -cgo -intgosize 64 -c++ <i>path/to/swig_file.i</i></blockquote>
+- Generate a binding between C and Java:
+
+<blockquote>swig -java <i>path/to/swig_file.i</i></blockquote>
+- Generate a binding between C and Ruby and prefix the Ruby module with <i>foo::bar::</i>:
+
+<blockquote>swig -ruby -prefix "<i>foo::bar::</i>" <i>path/to/swig_file.i</i></blockquote>
