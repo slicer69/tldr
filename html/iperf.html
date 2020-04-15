@@ -3,9 +3,18 @@
 - Run on server:
 
 <blockquote>iperf -s</blockquote>
+- Run on server using UDP mode and set server port to listen on 5001:
+
+<blockquote>iperf -u -s -p <i>5001</i></blockquote>
 - Run on client:
 
 <blockquote>iperf -c <i>server_address</i></blockquote>
+- Run on client every 2 seconds:
+
+<blockquote>iperf -c <i>server_address</i> -i <i>2</i></blockquote>
 - Run on client with 5 parallel threads:
 
 <blockquote>iperf -c <i>server_address</i> -P <i>5</i></blockquote>
+- Run on client using UDP mode:
+
+<blockquote>iperf -u -c <i>server_address</i> -p <i>5001</i></blockquote>

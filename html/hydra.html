@@ -1,0 +1,26 @@
+<b>hydra</b><br><br>
+<b>Online password guessing tool.</b><br><br><b>Protocols supported include FTP, HTTP(S), SMTP, SNMP, XMPP, SSH, and more.</b><br><br><b>More information: <a href="https://github.com/vanhauser-thc/thc-hydra">home page</a></b><br><br>
+- Start Hydra's wizard:
+
+<blockquote>hydra-wizard</blockquote>
+- Guess SSH credentials using a given username and a list of passwords:
+
+<blockquote>hydra -l <i>username</i> -P <i>path/to/wordlist.txt</i> <i>host_ip</i> <i>ssh</i></blockquote>
+- Guess Telnet credentials using a list of usernames and a single password, specifying a non-standard port and IPv6:
+
+<blockquote>hydra -L <i>path/to/usernames.txt</i> -p <i>password</i> -s <i>port</i> -6 <i>host_ip</i> <i>telnet</i></blockquote>
+- Guess FTP credentials using usernames and passwords lists, specifying the number of threads:
+
+<blockquote>hydra -L <i>path/to/usernames.txt</i> -P <i>path/to/wordlist.txt</i> -t <i>n_tasks</i> <i>host_ip</i> <i>ftp</i></blockquote>
+- Guess MySQL credentials using a username and a passwords list, exiting when a username/password pair is found:
+
+<blockquote>hydra -l <i>username</i> -P <i>path/to/wordlist.txt</i> -f <i>host_ip</i> <i>mysql</i></blockquote>
+- Guess RDP credentials using a username and a passwords list, showing each attempt:
+
+<blockquote>hydra -l <i>username</i> -P <i>path/to/wordlist.txt</i> -V <i>rdp://host_ip</i></blockquote>
+- Guess IMAP credentials on a range of hosts using a list of colon-separated username/password pairs:
+
+<blockquote>hydra -C <i>path/to/username_password_pairs.txt</i> <i>imap://[host_range_cidr]</i></blockquote>
+- Guess POP3 credentials on a list of hosts using usernames and passwords lists, exiting when a username/password pair is found:
+
+<blockquote>hydra -L <i>path/to/usernames.txt</i> -P <i>path/to/wordlist.txt</i> -M <i>path/to/hosts.txt</i> -F <i>pop3</i></blockquote>

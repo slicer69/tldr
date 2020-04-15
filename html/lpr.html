@@ -1,0 +1,23 @@
+<b>lpr</b><br><br>
+<b>CUPS tool for printing files.</b><br><br><b>See also `lpstat` and `lpadmin` for listing and configuring printers.</b><br><br><b>More information: <a href="http://www.CUPS.org">home page</a></b><br><br>
+- Print a file to the default printer:
+
+<blockquote>lpr <i>path/to/file</i></blockquote>
+- Print 2 copies:
+
+<blockquote>lpr -# <i>2</i> <i>path/to/file</i></blockquote>
+- Print to a named printer:
+
+<blockquote>lpr -P <i>printer</i> <i>path/to/file</i></blockquote>
+- Print double sided in portrait:
+
+<blockquote>lpr -o sides=<i>two-sided-long-edge</i> <i>path/to/file</i></blockquote>
+- Print double sided in landscape:
+
+<blockquote>lpr -o sides=<i>two-sided-short-edge</i> <i>path/to/file</i></blockquote>
+- Set page size (more options may be available depending on setup):
+
+<blockquote>lpr -o media=<i>a4|letter|legal</i> <i>path/to/file</i></blockquote>
+- Print multiple pages per sheet:
+
+<blockquote>lpr -o number-up=<i>2|4|6|9|16</i> <i>path/to/file</i></blockquote>

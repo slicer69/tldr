@@ -1,14 +1,17 @@
 <b>rails generate</b><br><br>
-<b>Generate new Rails templates in an existing project.</b><br><br>
+<b>Generate new Rails templates in an existing project.</b><br><br><b>More information: <a href="https://guides.rubyonrails.org/command_line.html#rails-generate">home page</a></b><br><br>
 - List all available generators:
 
 <blockquote>rails generate</blockquote>
-- Generate a new model:
+- Generate a new model named Post with attributes title and body:
 
-<blockquote>rails generate model <i>model_name</i></blockquote>
-- Generate a new controller:
+<blockquote>rails generate model <i>Post</i> <i>title:string</i> <i>body:text</i></blockquote>
+- Generate a new controller named Posts with actions index, show, new and create:
 
-<blockquote>rails generate controller <i>controller_name</i></blockquote>
-- Generate a scaffold for a new model:
+<blockquote>rails generate controller <i>Posts</i> <i>index</i> <i>show</i> <i>new</i> <i>create</i></blockquote>
+- Generate a new migration that adds a category attribute to an existing model called Post:
 
-<blockquote>rails generate scaffold <i>model_name</i></blockquote>
+<blockquote>rails generate migration <i>AddCategoryToPost</i> <i>category:string</i></blockquote>
+- Generate a scaffold for a model named Post, predefining the attributes title and body:
+
+<blockquote>rails generate scaffold <i>Post</i> <i>title:string</i> <i>body:text</i></blockquote>
