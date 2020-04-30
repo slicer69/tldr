@@ -1,0 +1,20 @@
+<b>fgrep</b><br><br>
+<b>Matches patterns in files.</b><br><br><b>Supports simple patterns and regular expressions.</b><br><br>
+- Search for an exact string in a file:
+
+<blockquote>fgrep <i>search_string</i> <i>path/to/file</i></blockquote>
+- Search only lines that match entirely in files:
+
+<blockquote>fgrep -x <i>path/to/file1</i> <i>path/to/file2</i></blockquote>
+- Count the number of lines that match the given string in a file:
+
+<blockquote>fgrep -c <i>search_string</i> <i>path/to/file</i></blockquote>
+- Show the line number in the file along with the line matched:
+
+<blockquote>fgrep -n <i>search_string</i> <i>path/to/file</i></blockquote>
+- Display all lines except those that contain the given regular expression:
+
+<blockquote>fgrep -v <i>^regex$</i> <i>path/to/file</i></blockquote>
+- Display filenames whose content matchs the regular expression at least once:
+
+<blockquote>fgrep -l <i>^regex$</i> <i>path/to/file1</i> <i>path/to/file2</i></blockquote>

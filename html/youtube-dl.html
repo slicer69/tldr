@@ -18,9 +18,9 @@
 - Download video(s) as MP4 files with custom filenames:
 
 <blockquote>youtube-dl --format <i>mp4</i> -o <i>"%(title)s by %(uploader)s on %(upload_date)s in %(playlist)s.%(ext)s"</i> <i>url</i></blockquote>
-- Download a video and save its description, metadata, annotations, subtitles, and thumbnail:
+- List available subtitles:
 
-<blockquote>youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnail <i>url</i></blockquote>
-- From a playlist, download all "Let's Play" videos that aren't marked "NSFW" or age-restricted for 7 year-olds:
+<blockquote>youtube-dl --list-subs <i>https://www.youtube.com/watch?v=Mwa0_nE9H7A</i></blockquote>
+- Download a particular language's subtitles along with the video:
 
-<blockquote>youtube-dl --match-title <i>"let's play"</i> --age-limit <i>7</i> --reject-title <i>"nsfw"</i> <i>playlist_url</i></blockquote>
+<blockquote>youtube-dl --sub-lang <i>en</i> --write-sub <i>https://www.youtube.com/watch?v=Mwa0_nE9H7A</i></blockquote>

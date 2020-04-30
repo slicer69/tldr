@@ -1,0 +1,26 @@
+<b>nomad</b><br><br>
+<b>Distributed, highly available, datacenter-aware scheduler.</b><br><br><b>More information: <a href="https://www.nomadproject.io/docs/commands/">home page</a></b><br><br>
+- Show the status of nodes in the cluster:
+
+<blockquote>nomad node status</blockquote>
+- Validate a job file:
+
+<blockquote>nomad job validate <i>path/to/file.nomad</i></blockquote>
+- Plan a job for execution on the cluster:
+
+<blockquote>nomad job plan <i>path/to/file.nomad</i></blockquote>
+- Run a job on the cluster:
+
+<blockquote>nomad job run <i>path/to/file.nomad</i></blockquote>
+- Show the status of jobs currently running on the cluster:
+
+<blockquote>nomad job status</blockquote>
+- Show the detailed status information about a specific job:
+
+<blockquote>nomad job status <i>job_name</i></blockquote>
+- Follow the logs of a specific allocation:
+
+<blockquote>nomad alloc logs <i>alloc_id</i></blockquote>
+- Show the status of storage volumes:
+
+<blockquote>nomad volume status</blockquote>
