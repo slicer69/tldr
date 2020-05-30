@@ -1,5 +1,14 @@
 <b>dnf</b><br><br>
-<b>Package management utility for RHEL, Fedora, and CentOS (replaces yum).</b><br><br>
+<b>Package management utility for RHEL, Fedora, and CentOS (replaces yum).</b><br><br><b>More information: <a href="https://dnf.readthedocs.io/">home page</a></b><br><br>
+- Upgrade installed packages to the newest available versions:
+
+<blockquote>sudo dnf upgrade</blockquote>
+- Search packages via keywords:
+
+<blockquote>dnf search <i>keywords</i></blockquote>
+- Display details about a package:
+
+<blockquote>dnf info <i>package</i></blockquote>
 - Install a new package:
 
 <blockquote>sudo dnf install <i>package</i></blockquote>
@@ -9,15 +18,9 @@
 - Remove a package:
 
 <blockquote>sudo dnf remove <i>package</i></blockquote>
-- Upgrade installed packages to newest available versions:
-
-<blockquote>sudo dnf upgrade</blockquote>
 - List installed packages:
 
 <blockquote>dnf list --installed</blockquote>
-- Search packages via keyword:
+- Find which packages provide a given file:
 
-<blockquote>sudo dnf search <i>keyword</i></blockquote>
-- Find which packages provide a given value:
-
-<blockquote>sudo dnf provides <i>value</i></blockquote>
+<blockquote>dnf provides <i>file</i></blockquote>

@@ -1,0 +1,20 @@
+<b>quilt</b><br><br>
+<b>Tool to manage a series of patches.</b><br><br><b>More information: <a href="https://savannah.nongnu.org/projects/quilt">home page</a></b><br><br>
+- Import an existing patch from a file:
+
+<blockquote>quilt import <i>path/to/filename.patch</i></blockquote>
+- Create a new patch:
+
+<blockquote>quilt new <i>filename.patch</i></blockquote>
+- Add a file to the current patch:
+
+<blockquote>quilt add <i>path/to/file</i></blockquote>
+- After editing the file, refresh the current patch with the changes:
+
+<blockquote>quilt refresh</blockquote>
+- Apply all the patches in the series file:
+
+<blockquote>quilt push -a</blockquote>
+- Remove all applied patches:
+
+<blockquote>quilt pop -a</blockquote>

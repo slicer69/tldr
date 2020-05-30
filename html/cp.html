@@ -15,3 +15,9 @@
 - Copy text files to another location, in interactive mode (prompts user before overwriting):
 
 <blockquote>cp -i <i>*.txt</i> <i>path/to/target_directory</i></blockquote>
+- Dereference symbolic links before copying:
+
+<blockquote>cp -L <i>link</i> <i>path/to/copy</i></blockquote>
+- Use the full path of source files, creating any missing intermediate directories when copying:
+
+<blockquote>cp --parents <i>source/path/to/file</i> <i>path/to/copy</i></blockquote>

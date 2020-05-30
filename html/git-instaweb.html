@@ -1,0 +1,23 @@
+<b>git instaweb</b><br><br>
+<b>Helper to launch a gitweb server.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-instaweb">home page</a></b><br><br>
+- Launch a gitweb server for the current git repository:
+
+<blockquote>git instaweb --start</blockquote>
+- Listen only on localhost:
+
+<blockquote>git instaweb --start --local</blockquote>
+- Listen on a specific port:
+
+<blockquote>git instaweb --start --port <i>1234</i></blockquote>
+- Use a specified http daemon:
+
+<blockquote>git instaweb --start --httpd <i>lighttpd|apache2|mongoose|plackup|webrick</i></blockquote>
+- Also auto-launch a web browser:
+
+<blockquote>git instaweb --start --browser</blockquote>
+- Stop the currently running gitweb server:
+
+<blockquote>git instaweb --stop</blockquote>
+- Restart the currently running gitweb server:
+
+<blockquote>git instaweb --restart</blockquote>

@@ -9,3 +9,6 @@
 - Retrieve certain types of public ssh keys of a remote host:
 
 <blockquote>ssh-keyscan -t <i>rsa,dsa,ecdsa,ed25519</i> <i>host</i></blockquote>
+- Manually update the ssh known_hosts file with the fingerprint of a given host:
+
+<blockquote>ssh-keyscan -H <i>host</i> >> ~/.ssh/known_hosts</blockquote>

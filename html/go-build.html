@@ -1,0 +1,14 @@
+<b>go build</b><br><br>
+<b>Compile Go sources.</b><br><br><b>More information: <a href="https://golang.org/cmd/go/#hdr-Compile_packages_and_dependencies">home page</a></b><br><br>
+- Compile a file:
+
+<blockquote>go build <i>path/to/main.go</i></blockquote>
+- Compile, specifying the output filename:
+
+<blockquote>go build -o <i>path/to/binary</i> <i>path/to/source.go</i></blockquote>
+- Compile a package:
+
+<blockquote>go build -o <i>path/to/binary</i> <i>path/to/package</i></blockquote>
+- Compile a main package into an executable, with data race detection:
+
+<blockquote>go build -race -o <i>path/to/executable</i> <i>path/to/main/package</i></blockquote>

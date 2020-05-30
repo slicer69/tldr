@@ -1,0 +1,17 @@
+<b>efibootmgr</b><br><br>
+<b>Manipulate the UEFI Boot Manager (the Bootoptions).</b><br><br><b>More information: https://linux.die.net/man/8/efibootmgr.</b><br><br>
+- List the current settings / bootnums:
+
+<blockquote>efibootmgr</blockquote>
+- List the filepaths:
+
+<blockquote>efibootmgr -v</blockquote>
+- Add UEFI Shell v2 as a boot option:
+
+<blockquote>sudo efibootmgr -c -d <i>/dev/sda1</i> -l <i>\EFI\tools\Shell.efi</i> -L "<i>UEFI Shell</i>"</blockquote>
+- Change the current boot order:
+
+<blockquote>sudo efibootmgr -o <i>0002,0008,0001,0005</i></blockquote>
+- Delete a boot option:
+
+<blockquote>sudo efibootmgr -b <i>0008</i> --delete-bootnum</blockquote>

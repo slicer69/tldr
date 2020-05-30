@@ -1,0 +1,14 @@
+<b>watchexec</b><br><br>
+<b>Run arbitrary commands when files change.</b><br><br><b>More information: <a href="https://github.com/watchexec/watchexec">home page</a></b><br><br>
+- Call `ls -la` when any file in the current directory changes:
+
+<blockquote>watchexec -- <i>ls -la</i></blockquote>
+- Run `make` when any JavaScript, CSS and HTML files in the current directory change:
+
+<blockquote>watchexec --exts <i>js,css,html</i> make</blockquote>
+- Run `make` when any file in the `lib` or `src` subdirectories change:
+
+<blockquote>watchexec --watch <i>lib</i> --watch <i>src</i> <i>make</i></blockquote>
+- Call/restart `my_server` when any file in the current directory change, sending `SIGKILL` to stop the child process:
+
+<blockquote>watchexec --restart --signal <i>SIGKILL</i> <i>my_server</i></blockquote>

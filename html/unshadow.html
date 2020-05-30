@@ -1,0 +1,8 @@
+<b>unshadow</b><br><br>
+<b>Utility provided by the John the Ripper project to obtain the traditional Unix password file if the system uses shadow passwords.</b><br><br><b>More information: <a href="https://www.openwall.com/john/">home page</a></b><br><br>
+- Combine the /etc/shadow and /etc/passwd of the current system:
+
+<blockquote>sudo unshadow /etc/passwd /etc/shadow</blockquote>
+- Combine two arbitrary shadow and password files:
+
+<blockquote>sudo unshadow <i>/path/to/passwd</i> <i>/path/to/shadow</i></blockquote>

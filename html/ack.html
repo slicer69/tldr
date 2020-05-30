@@ -12,6 +12,12 @@
 - Show the file names containing "foo" and number of matches in each file:
 
 <blockquote>ack -cl <i>foo</i></blockquote>
+- Search a file for a specified string:
+
+<blockquote>ack bar "<i>foo bar</i>" <i>path/to/file</i></blockquote>
+- Search a file for the specified regex pattern:
+
+<blockquote>ack bar "<i>[bB]ar \d+</i>" <i>path/to/file</i></blockquote>
 - List all valid types:
 
 <blockquote>ack --help=types</blockquote>

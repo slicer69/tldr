@@ -1,0 +1,8 @@
+<b>spfquery</b><br><br>
+<b>Query Sender Policy Framework records to validate e-mail senders.</b><br><br><b>More information: <a href="https://www.libspf2.org/">home page</a></b><br><br>
+- Check if an IP address is allowed to send an e-mail from the specified e-mail address:
+
+<blockquote>spfquery -ip <i>8.8.8.8</i> -sender <i>sender@example.com</i></blockquote>
+- Turn on debugging output:
+
+<blockquote>spfquery -ip <i>8.8.8.8</i> -sender <i>sender@example.com</i> --debug</blockquote>

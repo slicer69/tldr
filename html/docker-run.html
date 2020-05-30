@@ -1,0 +1,20 @@
+<b>docker run</b><br><br>
+<b>Run a command in a new Docker container.</b><br><br><b>More information: <a href="https://docs.docker.com/engine/reference/commandline/run/">home page</a></b><br><br>
+- Run command in a new container from a tagged image:
+
+<blockquote>docker run <i>image:tag</i> <i>command</i></blockquote>
+- Run command in a new container in background and display its ID:
+
+<blockquote>docker run -d <i>image</i> <i>command</i></blockquote>
+- Run command in a one-off container in interactive mode and pseudo-TTY:
+
+<blockquote>docker run --rm -it <i>image</i> <i>command</i></blockquote>
+- Run command in a new container with passed environment variables:
+
+<blockquote>docker run -e '<i>variable</i>=<i>value</i>' -e <i>variable</i> <i>image</i> <i>command</i></blockquote>
+- Run command in a new container with bind mounted volumes:
+
+<blockquote>docker run -v <i>path/to/host_path</i>:<i>path/to/container_path</i> <i>image</i> <i>command</i></blockquote>
+- Run command in a new container with published ports:
+
+<blockquote>docker run -p <i>host_port</i>:<i>container_port</i> <i>image</i> <i>command</i></blockquote>

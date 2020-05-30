@@ -1,0 +1,20 @@
+<b>jupytext</b><br><br>
+<b>Tool to convert Jupyter notebooks to plain text documents, and back again.</b><br><br><b>More information: <a href="https://jupytext.readthedocs.io/en/latest/">home page</a></b><br><br>
+- Turn a notebook into a paired `.ipynb`/`.py` notebook:
+
+<blockquote>jupytext --set-formats ipynb,py <i>notebook.ipynb</i></blockquote>
+- Convert a notebook to a `.py` file:
+
+<blockquote>jupytext --to py <i>notebook.ipynb</i></blockquote>
+- Convert a `.py` file to a notebook with no outputs:
+
+<blockquote>jupytext --to notebook <i>notebook.py</i></blockquote>
+- Convert a `.md` file to a notebook and run it:
+
+<blockquote>jupytext --to notebook --execute <i>notebook.md</i></blockquote>
+- Update the input cells in a notebook and preserve outputs and metadata:
+
+<blockquote>jupytext --update --to notebook <i>notebook.py</i></blockquote>
+- Update all paired representations of a notebook:
+
+<blockquote>jupytext --sync <i>notebook.ipynb</i></blockquote>
