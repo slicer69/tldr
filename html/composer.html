@@ -1,17 +1,26 @@
 <b>composer</b><br><br>
 <b>A package-based dependency manager for PHP projects.</b><br><br><b>More information: <a href="https://getcomposer.org/">home page</a></b><br><br>
+- Interactively create a `composer.json` file:
+
+<blockquote>composer init</blockquote>
 - Add a package as a dependency for this project, adding it to `composer.json`:
 
 <blockquote>composer require <i>user/package_name</i></blockquote>
-- Install all the dependencies in this project's `composer.json`:
+- Install all the dependencies in this project's `composer.json` and create `composer.lock`:
 
 <blockquote>composer install</blockquote>
 - Uninstall a package from this project, removing it as a dependency from `composer.json`:
 
 <blockquote>composer remove <i>user/package_name</i></blockquote>
-- Update all the dependencies in this project's `composer.json`:
+- Update all the dependencies in this project's `composer.json` and note versions in `composer.lock` file:
 
 <blockquote>composer update</blockquote>
-- Update composer to the latest version:
+- Update composer lock only after updating `composer.json` manually:
+
+<blockquote>composer update --lock</blockquote>
+- Learn more about why a dependency can't be installed:
+
+<blockquote>composer why-not <i>user/package_name</i></blockquote>
+- Update composer to its latest version:
 
 <blockquote>composer self-update</blockquote>

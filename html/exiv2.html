@@ -1,0 +1,20 @@
+<b>exiv2</b><br><br>
+<b>Image metadata manipulation tool.</b><br><br><b>More information: <a href="https://www.exiv2.org/manpage.html">home page</a></b><br><br>
+- Print a summary of the image Exif metadata:
+
+<blockquote>exiv2 <i>path/to/file</i></blockquote>
+- Print all metadata (Exif, IPTC, XMP) with interpreted values:
+
+<blockquote>exiv2 -P kt <i>path/to/file</i></blockquote>
+- Print all metadata with raw values:
+
+<blockquote>exiv2 -P kv <i>path/to/file</i></blockquote>
+- Delete all metadata from an image:
+
+<blockquote>exiv2 -d a <i>path/to/file</i></blockquote>
+- Delete all metadata, preserving the file timestamp:
+
+<blockquote>exiv2 -d a -k <i>path/to/file</i></blockquote>
+- Rename the file, prepending the date and time from metadata (not from the file timestamp):
+
+<blockquote>exiv2 -r <i>'%Y%m%d_%H%M%S_:basename:'</i> <i>path/to/file</i></blockquote>

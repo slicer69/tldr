@@ -1,0 +1,11 @@
+<b>gpgv</b><br><br>
+<b>Verify OpenPGP signatures.</b><br><br><b>More information: <a href="https://www.gnupg.org/documentation/manuals/gnupg/gpgv.html">home page</a></b><br><br>
+- Verify a signed file:
+
+<blockquote>gpgv <i>path/to/file</i></blockquote>
+- Verify a signed file using a detached signature:
+
+<blockquote>gpgv <i>path/to/signature</i> <i>path/to/file</i></blockquote>
+- Add a file to the list of keyrings (a single exported key also accounts as a keyring):
+
+<blockquote>gpgv --keyring <i">home page</a>/alice.keyring</i> <i>path/to/file</i> <i>path/to/signature</i></blockquote>
