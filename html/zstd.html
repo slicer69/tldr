@@ -9,9 +9,9 @@
 - Decompress to `stdout`:
 
 <blockquote>zstd -dc <i>file</i">home page</a>zst</blockquote>
-- Compress a file, while specifing the compression level (0 being worst, 19 best, and 3 default):
+- Compress a file specifying the compression level, where 1=fastest, 19=slowest and 3=default:
 
 <blockquote>zstd -<i>level</i> <i>file</i></blockquote>
-- Use more memory (both when compressing and decompressing) to achieve a higher compression ratio:
+- Unlock higher compression levels (up to 22) using more memory (both for compression and decompression):
 
 <blockquote>zstd --ultra -<i>level</i> <i>file</i></blockquote>

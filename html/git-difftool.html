@@ -1,0 +1,14 @@
+<b>git difftool</b><br><br>
+<b>Show file changes using external diff tools. Accepts the same options and arguments as git diff.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-difftool">home page</a></b><br><br>
+- List available diff tools:
+
+<blockquote>git difftool --tool-help</blockquote>
+- Set the default diff tool to meld:
+
+<blockquote>git config --global diff.tool "<i>meld</i>"</blockquote>
+- Use the default diff tool to show staged changes:
+
+<blockquote>git difftool --staged</blockquote>
+- Use a specific tool (opendiff) to show changes since a given commit:
+
+<blockquote>git difftool --tool=<i>opendiff</i> <i>commit</i></blockquote>
