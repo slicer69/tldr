@@ -1,0 +1,23 @@
+<b>zgrep</b><br><br>
+<b>Grep text patterns from files within compressed file (equivalent to grep -Z).</b><br><br>
+- Grep a pattern in a compressed file (case-sensitive):
+
+<blockquote>zgrep <i>pattern</i> <i>path/to/compressed/file</i></blockquote>
+- Grep a pattern in a compressed file (case-insensitive):
+
+<blockquote>zgrep -i <i>pattern</i> <i>path/to/compressed/file</i></blockquote>
+- Output count of lines containing matched pattern in a compressed file:
+
+<blockquote>zgrep -c <i>pattern</i> <i>path/to/compressed/file</i></blockquote>
+- Display the lines which don’t have the pattern present (Invert the search function):
+
+<blockquote>zgrep -v <i>pattern</i> <i>path/to/compressed/file</i></blockquote>
+- Grep a compressed file for multiple patterns:
+
+<blockquote>zgrep -e "<i>pattern_1</i>" -e "<i>pattern_2</i>" <i>path/to/compressed/file</i></blockquote>
+- Use extended regular expressions (supporting `?`, `+`, `{}`, `()` and `|`):
+
+<blockquote>zgrep -E <i>^regex$</i> <i>path/to/file</i></blockquote>
+- Print 3 lines of [C]ontext around, [B]efore, or [A]fter each match:
+
+<blockquote>zgrep -<i>C|B|A</i> <i>3</i> <i>pattern</i> <i>path/to/compressed/file</i></blockquote>

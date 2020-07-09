@@ -1,0 +1,14 @@
+<b>makepkg</b><br><br>
+<b>Creates a package installable with the `pacman` package manager.</b><br><br><b>Runs the commands from a PKGBUILD file to build the package.</b><br><br><b>More information: <a href="https://wiki.archlinux.org/index.php/Makepkg">home page</a></b><br><br>
+- Make a package (run in the same directory as a PKGBUILD):
+
+<blockquote>makepkg</blockquote>
+- Make a package and install its dependencies:
+
+<blockquote>makepkg --syncdeps</blockquote>
+- Same as above, but install the package with `pacman` when done:
+
+<blockquote>makepkg --syncdeps --install</blockquote>
+- Make a package, but skip source checksums:
+
+<blockquote>makepkg --skipchecksums</blockquote>
