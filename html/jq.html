@@ -18,6 +18,9 @@
 - Output the value of a given key of each element in a JSON text from `stdin`:
 
 <blockquote>cat <i>file.json</i> | jq 'map(.<i>key_name</i>)'</blockquote>
+- Output the value of multiple keys as a new JSON object (assuming the input JSON has the keys `key_name` and `other_key_name`):
+
+<blockquote>cat <i>file.json</i> | jq '<i>{my_new_key</i>: .<i>key_name</i>, <i>my_other_key</i>: <i>other_key_name</i>}'</blockquote>
 - Combine multiple filters:
 
 <blockquote>cat <i>file.json</i> | jq 'unique | sort | reverse'</blockquote>

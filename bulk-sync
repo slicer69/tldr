@@ -1,12 +1,17 @@
 #!/bin/bash
 
 cd ../tldr || exit 1
+echo "Getting upstream pages"
 git pull
 cd -
+echo "Syncing upstream pages to local repository"
 rsync -av ../tldr/pages/common/ pages/common/
 rsync -av ../tldr/pages/linux/ pages/linux/
+echo "Converting upstream pages to HTML files"
 nice ./change-all-md-to-html
+echo "Sending converted pages to server"
 nice rsync -av html/*.html jsmith@distrowatch.com:dww/text/man-pages/
+echo "Adding new pages to our repository"
 nice git add html/* pages/linux/* pages/common/*
 nice git commit -a -m "Bulk update"
 git push

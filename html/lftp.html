@@ -1,0 +1,23 @@
+<b>lftp</b><br><br>
+<b>Sophisticated file transfer program.</b><br><br><b>More information: <a href="https://linux.die.net/man/1/lftp">home page</a></b><br><br>
+- Connect to an FTP server:
+
+<blockquote>lftp <i>ftp.example.com</i></blockquote>
+- Download multiple files (glob expression):
+
+<blockquote>mget <i>path/to/*.png</i></blockquote>
+- Upload multiple files (glob expression):
+
+<blockquote>mput <i>path/to/*.zip</i></blockquote>
+- Delete multiple files on the remote server:
+
+<blockquote>mrm <i>path/to/*.txt</i></blockquote>
+- Rename a file on the remote server:
+
+<blockquote>mv <i>original_filename</i> <i>new_filename</i></blockquote>
+- Download or update an entire directory:
+
+<blockquote>mirror <i>path/to/remote_dir</i> <i>path/to/local_output_dir</i></blockquote>
+- Upload or update an entire directory:
+
+<blockquote>mirror -R <i>path/to/local_dir</i> <i>path/to/remote_output_dir</i></blockquote>

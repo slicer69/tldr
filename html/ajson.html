@@ -1,0 +1,14 @@
+<b>ajson</b><br><br>
+<b>Executes JSONPath on JSON objects.</b><br><br><b>More information: <a href="https://github.com/spyzhov/ajson">home page</a></b><br><br>
+- Read JSON from a file and execute a specified JSONPath expression:
+
+<blockquote>ajson '<i>$..json[?(@.path)]</i>' <i>path/to/file.json</i></blockquote>
+- Read JSON from stdin and execute a specified JSONPath expression:
+
+<blockquote>cat <i>path/to/file.json</i> | ajson '<i>$..json[?(@.path)]</i>'</blockquote>
+- Read JSON from a URL and evaluate a specified JSONPath expression:
+
+<blockquote>ajson '<i>avg($..price)</i>' '<i>https://example.com/api/</i>'</blockquote>
+- Read some simple JSON and calculate a value:
+
+<blockquote>echo '<i>3</i>' | ajson '<i>2 * pi * $</i>'</blockquote>

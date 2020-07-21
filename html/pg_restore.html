@@ -9,6 +9,9 @@
 - Same as above, customize host and port:
 
 <blockquote>pg_restore -h <i>host</i> -p <i>port</i> -d <i>db_name</i> <i>archive_file.dump</i></blockquote>
+- List database objects included in the archive:
+
+<blockquote>pg_restore --list <i>archive_file.dump</i></blockquote>
 - Clean database objects before creating them:
 
 <blockquote>pg_restore --clean -d <i>db_name</i> <i>archive_file.dump</i></blockquote>
