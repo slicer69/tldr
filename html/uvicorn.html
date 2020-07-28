@@ -1,0 +1,17 @@
+<b>uvicorn</b><br><br>
+<b>Python ASGI HTTP Server, for asynchronous projects.</b><br><br><b>More information: <a href="https://www.uvicorn.org/">home page</a></b><br><br>
+- Run Python web app:
+
+<blockquote>uvicorn <i>import.path:app_object</i></blockquote>
+- Listen on port 8080 on localhost:
+
+<blockquote>uvicorn --host <i>localhost</i> --port <i>8080</i> <i>import.path:app_object</i></blockquote>
+- Turn on live reload:
+
+<blockquote>uvicorn --reload <i>import.path:app_object</i></blockquote>
+- Use 4 worker processes for handling requests:
+
+<blockquote>uvicorn --workers <i>4</i> <i>import.path:app_object</i></blockquote>
+- Run app over HTTPS:
+
+<blockquote>uvicorn --ssl-certfile <i>cert.pem</i> --ssl-keyfile <i>key.pem</i> <i>import.path:app_object</i></blockquote>

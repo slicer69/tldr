@@ -2,22 +2,22 @@
 <b>Copy files and directories.</b><br><br>
 - Copy a file to another location:
 
-<blockquote>cp <i>path/to/file.ext</i> <i>path/to/copy.ext</i></blockquote>
+<blockquote>cp <i>path/to/source_file.ext</i> <i>path/to/target_file.ext</i></blockquote>
 - Copy a file into another directory, keeping the filename:
 
-<blockquote>cp <i>path/to/file.ext</i> <i>path/to/target_parent_directory</i></blockquote>
+<blockquote>cp <i>path/to/source_file.ext</i> <i>path/to/target_parent_directory</i></blockquote>
 - Recursively copy a directory's contents to another location (if the destination exists, the directory is copied inside it):
 
-<blockquote>cp -r <i>path/to/directory</i> <i>path/to/copy</i></blockquote>
+<blockquote>cp -r <i>path/to/source_directory</i> <i>path/to/target_directory</i></blockquote>
 - Copy a directory recursively, in verbose mode (shows files as they are copied):
 
-<blockquote>cp -vr <i>path/to/directory</i> <i>path/to/copy</i></blockquote>
+<blockquote>cp -vr <i>path/to/source_directory</i> <i>path/to/target_directory</i></blockquote>
 - Copy text files to another location, in interactive mode (prompts user before overwriting):
 
 <blockquote>cp -i <i>*.txt</i> <i>path/to/target_directory</i></blockquote>
 - Dereference symbolic links before copying:
 
-<blockquote>cp -L <i>link</i> <i>path/to/copy</i></blockquote>
+<blockquote>cp -L <i>link</i> <i>path/to/target_directory</i></blockquote>
 - Use the full path of source files, creating any missing intermediate directories when copying:
 
-<blockquote>cp --parents <i>source/path/to/file</i> <i>path/to/copy</i></blockquote>
+<blockquote>cp --parents <i>source/path/to/file</i> <i>path/to/target_file</i></blockquote>

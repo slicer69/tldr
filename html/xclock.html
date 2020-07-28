@@ -1,0 +1,17 @@
+<b>xclock</b><br><br>
+<b>Display the time in analog or digital form.</b><br><br>
+- Display an analog clock:
+
+<blockquote>xclock</blockquote>
+- Display a 24-hour digital clock with the hour and minute fields only:
+
+<blockquote>xclock -digital -brief</blockquote>
+- Display a digital clock using an strftime format string (see strftime(3)):
+
+<blockquote>xclock -digital -strftime <i>format</i></blockquote>
+- Display a 24-hour digital clock with the hour, minute and second fields that updates every second:
+
+<blockquote>xclock -digital -strftime '%H:%M:%S' -update 1</blockquote>
+- Display a 12-hour digital clock with the hour and minute fields only:
+
+<blockquote>xclock -digital -twelve -brief</blockquote>

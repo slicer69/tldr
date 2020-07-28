@@ -9,7 +9,7 @@
 - Download a file, following [L]ocation redirects, and automatically [C]ontinuing (resuming) a previous file transfer:
 
 <blockquote>curl -O -L -C - <i>http://example.com/filename</i></blockquote>
-- Send form-encoded data (POST request of type `application/x-www-form-urlencoded`):
+- Send form-encoded data (POST request of type `application/x-www-form-urlencoded`). Use `-d @file_name` or `-d @'-'` to read from STDIN:
 
 <blockquote>curl -d <i>'name=bob'</i> <i>http://example.com/form</i></blockquote>
 - Send a request with an extra header, using a custom HTTP method:

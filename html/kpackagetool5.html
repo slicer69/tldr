@@ -1,0 +1,17 @@
+<b>kpackagetool5</b><br><br>
+<b>KPackage Manager: Install, list, remove Plasma packages.</b><br><br><b>More information: <a href="https://techbase.kde.org/Development/Tutorials/Plasma5/QML2/GettingStarted#Kpackagetool5">home page</a></b><br><br>
+- List all known package types that can be installed:
+
+<blockquote>kpackagetool5 --list-types</blockquote>
+- Install the package from a directory:
+
+<blockquote>kpackagetool5 --type <i>package_type</i> --install <i>path/to/directory</i></blockquote>
+- Update installed package from a directory:
+
+<blockquote>kpackagetool5 --type <i>package_type</i> --upgrade <i>path/to/directory</i></blockquote>
+- List installed plasmoids (--global for all users):
+
+<blockquote>kpackagetool5 --type Plasma/Applet --list --global</blockquote>
+- Remove a plasmoid by name:
+
+<blockquote>kpackagetool5 --type Plasma/Applet --remove "<i>name</i>"</blockquote>
