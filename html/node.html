@@ -2,7 +2,7 @@
 <b>Server-side JavaScript platform (Node.js).</b><br><br><b>More information: <a href="https://nodejs.org">home page</a></b><br><br>
 - Run a JavaScript file:
 
-<blockquote>node <i>file</i">home page</a>js</blockquote>
+<blockquote>node <i>path/to/file</i></blockquote>
 - Start a REPL (interactive shell):
 
 <blockquote>node</blockquote>
@@ -12,3 +12,6 @@
 - Evaluate and print result, useful to see node's dependencies versions:
 
 <blockquote>node -p "<i>process.versions</i>"</blockquote>
+- Activate inspector, pausing execution until a debugger is connected once source code is fully parsed:
+
+<blockquote>node --no-lazy --inspect-brk <i>path/to/file</i></blockquote>
