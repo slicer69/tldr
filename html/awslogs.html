@@ -1,0 +1,17 @@
+<b>awslogs</b><br><br>
+<b>Queries groups, streams and events from Amazon Cloudwatch logs.</b><br><br><b>More information: <a href="https://github.com/jorgebastida/awslogs">home page</a></b><br><br>
+- List log groups:
+
+<blockquote>awslogs groups</blockquote>
+- List existing streams for the specified group:
+
+<blockquote>awslogs streams <i>/var/log/syslog</i></blockquote>
+- Get logs for any streams in the specified group between 1 and 2 hours ago:
+
+<blockquote>awslogs get <i>/var/log/syslog</i> --start='<i>2h ago</i>' --end='<i>1h ago</i>'</blockquote>
+- Get logs that match a specific Cloudwatch Logs Filter pattern:
+
+<blockquote>awslogs get <i>/aws/lambda/my_lambda_group</i> --filter-pattern='<i>ERROR</i>'</blockquote>
+- Watch logs for any streams in the specified group:
+
+<blockquote>awslogs get <i>/var/log/syslog</i> ALL --watch</blockquote>

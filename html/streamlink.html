@@ -1,0 +1,26 @@
+<b>streamlink</b><br><br>
+<b>Extracts streams from various services and pipes them into a video player of choice.</b><br><br><b>More information: <a href="https://streamlink.github.io">home page</a></b><br><br>
+- Attempt to extract streams from the URL specified, and if it's successful, print out a list of available streams to choose from:
+
+<blockquote>streamlink <i>example.com/stream</i></blockquote>
+- Open a stream with the specified quality:
+
+<blockquote>streamlink <i>example.com/stream</i> <i>720p60</i></blockquote>
+- Select the highest or lowest available quality:
+
+<blockquote>streamlink <i>example.com/stream</i> <i>best|worst</i></blockquote>
+- Specify which player to use to feed stream data to (VLC is used by default if found):
+
+<blockquote>streamlink --player=<i>mpv</i> <i>example.com/stream</i> <i>best</i></blockquote>
+- Specify the amount of time to skip from the beginning of the stream. For live streams, this is a negative offset from the end of the stream (rewind):
+
+<blockquote>streamlink --hls-start-offset <i>[HH:]MM:SS</i> <i>example.com/stream</i> <i>best</i></blockquote>
+- Skip to the beginning of a live stream, or as far back as possible:
+
+<blockquote>streamlink --hls-live-restart <i>example.com/stream</i> <i>best</i></blockquote>
+- Write stream data to a file instead of playing it:
+
+<blockquote>streamlink --output <i>path/to/file.ts</i> <i>example.com/stream</i> <i>best</i></blockquote>
+- Open the stream in the player, while at the same time writing it to a file:
+
+<blockquote>streamlink --record <i>path/to/file.ts</i> <i>example.com/stream</i> <i>best</i></blockquote>
