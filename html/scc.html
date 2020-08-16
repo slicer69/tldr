@@ -1,0 +1,26 @@
+<b>scc</b><br><br>
+<b>Tool written in Go that counts lines of code.</b><br><br><b>More information: <a href="https://github.com/boyter/scc">home page</a></b><br><br>
+- Print lines of code in the current directory:
+
+<blockquote>scc</blockquote>
+- Print lines of code in the target directory:
+
+<blockquote>scc <i>path/to/directory</i></blockquote>
+- Display output for every file:
+
+<blockquote>scc --by-file</blockquote>
+- Display output using a specific output format (defaults to `tabular`):
+
+<blockquote>scc --format <i>tabular|wide|json|csv|cloc-yaml|html|html-table</i></blockquote>
+- Only count files with specific file extensions:
+
+<blockquote>scc --include-ext <i>go, java, js</i></blockquote>
+- Exclude directories from being counted:
+
+<blockquote>scc --exclude-dir <i">home page</a>git,.hg</i></blockquote>
+- Display output and sort by column (defaults to by files):
+
+<blockquote>scc --sort <i>files|name|lines|blanks|code|comments|complexity</i></blockquote>
+- Print help for scc:
+
+<blockquote>scc -h</blockquote>

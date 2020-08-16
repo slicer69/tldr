@@ -1,0 +1,11 @@
+<b>lvresize</b><br><br>
+<b>Change the size of a logical volume.</b><br><br>
+- Change a volume's size to 120GB:
+
+<blockquote>lvresize -L <i>120G</i> <i>logical_volume</i></blockquote>
+- Reduce a volume's size by 120GB as well as the underlying filesystem:
+
+<blockquote>lvresize --size -<i>120G</i> -r <i>logical_volume</i></blockquote>
+- Increase a volume's size to 100% of the free phyiscal volume space:
+
+<blockquote>lvresize --size <i>100</i>%FREE <i>logical_volume</i></blockquote>

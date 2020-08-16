@@ -1,0 +1,8 @@
+<b>lvreduce</b><br><br>
+<b>Reduce the size of a logical volume.</b><br><br>
+- Reduce a volume's size to 120GB:
+
+<blockquote>lvreduce --size <i>120G</i> <i>logical_volume</i></blockquote>
+- Reduce a volume's size by 40GB as well as the underlying filesystem:
+
+<blockquote>lvreduce --size -<i>40G</i> -r <i>logical_volume</i></blockquote>

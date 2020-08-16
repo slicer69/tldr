@@ -1,0 +1,20 @@
+<b>git apply</b><br><br>
+<b>Apply a patch to files and/or to the index.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-apply">home page</a></b><br><br>
+- Print messages about the patched files:
+
+<blockquote>git apply --verbose <i>path/to/file</i></blockquote>
+- Apply and add the patched files to the index:
+
+<blockquote>git apply --index <i>path/to/file</i></blockquote>
+- Apply a remote patch file:
+
+<blockquote>curl <i>https://example.com/file.patch</i> | git apply</blockquote>
+- Output diffstat for the input and apply the patch:
+
+<blockquote>git apply --stat --apply <i>path/to/file</i></blockquote>
+- Apply the patch in reverse:
+
+<blockquote>git apply --reverse <i>path/to/file</i></blockquote>
+- Store the patch result in the index without modifying the working tree:
+
+<blockquote>git apply --cache <i>path/to/file</i></blockquote>
