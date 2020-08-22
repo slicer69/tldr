@@ -1,0 +1,23 @@
+<b>dvc config</b><br><br>
+<b>Low level command to manage custom configuration options for dvc repositories.</b><br><br><b>These configurations can be on project, local, global, or system level.</b><br><br><b>More information: <a href="https://dvc.org/doc/command-reference/config">home page</a></b><br><br>
+- Get the name of the default remote:
+
+<blockquote>dvc config core.remote</blockquote>
+- Set the project's default remote:
+
+<blockquote>dvc config core.remote <i>remote_name</i></blockquote>
+- Unset the project's default remote:
+
+<blockquote>dvc config --unset core.remote</blockquote>
+- Get the config value for a specified key for the current project:
+
+<blockquote>dvc config <i>key</i></blockquote>
+- Set the config value for a key on a project level:
+
+<blockquote>dvc config <i>key</i> <i>value</i></blockquote>
+- Unset a project level config value for a given key:
+
+<blockquote>dvc config --unset <i>key</i></blockquote>
+- Set a local, global, or system level config value:
+
+<blockquote>dvc config --local/global/system <i>key</i> <i>value</i></blockquote>

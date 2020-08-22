@@ -1,26 +1,26 @@
 <b>grep</b><br><br>
 <b>Matches patterns in input text.</b><br><br><b>Supports simple patterns and regular expressions.</b><br><br>
+- Search for a pattern within a file:
+
+<blockquote>grep <i>search_pattern</i> <i>path/to/file</i></blockquote>
 - Search for an exact string:
 
-<blockquote>grep <i>search_string</i> <i>path/to/file</i></blockquote>
-- Search in case-insensitive mode:
+<blockquote>grep -F <i>exact_string</i> <i>path/to/file</i></blockquote>
+- Search for a pattern recursively in the current directory, ignoring non-text files:
 
-<blockquote>grep -i <i>search_string</i> <i>path/to/file</i></blockquote>
-- Search recursively (ignoring non-text files) in current directory for an exact string:
+<blockquote>grep -RI <i>search_pattern</i> .</blockquote>
+- Use extended regular expressions (supporting `?`, `+`, `{}`, `()` and `|`), in case-insensitive mode:
 
-<blockquote>grep -RI <i>search_string</i> .</blockquote>
-- Use extended regular expressions (supporting `?`, `+`, `{}`, `()` and `|`):
-
-<blockquote>grep -E <i>^regex$</i> <i>path/to/file</i></blockquote>
+<blockquote>grep -Ei <i>search_pattern</i> <i>path/to/file</i></blockquote>
 - Print 3 lines of [C]ontext around, [B]efore, or [A]fter each match:
 
-<blockquote>grep -<i>C|B|A</i> 3 <i>search_string</i> <i>path/to/file</i></blockquote>
+<blockquote>grep -<i>C|B|A</i> 3 <i>search_pattern</i> <i>path/to/file</i></blockquote>
 - Print file name with the corresponding line number for each match:
 
-<blockquote>grep -Hn <i>search_string</i> <i>path/to/file</i></blockquote>
+<blockquote>grep -Hn <i>search_pattern</i> <i>path/to/file</i></blockquote>
 - Use the standard input instead of a file:
 
-<blockquote>cat <i>path/to/file</i> | grep <i>search_string</i></blockquote>
+<blockquote>cat <i>path/to/file</i> | grep <i>search_pattern</i></blockquote>
 - Invert match for excluding specific strings:
 
-<blockquote>grep -v <i>search_string</i></blockquote>
+<blockquote>grep -v <i>search_pattern</i></blockquote>

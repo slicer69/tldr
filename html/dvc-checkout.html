@@ -1,0 +1,11 @@
+<b>dvc checkout</b><br><br>
+<b>Checkout data files and directories from cache.</b><br><br><b>More information: <a href="https://dvc.org/doc/command-reference/checkout">home page</a></b><br><br>
+- Checkout the latest version of all target files and directories:
+
+<blockquote>dvc checkout</blockquote>
+- Checkout to latest version of a specified target:
+
+<blockquote>dvc checkout <i>target</i></blockquote>
+- Checkout a specific version of a target from a different Git commit/tag/branch:
+
+<blockquote>git checkout <i>commit_hash|tag|branch</i> <i>target</i> && dvc checkout <i>target</i></blockquote>
