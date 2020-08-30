@@ -1,0 +1,20 @@
+<b>cargo-test</b><br><br>
+<b>Execute the unit and integration tests of a Rust package.</b><br><br><b>More information: <a href="https://doc.rust-lang.org/cargo/commands/cargo-test.html">home page</a></b><br><br>
+- Only run tests containing a specific string in their names:
+
+<blockquote>cargo test <i>testname</i></blockquote>
+- Set the number of simultaneous running test cases:
+
+<blockquote>cargo test -- --test-threads=<i>count</i></blockquote>
+- Require that `Cargo.lock` is up to date:
+
+<blockquote>cargo test --locked</blockquote>
+- Test artifacts in release mode, with optimizations:
+
+<blockquote>cargo test --release</blockquote>
+- Test all packages in the workspace:
+
+<blockquote>cargo test --workspace</blockquote>
+- Run tests for a package:
+
+<blockquote>cargo test --package <i>package</i></blockquote>

@@ -1,0 +1,14 @@
+<b>adb-install</b><br><br>
+<b>Android Debug Bridge Install: Push packages to an Android emulator instance or connected Android devices.</b><br><br><b>More information: <a href="https://developer.android.com/studio/command-line/adb">home page</a></b><br><br>
+- Push an Android application to an emulator/device:
+
+<blockquote>adb install <i>path/to/file.apk</i></blockquote>
+- Reinstall an existing app, keeping its data:
+
+<blockquote>adb install -r <i>path/to/file.apk</i></blockquote>
+- Grant all permissions listed in the app manifest:
+
+<blockquote>adb install -g <i>path/to/file.apk</i></blockquote>
+- Quickly update an installed package by only updating the parts of the APK that changed:
+
+<blockquote>adb install --fastdeploy <i>path/to/file.apk</i></blockquote>

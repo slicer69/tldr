@@ -1,0 +1,23 @@
+<b>cf</b><br><br>
+<b>Command line tool to manage apps and services on Cloud Foundry.</b><br><br><b>More information: <a href="https://docs.cloudfoundry.org">home page</a></b><br><br>
+- Push an app using the default settings:
+
+<blockquote>cf push <i>app_name</i></blockquote>
+- View the services available from your organization:
+
+<blockquote>cf marketplace</blockquote>
+- Create a service instance:
+
+<blockquote>cf create-service <i>service</i> <i>plan</i> <i>service_name</i></blockquote>
+- Connect an application to a service:
+
+<blockquote>cf bind-service <i>app_name</i> <i>service_name</i></blockquote>
+- Run a script whose code is included in the app, but runs independently:
+
+<blockquote>cf run-task <i>app_name</i> "<i>script_command</i>" --name <i>task_name</i></blockquote>
+- Start an interactive SSH session with a VM hosting an app:
+
+<blockquote>cf ssh <i>app_name</i></blockquote>
+- View a dump of recent app logs:
+
+<blockquote>cf logs <i>app_name</i> --recent</blockquote>
