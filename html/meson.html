@@ -1,0 +1,17 @@
+<b>meson</b><br><br>
+<b>SCons-like build system that uses python as a front-end language and Ninja as a building backend.</b><br><br><b>More information: <a href="https://mesonbuild.com">home page</a></b><br><br>
+- Generate a c project with a given name and version:
+
+<blockquote>meson init --language=<i>c</i> --name=<i>myproject</i> --version=<i>0.1</i></blockquote>
+- Configure builddir with default values:
+
+<blockquote>meson setup <i>build_dir</i></blockquote>
+- Build the project:
+
+<blockquote>meson compile -C <i>path/to/build_dir</i></blockquote>
+- Show the help:
+
+<blockquote>meson --help</blockquote>
+- Show version info:
+
+<blockquote>meson --version</blockquote>

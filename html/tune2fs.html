@@ -1,0 +1,14 @@
+<b>tune2fs</b><br><br>
+<b>Adjust parameters of an ext2, ext3 or ext4 filesystem.</b><br><br><b>May be used on mounted filesystems.</b><br><br>
+- Set the max number of counts before a filesystem is checked to 2:
+
+<blockquote>tune2fs -c <i>2</i> <i>/dev/sdXN</i></blockquote>
+- Set the filesystem label to MY_LABEL:
+
+<blockquote>tune2fs -L <i>'MY_LABEL'</i> <i>/dev/sdXN</i></blockquote>
+- Enable discard and user-specified extended attributes for a filesystem:
+
+<blockquote>tune2fs -o <i>discard,user_xattr</i> <i>/dev/sdXN</i></blockquote>
+- Enable journaling for a filesystem:
+
+<blockquote>tune2fs -o^<i>nobarrier</i> <i>/dev/sdXN</i></blockquote>
