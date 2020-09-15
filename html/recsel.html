@@ -1,0 +1,11 @@
+<b>recsel</b><br><br>
+<b>Print records from a recfile: a human-editable, plain text database.</b><br><br><b>More information: <a href="https://www.gnu.org/software/recutils/manual/recutils.html">home page</a></b><br><br>
+- Extract name and version field:
+
+<blockquote>recsel -p name,version <i>data.rec</i></blockquote>
+- Use "~" to match a string with a given regular expression:
+
+<blockquote>recsel -e "<i>field_name</i>  ~ '<i>pattern_regex</i>' <i>data.rec</i>"</blockquote>
+- Use a predicate to match a name and a version:
+
+<blockquote>recsel -e "name ~ '<i>pattern_regex</i>' && version ~ '<i>pattern_regex</i>'" <i>data.rec</i></blockquote>

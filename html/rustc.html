@@ -9,3 +9,15 @@
 - Compile with debugging information:
 
 <blockquote>rustc -g <i>file.rs</i></blockquote>
+- Compile with architecture-specific optimizations for the current CPU:
+
+<blockquote>rustc -C target-cpu=native <i>path/to/file.rs</i></blockquote>
+- Display architecture-specific optimizations for the current CPU:
+
+<blockquote>rustc -C target-cpu=native --print cfg</blockquote>
+- Display target list:
+
+<blockquote>rustc --print target-list</blockquote>
+- Compile for a specific target:
+
+<blockquote>rustc --target <i>target_triple</i> <i>path/to/file.rs</i></blockquote>

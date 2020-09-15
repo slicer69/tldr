@@ -1,0 +1,23 @@
+<b>cargo build</b><br><br>
+<b>Compile a local package and all of its dependencies.</b><br><br><b>More information: <a href="https://doc.rust-lang.org/cargo/commands/cargo-build.html">home page</a></b><br><br>
+- Build the package or packages defined by the `Cargo.toml` manifest file in the local path:
+
+<blockquote>cargo build</blockquote>
+- Build artifacts in release mode, with optimizations:
+
+<blockquote>cargo build --release</blockquote>
+- Require that `Cargo.lock` is up to date:
+
+<blockquote>cargo build --locked</blockquote>
+- Build all packages in the workspace:
+
+<blockquote>cargo build --workspace</blockquote>
+- Build a specific package:
+
+<blockquote>cargo build --package <i>package</i></blockquote>
+- Build only the specified binary:
+
+<blockquote>cargo --bin <i>name</i></blockquote>
+- Build only the specified test target:
+
+<blockquote>cargo build --test <i>testname</i></blockquote>

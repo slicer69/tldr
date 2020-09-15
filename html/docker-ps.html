@@ -1,0 +1,26 @@
+<b>docker ps</b><br><br>
+<b>List Docker containers.</b><br><br><b>More information: <a href="https://docs.docker.com/engine/reference/commandline/ps/">home page</a></b><br><br>
+- List currently running docker containers:
+
+<blockquote>docker ps</blockquote>
+- List all docker containers (running and stopped):
+
+<blockquote>docker ps --all</blockquote>
+- Show the latest created container (includes all states):
+
+<blockquote>docker ps --latest</blockquote>
+- Filter containers that contain a substring in their name:
+
+<blockquote>docker ps --filter="name=<i>name</i>"</blockquote>
+- Filter containers that share a given image as an ancestor:
+
+<blockquote>docker ps --filter "ancestor=<i>image</i>:<i>tag</i>"</blockquote>
+- Filter containers by exit status code:
+
+<blockquote>docker ps --all --filter="exited=<i>code</i>"</blockquote>
+- Filter containers by status (created, running, removing, paused, exited and dead):
+
+<blockquote>docker ps --filter="status=<i>status</i>"</blockquote>
+- Filter containers that mount a specific volume or have a volume mounted in a specific path:
+
+<blockquote>docker ps --filter="volume=<i>path/to/directory</i>" --format "table <i">home page</a>ID</i>\t<i">home page</a>Image</i>\t<i">home page</a>Names</i>\t<i">home page</a>Mounts</i>"</blockquote>

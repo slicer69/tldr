@@ -1,23 +1,26 @@
 <b>git log</b><br><br>
 <b>Show a history of commits.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-log">home page</a></b><br><br>
-- Show the sequence of commits starting from the current one, in reverse chronological order:
+- Show the sequence of commits starting from the current one, in reverse chronological order of the git repository in the current working directory:
 
 <blockquote>git log</blockquote>
 - Show the history of a particular file or directory, including differences:
 
 <blockquote>git log -p <i>path/to/file_or_directory</i></blockquote>
-- Show only the first line of each commit message:
-
-<blockquote>git log --oneline</blockquote>
 - Show an overview of which file(s) changed in each commit:
 
 <blockquote>git log --stat</blockquote>
-- Show a graph of commits in the current branch:
+- Show a graph of commits in the current branch using only the first line of each commit message:
 
-<blockquote>git log --graph</blockquote>
+<blockquote>git log --oneline --graph</blockquote>
 - Show a graph of all commits, tags and branches in the entire repo:
 
 <blockquote>git log --oneline --decorate --all --graph</blockquote>
 - Show only commits whose messages include a given string (case-insensitively):
 
 <blockquote>git log -i --grep <i>search_string</i></blockquote>
+- Show the last N commits from a certain author:
+
+<blockquote>git log -n <i>number</i> --author=<i>author</i></blockquote>
+- Show commits between two dates:
+
+<blockquote>git log --before=<i>date</i> --after=<i>date</i></blockquote>

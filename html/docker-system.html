@@ -1,0 +1,26 @@
+<b>docker system</b><br><br>
+<b>Manage Docker data and display system-wide information.</b><br><br><b>More information: <a href="https://docs.docker.com/engine/reference/commandline/system/">home page</a></b><br><br>
+- Show help:
+
+<blockquote>docker system</blockquote>
+- Show docker disk usage:
+
+<blockquote>docker system df</blockquote>
+- Show detailed information on disk usage:
+
+<blockquote>docker system df --verbose</blockquote>
+- Remove unused data:
+
+<blockquote>docker system prune</blockquote>
+- Remove unused data created more than a specified amount of time in the past:
+
+<blockquote>docker system prune --filter="until=<i>hours</i>h<i>minutes</i>m"</blockquote>
+- Display real-time events from the Docker daemon:
+
+<blockquote>docker system events</blockquote>
+- Display real-time events from containers streamed as valid JSON Lines:
+
+<blockquote>docker system events --filter 'type=container' --format '<i>json .</i>'</blockquote>
+- Display system-wide information:
+
+<blockquote>docker system info</blockquote>

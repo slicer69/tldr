@@ -1,5 +1,5 @@
 <b>k6</b><br><br>
-<b>A modern load testing tool, using Go and JavaScript.</b><br><br><b>More information: <a href="https://k6.io">home page</a></b><br><br>
+<b>Open source load testing tool and SaaS for engineering teams.</b><br><br><b>More information: <a href="https://k6.io">home page</a></b><br><br>
 - Run load test locally:
 
 <blockquote>k6 run <i>script.js</i></blockquote>
@@ -12,6 +12,12 @@
 - Run load test locally using InfluxDB to store results:
 
 <blockquote>k6 run --out influxdb=<i>http://localhost:8086/k6db</i> <i>script.js</i></blockquote>
+- Run load test locally and discard response bodies (significantly faster):
+
+<blockquote>k6 run --discard-response-bodies <i>script.js</i></blockquote>
+- Run load test locally using the base javascript compatibility mode (significantly faster):
+
+<blockquote>k6 run --compatibility-mode=base <i>script.js</i></blockquote>
 - Login to cloud service using secret token:
 
 <blockquote>k6 login cloud --token <i>secret</i></blockquote>

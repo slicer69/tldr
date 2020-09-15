@@ -1,0 +1,26 @@
+<b>emulator</b><br><br>
+<b>Manager Android emulators from the command line.</b><br><br><b>More information: <a href="https://developer.android.com/studio/run/emulator-commandline">home page</a></b><br><br>
+- Display the help:
+
+<blockquote>emulator -help</blockquote>
+- Start an Android emulator device:
+
+<blockquote>emulator -avd <i>name</i></blockquote>
+- Display the webcams on your development computer that are available for emulation:
+
+<blockquote>emulator -avd <i>name</i> -webcam-list</blockquote>
+- Start an emulator overriding the facing back camera setting (use `-camera-front` for front camera):
+
+<blockquote>emulator -avd <i>name</i> -camera-back <i>none|emulated|webcamN</i></blockquote>
+- Start an emulator, with a maximun network speed:
+
+<blockquote>emulator -avd <i>name</i> -netspeed <i>gsm|hscsd|gprs|edge|hsdpa|lte|evdo|full</i></blockquote>
+- Start an emulator with network latency:
+
+<blockquote>emulator -avd <i>name</i> -netdelay <i>gsm|hscsd|gprs|edge|hsdpa|lte|evdo|none</i></blockquote>
+- Start an emulator, making all TCP connections through a specified HTTP/HTTPS proxy (port number is required):
+
+<blockquote>emulator -avd <i>name</i> -http-proxy <i>http://example.com:80</i></blockquote>
+- Start an emulator with a given SD card partition image file:
+
+<blockquote>emulator -avd <i>name</i> -sdcard <i>path/to/sdcard.img</i></blockquote>

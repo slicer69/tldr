@@ -1,0 +1,23 @@
+<b>cargo clippy</b><br><br>
+<b>A collection of lints to catch common mistakes and improve your Rust code.</b><br><br><b>More information: <a href="https://github.com/rust-lang/rust-clippy">home page</a></b><br><br>
+- Run checks over the code in the current directory:
+
+<blockquote>cargo clippy</blockquote>
+- Require that `Cargo.lock` is up to date:
+
+<blockquote>cargo clippy --locked</blockquote>
+- Run checks on all packages in the workspace:
+
+<blockquote>cargo clippy --workspace</blockquote>
+- Run checks for a package:
+
+<blockquote>cargo clippy --package <i>package</i></blockquote>
+- Treat warnings as errors:
+
+<blockquote>RUSTFLAGS="-Dwarnings" cargo clippy -- -D warnings</blockquote>
+- Run checks and ignore warnings:
+
+<blockquote>cargo clippy -- -A warnings</blockquote>
+- Apply Clippy suggestion automatically (experimental and only supported on the nightly channel):
+
+<blockquote>cargo clippy --fix -Z unstable-options</blockquote>

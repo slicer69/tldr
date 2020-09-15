@@ -1,0 +1,17 @@
+<b>git send-email</b><br><br>
+<b>Send a collection of patches as emails.</b><br><br><b>Patches can be specified as files, directions, or a revision list.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-send-email">home page</a></b><br><br>
+- Send the last commit in the current branch:
+
+<blockquote>git send-email -1</blockquote>
+- Send a given commit:
+
+<blockquote>git send-email -1 <i>commit</i></blockquote>
+- Send multiple (e.g. 10) commits in the current branch:
+
+<blockquote>git send-email <i>-10</i></blockquote>
+- Send an introductory email message for the patch series:
+
+<blockquote>git send-email -<i>number of commits</i> --compose</blockquote>
+- Review and edit the email message for each patch you're about to send:
+
+<blockquote>git send-email -<i>number of commits</i> --annotate</blockquote>
