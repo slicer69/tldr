@@ -6,6 +6,9 @@
 - Execute a .jar program:
 
 <blockquote>java -jar <i>filename.jar</i></blockquote>
+- Execute a .jar program with debug waiting to connect on port 5005:
+
+<blockquote>java -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:5005 -jar <i>filename.jar</i></blockquote>
 - Display JDK, JRE and HotSpot versions:
 
 <blockquote>java -version</blockquote>

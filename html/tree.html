@@ -1,26 +1,26 @@
 <b>tree</b><br><br>
-<b>Show the contents of the current directory as a tree.</b><br><br>
+<b>Show the contents of the current directory as a tree.</b><br><br><b>More information: <a href="http://mama.indstate.edu/users/ice/tree/">home page</a></b><br><br>
 - Print files and directories up to 'num' levels of depth (where 1 means the current directory):
 
 <blockquote>tree -L <i>num</i></blockquote>
 - Print directories only:
 
 <blockquote>tree -d</blockquote>
-- Print hidden files too:
+- Print hidden files too with colorization on:
 
-<blockquote>tree -a</blockquote>
+<blockquote>tree -a -C</blockquote>
 - Print the tree without indentation lines, showing the full path instead (use `-N` to not escape whitespace and special characters):
 
 <blockquote>tree -i -f</blockquote>
-- Print the size of each node next to it, in human-readable format:
+- Print the size of each file and the cumulative size of each directory, in human-readable format:
 
-<blockquote>tree -s -h</blockquote>
-- Filter the tree using a wildcard (glob) pattern:
+<blockquote>tree -s -h --du</blockquote>
+- Print files within the tree hierarchy, using a wildcard (glob) pattern, and pruning out directories that don't contain matching files:
 
-<blockquote>tree -P <i>*.txt</i></blockquote>
-- Ignore entries that match a wildcard (glob) pattern:
+<blockquote>tree -P '<i>*.txt</i>' --prune</blockquote>
+- Print directories within the tree hierarchy, using the wildcard (glob) pattern, and pruning out directories that aren't ancestors of the wanted one:
 
-<blockquote>tree -I <i>*.txt</i></blockquote>
+<blockquote>tree -P <i>directory_name</i> --matchdirs --prune</blockquote>
 - Print the tree ignoring the given directories:
 
 <blockquote>tree -I '<i>directory_name1|directory_name2</i>'</blockquote>
