@@ -3,12 +3,18 @@
 - Check the Git version:
 
 <blockquote>git --version</blockquote>
-- Call general help:
+- Show general help:
 
 <blockquote>git --help</blockquote>
-- Call help on a command:
+- Show help on a Git subcommand (like `commit`, `log`, etc.):
 
-<blockquote>git help <i>command</i></blockquote>
-- Execute Git command:
+<blockquote>git help <i>subcommand</i></blockquote>
+- Execute a Git subcommand:
 
-<blockquote>git <i>command</i></blockquote>
+<blockquote>git <i>subcommand</i></blockquote>
+- Execute a Git subcommand on a custom repository root path:
+
+<blockquote>git -C <i>path/to/repo</i> <i>subcommand</i></blockquote>
+- Execute a Git subcommand with a given configuration set:
+
+<blockquote>git -c '<i>config.key</i>=<i>value</i>' <i>subcommand</i></blockquote>

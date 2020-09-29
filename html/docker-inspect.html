@@ -1,0 +1,23 @@
+<b>docker inspect</b><br><br>
+<b>Return low-level information on Docker objects.</b><br><br><b>More information: <a href="https://docs.docker.com/engine/reference/commandline/inspect/">home page</a></b><br><br>
+- Show help:
+
+<blockquote>docker inspect</blockquote>
+- Display information about a container, image, or volume using a name or ID:
+
+<blockquote>docker inspect <i>container|image|ID</i></blockquote>
+- Display a container's IP address:
+
+<blockquote>docker inspect --format='<i>range .NetworkSettings.Networks</i><i">home page</a>IPAddress</i><i>end</i>' <i>container</i></blockquote>
+- Display the path to the container's log file:
+
+<blockquote>docker inspect --format='<i">home page</a>LogPath</i>' <i>container</i></blockquote>
+- Display the image name of the container:
+
+<blockquote>docker inspect --format='<i">home page</a>Config.Image</i>' <i>container</i></blockquote>
+- Display the configuration information as JSON:
+
+<blockquote>docker inspect --format='<i>json .Config</i>' <i>container</i></blockquote>
+- Display all port bindings:
+
+<blockquote>docker inspect --format='<i>range $p, $conf := .NetworkSettings.Ports</i> <i>$p</i> -> <i>(index $conf 0).HostPort</i> <i>end</i>' <i>container</i></blockquote>

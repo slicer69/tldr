@@ -1,0 +1,11 @@
+<b>pdfseparate</b><br><br>
+<b>Portable Document Format (PDF) file page extractor.</b><br><br><b>More information: <a href="https://manpages.debian.org/unstable/poppler-utils/pdfseparate.1.en.html">home page</a></b><br><br>
+- Extract pages from PDF file and make a separate PDF file for each page:
+
+<blockquote>pdfseparate <i>path/to/source_filename.pdf</i> <i>path/to/destination_filename-%d.pdf</i></blockquote>
+- Specify the first/start page for extraction:
+
+<blockquote>pdfseparate -f <i>3</i> <i>path/to/source_filename.pdf</i> <i>path/to/destination_filename-%d.pdf</i></blockquote>
+- Specify the last page for extraction:
+
+<blockquote>pdfseparate -l <i>10</i> <i>path/to/source_filename.pdf</i> <i>path/to/destination_filename-%d.pdf</i></blockquote>

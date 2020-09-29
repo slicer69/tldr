@@ -1,0 +1,26 @@
+<b>cargo rustc</b><br><br>
+<b>Compile a Rust package, and pass extra options to the compiler.</b><br><br><b>More information: <a href="https://doc.rust-lang.org/cargo/commands/cargo-rustc.html">home page</a></b><br><br>
+- Build the package or packages defined by the `Cargo.toml` manifest file in the current working directory:
+
+<blockquote>cargo rustc</blockquote>
+- Build artifacts in release mode, with optimizations:
+
+<blockquote>cargo rustc --release</blockquote>
+- Compile with architecture-specific optimizations for the current CPU:
+
+<blockquote>cargo rustc --release -- -C target-cpu=native</blockquote>
+- Compile with speed optimization:
+
+<blockquote>cargo rustc -- -C opt-level <i>1|2|3</i></blockquote>
+- Compile with [s]ize optimization (`z` also turns off loop vectorization):
+
+<blockquote>cargo rustc -- -C opt-level <i>s|z</i></blockquote>
+- Check if your package uses unsafe code:
+
+<blockquote>cargo rustc --lib -- -D unsafe-code</blockquote>
+- Build a specific package:
+
+<blockquote>cargo rustc --package <i>package</i></blockquote>
+- Build only the specified binary:
+
+<blockquote>cargo --bin <i>name</i></blockquote>
