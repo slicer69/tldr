@@ -1,0 +1,11 @@
+<b>ocamlfind</b><br><br>
+<b>The findlib package manager for OCaml.</b><br><br><b>Simplifies linking executables with external libraries.</b><br><br><b>More information: <a href="http://projects.camlcity.org/projects/findlib.html">home page</a></b><br><br>
+- Compile a source file to a native binary and link with packages:
+
+<blockquote>ocamlfind ocamlopt -package <i>package1</i>,<i>package2</i> -linkpkg -o <i>executable</i> <i>source_file.ml</i></blockquote>
+- Compile a source file to a bytecode binary and link with packages:
+
+<blockquote>ocamlfind ocamlc -package <i>package1</i>,<i>package2</i> -linkpkg -o <i>executable</i> <i>source_file.ml</i></blockquote>
+- Cross-compile for a different platform:
+
+<blockquote>ocamlfind -toolchain <i>cross-toolchain</i> ocamlopt -o <i>executable</i> <i>source_file.ml</i></blockquote>

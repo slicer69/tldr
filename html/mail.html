@@ -2,10 +2,10 @@
 <b>The command operates on the user's mailbox if no argument is given.</b><br><br><b>To send an email the message body is built from standard input.</b><br><br>
 - Send a typed email message. The commandline below continues after pressing Enter key. Input CC email-id (optional) press Enter key. Input message text (can be multi-line). Press "Ctrl-D" key to complete the message text:
 
-<blockquote>mail --subject=<i>"subject line"</i> <i>to_user@example.com</i></blockquote>
+<blockquote>mail --subject="<i>subject line</i>" <i>to_user@example.com</i></blockquote>
 - Send an email that contains file content:
 
-<blockquote>mail --subject=<i>"$HOSTNAME filename.txt"</i> <i>to_user@example.com</i> < <i>path/to/filename.txt</i></blockquote>
+<blockquote>mail --subject="<i>$HOSTNAME filename.txt</i>" <i>to_user@example.com</i> < <i>path/to/filename.txt</i></blockquote>
 - Send a tar.gz file as an attachment:
 
-<blockquote>tar cvzf - <i>path/to/directory1 path/to/directory2</i> | uuencode <i>data.tar.gz</i> | mail --subject=<i>"subject line"</i> <i>to_user@example.com</i></blockquote>
+<blockquote>tar cvzf - <i>path/to/directory1 path/to/directory2</i> | uuencode <i>data.tar.gz</i> | mail --subject="<i>subject line</i>" <i>to_user@example.com</i></blockquote>

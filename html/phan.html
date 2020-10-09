@@ -1,0 +1,23 @@
+<b>phan</b><br><br>
+<b>A static analysis tool for PHP.</b><br><br><b>More information: <a href="https://github.com/phan/phan">home page</a></b><br><br>
+- Generate a `.phan/config.php` in the current directory:
+
+<blockquote>phan --init</blockquote>
+- Generate a Phan configuration file using a specific level (1 being strictest to 5 being the least strict):
+
+<blockquote>phan --init --init-level <i>level</i></blockquote>
+- Analyse the current directory:
+
+<blockquote>phan</blockquote>
+- Analyse one or more directories:
+
+<blockquote>phan --directory <i>path/to/directory</i> --directory <i>path/to/another_directory</i></blockquote>
+- Specify a config file (defaults to `.phan/config.php`):
+
+<blockquote>phan --config-file <i>path/to/config.php</i></blockquote>
+- Specify the output mode:
+
+<blockquote>phan --output-mode <i>text|verbose|json|csv|codeclimate|checkstyle|pylint|html</i></blockquote>
+- Specify the number of parallel processes:
+
+<blockquote>phan --processes <i>number_of_processes</i></blockquote>

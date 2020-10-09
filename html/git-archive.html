@@ -1,0 +1,20 @@
+<b>git archive</b><br><br>
+<b>Create an archive of files from a named tree.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-archive">home page</a></b><br><br>
+- Create a tar archive from the contents of the current HEAD and print it to standard output:
+
+<blockquote>git archive --verbose HEAD</blockquote>
+- Create a zip archive from the current HEAD and print it to standard output:
+
+<blockquote>git archive --verbose --format=zip HEAD</blockquote>
+- Same as above, but write the zip archive to file:
+
+<blockquote>git archive --verbose --output=<i>path/to/file.zip</i> HEAD</blockquote>
+- Create a tar archive from the contents of the latest commit on a specific branch:
+
+<blockquote>git archive --output=<i>path/to/file.tar</i> <i>branch_name</i></blockquote>
+- Create a tar archive from the contents of a specific directory:
+
+<blockquote>git archive --output=<i>path/to/file.tar</i> HEAD:<i>path/to/directory</i></blockquote>
+- Prepend a path to each file to archive it inside a specific directory:
+
+<blockquote>git archive --output=<i>path/to/file.tar</i> --prefix=<i>path/to/prepend</i>/ HEAD</blockquote>

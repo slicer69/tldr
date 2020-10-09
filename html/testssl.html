@@ -1,0 +1,17 @@
+<b>testssl</b><br><br>
+<b>Check SSL/TLS protocols and ciphers supported by a server.</b><br><br><b>More information: <a href="https://testssl.sh/">home page</a></b><br><br>
+- Test a server (run every check) on port 443:
+
+<blockquote>testssl <i>example.com</i></blockquote>
+- Test a different port:
+
+<blockquote>testssl <i>example.com:465</i></blockquote>
+- Only check available protocols:
+
+<blockquote>testssl --protocols <i>example.com</i></blockquote>
+- Only check vulnerabilities:
+
+<blockquote>testssl --vulnerable <i>example.com</i></blockquote>
+- Only check HTTP security headers:
+
+<blockquote>testssl --headers <i>example.com</i></blockquote>

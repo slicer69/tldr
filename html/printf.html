@@ -2,16 +2,16 @@
 <b>Format and print text.</b><br><br>
 - Print a text message:
 
-<blockquote>printf <i>"%s\n"</i> <i>"Hello world"</i></blockquote>
+<blockquote>printf "<i>%s\n</i>" "<i>Hello world</i>"</blockquote>
 - Print an integer in bold blue:
 
-<blockquote>printf <i>"\e[1;34m%.3d\e[0m\n"</i> <i>42</i></blockquote>
+<blockquote>printf "<i>\e[1;34m%.3d\e[0m\n</i>" <i>42</i></blockquote>
 - Print a float number with the unicode Euro sign:
 
-<blockquote>printf <i>"\u20AC %.2f\n"</i> <i>123.4</i></blockquote>
+<blockquote>printf "<i>\u20AC %.2f\n</i>" <i>123.4</i></blockquote>
 - Print a text message composed with environment variables:
 
-<blockquote>printf <i>"var1: %s\tvar2: %s\n"</i> <i>"$VAR1"</i> <i>"$VAR2"</i></blockquote>
+<blockquote>printf "<i>var1: %s\tvar2: %s\n</i>" "<i>$VAR1</i>" "<i>$VAR2</i>"</blockquote>
 - Store a formatted message in a variable (does not work on zsh):
 
 <blockquote>printf -v <i>myvar</i> <i>"This is %s = %d\n" "a year" 2016</i></blockquote>

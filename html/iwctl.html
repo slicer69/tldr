@@ -1,0 +1,20 @@
+<b>iwctl</b><br><br>
+<b>A command line tool for controlling the iwd network supplicant.</b><br><br><b>More information: <a href="https://iwd.wiki.kernel.org/gettingstarted">home page</a></b><br><br>
+- Start the interactive mode, in this mode you can enter the commands directly, with autocompletion:
+
+<blockquote>iwctl</blockquote>
+- Call general help:
+
+<blockquote>iwctl --help</blockquote>
+- Display your wifi stations:
+
+<blockquote>iwctl station list</blockquote>
+- Start looking for networks with a station:
+
+<blockquote>iwctl station <i>station</i> scan</blockquote>
+- Display the networks found by a station:
+
+<blockquote>iwctl station <i>station</i> get-networks</blockquote>
+- Connect to a network with a station, if credentials are needed they will be asked:
+
+<blockquote>iwctl station <i>station</i> connect <i>network_name</i></blockquote>

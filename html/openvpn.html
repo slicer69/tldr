@@ -1,0 +1,20 @@
+<b>openvpn</b><br><br>
+<b>OpenVPN client and daemon binary.</b><br><br><b>More information: <a href="https://openvpn.net/">home page</a></b><br><br>
+- Connect to server using a config file:
+
+<blockquote>sudo openvpn <i>path/to/client.conf</i></blockquote>
+- Try to set up an insecure peer-to-peer tunnel on bob.example.com host:
+
+<blockquote>sudo openvpn --remote <i>alice.example.com</i> --dev <i>tun1</i> --ifconfig <i>10.4.0.1</i> <i>10.4.0.2</i></blockquote>
+- Connect to the awaiting bob.example.com host without encryption:
+
+<blockquote>sudo openvpn --remote <i>bob.example.com</i> --dev <i>tun1</i> --ifconfig <i>10.4.0.2</i> <i>10.4.0.1</i></blockquote>
+- Create a cryptographic key and save it to file:
+
+<blockquote>openvpn --genkey --secret <i>path/to/key</i></blockquote>
+- Try to set up a peer-to-peer tunnel on bob.example.com host with a static key:
+
+<blockquote>sudo openvpn --remote <i>alice.example.com</i> --dev <i>tun1</i> --ifconfig <i>10.4.0.1</i> <i>10.4.0.2</i> --secret <i>path/to/key</i></blockquote>
+- Connect to the awaiting bob.example.com host with the same static key as on bob.example.com:
+
+<blockquote>sudo openvpn --remote <i>bob.example.com</i> --dev <i>tun1</i> --ifconfig <i>10.4.0.2</i> <i>10.4.0.1</i> --secret <i>path/to/key</i></blockquote>

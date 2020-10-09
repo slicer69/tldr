@@ -1,0 +1,11 @@
+<b>indent</b><br><br>
+<b>Change the appearance of a C/C++ program by inserting or deleting whitespace.</b><br><br><b>More information: <a href="https://www.gnu.org/software/indent/">home page</a></b><br><br>
+- Format C/C++ source according to the Linux style guide, automatically back up the original files, and replace with the indented versions:
+
+<blockquote>indent --linux-style <i>path/to/source.c</i> <i>path/to/another_source.c</i></blockquote>
+- Format C/C++ source according to the GNU style, saving the indented version to a different file:
+
+<blockquote>indent --gnu-style <i>path/to/source.c</i> -o <i>path/to/indented_source.c</i></blockquote>
+- Format C/C++ source according to the style of Kernigan & Ritchie (K&R), no tabs, 3 spaces per indent, and wrap lines at 120 characters:
+
+<blockquote>indent --k-and-r-style --indent-level3 --no-tabs --line-length120  <i>path/to/source.c</i> -o <i>path/to/indented_source.c</i></blockquote>

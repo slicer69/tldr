@@ -5,10 +5,10 @@
 <blockquote>mmv "*<i">home page</a>old_extension</i>" "#1<i">home page</a>new_extension</i>"</blockquote>
 - Copy report6part4.txt to ./french/rapport6partie4.txt along with all similarly named files:
 
-<blockquote>mmv -c <i>"report*part*.txt"</i> <i>"./french/rapport#1partie#2.txt"</i></blockquote>
+<blockquote>mmv -c "<i>report*part*.txt</i>" "<i">home page</a>/french/rapport#1partie#2.txt</i>"</blockquote>
 - Append all .txt files into one file:
 
-<blockquote>mmv -a <i>"*.txt"</i> <i>"all.txt"</i></blockquote>
+<blockquote>mmv -a "<i>*.txt</i>" "<i>all.txt</i>"</blockquote>
 - Convert dates in filenames from "M-D-Y" format to "D-M-Y" format:
 
-<blockquote>mmv <i>"[0-1][0-9]-[0-3][0-9]-[0-9][0-9][0-9][0-9].txt"</i> <i>"#3#4-#1#2-#5#6#7#8.txt"</i></blockquote>
+<blockquote>mmv "<i>[0-1][0-9]-[0-3][0-9]-[0-9][0-9][0-9][0-9].txt</i>" "<i>#3#4-#1#2-#5#6#7#8.txt</i>"</blockquote>

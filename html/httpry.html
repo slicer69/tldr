@@ -1,0 +1,17 @@
+<b>httpry</b><br><br>
+<b>A lightweight packet sniffer for displaying and logging HTTP traffic.</b><br><br><b>It can be run in real-time displaying the traffic as it is parsed, or as a daemon process that logs to an output file.</b><br><br><b>More information: <a href="http://dumpsterventures.com/jason/httpry/">home page</a></b><br><br>
+- Save output to a file:
+
+<blockquote>httpry -o <i>path/to/file.log</i></blockquote>
+- Listen on a specific interface and save output to a binary pcap format file:
+
+<blockquote>httpry <i>eth0</i> -b <i>path/to/file.pcap</i></blockquote>
+- Filter output by a comma-separated list of HTTP verbs:
+
+<blockquote>httpry -m <i>get|post|put|head|options|delete|trace|connect|patch</i></blockquote>
+- Read from an input capture file and filter by IP:
+
+<blockquote>httpry -r <i>path/to/file.log</i> '<i>host 192.168.5.25</i>'</blockquote>
+- Run as daemon process:
+
+<blockquote>httpry -d -o <i>path/to/file.log</i></blockquote>

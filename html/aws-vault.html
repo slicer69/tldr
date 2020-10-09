@@ -1,0 +1,20 @@
+<b>aws-vault</b><br><br>
+<b>A vault for securely storing and accessing AWS credentials in development environments.</b><br><br><b>More information: <a href="https://github.com/99designs/aws-vault">home page</a></b><br><br>
+- Add credentials to the secure keystore:
+
+<blockquote>aws-vault add <i>profile</i></blockquote>
+- Execute a command with AWS credentials in the environment:
+
+<blockquote>aws-vault exec <i>profile</i> -- <i>aws s3 ls</i></blockquote>
+- Open a browser window and login to the AWS Console:
+
+<blockquote>aws-vault login <i>profile</i></blockquote>
+- List profiles, along with their credentials and sessions:
+
+<blockquote>aws-vault list</blockquote>
+- Rotate AWS credentials:
+
+<blockquote>aws-vault rotate <i>profile</i></blockquote>
+- Remove credentials from the secure keystore:
+
+<blockquote>aws-vault remove <i>profile</i></blockquote>

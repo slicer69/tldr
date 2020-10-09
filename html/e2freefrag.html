@@ -1,0 +1,8 @@
+<b>e2freefrag</b><br><br>
+<b>Print the free space fragmentation information for ext2/ext3/ext4 filesystems.</b><br><br><b>More information: <a href="https://linux.die.net/man/8/e2freefrag">home page</a></b><br><br>
+- Check how many free blocks are present as contiguous and aligned free space:
+
+<blockquote>e2freefrag <i>/dev/sdXN</i></blockquote>
+- Specify chunk size in kilobytes to print how many free chunks are available:
+
+<blockquote>e2freefrag -c <i>chunk_size_in_kb</i> <i>/dev/sdXN</i></blockquote>

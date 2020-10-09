@@ -1,0 +1,20 @@
+<b>dotnet restore</b><br><br>
+<b>Restores the dependencies and tools of a .NET project.</b><br><br><b>More information: <a href="https://docs.microsoft.com/dotnet/core/tools/dotnet-restore">home page</a></b><br><br>
+- Restore dependencies for a .NET project or solution in the current directory:
+
+<blockquote>dotnet restore</blockquote>
+- Restore dependencies for a .NET project or solution in a specific location:
+
+<blockquote>dotnet restore <i>path/to/project_or_solution</i></blockquote>
+- Restore dependencies without caching the HTTP requests:
+
+<blockquote>dotnet restore --no-cache</blockquote>
+- Force all dependencies to be resolved even if the last restore was successful:
+
+<blockquote>dotnet restore --force</blockquote>
+- Restore dependencies using package source failures as warnings:
+
+<blockquote>dotnet restore --ignore-failed-sources</blockquote>
+- Restore dependencies with a specific verbosity level:
+
+<blockquote>dotnet restore --verbosity <i>quiet|minimal|normal|detailed|diagnostic</i></blockquote>

@@ -1,0 +1,14 @@
+<b>kind</b><br><br>
+<b>Tool for running local Kubernetes clusters using Docker container "nodes".</b><br><br><b>Designed for testing Kubernetes itself, but may be used for local development or continuous integration.</b><br><br><b>More information: <a href="https://github.com/kubernetes-sigs/kind">home page</a></b><br><br>
+- Create a local Kubernetes cluster:
+
+<blockquote>kind create cluster --name <i>cluster-name</i></blockquote>
+- Delete one or more clusters:
+
+<blockquote>kind delete clusters <i>cluster-name</i></blockquote>
+- Get details about clusters, nodes, or the kubeconfig:
+
+<blockquote>kind get <i>clusters|nodes|kubeconfig</i></blockquote>
+- Export the kubeconfig or the logs:
+
+<blockquote>kind export <i>kubeconfig|logs</i></blockquote>

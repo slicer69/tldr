@@ -1,0 +1,14 @@
+<b>logsave</b><br><br>
+<b>Save the output of a command in a logfile.</b><br><br><b>More information: <a href="https://linux.die.net/man/8/logsave">home page</a></b><br><br>
+- Execute command with specified argument(s) and save its output to log file:
+
+<blockquote>logsave <i>path/to/logfile</i> <i>command</i></blockquote>
+- Take input from standard input and save it in a log file:
+
+<blockquote>logsave <i>logfile</i> -</blockquote>
+- Append the output to a log file, instead of replacing its current contents:
+
+<blockquote>logsave -a <i>logfile</i> <i>command</i></blockquote>
+- Show verbose output:
+
+<blockquote>logsave -v <i>logfile</i> <i>command</i></blockquote>

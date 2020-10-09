@@ -1,0 +1,8 @@
+<b>Xephyr</b><br><br>
+<b>A nested X server that runs as an X application.</b><br><br>
+- Create a black window with display ID ":2":
+
+<blockquote>Xephyr -br -ac -noreset -screen <i>800x600</i> <i>:2</i></blockquote>
+- Start an X application on the new screen:
+
+<blockquote>DISPLAY=:2 <i>command_name</i></blockquote>

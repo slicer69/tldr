@@ -2,10 +2,10 @@
 <b>An SMTP client.</b><br><br><b>It reads text from standard input and sends it to an SMTP server.</b><br><br><b>More information: <a href="https://marlam.de/msmtp">home page</a></b><br><br>
 - Send an email using the default account configured in `~/.msmtprc`:
 
-<blockquote>echo <i>"Hello world"</i> | msmtp <i>to@example.org</i></blockquote>
+<blockquote>echo "<i>Hello world</i>" | msmtp <i>to@example.org</i></blockquote>
 - Send an email using a specific account configured in `~/.msmtprc`:
 
-<blockquote>echo <i>"Hello world"</i> | msmtp --account=<i>account_name</i> <i>to@example.org</i></blockquote>
+<blockquote>echo "<i>Hello world</i>" | msmtp --account=<i>account_name</i> <i>to@example.org</i></blockquote>
 - Send an email without a configured account. The password should be specified in the `~/.msmtprc` file:
 
-<blockquote>echo <i>"Hello world"</i> | msmtp --host=<i>localhost</i> --port=<i>999</i> --from=<i>from@example.org</i> <i>to@example.org</i></blockquote>
+<blockquote>echo "<i>Hello world</i>" | msmtp --host=<i>localhost</i> --port=<i>999</i> --from=<i>from@example.org</i> <i>to@example.org</i></blockquote>

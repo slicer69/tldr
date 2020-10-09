@@ -1,0 +1,11 @@
+<b>e2fsck</b><br><br>
+<b>Check a Linux ext2/ext3/ext4 filesystem. The filesystem should be unmounted at the time the command is run.</b><br><br>
+- Check filesystem, reporting any damaged blocks:
+
+<blockquote>e2fsck <i>/dev/sdXN</i></blockquote>
+- Check filesystem and automatically repair any damaged blocks:
+
+<blockquote>e2fsck -p <i>/dev/sdXN</i></blockquote>
+- Check filesystem in read only mode:
+
+<blockquote>e2fsck -c <i>/dev/sdXN</i></blockquote>

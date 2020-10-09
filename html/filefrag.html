@@ -1,0 +1,20 @@
+<b>filefrag</b><br><br>
+<b>Report how badly fragmented a particular file might be.</b><br><br><b>More information: <a href="https://linux.die.net/man/8/filefrag">home page</a></b><br><br>
+- Display a report for a specific file:
+
+<blockquote>filefrag <i>path/to/file</i></blockquote>
+- Display a report for space-separated list of files:
+
+<blockquote>filefrag <i>path/to/file1</i> <i>path/to/file2</i></blockquote>
+- Display a report using a 1024 byte blocksize:
+
+<blockquote>filefrag -b <i>path/to/file</i></blockquote>
+- Sync the file before requesting the mapping:
+
+<blockquote>filefrag -s <i>path/to/files</i></blockquote>
+- Display mapping of extended attributes:
+
+<blockquote>filefrag -x <i>path/to/files</i></blockquote>
+- Display a report with verbose information:
+
+<blockquote>filefrag -v <i>path/to/files</i></blockquote>

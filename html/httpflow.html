@@ -1,0 +1,17 @@
+<b>httpflow</b><br><br>
+<b>A command line utility to capture and dump HTTP streams.</b><br><br><b>More information: <a href="https://github.com/six-ddc/httpflow">home page</a></b><br><br>
+- Capture traffic on all interfaces:
+
+<blockquote>httpflow -i <i>any</i></blockquote>
+- Use a bpf-style capture to filter the results:
+
+<blockquote>httpflow <i>host httpbin.org or host baidu.com</i></blockquote>
+- Use a regexp to filter requests by urls:
+
+<blockquote>httpflow -u '<i>regex</i>'</blockquote>
+- Read packets from pcap format binary file:
+
+<blockquote>httpflow -r <i>out.cap</i></blockquote>
+- Write the output to a directory:
+
+<blockquote>httpflow -w <i>path/to/directory</i></blockquote>

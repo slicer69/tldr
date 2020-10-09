@@ -3,6 +3,9 @@
 - Run a speed test:
 
 <blockquote>speedtest-cli</blockquote>
+- Run without performing download tests:
+
+<blockquote>speedtest-cli --no-download</blockquote>
 - Run a speed test and generate a shareable result picture:
 
 <blockquote>speedtest-cli --share</blockquote>
@@ -12,3 +15,9 @@
 - Run a speed test to the given speedtest.net server id:
 
 <blockquote>speedtest-cli --server <i>server_id</i></blockquote>
+- Display results in CSV format, suppressing the progress information:
+
+<blockquote>speedtest-cli --csv --csv-delimiter <i>delimiter_char</i></blockquote>
+- Display results in JSON format, suppressing the progress information:
+
+<blockquote>speedtest-cli --json</blockquote>
