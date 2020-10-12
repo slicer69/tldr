@@ -1,0 +1,11 @@
+<b>aplay</b><br><br>
+<b>Command-line sound player for ALSA soundcard driver.</b><br><br><b>More information: <a href="https://linux.die.net/man/1/aplay">home page</a></b><br><br>
+- Play a specific file (sampling rate, bit depth, etc. will be automatically determined for the file format):
+
+<blockquote>aplay <i>path/to/file</i></blockquote>
+- Play the first 10 seconds of a specific file at 2500Hz:
+
+<blockquote>aplay --duration=<i>10</i> --rate=<i>2500</i> <i>path/to/file</i></blockquote>
+- Play the raw file as a 22050Hz, mono, 8-bit, Mu-Law `.au` file:
+
+<blockquote>aplay --channels=<i>1</i> --file-type <i>raw</i> --rate=<i>22050</i> --format=<i>mu_law</i> <i>path/to/file</i></blockquote>

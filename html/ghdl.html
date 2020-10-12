@@ -1,0 +1,20 @@
+<b>ghdl</b><br><br>
+<b>Open-source simulator for the VHDL language.</b><br><br><b>More information: <a href="http://ghdl.free.fr">home page</a></b><br><br>
+- Analyze a VHDL source file and produce an object file:
+
+<blockquote>ghdl -a <i>filename.vhdl</i></blockquote>
+- Elaborate a design (where `<i>design</i>` is the name of a configuration unit, entity unit or architecture unit):
+
+<blockquote>ghdl -e <i>design</i></blockquote>
+- Run an elaborated design:
+
+<blockquote>ghdl -r <i>design</i></blockquote>
+- Run an elaborated design and dump output to a waveform file:
+
+<blockquote>ghdl -r <i>design</i> --wave=<i>output.ghw</i></blockquote>
+- Check the syntax of a VHDL source file:
+
+<blockquote>ghdl -s <i>filename.vhdl</i></blockquote>
+- Display the help page:
+
+<blockquote>ghdl --help</blockquote>

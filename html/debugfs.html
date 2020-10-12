@@ -1,0 +1,20 @@
+<b>debugfs</b><br><br>
+<b>An interactive ext2/ext3/ext4 filesystem debugger.</b><br><br>
+- Open the filesystem in read only mode:
+
+<blockquote>debugfs <i>/dev/sdXN</i></blockquote>
+- Open the filesystem in read write mode:
+
+<blockquote>debugfs -w <i>/dev/sdXN</i></blockquote>
+- Read commands from a specified file, execute them and then exit:
+
+<blockquote>debugfs -f <i>path/to/cmd_file</i> <i>/dev/sdXN</i></blockquote>
+- View the filesystem stats in debugfs console:
+
+<blockquote>stats</blockquote>
+- Close the filesystem:
+
+<blockquote>close -a</blockquote>
+- List all available commands:
+
+<blockquote>lr</blockquote>

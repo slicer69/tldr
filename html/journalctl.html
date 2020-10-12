@@ -6,6 +6,9 @@
 - Show all messages from last boot:
 
 <blockquote>journalctl -b -1</blockquote>
+- Show all messages with priority level 3 (errors) from this boot:
+
+<blockquote>journalctl -b --priority=<i>3</i></blockquote>
 - Follow new messages (like `tail -f` for traditional syslog):
 
 <blockquote>journalctl -f</blockquote>

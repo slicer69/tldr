@@ -6,9 +6,9 @@
 - Search for an exact string:
 
 <blockquote>grep -F <i>exact_string</i> <i>path/to/file</i></blockquote>
-- Search for a pattern recursively in the current directory, ignoring non-text files:
+- Search for a pattern [R]ecursively in the current directory, showing matching line [n]umbers, [I]gnoring non-text files:
 
-<blockquote>grep -RI <i>search_pattern</i> .</blockquote>
+<blockquote>grep -RIn <i>search_pattern</i> .</blockquote>
 - Use extended regular expressions (supporting `?`, `+`, `{}`, `()` and `|`), in case-insensitive mode:
 
 <blockquote>grep -Ei <i>search_pattern</i> <i>path/to/file</i></blockquote>
