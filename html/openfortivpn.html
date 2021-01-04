@@ -1,0 +1,14 @@
+<b>openfortivpn</b><br><br>
+<b>A VPN client, for Fortinet's proprietary PPP+SSL VPN solution.</b><br><br><b>More information: <a href="https://github.com/adrienverge/openfortivpn">home page</a></b><br><br>
+- Connect to a VPN with a username and password:
+
+<blockquote>openfortivpn --username=<i>username</i> --password=<i>password</i></blockquote>
+- Connect to a VPN using a specific configuration file (defaults to `/etc/openfortivpn/config`):
+
+<blockquote>sudo openfortivpn --config=<i>path/to/config</i></blockquote>
+- Connect to a VPN by specifying the host and port:
+
+<blockquote>openfortivpn <i>host</i>:<i>port</i></blockquote>
+- Trust a given gateway by passing in its certificate's sha256 sum:
+
+<blockquote>openfortivpn --trusted-cert=<i>sha256_sum</i></blockquote>

@@ -1,0 +1,14 @@
+<b>zmv</b><br><br>
+<b>Move or rename files matching a specified extended glob pattern.</b><br><br><b>See also `zcp` and `zln`.</b><br><br><b>More information: <a href="http://zsh.sourceforge.net/Doc/Release/User-Contributions.html">home page</a></b><br><br>
+- Move files using a regex-like pattern:
+
+<blockquote>zmv '<i>(*).log</i>' '<i>$1.txt</i>'</blockquote>
+- Preview the result of a move, without making any actual changes:
+
+<blockquote>zmv -n '<i>(*).log</i>' '<i>$1.txt</i>'</blockquote>
+- Interactively move files, with a prompt before every change:
+
+<blockquote>zmv -i '<i>(*).log</i>' '<i>$1.txt</i>'</blockquote>
+- Verbosely print each action as it's being executed:
+
+<blockquote>zmv -v '<i>(*).log</i>' '<i>$1.txt</i>'</blockquote>

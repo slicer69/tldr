@@ -1,0 +1,14 @@
+<b>openssl x509</b><br><br>
+<b>OpenSSL command to manage X.509 certificates.</b><br><br><b>More information: <a href="https://www.openssl.org/docs/manmaster/man1/openssl-x509.html">home page</a></b><br><br>
+- Display certificate information:
+
+<blockquote>openssl x509 -in <i>filename.crt</i> -noout -text</blockquote>
+- Display a certificate's expiration date:
+
+<blockquote>openssl x509 -enddate -noout -in <i>filename.pem</i></blockquote>
+- Convert a certificate between binary DER encoding and textual PEM encoding:
+
+<blockquote>openssl x509 -inform <i>der</i> -outform <i>pem</i> -in <i>original_certificate_file</i> -out <i>converted_certificate_file</i></blockquote>
+- Store a certificate's public key in a file:
+
+<blockquote>openssl x509 -in <i>certificate_file</i> -noout -pubkey -out <i>output_file</i></blockquote>

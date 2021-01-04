@@ -1,0 +1,17 @@
+<b>reflex</b><br><br>
+<b>Tool to watch a directory and rerun a command when certain files change.</b><br><br><b>More information: <a href="https://github.com/cespare/reflex">home page</a></b><br><br>
+- Rebuild with `make` if any file changes:
+
+<blockquote>reflex make</blockquote>
+- Compile and run Go application if any .go file changes:
+
+<blockquote>reflex --regex='<i>\.go$</i>' <i>go run .</i></blockquote>
+- Ignore a directory when watching for changes:
+
+<blockquote>reflex --inverse-regex='<i>^dir/</i>' <i>command</i></blockquote>
+- Run command when reflex starts and restarts on file changes:
+
+<blockquote>reflex --start-service=true <i>command</i></blockquote>
+- Substitute the filename that changed in:
+
+<blockquote>reflex -- echo {}</blockquote>

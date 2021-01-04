@@ -1,0 +1,14 @@
+<b>amass db</b><br><br>
+<b>Interact with an Amass database.</b><br><br><b>More information: <a href="https://github.com/OWASP/Amass/blob/master/doc/user_guide.md#the-db-subcommand">home page</a></b><br><br>
+- List all performed enumerations in the database:
+
+<blockquote>amass db -dir <i>path/to/database_directory</i> -list</blockquote>
+- Show results for a specified enumeration index and domain name:
+
+<blockquote>amass db -dir <i>path/to/database_directory</i> -d <i>domain_name</i> -enum <i>index_from_list</i> -show</blockquote>
+- List all found subdomains of a domain within an enumeration:
+
+<blockquote>amass db -dir <i>path/to/database_directory</i> -d <i>domain_name</i> -enum <i>index_from_list</i> -names</blockquote>
+- Show a summary of the found subdomains within an enumeration:
+
+<blockquote>amass db -dir <i>path/to/database_directory</i> -d <i>domain_name</i> -enum <i>index_from_list</i> -summary</blockquote>

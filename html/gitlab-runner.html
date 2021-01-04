@@ -1,0 +1,20 @@
+<b>gitlab-runner</b><br><br>
+<b>CLI tool for managing GitLab runners.</b><br><br><b>More information: <a href="https://docs.gitlab.com/runner/">home page</a></b><br><br>
+- Register a runner:
+
+<blockquote>sudo gitlab-runner register --url <i>https://gitlab.example.com</i> --registration-token <i>token</i> --name <i>name</i></blockquote>
+- Register a runner with a Docker executor:
+
+<blockquote>sudo gitlab-runner register --url <i>https://gitlab.example.com</i> --registration-token <i>token</i> --name <i>name</i> --executor <i>docker</i></blockquote>
+- Unregister a runner:
+
+<blockquote>sudo gitlab-runner unregister --name <i>name</i></blockquote>
+- Display the status of the runner service:
+
+<blockquote>sudo gitlab-runner status</blockquote>
+- Restart the runner service:
+
+<blockquote>sudo gitlab-runner restart</blockquote>
+- Check if the registered runners can connect to GitLab:
+
+<blockquote>sudo gitlab-runner verify</blockquote>

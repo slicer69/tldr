@@ -1,0 +1,11 @@
+<b>openssl genpkey</b><br><br>
+<b>OpenSSL command to generate asymmetric key pairs.</b><br><br><b>More information: <a href="https://www.openssl.org/docs/manmaster/man1/openssl-genpkey.html">home page</a></b><br><br>
+- Generate an RSA private key of 2048 bits, saving it to a specific file:
+
+<blockquote>openssl genpkey -algorithm rsa -pkeyopt rsa_keygen_bits:<i>2048</i> -out <i>filename.key</i></blockquote>
+- Generate an elliptic curve private key using the curve `prime256v1`, saving it to a specific file:
+
+<blockquote>openssl genpkey -algorithm EC -pkeyopt ec_paramgen_curve:<i>prime256v1</i> -out <i>filename.key</i></blockquote>
+- Generate an `ED25519` elliptic curve private key, saving it to a specific file:
+
+<blockquote>openssl genpkey -algorithm <i>ED25519</i> -out <i>filename.key</i></blockquote>

@@ -1,0 +1,20 @@
+<b>topydo</b><br><br>
+<b>A todo list application that uses the todo.txt format.</b><br><br><b>More information: <a href="https://github.com/topydo/topydo">home page</a></b><br><br>
+- Add a todo to a specific project with a given context:
+
+<blockquote>topydo add "<i>todo_message</i> +<i>project_name</i> @<i>context_name</i>"</blockquote>
+- Add a todo with a due date of tomorrow with a priority of `A`:
+
+<blockquote>topydo add "(A) <i>todo _message</i> due:<i>1d</i>"</blockquote>
+- Add a todo with a due date of friday:
+
+<blockquote>topydo add "<i>todo_message</i> due:<i>fri</i>"</blockquote>
+- Add a non-strict repeating todo (next due = now + rec):
+
+<blockquote>topydo add "water flowers due:<i>mon</i> rec:<i>1w</i>"</blockquote>
+- Add a strict repeating todo (next due = currentdue + rec):
+
+<blockquote>topydo add "<i>todo_message</i> due:<i>2020-01-01</i> rec:<i>+1m</i>"</blockquote>
+- Revert the last `topydo` command executed:
+
+<blockquote>topydo revert</blockquote>

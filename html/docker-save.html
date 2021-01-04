@@ -1,0 +1,14 @@
+<b>docker save</b><br><br>
+<b>Export one or more docker images to archive.</b><br><br><b>More information: <a href="https://docs.docker.com/engine/reference/commandline/save/">home page</a></b><br><br>
+- Save an image by redirecting `stdout` to a tar archive:
+
+<blockquote>docker save <i>image</i>:<i>tag</i> > <i>path/to/file.tar</i></blockquote>
+- Save an image to a tar archive:
+
+<blockquote>docker save --output <i>path/to/file.tar</i> <i>image</i>:<i>tag</i></blockquote>
+- Save all tags of the image:
+
+<blockquote>docker save --output <i>path/to/file.tar</i> <i>image_name</i></blockquote>
+- Cherry-pick particular tags of an image to save:
+
+<blockquote>docker save --output <i>path/to/file.tar</i> <i>image_name:tag1 image_name:tag2 ...</i></blockquote>

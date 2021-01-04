@@ -1,0 +1,20 @@
+<b>clj</b><br><br>
+<b>Clojure tool to start a REPL or invoke a specific function with data.</b><br><br><b>All options can be defined in a `deps.edn` file.</b><br><br><b>More information: <a href="https://clojure.org/guides/deps_and_cli">home page</a></b><br><br>
+- Start a REPL:
+
+<blockquote>clj</blockquote>
+- Execute a function:
+
+<blockquote>clj -X <i>namespace/function_name</i></blockquote>
+- Run the main function of a specified namespace:
+
+<blockquote>clj -M -m <i>namespace</i> <i>args</i></blockquote>
+- Prepare a project by resolving dependencies, downloading libraries, and making / caching classpaths:
+
+<blockquote>clj -P</blockquote>
+- Start an nREPL server with the CIDER middleware:
+
+<blockquote>clj -Sdeps '{:deps {nrepl {:mvn/version "0.7.0"} cider/cider-nrepl {:mvn/version "0.25.2"</i>}' -m nrepl.cmdline --middleware '["cider.nrepl/cider-middleware"]' --interactive</blockquote>
+- Start a REPL for ClojureScript and open a web browser:
+
+<blockquote>clj -Sdeps '{:deps {org.clojure/clojurescript {:mvn/version "1.10.758"</i>}' --main cljs.main --repl</blockquote>

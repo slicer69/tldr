@@ -1,0 +1,23 @@
+<b>jpegtran</b><br><br>
+<b>Perform lossless transformation of JPEG files.</b><br><br><b>More information: <a href="https://linux.die.net/man/1/jpegtran">home page</a></b><br><br>
+- Mirror an image horizontally or vertically:
+
+<blockquote>jpegtran -flip <i>horizontal|vertical</i> <i>path/to/image.jpg</i> > <i>path/to/output.jpg</i></blockquote>
+- Rotate an image 90, 180 or 270 degrees clockwise:
+
+<blockquote>jpegtran -rotate <i>90|180|270</i> <i>path/to/image.jpg</i> > <i>path/to/output.jpg</i></blockquote>
+- Transpose the image across the upper left to lower right axis:
+
+<blockquote>jpegtran -transpose <i>path/to/image.jpg</i> > <i>path/to/output.jpg</i></blockquote>
+- Transverse the image across the upper right to lower left axis:
+
+<blockquote>jpegtran -transverse <i>path/to/image.jpg</i> > <i>path/to/output.jpg</i></blockquote>
+- Convert the image to grayscale:
+
+<blockquote>jpegtran -grayscale <i>path/to/image.jpg</i> > <i>path/to/output.jpg</i></blockquote>
+- Crop the image to a rectangular region of width `W` and height `H` from the upper left corner, saving the output to a specific file:
+
+<blockquote>jpegtran -crop <i>W</i>x<i>H</i> -outfile <i>path/to/output.jpg</i> <i>path/to/image.jpg</i></blockquote>
+- Crop the image to a rectangular region of width `W` and height `H`, starting at point `X` and `Y` from the upper left corner:
+
+<blockquote>jpegtran -crop <i>W</i>x<i>H</i>+<i>X</i>+<i>Y</i> <i>path/to/image.jpg</i> > <i>path/to/output.jpg</i></blockquote>

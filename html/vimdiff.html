@@ -1,11 +1,26 @@
 <b>vimdiff</b><br><br>
-<b>Open up to four files in vim and show the differences between them.</b><br><br><b>See `vim` documentation for working with files and navigating within a window.</b><br><br>
-- Open two files and show the differences (up to four files can be compared):
+<b>Open up two or more files in vim and show the differences between them.</b><br><br><b>See also `vim`.</b><br><br><b>More information: <a href="https://www.vim.org">home page</a></b><br><br>
+- Open two files and show the differences:
 
 <blockquote>vimdiff <i>file1</i> <i>file2</i></blockquote>
-- Open two files using a horizontal window split instead of the default vertical split:
+- Move the cursor to the window on the left|right:
 
-<blockquote>vimdiff -o <i>file1</i> <i>file2</i></blockquote>
-- Move the cursor to the window on the left|right|up|down:
+<blockquote>Ctrl + w <i>h|l</i></blockquote>
+- Jump to the next difference:
 
-<blockquote>Ctrl + w <i>h|l|k|j</i></blockquote>
+<blockquote>[c</blockquote>
+- Jump to the previous difference:
+
+<blockquote>]c</blockquote>
+- Copy the highlighted difference from the other window to the current window:
+
+<blockquote>do</blockquote>
+- Copy the highlighted difference from the current window to the other window:
+
+<blockquote>dp</blockquote>
+- Update all highlights and folds:
+
+<blockquote>:diffupdate</blockquote>
+- Toggle the highlighted code fold:
+
+<blockquote>za</blockquote>

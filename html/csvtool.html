@@ -1,0 +1,17 @@
+<b>csvtool</b><br><br>
+<b>Utility to filter and extract data from CSV formatted sources.</b><br><br><b>More information: <a href="https://github.com/maroofi/csvtool">home page</a></b><br><br>
+- Extract the second column from a CSV file:
+
+<blockquote>csvtool --column <i>2</i> <i>path/to/file.csv</i></blockquote>
+- Extract the second and fourth columns from a CSV file:
+
+<blockquote>csvtool --column <i>2,4</i> <i>path/to/file.csv</i></blockquote>
+- Extract lines from a CSV file where the second column exactly matches 'Foo':
+
+<blockquote>csvtool --column <i>2</i> --search '<i>^Foo$</i>' <i>path/to/file.csv</i></blockquote>
+- Extract lines from a CSV file where the second column starts with 'Bar':
+
+<blockquote>csvtool --column <i>2</i> --search '<i>^Bar</i>' <i>path/to/file.csv</i></blockquote>
+- Find lines in a CSV file where the second column ends with 'Baz' and then extract the third and sixth columns:
+
+<blockquote>csvtool --column <i>2</i> --search '<i>Baz$</i>' <i>path/to/file.csv</i> | csvtool --no-header --column <i>3,6</i></blockquote>

@@ -1,0 +1,17 @@
+<b>pmount</b><br><br>
+<b>Mount arbitrary hotpluggable devices as a normal user.</b><br><br><b>More information: <a href="https://linux.die.net/man/1/pmount">home page</a></b><br><br>
+- Mount a device below `/media/` (using device as mount point):
+
+<blockquote>pmount <i>/dev/to/block/device</i></blockquote>
+- Mount a device with a specific filesystem type to `/media/label`:
+
+<blockquote>pmount --type <i>filesystem</i> <i>/dev/to/block/device</i> <i>label</i></blockquote>
+- Mount a CD-ROM (filesystem type ISO9660) in read-only mode:
+
+<blockquote>pmount --type <i>iso9660</i> --read-only <i>/dev/cdrom</i></blockquote>
+- Mount an NTFS-formatted disk, forcing read-write access:
+
+<blockquote>pmount --type <i>ntfs</i> --read-write <i>/dev/sdX</i></blockquote>
+- Display all mounted removable devices:
+
+<blockquote>pmount</blockquote>

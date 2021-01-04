@@ -1,0 +1,20 @@
+<b>ansible-doc</b><br><br>
+<b>Display information on modules installed in Ansible libraries.</b><br><br><b>Display a terse listing of plugins and their short descriptions.</b><br><br><b>More information: <a href="https://docs.ansible.com/ansible/latest/cli/ansible-doc.html">home page</a></b><br><br>
+- List available action plugins (modules):
+
+<blockquote>ansible-doc --list</blockquote>
+- List available plugins of a specific type:
+
+<blockquote>ansible-doc --type <i>plugin_type</i> --list</blockquote>
+- Show information about a specific action plugin (module):
+
+<blockquote>ansible-doc <i>plugin_name</i></blockquote>
+- Show information about a plugin with a specific type:
+
+<blockquote>ansible-doc --type <i>plugin_type</i> <i>plugin_name</i></blockquote>
+- Show the playbook snippet for action plugin (modules):
+
+<blockquote>ansible-doc --snippet <i>plugin_name</i></blockquote>
+- Show information about an action plugin (module) as JSON:
+
+<blockquote>ansible-doc --json <i>plugin_name</i></blockquote>

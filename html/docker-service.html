@@ -1,0 +1,20 @@
+<b>docker service</b><br><br>
+<b>Manage the services on a docker daemon.</b><br><br><b>More information: <a href="https://docs.docker.com/engine/reference/commandline/service/">home page</a></b><br><br>
+- List the services on a docker daemon:
+
+<blockquote>docker service ls</blockquote>
+- Create a new service:
+
+<blockquote>docker service create --name <i>service_name</i> <i>image</i>:<i>tag</i></blockquote>
+- Display detailed information of a space-separated list of services:
+
+<blockquote>docker service inspect <i>service_name|ID</i></blockquote>
+- List the tasks of a space-separated list of services:
+
+<blockquote>docker service ps <i>service_name|ID</i></blockquote>
+- Scale to a specific number of replicas for a space-separated list of services:
+
+<blockquote>docker service scale <i>service_name</i>=<i>count_of_replicas</i></blockquote>
+- Remove a space-separated list of services:
+
+<blockquote>docker service rm <i>service_name|ID</i></blockquote>

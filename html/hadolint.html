@@ -1,0 +1,17 @@
+<b>hadolint</b><br><br>
+<b>Dockerfile linter.</b><br><br><b>More information: <a href="https://github.com/hadolint/hadolint">home page</a></b><br><br>
+- Lint a Dockerfile:
+
+<blockquote>hadolint <i>path/to/Dockerfile</i></blockquote>
+- Lint a Dockerfile, displaying the output in JSON format:
+
+<blockquote>hadolint --format <i>json</i> <i>path/to/Dockerfile</i></blockquote>
+- Lint a Dockerfile, displaying the output in a specific format:
+
+<blockquote>hadolint --format <i>tty|json|checkstyle|codeclimate|codacy</i> <i>path/to/Dockerfile</i></blockquote>
+- Lint a Dockerfile ignoring specific rules:
+
+<blockquote>hadolint --ignore <i>DL3006</i> --ignore <i>DL3008</i> <i>path/to/Dockerfile</i></blockquote>
+- Lint multiple Dockerfiles using specific trusted registries:
+
+<blockquote>hadolint --trusted-registry <i>docker.io</i> --trusted-registry <i>example.com</i>:<i>5000</i> <i>path/to/Dockerfile</i> <i>path/to/another/Dockerfile</i></blockquote>

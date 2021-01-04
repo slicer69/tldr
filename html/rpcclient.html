@@ -1,0 +1,26 @@
+<b>rpcclient</b><br><br>
+<b>MS-RPC client tool (part of the samba suite).</b><br><br><b>More information: <a href="https://www.samba.org/samba/docs/current/man-html/rpcclient.1.html">home page</a></b><br><br>
+- Connect to a remote host:
+
+<blockquote>rpcclient --user <i>domain</i>\<i>username</i>%<i>password</i> <i>ip</i></blockquote>
+- Connect to a remote host on a domain without a password:
+
+<blockquote>rpcclient --user <i>username</i> --workgroup <i>domain</i> --no-pass <i>ip</i></blockquote>
+- Connect to a remote host, passing the password hash:
+
+<blockquote>rpcclient --user <i>domain</i>\<i>username</i> --pw-nt-hash <i>ip</i></blockquote>
+- Execute shell commands on a remote host:
+
+<blockquote>rpcclient --user <i>domain</i>\<i>username</i>%<i>password</i> --command <i>semicolon_separated_commands</i> <i>ip</i></blockquote>
+- Display domain users:
+
+<blockquote>rpcclient $> enumdomusers</blockquote>
+- Display privileges:
+
+<blockquote>rpcclient $> enumprivs</blockquote>
+- Display information about a specific user:
+
+<blockquote>rpcclient $> queryuser <i>username|rid</i></blockquote>
+- Create a new user in the domain:
+
+<blockquote>rpcclient $> createdomuser <i>username</i></blockquote>

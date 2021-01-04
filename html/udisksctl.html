@@ -1,0 +1,20 @@
+<b>udisksctl</b><br><br>
+<b>A command-line program used to interact with the udisksd daemon process.</b><br><br><b>More information: <a href="http://storaged.org/doc/udisks2-api/latest/udisksctl.1.html">home page</a></b><br><br>
+- Show high-level information about disk drives and block devices:
+
+<blockquote>udisksctl status</blockquote>
+- Show detailed information about a device:
+
+<blockquote>udisksctl info --block-device <i>/dev/sdX</i></blockquote>
+- Show detailed information about a device partition:
+
+<blockquote>udisksctl info --block-device <i>/dev/sdXN</i></blockquote>
+- Mount a device partition and prints the mount point:
+
+<blockquote>udisksctl mount --block-device <i>/dev/sdXN</i></blockquote>
+- Unmount a device partition:
+
+<blockquote>udisksctl unmount --block-device <i>/dev/sdXN</i></blockquote>
+- Monitor the daemon for events:
+
+<blockquote>udisksctl monitor</blockquote>

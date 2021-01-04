@@ -1,0 +1,17 @@
+<b>dpkg-deb</b><br><br>
+<b>Pack, unpack and provide information about Debian archives.</b><br><br><b>More information: <a href="https://manpages.debian.org/buster/dpkg/dpkg-deb.1.en.html">home page</a></b><br><br>
+- Display information about a package:
+
+<blockquote>dpkg-deb --info <i>path/to/file.deb</i></blockquote>
+- Display the package's name and version on one line:
+
+<blockquote>dpkg-deb --show <i>path/to/file.deb</i></blockquote>
+- List the package's contents:
+
+<blockquote>dpkg-deb --contents <i>path/to/file.deb</i></blockquote>
+- Extract package's contents into a directory:
+
+<blockquote>dpkg-deb --extract <i>path/to/file.deb</i> <i>path/to/directory</i></blockquote>
+- Create a package from a specified directory:
+
+<blockquote>dpkg-deb --build <i>path/to/directory</i></blockquote>

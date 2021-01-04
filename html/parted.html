@@ -1,0 +1,26 @@
+<b>parted</b><br><br>
+<b>A partition manipulation program.</b><br><br><b>More information: <a href="https://www.gnu.org/software/parted/parted.html">home page</a></b><br><br>
+- List partitions on all block devices:
+
+<blockquote>sudo parted --list</blockquote>
+- Start to manipulate disk partition:
+
+<blockquote>sudo parted <i>/dev/sdX</i></blockquote>
+- Create a new partition table of label-type directly, label-type can be gpt, msdos etc:
+
+<blockquote>sudo parted --script <i>/dev/sdX</i> mklabel <i>gpt</i></blockquote>
+- Show disk partition information in interactive mode:
+
+<blockquote>print</blockquote>
+- Select a disk in interactive mode:
+
+<blockquote>select <i>/dev/sdX</i></blockquote>
+- Interactively create a 16GB partition with a given filesystem:
+
+<blockquote>mkpart <i>primary|logical|extended</i> <i>filesystem</i> <i>0%</i> <i>16G</i></blockquote>
+- Resize partition size:
+
+<blockquote>resizepart <i>/dev/sdXN</i> <i>end_position_of_partition</i></blockquote>
+- Remove partition:
+
+<blockquote>rm <i>/dev/sdXN</i></blockquote>

@@ -15,15 +15,12 @@
 - Delete lines matching the line pattern:
 
 <blockquote>sed '/<i>line_pattern</i>/d' <i>filename</i></blockquote>
-- Print only text between n-th line till the next empty line:
+- Print the first 11 lines of a file:
 
-<blockquote>sed -n '<i>n</i>,/^$/p' <i>filename</i></blockquote>
+<blockquote>sed 11q <i>filename</i></blockquote>
 - Apply multiple find-replace expressions to a file:
 
 <blockquote>sed -e 's/<i>find</i>/<i>replace</i>/' -e 's/<i>find</i>/<i>replace</i>/' <i>filename</i></blockquote>
 - Replace separator / by any other character not used in the find or replace patterns, e.g., #:
 
 <blockquote>sed 's#<i>find</i>#<i>replace</i>#' <i>filename</i></blockquote>
-- Print only the n-th line of a file:
-
-<blockquote>sed '<i>n</i>q;d' <i>filename</i></blockquote>

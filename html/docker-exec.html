@@ -2,16 +2,19 @@
 <b>Execute a command on an already running Docker container.</b><br><br><b>More information: <a href="https://docs.docker.com/engine/reference/commandline/exec/">home page</a></b><br><br>
 - Enter an interactive shell session on an already-running container:
 
-<blockquote>docker exec -it <i>container_name</i> <i>/bin/bash</i></blockquote>
+<blockquote>docker exec --interactive --tty <i>container_name</i> <i>/bin/bash</i></blockquote>
 - Run a command in the background (detached) on a running container:
 
-<blockquote>docker exec -d <i>container_name</i> <i>command</i></blockquote>
+<blockquote>docker exec --detach <i>container_name</i> <i>command</i></blockquote>
 - Select the working directory for a given command to execute into:
 
-<blockquote>docker exec -it -w <i>path/to/directory</i> <i>container_name</i> <i>command</i></blockquote>
+<blockquote>docker exec --interactive -tty --workdir <i>path/to/directory</i> <i>container_name</i> <i>command</i></blockquote>
 - Run a command in background on existing container but keep `stdin` open:
 
-<blockquote>docker exec -i -d <i>container_name</i> <i>command</i></blockquote>
+<blockquote>docker exec --interactive --detach <i>container_name</i> <i>command</i></blockquote>
 - Set an environment variable in a running bash session:
 
-<blockquote>docker exec -it -e <i>variable_name</i>=<i>value</i> <i>container_name</i> <i>/bin/bash</i></blockquote>
+<blockquote>docker exec --interactive --tty --env <i>variable_name</i>=<i>value</i> <i>container_name</i> <i>/bin/bash</i></blockquote>
+- Run a command as a specific user:
+
+<blockquote>docker exec --user <i>user</i> <i>container_name</i> <i>command</i></blockquote>

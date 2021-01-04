@@ -1,5 +1,8 @@
 <b>nmap</b><br><br>
 <b>Network exploration tool and security / port scanner.</b><br><br><b>Some features only activate when Nmap is run with privileges.</b><br><br><b>More information: <a href="https://nmap.org">home page</a></b><br><br>
+- Check if an IP address is up, and guess the remote host's operating system:
+
+<blockquote>nmap -O <i>ip_or_hostname</i></blockquote>
 - Try to determine whether the specified hosts are up and what are their names:
 
 <blockquote>nmap -sn <i>ip_or_hostname</i> <i>optional_another_address</i></blockquote>
@@ -18,6 +21,6 @@
 - Perform TCP and UDP scanning (use -sU for UDP only, -sZ for SCTP, -sO for IP):
 
 <blockquote>nmap -sSU <i>address_or_addresses</i></blockquote>
-- Perform TLS cipher scan against a host to determine supported ciphers and SSL/TLS protocols:
+- Perform full port, service, version detection scan with all default NSE scripts active against a host to determine weaknesses and info:
 
-<blockquote>nmap --script ssl-enum-ciphers <i>address_or_addresses</i> -p 443</blockquote>
+<blockquote>nmap -sC -sV <i>address_or_addresses</i></blockquote>

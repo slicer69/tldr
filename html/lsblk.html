@@ -21,3 +21,6 @@
 - Exclude the devices specified by the comma-separated list of major device numbers:
 
 <blockquote>lsblk -e <i>1,7</i></blockquote>
+- Display a customized summary using a comma-separated list of columns:
+
+<blockquote>lsblk --output <i>NAME</i>,<i>SERIAL</i>,<i>MODEL</i>,<i>TRAN</i>,<i>TYPE</i>,<i>SIZE</i>,<i>FSTYPE</i>,<i>MOUNTPOINT</i></blockquote>

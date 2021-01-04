@@ -3,22 +3,16 @@
 - Listen on a specified port and print any data received:
 
 <blockquote>nc -l <i>port</i></blockquote>
-- Connect to a certain port (you can then write to this port):
+- Connect to a certain port:
 
 <blockquote>nc <i>ip_address</i> <i>port</i></blockquote>
 - Set a timeout:
 
 <blockquote>nc -w <i>timeout_in_seconds</i> <i>ipaddress</i> <i>port</i></blockquote>
-- Serve a file:
-
-<blockquote>nc -l <i>port</i> < <i>file</i></blockquote>
-- Receive a file:
-
-<blockquote>nc <i>ip_address</i> <i>port</i> > <i>file</i></blockquote>
-- Server stay up after client detach:
+- Keep the server up after the client detaches:
 
 <blockquote>nc -k -l <i>port</i></blockquote>
-- Client stay up after EOF:
+- Keep the client up even after EOF:
 
 <blockquote>nc -q <i>timeout</i> <i>ip_address</i></blockquote>
 - Scan the open ports of a specified host:

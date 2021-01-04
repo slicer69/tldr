@@ -15,7 +15,7 @@
 
 `git show {{tag}}`
 
-- Show information about the 3rd commit from the tip of a branch:
+- Show information about the 3rd commit from the HEAD of a branch:
 
 `git show {{branch}}~{{3}}`
 
@@ -23,9 +23,13 @@
 
 `git show --oneline -s {{commit}}`
 
-- Show only the list of the files changed in a commit:
+- Show only statistics (added/removed characters) about the changed files:
 
 `git show --stat {{commit}}`
+
+- Show only the list of added, renamed or deleted files:
+
+`git show --summary {{commit}}`
 
 - Show the contents of a file as it was at a given revision (e.g. branch, tag or commit):
 

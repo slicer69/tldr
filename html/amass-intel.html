@@ -1,0 +1,20 @@
+<b>amass intel</b><br><br>
+<b>Collect open source intel on an organisation like root domains and ASNs.</b><br><br><b>More information: <a href="https://github.com/OWASP/Amass/blob/master/doc/user_guide.md#the-intel-subcommand">home page</a></b><br><br>
+- Find root domains in an IP address range:
+
+<blockquote>amass intel -addr <i>192.168.0.1-254</i></blockquote>
+- Use active recon methods:
+
+<blockquote>amass intel -active -addr <i>192.168.0.1-254</i></blockquote>
+- Find root domains related to a domain:
+
+<blockquote>amass intel -whois -d <i>domain_name</i></blockquote>
+- Find ASNs belonging to an organisation:
+
+<blockquote>amass intel -org <i>organisation_name</i></blockquote>
+- Find root domains belonging to a given Autonomous System Number:
+
+<blockquote>amass intel -asn <i>asn</i></blockquote>
+- Save results to a text file:
+
+<blockquote>amass intel -o <i>output_file</i> -whois -d <i>domain_name</i></blockquote>

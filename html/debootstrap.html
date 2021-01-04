@@ -1,0 +1,14 @@
+<b>debootstrap</b><br><br>
+<b>Create a basic Debian system.</b><br><br><b>More information: <a href="https://wiki.debian.org/Debootstrap">home page</a></b><br><br>
+- Create a Debian stable release system inside the `debian-root` directory:
+
+<blockquote>sudo debootstrap stable <i>path/to/debian-root/</i> http://deb.debian.org/debian</blockquote>
+- Create an Ubuntu 20.04 system inside the `focal-root` directory with a local mirror:
+
+<blockquote>sudo debootstrap focal <i>path/to/focal-root/</i> <i>file:///path/to/mirror/</i></blockquote>
+- Switch to a bootstrapped system:
+
+<blockquote>sudo chroot <i>path/to/root</i></blockquote>
+- List available releases:
+
+<blockquote>ls /usr/share/debootstrap/scripts/</blockquote>

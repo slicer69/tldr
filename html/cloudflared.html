@@ -1,0 +1,17 @@
+<b>cloudflared</b><br><br>
+<b>Command line tool to create a persistent connection to the Cloudflare network.</b><br><br><b>More information: <a href="https://developers.cloudflare.com/argo-tunnel/">home page</a></b><br><br>
+- Authenticate and associate the connection to a domain in the Cloudflare account:
+
+<blockquote>cloudflared tunnel login</blockquote>
+- Establish a tunnel to a host in Cloudflare from the local server:
+
+<blockquote>cloudflared tunnel --hostname <i>hostname</i> localhost:<i>port_number</i></blockquote>
+- Establish a tunnel to a host in Cloudflare from the local server, without verifying the local server's certificate:
+
+<blockquote>cloudflared tunnel --hostname <i>hostname</i> localhost:<i>port_number</i> --no-tls-verify</blockquote>
+- Save logs to a file:
+
+<blockquote>cloudflared tunnel --hostname <i>hostname</i> http://localhost:<i>port_number</i> --loglevel <i>panic|fatal|error|warn|info|debug</i> --logfile <i>path/to/file</i></blockquote>
+- Install cloudflared as a system service:
+
+<blockquote>cloudflared service install</blockquote>

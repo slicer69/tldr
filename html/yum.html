@@ -1,8 +1,5 @@
 <b>yum</b><br><br>
-<b>Package management utility for RHEL, Fedora, and CentOS (for older versions).</b><br><br>
-- Synchronize list of packages and versions available. This should be run first, before running subsequent yum commands:
-
-<blockquote>yum update</blockquote>
+<b>Package management utility for RHEL, Fedora, and CentOS (for older versions).</b><br><br><b>More information: <a href="https://man7.org/linux/man-pages/man8/yum.8.html">home page</a></b><br><br>
 - Install a new package:
 
 <blockquote>yum install <i>package</i></blockquote>
@@ -15,6 +12,9 @@
 - Remove a package:
 
 <blockquote>yum remove <i>package</i></blockquote>
+- Display available updates for installed packages:
+
+<blockquote>yum check-update</blockquote>
 - Upgrade installed packages to newest available versions:
 
 <blockquote>yum upgrade</blockquote>

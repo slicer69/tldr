@@ -1,0 +1,11 @@
+<b>srun</b><br><br>
+<b>Create an interactive slurm job or connect to an existing job.</b><br><br><b>More information: <a href="https://slurm.schedmd.com/srun.html">home page</a></b><br><br>
+- Submit a basic interactive job:
+
+<blockquote>srun --pty /bin/bash</blockquote>
+- Submit an interactive job with different attributes:
+
+<blockquote>srun --ntasks-per-node=<i>num_cores</i> --mem-per-cpu=<i>memory_MB</i> --pty /bin/bash</blockquote>
+- Connect to a worker node with a job running:
+
+<blockquote>srun --jobid=<i>job_id</i> --pty /bin/bash</blockquote>

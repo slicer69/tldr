@@ -1,0 +1,23 @@
+<b>aws lambda</b><br><br>
+<b>CLI for AWS lambda.</b><br><br><b>More information: <a href="https://docs.aws.amazon.com/cli/latest/reference/lambda/index.html">home page</a></b><br><br>
+- Run a function:
+
+<blockquote>aws lambda invoke --function-name <i>name</i> <i>path/to/response</i">home page</a>json</blockquote>
+- Run a function with an input payload in JSON format:
+
+<blockquote>aws lambda invoke --function-name <i>name</i> --payload <i>json</i> <i>path/to/response</i">home page</a>json</blockquote>
+- List functions:
+
+<blockquote>aws lambda list-functions</blockquote>
+- Display the configuration of a function:
+
+<blockquote>aws lambda get-function-configuration --function-name <i>name</i></blockquote>
+- List function aliases:
+
+<blockquote>aws lambda list-aliases --function-name <i>name</i></blockquote>
+- Display the reserved concurrency configuration for a function:
+
+<blockquote>aws lambda get-function-concurrency --function-name <i>name</i></blockquote>
+- List which AWS services can invoke the function:
+
+<blockquote>aws lambda get-policy --function-name <i>name</i></blockquote>

@@ -5,10 +5,13 @@
 <blockquote>docker images</blockquote>
 - List all Docker images including intermediates:
 
-<blockquote>docker images -a</blockquote>
+<blockquote>docker images --all</blockquote>
 - List the output in quiet mode (only numeric IDs):
 
-<blockquote>docker images -q</blockquote>
+<blockquote>docker images --quiet</blockquote>
 - List all Docker images not used by any container:
 
 <blockquote>docker images --filter dangling=true</blockquote>
+- List images that contain a substring in their name:
+
+<blockquote>docker images "<i>*name*</i>"</blockquote>

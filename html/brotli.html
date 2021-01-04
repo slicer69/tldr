@@ -1,0 +1,17 @@
+<b>Brotli</b><br><br>
+<b>Compress/uncompress files with brotli compression.</b><br><br><b>More information: <a href="https://github.com/google/brotli">home page</a></b><br><br>
+- Compress a file, creating a compressed version next to the file:
+
+<blockquote>brotli <i>file.ext</i></blockquote>
+- Decompress a file, creating an uncompressed version next to the file:
+
+<blockquote>brotli -d <i>file.ext</i">home page</a>br</blockquote>
+- Compress a file specifying the output filename:
+
+<blockquote>brotli <i>file.ext</i> -o <i>compressed_file.ext.br</i></blockquote>
+- Decompress a brotli file specifying the output filename:
+
+<blockquote>brotli -d <i>compressed_file.ext.br</i> -o <i>file.ext</i></blockquote>
+- Specify the compression level. 1=Fastest (Worst), 11=Slowest (Best):
+
+<blockquote>brotli -q <i>11</i> <i>file.ext</i> -o <i>compressed_file.ext.br</i></blockquote>

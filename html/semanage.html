@@ -1,0 +1,17 @@
+<b>semanage</b><br><br>
+<b>SELinux Policy Management tool.</b><br><br><b>More information: <a href="https://linux.die.net/man/8/semanage">home page</a></b><br><br>
+- Output local customizations:
+
+<blockquote>semanage -S <i>store</i> -o <i>path/to/output_file</i></blockquote>
+- Take a set of commands from a specified file and load them in a single transaction:
+
+<blockquote>semanage -S <i>store</i> -i <i>path/to/input_file</i></blockquote>
+- Manage booleans. Booleans allow the administrator to modify the confinement of processes based on the current configuration:
+
+<blockquote>semanage boolean -S <i>store</i> <i>--delete|--modify|--list|--noheading|--deleteall</i> <i>-on|-off</i> -F <i>boolean|boolean_file</i></blockquote>
+- Manage policy modules:
+
+<blockquote>semanage module -S <i>store</i> <i>--add|--delete|--list|--modify</i> <i>--enable|--disable</i> <i>module_name</i></blockquote>
+- Disable/Enable dontaudit rules in policy:
+
+<blockquote>semanage dontaudit -S <i>store</i> <i>on|off</i></blockquote>

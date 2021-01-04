@@ -1,0 +1,20 @@
+<b>aws glue</b><br><br>
+<b>CLI for AWS Glue.</b><br><br><b>Defines the public endpoint for the AWS Glue service.</b><br><br><b>More information: <a href="https://docs.aws.amazon.com/cli/latest/reference/glue/index.html">home page</a></b><br><br>
+- List jobs:
+
+<blockquote>aws glue list-jobs</blockquote>
+- Start a job:
+
+<blockquote>aws glue start-job-run --job-name <i>job_name</i></blockquote>
+- Start running a workflow:
+
+<blockquote>aws glue start-workflow-run --name <i>workflow_name</i></blockquote>
+- List triggers:
+
+<blockquote>aws glue list-triggers</blockquote>
+- Start a trigger:
+
+<blockquote>aws glue start-trigger --name <i>trigger_name</i></blockquote>
+- Create a dev endpoint:
+
+<blockquote>aws glue create-dev-endpoint --endpoint-name <i>name</i> --role-arn <i>role_arn_used_by_endpoint</i></blockquote>

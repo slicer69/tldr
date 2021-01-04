@@ -1,0 +1,14 @@
+<b>maim</b><br><br>
+<b>Screenshot utility.</b><br><br><b>More information: <a href="https://github.com/naelstrof/maim">home page</a></b><br><br>
+- Capture a screenshot and save it to the given path:
+
+<blockquote>maim <i>path/to/screenshot.png</i></blockquote>
+- Capture a screenshot of the selected region:
+
+<blockquote>maim --select <i>path/to/screenshot.png</i></blockquote>
+- Capture a screenshot of the selected region and save it in the clipboard (requires `xclip`):
+
+<blockquote>maim --select | xclip -selection clipboard -target image/png</blockquote>
+- Capture a screenshot of the current active window (requires `xdotool`):
+
+<blockquote>maim --window $(xdotool getactivewindow) <i>path/to/screenshot.png</i></blockquote>

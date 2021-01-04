@@ -1,0 +1,14 @@
+<b>httprobe</b><br><br>
+<b>Take a list of domains and probe for working HTTP and HTTPS servers.</b><br><br><b>More information: <a href="https://github.com/tomnomnom/httprobe">home page</a></b><br><br>
+- Probe a list of domains from a text file:
+
+<blockquote>cat <i>input_file</i> | httprobe</blockquote>
+- Only check for HTTP if HTTPS is not working:
+
+<blockquote>cat <i>input_file</i> | httprobe --prefer-https</blockquote>
+- Probe additional ports with a given protocol:
+
+<blockquote>cat <i>input_file</i> | httprobe -p <i>https:2222</i></blockquote>
+- Output all available options:
+
+<blockquote>httprobe --help</blockquote>

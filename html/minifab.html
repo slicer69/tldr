@@ -1,0 +1,26 @@
+<b>minifab</b><br><br>
+<b>Utility tool that automates the setup and deployment of Hyperledger Fabric networks.</b><br><br><b>More information: <a href="https://github.com/hyperledger-labs/minifabric">home page</a></b><br><br>
+- Bring up the default Hyperledger Fabric network:
+
+<blockquote>minifab up -i <i>minifab_version</i></blockquote>
+- Bring down the Hyperldger Fabric network:
+
+<blockquote>minifab down</blockquote>
+- Install chaincode onto a specified channel:
+
+<blockquote>minifab install -n <i>chaincode_name</i></blockquote>
+- Install a specific chaincode version onto a channel:
+
+<blockquote>minifab install -n <i>chaincode_name</i> -v <i>chaincode_version</i></blockquote>
+- Initialize the chaincode after installation/upgrade:
+
+<blockquote>minifab approve,commit,initialize,discover</blockquote>
+- Invoke a chaincode method with the specified arguments:
+
+<blockquote>minifab invoke -n <i>chaincode_name</i> -p '"<i>method_name</i>", "<i>arg0</i>", "<i>arg1</i>", ...'</blockquote>
+- Make a query on the ledger:
+
+<blockquote>minifab blockquery <i>block_number</i></blockquote>
+- Quickly run an application:
+
+<blockquote>minifab apprun -l <i>app_programming_langauge</i></blockquote>

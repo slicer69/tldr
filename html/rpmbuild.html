@@ -1,0 +1,11 @@
+<b>rpmbuild</b><br><br>
+<b>RPM Package Build tool.</b><br><br><b>More information: <a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-rpm-packages/">home page</a></b><br><br>
+- Build binary and source packages:
+
+<blockquote>rpmbuild -ba <i>path/to/spec_file</i></blockquote>
+- Build a binary package without source package:
+
+<blockquote>rpmbuild -bb <i>path/to/spec_file</i></blockquote>
+- Specify additional variables when building a package:
+
+<blockquote>rpmbuild -bb <i>path/to/spec_file</i> --define "<i>variable1</i> <i>value1</i>" --define "<i>variable2</i> <i>value2</i>"</blockquote>

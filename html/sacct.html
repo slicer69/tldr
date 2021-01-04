@@ -1,0 +1,14 @@
+<b>sacct</b><br><br>
+<b>Display accounting data from the Slurm service.</b><br><br><b>More information: <a href="https://slurm.schedmd.com/sacct.html">home page</a></b><br><br>
+- Display job id, job name, partition, account, number of allocated cpus, job state, and job exit codes for recent jobs:
+
+<blockquote>sacct</blockquote>
+- Display job id, job state, job exit code for recent jobs:
+
+<blockquote>sacct --brief</blockquote>
+- Display the allocations of a job:
+
+<blockquote>sacct --jobs <i>job_id</i> --allocations</blockquote>
+- Display elapsed time, job name, number of requested CPUs, and memory requested of a job:
+
+<blockquote>sacct --jobs <i>job_id</i> --format=<i>elapsed</i>,<i>jobname</i>,<i>reqcpus</i>,<i>reqmem</i></blockquote>
