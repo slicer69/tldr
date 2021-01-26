@@ -1,0 +1,11 @@
+<b>addr2line</b><br><br>
+<b>Convert addresses of a binary into file names and line numbers.</b><br><br>
+- Display the filename and line number of the source code from an instruction address of an executable:
+
+<blockquote>addr2line --exe=<i>path/to/executable</i> <i>address</i></blockquote>
+- Display the function name, filename and line number:
+
+<blockquote>addr2line --exe=<i>path/to/executable</i> --functions <i>address</i></blockquote>
+- Demangle the function name for C++ code:
+
+<blockquote>addr2line --exe=<i>path/to/executable</i> --functions --demangle <i>address</i></blockquote>

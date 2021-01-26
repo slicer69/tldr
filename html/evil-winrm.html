@@ -6,7 +6,7 @@
 - Connect to a host, passing the password hash:
 
 <blockquote>evil-winrm --ip <i>ip</i> --user <i>user</i> --hash <i>nt_hash</i></blockquote>
-- Connect to a host, specifying folders for scripts and executables:
+- Connect to a host, specifying directories for scripts and executables:
 
 <blockquote>evil-winrm --ip <i>ip</i> --user <i>user</i> --password <i>password</i> --scripts <i>path/to/scripts</i> --executables <i>path/to/executables</i></blockquote>
 - Connect to a host, using SSL:
@@ -18,9 +18,9 @@
 - Get a list of loaded PowerShell functions:
 
 <blockquote>PS > menu</blockquote>
-- Load a PowerShell script from the `--scripts` folder:
+- Load a PowerShell script from the `--scripts` directory:
 
 <blockquote>PS > <i>script.ps1</i></blockquote>
-- Invoke a binary on the host from the `--executables` folder:
+- Invoke a binary on the host from the `--executables` directory:
 
 <blockquote>PS > Invoke-Binary <i>binary.exe</i></blockquote>

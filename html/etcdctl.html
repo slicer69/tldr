@@ -1,0 +1,26 @@
+<b>etcdctl</b><br><br>
+<b>CLI interface for interacting with `etcd`, a highly-available key-value pair store.</b><br><br><b>Etcd stores data in hierarchically organized directories, as in a standard filesystem.</b><br><br><b>More information: <a href="https://etcd.io/docs/latest/dev-guide/interacting_v3/">home page</a></b><br><br>
+- Display the value associated with a specified key:
+
+<blockquote>etcdctl get <i>my/key</i></blockquote>
+- Store a key-value pair:
+
+<blockquote>etcdctl put <i>my/key</i> <i>my_value</i></blockquote>
+- Delete a key-value pair:
+
+<blockquote>etcdctl del <i>my/key</i></blockquote>
+- Store a key-value pair, reading the value from a file:
+
+<blockquote>etcdctl put <i>my/file</i> < <i>path/to/file.txt</i></blockquote>
+- Save a snapshot of the etcd keystore:
+
+<blockquote>etcdctl snapshot save <i>path/to/snapshot.db</i></blockquote>
+- Restore a snapshot of an etcd keystore (restart the etcd server afterwards):
+
+<blockquote>etcdctl snapshot restore <i>path/to/snapshot.db</i></blockquote>
+- Add a user:
+
+<blockquote>etcdctl user add <i>my_user</i></blockquote>
+- Watch a key for changes:
+
+<blockquote>etcdctl watch <i>my/key</i></blockquote>

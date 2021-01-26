@@ -1,0 +1,23 @@
+<b>asterisk</b><br><br>
+<b>Telephone and exchange (phone) server.</b><br><br><b>Used for running the server itself, and managing an already running instance.</b><br><br><b>More information: <a href="https://wiki.asterisk.org/wiki/display/AST/Home">home page</a></b><br><br>
+- [R]econnect to a running server, and turn on logging 3 levels of [v]erbosity:
+
+<blockquote>asterisk -r -vvv</blockquote>
+- [R]econnect to a running server, run a single command, and return:
+
+<blockquote>asterisk -r -x "<i>command</i>"</blockquote>
+- Show chan_SIP clients (phones):
+
+<blockquote>asterisk -r -x "sip show peers"</blockquote>
+- Show active calls and channels:
+
+<blockquote>asterisk -r -x "core show channels"</blockquote>
+- Show voicemail mailboxes:
+
+<blockquote>asterisk -r -x "voicemail show users"</blockquote>
+- Terminate a channel:
+
+<blockquote>asterisk -r -x "hangup request <i>channel_ID</i>"</blockquote>
+- Reload chan_SIP configuration:
+
+<blockquote>asterisk -r -x "sip reload"</blockquote>

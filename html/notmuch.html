@@ -1,0 +1,23 @@
+<b>notmuch</b><br><br>
+<b>Command-line based program for indexing, searching, reading, and tagging large collections of email messages.</b><br><br><b>More information: <a href="https://notmuchmail.org/manpages/">home page</a></b><br><br>
+- Configure for first use:
+
+<blockquote>notmuch setup</blockquote>
+- Add a tag for all messages matching a search term:
+
+<blockquote>notmuch tag +<i>custom_tag</i> "<i>search_term</i>"</blockquote>
+- Remove a tag for all messages matching a search term:
+
+<blockquote>notmuch tag -<i>custom_tag</i> "<i>search_term</i>"</blockquote>
+- Count messages matching the given search term:
+
+<blockquote>notmuch count --output=<i>messages|threads</i> "<i>search_term</i>"</blockquote>
+- Search for messages matching the given search term:
+
+<blockquote>notmuch search --format=<i>json|text</i> --output=<i>summary|threads|messages|files|tags</i> "<i>search_term</i>"</blockquote>
+- Limit the number of search results to X:
+
+<blockquote>notmuch search --format=<i>json|text</i> --output=<i>summary|threads|messages|files|tags</i> --limit=<i>X</i> "<i>search_term</i>"</blockquote>
+- Create a reply template for a set of messages:
+
+<blockquote>notmuch reply --format=<i>default|headers-only</i> --reply-to=<i>sender|all</i> "<i>search_term</i>"</blockquote>

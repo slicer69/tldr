@@ -1,0 +1,17 @@
+<b>e2undo</b><br><br>
+<b>Replay undo logs for an ext2/ext3/ext4 filesystem.</b><br><br><b>This can be used to undo a failed operation by an e2fsprogs program.</b><br><br><b>More information: <a href="https://man7.org/linux/man-pages/man8/e2undo.8.html">home page</a></b><br><br>
+- Display information about a specific undo file:
+
+<blockquote>e2undo -h <i>path/to/undo_file</i> <i>/dev/sdXN</i></blockquote>
+- Perform a dry-run and display the candidate blocks for replaying:
+
+<blockquote>e2undo -nv <i>path/to/undo_file</i> <i>/dev/sdXN</i></blockquote>
+- Perform an undo operation:
+
+<blockquote>e2undo <i>path/to/undo_file</i> <i>/dev/sdXN</i></blockquote>
+- Perform an undo operation and display verbose information:
+
+<blockquote>e2undo -v <i>path/to/undo_file</i> <i>/dev/sdXN</i></blockquote>
+- Write the old contents of the block to an undo file before overwriting a file system block:
+
+<blockquote>e2undo -z <i>path/to/file.e2undo</i> <i>path/to/undo_file</i> <i>/dev/sdXN</i></blockquote>

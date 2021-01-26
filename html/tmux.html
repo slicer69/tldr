@@ -5,22 +5,22 @@
 <blockquote>tmux</blockquote>
 - Start a new named session:
 
-<blockquote>tmux new-session -s <i>name</i></blockquote>
+<blockquote>tmux new -s <i>name</i></blockquote>
 - List existing sessions:
 
 <blockquote>tmux ls</blockquote>
 - Attach to the most recently used session:
 
-<blockquote>tmux attach-session</blockquote>
-- Attach to a named session:
-
-<blockquote>tmux attach-session -t <i>name</i></blockquote>
-- Detach from the current session (with prefix Ctrl-B):
+<blockquote>tmux attach</blockquote>
+- Detach from the current session (inside a tmux session):
 
 <blockquote>Ctrl-B d</blockquote>
+- Create a new window (inside a tmux session):
+
+<blockquote>Ctrl-B c</blockquote>
+- Switch between sessions and windows (inside a tmux session):
+
+<blockquote>Ctrl-B w</blockquote>
 - Kill a session by name:
 
 <blockquote>tmux kill-session -t <i>name</i></blockquote>
-- Kill the current session (with prefix Ctrl-B):
-
-<blockquote>Ctrl-B :kill-session<Enter></blockquote>

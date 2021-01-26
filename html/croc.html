@@ -1,23 +1,23 @@
 <b>croc</b><br><br>
 <b>Send and receive files easily and securely over any network.</b><br><br><b>More information: <a href="https://github.com/schollz/croc">home page</a></b><br><br>
-- Send a file or folder:
+- Send a file or directory:
 
-<blockquote>croc send <i>path/to/file</i></blockquote>
-- Send a file or folder with a specific passphrase:
+<blockquote>croc send <i>path/to/file_or_directory</i></blockquote>
+- Send a file or directory with a specific passphrase:
 
-<blockquote>croc send --code <i>passphrase</i> <i>path/to/file</i></blockquote>
-- Receive a file or folder on receiving machine:
+<blockquote>croc send --code <i>passphrase</i> <i>path/to/file_or_directory</i></blockquote>
+- Receive a file or directory on receiving machine:
 
 <blockquote>croc <i>passphrase</i></blockquote>
 - Send and connect over a custom relay:
 
-<blockquote>croc --relay <i>ip_to_relay</i> send <i>path/to/file</i></blockquote>
+<blockquote>croc --relay <i>ip_to_relay</i> send <i>path/to/file_or_directory</i></blockquote>
 - Receive and connect over a custom relay:
 
 <blockquote>croc --relay <i>ip_to_relay</i> <i>passphrase</i></blockquote>
 - Host a croc relay on the default ports:
 
 <blockquote>croc relay</blockquote>
-- Display paramenters and options for a croc command:
+- Display parameters and options for a croc command:
 
 <blockquote>croc <i>send|relay</i> --help</blockquote>

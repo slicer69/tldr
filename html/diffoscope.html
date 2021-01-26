@@ -1,0 +1,17 @@
+<b>diffoscope</b><br><br>
+<b>Compare files, archives, and directories.</b><br><br><b>More information: <a href="https://diffoscope.org">home page</a></b><br><br>
+- Compare two files:
+
+<blockquote>diffoscope <i>path/to/file1</i> <i>path/to/file2</i></blockquote>
+- Compare two files without displaying a progress bar:
+
+<blockquote>diffoscope --no-progress <i>path/to/file1</i> <i>path/to/file2</i></blockquote>
+- Compare two files and write a HTML-report to a file (use `-` for `stdout`):
+
+<blockquote>diffoscope --html <i>path/to/outfile|-</i> <i>path/to/file1</i> <i>path/to/file2</i></blockquote>
+- Compare two directories excluding files with a name matching a specified pattern:
+
+<blockquote>diffoscope --exclude <i>pattern</i> <i>path/to/directory1</i> <i>path/to/directory2</i></blockquote>
+- Compare two directories and control whether directory metadata is considered:
+
+<blockquote>diffoscope --exclude-directory-metadata <i>auto|yes|no|recursive</i> <i>path/to/directory1</i> <i>path/to/directory2</i></blockquote>

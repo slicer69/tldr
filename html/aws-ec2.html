@@ -1,0 +1,26 @@
+<b>aws ec2</b><br><br>
+<b>CLI for AWS EC2.</b><br><br><b>Provides secure and resizable computing capacity in the AWS cloud to enable faster development and deployment of applications.</b><br><br><b>More information: <a href="https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/index.html">home page</a></b><br><br>
+- Show list of all available EC2 commands:
+
+<blockquote>aws ec2 help</blockquote>
+- Show help for specific EC2 subcommand:
+
+<blockquote>aws ec2 <i>subcommand</i> help</blockquote>
+- Display information about a specific instance:
+
+<blockquote>aws ec2 describe-instances --instance-ids <i>instance_id</i></blockquote>
+- Display information about all instances:
+
+<blockquote>aws ec2 describe-instances</blockquote>
+- Display information about all EC2 volumes:
+
+<blockquote>aws ec2 describe-volumes</blockquote>
+- Delete an EC2 volume:
+
+<blockquote>aws ec2 delete-volume --volume-id <i>volume_id</i></blockquote>
+- Create a snapshot from an EC2 volume:
+
+<blockquote>aws ec2 create-snapshot --volume-id <i>volume_id</i></blockquote>
+- List available AMIs (Amazon Machine Images):
+
+<blockquote>aws ec2 describe-images</blockquote>

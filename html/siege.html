@@ -1,0 +1,20 @@
+<b>siege</b><br><br>
+<b>HTTP loadtesting and benchmarking tool.</b><br><br><b>More information: <a href="https://www.joedog.org/siege-manual/">home page</a></b><br><br>
+- Test a url with default settings:
+
+<blockquote>siege <i>https://example.com</i></blockquote>
+- Test a list of urls:
+
+<blockquote>siege --file <i>path/to/url_list.txt</i></blockquote>
+- Test list of urls in a random order (Simulates internet traffic):
+
+<blockquote>siege --internet --file <i>path/to/url_list.txt</i></blockquote>
+- Benchmark a list of urls (Dont wait between requests):
+
+<blockquote>siege --benchmark --file <i>path/to/url_list.txt</i></blockquote>
+- Set the amount of concurrent connections:
+
+<blockquote>siege --concurrent=<i>50</i> --file <i>path/to/url_list.txt</i></blockquote>
+- Set how long for the siege to run for:
+
+<blockquote>siege --time=<i>30s</i> --file <i>path/to/url_list.txt</i></blockquote>

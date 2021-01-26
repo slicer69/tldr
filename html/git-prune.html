@@ -1,0 +1,11 @@
+<b>git prune</b><br><br>
+<b>Git command for pruning all unreachable objects from the object database.</b><br><br><b>This command is often not used directly but as an internal command that is used by Git gc.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-prune">home page</a></b><br><br>
+- Report what would be removed by Git prune without removing it:
+
+<blockquote>git prune --dry-run</blockquote>
+- Prune unreachable objects and display what has been pruned to `stdout`:
+
+<blockquote>git prune --verbose</blockquote>
+- Prune unreachable objects while showing progress:
+
+<blockquote>git prune --progress</blockquote>

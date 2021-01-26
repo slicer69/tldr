@@ -2,25 +2,25 @@
 <b>Download videos from YouTube and other websites.</b><br><br><b>More information: <a href="http://rg3.github.io/youtube-dl/">home page</a></b><br><br>
 - Download a video or playlist:
 
-<blockquote>youtube-dl <i>https://www.youtube.com/watch?v=oHg5SJYRHA0</i></blockquote>
+<blockquote>youtube-dl '<i>https://www.youtube.com/watch?v=oHg5SJYRHA0</i>'</blockquote>
 - List all formats that a video or playlist is available in:
 
-<blockquote>youtube-dl --list-formats <i>https://www.youtube.com/watch?v=Mwa0_nE9H7A</i></blockquote>
+<blockquote>youtube-dl --list-formats '<i>https://www.youtube.com/watch?v=Mwa0_nE9H7A</i>'</blockquote>
 - Download a video or playlist at a specific quality:
 
-<blockquote>youtube-dl --format "<i>best[height<=480]</i>" <i>https://www.youtube.com/watch?v=oHg5SJYRHA0</i></blockquote>
+<blockquote>youtube-dl --format "<i>best[height<=480]</i>" '<i>https://www.youtube.com/watch?v=oHg5SJYRHA0</i>'</blockquote>
 - Download the audio from a video and convert it to an MP3:
 
-<blockquote>youtube-dl -x --audio-format <i>mp3</i> <i>url</i></blockquote>
+<blockquote>youtube-dl -x --audio-format <i>mp3</i> '<i>url</i>'</blockquote>
 - Download the best quality audio and video and merge them:
 
-<blockquote>youtube-dl -f bestvideo+bestaudio <i>url</i></blockquote>
+<blockquote>youtube-dl -f bestvideo+bestaudio '<i>url</i>'</blockquote>
 - Download video(s) as MP4 files with custom filenames:
 
-<blockquote>youtube-dl --format <i>mp4</i> -o "<i>%(title)s by %(uploader)s on %(upload_date)s in %(playlist)s.%(ext)s</i>" <i>url</i></blockquote>
+<blockquote>youtube-dl --format <i>mp4</i> -o "<i>%(title)s by %(uploader)s on %(upload_date)s in %(playlist)s.%(ext)s</i>" '<i>url</i>'</blockquote>
 - Download a particular language's subtitles along with the video:
 
-<blockquote>youtube-dl --sub-lang <i>en</i> --write-sub <i>https://www.youtube.com/watch?v=Mwa0_nE9H7A</i></blockquote>
+<blockquote>youtube-dl --sub-lang <i>en</i> --write-sub '<i>https://www.youtube.com/watch?v=Mwa0_nE9H7A</i>'</blockquote>
 - Download a playlist and extract mp3 from it:
 
-<blockquote>youtube-dl -i --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" <i>url to playlist</i></blockquote>
+<blockquote>youtube-dl -f "bestaudio" --continue --no-overwrites --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" <i>url_to_playlist</i></blockquote>

@@ -9,3 +9,9 @@
 - Record a snippet and save it as mp3 (finish with Ctrl-C when done):
 
 <blockquote>arecord -vv --format=cd --file-type raw | lame -r - <i>path/to/file.mp3</i></blockquote>
+- List all sound cards and digital audio devices:
+
+<blockquote>arecord --list-devices</blockquote>
+- Allow interactive interface (e.g. use space-bar or enter to play or pause):
+
+<blockquote>arecord --interactive</blockquote>

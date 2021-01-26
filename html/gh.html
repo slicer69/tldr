@@ -1,23 +1,26 @@
 <b>gh</b><br><br>
 <b>Work seamlessly with GitHub from the command line.</b><br><br><b>More information: <a href="https://cli.github.com/">home page</a></b><br><br>
+- Clone a GitHub repository locally:
+
+<blockquote>gh repo clone <i>owner</i>/<i>repository</i></blockquote>
+- Create a new issue:
+
+<blockquote>gh issue create</blockquote>
+- View and filter the open issues of the current repository:
+
+<blockquote>gh issue list</blockquote>
+- View an issue in the browser:
+
+<blockquote>gh issue view --web <i>issue_number</i></blockquote>
 - Create a pull request:
 
 <blockquote>gh pr create</blockquote>
 - View a pull request in the browser:
 
-<blockquote>gh pr view <i>pr_number</i></blockquote>
-- Check out pull requests locally:
+<blockquote>gh pr view --web <i>pr_number</i></blockquote>
+- Locally check out the branch of a pull request, given its number:
 
 <blockquote>gh pr checkout <i>pr_number</i></blockquote>
-- Check the status of your pull requests:
+- Check the status of a repository's pull requests:
 
 <blockquote>gh pr status</blockquote>
-- Create a new issue:
-
-<blockquote>gh issue create</blockquote>
-- View and filter repository’s open issues:
-
-<blockquote>gh issue list</blockquote>
-- View an issue in the browser:
-
-<blockquote>gh issue view <i>issue_number</i></blockquote>

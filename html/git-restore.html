@@ -1,11 +1,23 @@
 <b>git restore</b><br><br>
-<b>Restore working tree files. Requires git version 2.23+.</b><br><br><b>See also `git checkout`.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-restore/">home page</a></b><br><br>
-- Restore a deleted file from the contents of the current commit (HEAD):
+<b>Restore working tree files. Requires Git version 2.23+.</b><br><br><b>See also `git checkout` and `git reset`.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-restore">home page</a></b><br><br>
+- Restore an unstaged file to the version of the current commit (HEAD):
 
 <blockquote>git restore <i>path/to/file</i></blockquote>
-- Restore a file to a version from a different commit:
+- Restore an unstaged file to the version of a specific commit:
 
 <blockquote>git restore --source <i>commit</i> <i>path/to/file</i></blockquote>
-- Undo any uncommitted changes to tracked files, reverting to the current HEAD:
+- Discard all unstaged changes to tracked files:
 
-<blockquote>git restore .</blockquote>
+<blockquote>git restore :/</blockquote>
+- Unstage a file:
+
+<blockquote>git restore --staged <i>path/to/file</i></blockquote>
+- Unstage all files:
+
+<blockquote>git restore --staged :/</blockquote>
+- Discard all changes to files, both staged and unstaged:
+
+<blockquote>git restore --worktree --staged :/</blockquote>
+- Interactively select sections of files to restore:
+
+<blockquote>git restore --patch</blockquote>

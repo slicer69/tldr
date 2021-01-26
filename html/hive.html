@@ -1,0 +1,14 @@
+<b>hive</b><br><br>
+<b>CLI tool for Apache Hive.</b><br><br><b>More information: <a href="https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Cli">home page</a></b><br><br>
+- Start a Hive interactive shell:
+
+<blockquote>hive</blockquote>
+- Run HiveQL:
+
+<blockquote>hive -e "<i>hiveql_query</i>"</blockquote>
+- Run a HiveQL file with a variable substitution:
+
+<blockquote>hive --define <i>key</i>=<i>value</i> -f <i>path/to/file.sql</i></blockquote>
+- Run a HiveQL with HiveConfig (e.g. `mapred.reduce.tasks=32`):
+
+<blockquote>hive --hiveconf <i>conf_name</i>=<i>conf_value</i></blockquote>

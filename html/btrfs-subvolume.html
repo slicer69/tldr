@@ -1,0 +1,20 @@
+<b>btrfs subvolume</b><br><br>
+<b>Manage btrfs subvolumes and snapshots.</b><br><br><b>More information: <a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-subvolume">home page</a></b><br><br>
+- Create a new empty subvolume:
+
+<blockquote>sudo btrfs subvolume create <i>path/to/new_subvolume</i></blockquote>
+- List all subvolumes and snapshots in the specified filesystem:
+
+<blockquote>sudo btrfs subvolume list <i>path/to/btrfs_filesystem</i></blockquote>
+- Delete a subvolume:
+
+<blockquote>sudo btrfs subvolume delete <i>path/to/subvolume</i></blockquote>
+- Create a read-only snapshot of an existing subvolume:
+
+<blockquote>sudo btrfs subvolume snapshot -r <i>path/to/source_subvolume</i> <i>path/to/target</i></blockquote>
+- Create a read-write snapshot of an existing subvolume:
+
+<blockquote>sudo btrfs subvolume snapshot <i>path/to/source_subvolume</i> <i>path/to/target</i></blockquote>
+- Show detailed information about a subvolume:
+
+<blockquote>sudo btrfs subvolume show <i>path/to/subvolume</i></blockquote>

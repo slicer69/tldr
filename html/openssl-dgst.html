@@ -1,0 +1,17 @@
+<b>openssl dgst</b><br><br>
+<b>OpenSSL command to generate digest values and perform signature operations.</b><br><br><b>More information: <a href="https://www.openssl.org/docs/manmaster/man1/openssl-dgst.html">home page</a></b><br><br>
+- Calculate the SHA256 digest for a file, saving the result to a specific file:
+
+<blockquote>openssl dgst -sha256 -binary -out <i>output_file</i> <i>input_file</i></blockquote>
+- Sign a file using an RSA key, saving the result to a specific file:
+
+<blockquote>openssl dgst -sign <i>private_key_file</i> -sha256 -sigopt rsa_padding_mode:pss -out <i>output_file</i> <i>input_file</i></blockquote>
+- Verify an RSA signature:
+
+<blockquote>openssl dgst -verify <i>public_key_file</i> -signature <i>signature_file</i> -sigopt rsa_padding_mode:pss <i>signature_message_file</i></blockquote>
+- Sign a file using and ECDSA key:
+
+<blockquote>openssl dgst -sign <i>private_key_file</i> -sha256 -out <i>output_file</i> <i>input_file</i></blockquote>
+- Verify an ECDSA signature:
+
+<blockquote>openssl dgst -verify <i>public_key_file</i> -signature <i>signature_file</i> <i>signature_message_file</i></blockquote>

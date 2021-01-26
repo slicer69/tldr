@@ -1,0 +1,20 @@
+<b>gh issue</b><br><br>
+<b>Manage GitHub issues from the command line.</b><br><br><b>More information: <a href="https://cli.github.com/manual/gh_issue">home page</a></b><br><br>
+- Print out the issue:
+
+<blockquote>gh issue view <i>issue_number</i></blockquote>
+- Create a new issue in the web browser:
+
+<blockquote>gh issue create --web</blockquote>
+- List the last 10 issues with the `bug` label:
+
+<blockquote>gh issue list --limit <i>10</i> --label "<i>bug</i>"</blockquote>
+- List closed issues made by a specific user:
+
+<blockquote>gh issue list --state closed --author <i>username</i></blockquote>
+- Display the status of issues relevant to the user, in a specific repository:
+
+<blockquote>gh issue status --repo <i>owner</i>/<i>repository</i></blockquote>
+- Reopen an issue:
+
+<blockquote>gh issue reopen <i>issue_number</i></blockquote>

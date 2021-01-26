@@ -1,0 +1,17 @@
+<b>clang-format</b><br><br>
+<b>Tool to auto-format C/C++/Java/JavaScript/Objective-C/Protobuf/C# code.</b><br><br><b>More information: <a href="https://clang.llvm.org/docs/ClangFormat.html">home page</a></b><br><br>
+- Format a file and print the result to `stdout`:
+
+<blockquote>clang-format <i>path/to/file</i></blockquote>
+- Format a file in-place:
+
+<blockquote>clang-format -i <i>path/to/file</i></blockquote>
+- Format a file using a predefined coding style:
+
+<blockquote>clang-format --style=<i>LLVM|Google|Chromium|Mozilla|WebKit</i> <i>path/to/file</i></blockquote>
+- Format a file using the `.clang-format` file in one of the parent directories of the source file:
+
+<blockquote>clang-format --style=file <i>path/to/file</i></blockquote>
+- Generate a custom `.clang-format` file:
+
+<blockquote>clang-format --style=<i>LLVM|Google|Chromium|Mozilla|WebKit</i> --dump-config > <i">home page</a>clang-format</i></blockquote>

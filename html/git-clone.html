@@ -3,6 +3,9 @@
 - Clone an existing repository:
 
 <blockquote>git clone <i>remote_repository_location</i></blockquote>
+- Clone an existing repository into a specific directory:
+
+<blockquote>git clone <i>remote_repository_location</i> <i>path/to/directory</i></blockquote>
 - Clone an existing repository and its submodules:
 
 <blockquote>git clone --recursive <i>remote_repository_location</i></blockquote>
@@ -15,3 +18,6 @@
 - Clone an existing repository only fetching the 10 most recent commits on the default branch (useful to save time):
 
 <blockquote>git clone --depth <i>10</i> <i>remote_repository_location</i></blockquote>
+- Clone an existing repository only fetching a specific branch:
+
+<blockquote>git clone --branch <i>name</i> --single-branch <i>remote_repository_location</i></blockquote>

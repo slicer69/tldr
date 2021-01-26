@@ -1,0 +1,17 @@
+<b>openconnect</b><br><br>
+<b>A VPN client, for Cisco AnyConnect VPNs and others.</b><br><br><b>More information: <a href="https://www.infradead.org/openconnect/manual.html">home page</a></b><br><br>
+- Connect to a server:
+
+<blockquote>openconnect <i>vpn.example.org</i></blockquote>
+- Connect to a server, forking into the background:
+
+<blockquote>openconnect --background <i>vpn.example.org</i></blockquote>
+- Terminate the connection that is running in the background:
+
+<blockquote>killall -SIGINT openconnect</blockquote>
+- Connect to a server, reading options from a config file:
+
+<blockquote>openconnect --config=<i>path/to/file</i> <i>vpn.example.org</i></blockquote>
+- Connect to a server and authenticate with a specific SSL client certificate:
+
+<blockquote>openconnect --certificate=<i>path/to/file</i> <i>vpn.example.org</i></blockquote>

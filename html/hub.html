@@ -1,15 +1,15 @@
 <b>hub</b><br><br>
-<b>A wrapper for git that adds commands for working with GitHub-based projects.</b><br><br><b>If set up as instructed by `hub alias`, one can use `git` to run `hub` commands.</b><br><br><b>More information: <a href="https://hub.github.com">home page</a></b><br><br>
+<b>A wrapper for Git that adds commands for working with GitHub-based projects.</b><br><br><b>If set up as instructed by `hub alias`, one can use `git` to run `hub` commands.</b><br><br><b>More information: <a href="https://hub.github.com">home page</a></b><br><br>
 - Clone a repository you own, using just the repository name rather than the full URL:
 
 <blockquote>hub clone <i>repo_name</i></blockquote>
-- Clone another user's repository, using their github username and the repository name:
+- Clone another user's repository, using their GitHub username and the repository name:
 
 <blockquote>hub clone <i>username</i>/<i>repo_name</i></blockquote>
-- Create a fork of the current repository (cloned from another user) under your github profile:
+- Create a fork of the current repository (cloned from another user) under your GitHub profile:
 
 <blockquote>hub fork</blockquote>
-- Push the current local branch to github and create a PR for it in the original repository:
+- Push the current local branch to GitHub and create a PR for it in the original repository:
 
 <blockquote>hub push <i>remote_name</i> && hub pull-request</blockquote>
 - Create a PR of the current (already pushed) branch, reusing the message from the first commit:
@@ -18,6 +18,6 @@
 - Create a new branch with the contents of a pull request and switch to it:
 
 <blockquote>hub pr checkout <i>pr_number</i></blockquote>
-- Upload the current (local-only) repository to your github account:
+- Upload the current (local-only) repository to your GitHub account:
 
 <blockquote>hub create</blockquote>

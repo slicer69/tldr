@@ -1,0 +1,14 @@
+<b>ss-local</b><br><br>
+<b>Run a Shadowsocks client as a SOCKS5 proxy.</b><br><br><b>More information: <a href="https://github.com/shadowsocks/shadowsocks-libev/blob/master/doc/ss-local.asciidoc">home page</a></b><br><br>
+- Run a Shadowsocks proxy by specifying the host, server port, local port, password, and encryption method:
+
+<blockquote>ss-local -s <i>host</i> -p <i>server_port</i> -l <i>local port</i> -k <i>password</i> -m <i>encrypt_method</i></blockquote>
+- Run a Shadowsocks proxy by specifying the config file:
+
+<blockquote>ss-local -c <i>path/to/config/file.json</i></blockquote>
+- Use a plugin to run the proxy client:
+
+<blockquote>ss-local --plugin <i>plugin_name</i> --plugin-opts <i>plugin_options</i></blockquote>
+- Enable TCP fast open:
+
+<blockquote>ss-local --fast-open</blockquote>

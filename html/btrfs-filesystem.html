@@ -1,0 +1,20 @@
+<b>btrfs filesystem</b><br><br>
+<b>Manage btrfs filesystems.</b><br><br><b>More information: <a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-filesystem">home page</a></b><br><br>
+- Show filesystem usage (optionally run as root to show detailed information):
+
+<blockquote>btrfs filesystem usage <i>path/to/btrfs_mount</i></blockquote>
+- Show usage by individual devices:
+
+<blockquote>sudo btrfs filesystem show <i>path/to/btrfs_mount</i></blockquote>
+- Defragment a single file on a btrfs filesystem (avoid while a deduplication agent is running):
+
+<blockquote>sudo btrfs filesystem defragment -v <i>path/to/file</i></blockquote>
+- Defragment a directory recursively (does not cross subvolume boundaries):
+
+<blockquote>sudo btrfs filesystem defragment -v -r <i>path/to/directory</i></blockquote>
+- Force syncing unwritten data blocks to disk(s):
+
+<blockquote>sudo btrfs filesystem sync <i>path/to/btrfs_mount</i></blockquote>
+- Summarize disk usage for the files in a directory recursively:
+
+<blockquote>sudo btrfs filesystem du --summarize <i>path/to/directory</i></blockquote>

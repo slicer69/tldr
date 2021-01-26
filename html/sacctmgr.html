@@ -1,0 +1,14 @@
+<b>sacctmgr</b><br><br>
+<b>View, setup, and manage Slurm accounts.</b><br><br><b>More information: <a href="https://slurm.schedmd.com/sacctmgr.html">home page</a></b><br><br>
+- Show current configuration:
+
+<blockquote>sacctmgr show configuration</blockquote>
+- Add a cluster to the slurm database:
+
+<blockquote>sacctmgr add cluster <i>cluster_name</i></blockquote>
+- Add an account to the slurm database:
+
+<blockquote>sacctmgr add account <i>account_name</i> cluster=<i>cluster_of_account</i></blockquote>
+- Show details of user/association/cluster/account:
+
+<blockquote>sacctmgr show <i>user/association/cluster/account</i></blockquote>

@@ -1,0 +1,14 @@
+<b>etcd</b><br><br>
+<b>A distributed, reliable key-value store for the most critical data of a distributed system.</b><br><br><b>More information: <a href="https://etcd.io">home page</a></b><br><br>
+- Start a single-node etcd cluster:
+
+<blockquote>etcd</blockquote>
+- Start a single-node etcd cluster, listening for client requests on a custom url:
+
+<blockquote>etcd --advertise-client-urls <i>http://127.0.0.1:1234</i> --listen-client-urls <i>http://127.0.0.1:1234</i></blockquote>
+- Start a single-node etcd cluster with a custom name:
+
+<blockquote>etcd --name <i>my_etcd_cluster</i></blockquote>
+- Start a single-node etcd cluster with extensive metrics available at http://localhost:2379/debug/pprof/:
+
+<blockquote>etcd --enable-pprof --metrics extensive</blockquote>

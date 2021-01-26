@@ -1,0 +1,14 @@
+<b>git commit-tree</b><br><br>
+<b>Low level utility to create commit objects.</b><br><br><b>See also: `git commit`.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-commit-tree">home page</a></b><br><br>
+- Create a commit object with the specified message:
+
+<blockquote>git commit-tree <i>tree</i> -m "<i>message</i>"</blockquote>
+- Create a commit object reading the message from a file (use `-` for `stdin`):
+
+<blockquote>git commit-tree <i>tree</i> -F <i>path/to/file</i></blockquote>
+- Create a GPG-signed commit object:
+
+<blockquote>git commit-tree <i>tree</i> -m "<i>message</i>" --gpg-sign</blockquote>
+- Create a commit object with the specified parent commit object:
+
+<blockquote>git commit-tree <i>tree</i> -m "<i>message</i>" -p <i>parent_commit_sha</i></blockquote>

@@ -12,9 +12,6 @@
 - Output the first element in a JSON file:
 
 <blockquote>jq '.[0]' <i>file.json</i></blockquote>
-- Output the value of a given key of the first element in a JSON text from `stdin`:
-
-<blockquote>cat <i>file.json</i> | jq '.[0].<i>key_name</i>'</blockquote>
 - Output the value of a given key of each element in a JSON text from `stdin`:
 
 <blockquote>cat <i>file.json</i> | jq 'map(.<i>key_name</i>)'</blockquote>

@@ -1,0 +1,26 @@
+<b>yq</b><br><br>
+<b>A lightweight and portable command-line YAML processor.</b><br><br><b>More information: <a href="https://mikefarah.gitbook.io/yq/">home page</a></b><br><br>
+- Output a YAML file, in pretty-print format (v4+):
+
+<blockquote>yq eval <i>path/to/file.yaml</i></blockquote>
+- Output a YAML file, in pretty-print format (v3):
+
+<blockquote>yq read <i>path/to/file.yaml</i> --colors</blockquote>
+- Output the first element in a YAML file that contains only an array (v4+):
+
+<blockquote>yq eval '.[0]' <i>path/to/file.yaml</i></blockquote>
+- Output the first element in a YAML file that contains only an array (v3):
+
+<blockquote>yq read <i>path/to/file.yaml</i> '[0]'</blockquote>
+- Set (or overwrite) a key to a value in a file (v4+):
+
+<blockquote>yq eval '.<i>key</i> = "<i>value</i>"' --inplace <i>path/to/file.yaml</i></blockquote>
+- Set (or overwrite) a key to a value in a file (v3):
+
+<blockquote>yq write --inplace <i>path/to/file.yaml</i> '<i>key</i>' '<i>value</i>'</blockquote>
+- Merge two files and print to `stdout` (v4+):
+
+<blockquote>yq eval-all 'select(filename == "<i>path/to/file1.yaml</i>") * select(filename == "<i>path/to/file2.yaml</i>")' <i>path/to/file1.yaml</i> <i>path/to/file2.yaml</i></blockquote>
+- Merge two files and print to `stdout` (v3):
+
+<blockquote>yq merge <i>path/to/file1.yaml</i> <i>path/to/file2.yaml</i> --colors</blockquote>

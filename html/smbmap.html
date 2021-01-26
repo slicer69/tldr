@@ -1,0 +1,26 @@
+<b>smbmap</b><br><br>
+<b>SMB enumeration tool.</b><br><br><b>More information: <a href="https://github.com/ShawnDEvans/smbmap">home page</a></b><br><br>
+- Display SMB shares and permissions on a host, prompting for user's password or NTLM hash:
+
+<blockquote>smbmap -u <i>username</i> --prompt -H <i>ip</i></blockquote>
+- Display SMB shares and permissions on a host, specifying the domain and passing the password NTLM hash:
+
+<blockquote>smbmap -u <i>username</i> --prompt -d <i>domain</i> -H <i>ip</i></blockquote>
+- Display SMB shares and list a single level of directories and files:
+
+<blockquote>smbmap -u <i>username</i> --prompt -H <i>ip</i> -r</blockquote>
+- Display SMB shares and recursively list a defined number of levels of directories and files:
+
+<blockquote>smbmap -u <i>username</i> --prompt -H <i>ip</i> -R --depth <i>3</i></blockquote>
+- Display SMB shares and recursively list directories and files, downloading the files matching a regular expression:
+
+<blockquote>smbmap -u <i>username</i> --prompt -H <i>ip</i> -R -A <i>pattern</i></blockquote>
+- Display SMB shares and recursively list directories and files, searching for file content matching a regular expression:
+
+<blockquote>smbmap -u <i>username</i> --prompt -H <i>ip</i> -R -F <i>pattern</i></blockquote>
+- Execute a shell command on a remote system:
+
+<blockquote>smbmap -u <i>username</i> --prompt -H <i>ip</i> -x <i>command</i></blockquote>
+- Upload a file to a remote system:
+
+<blockquote>smbmap -u <i>username</i> --prompt -H <i>ip</i> --upload <i>source</i> <i>destination</i></blockquote>

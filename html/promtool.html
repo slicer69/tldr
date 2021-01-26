@@ -1,0 +1,14 @@
+<b>promtool</b><br><br>
+<b>Tooling for the Prometheus monitoring system.</b><br><br><b>More information: <a href="https://prometheus.io/docs/prometheus/latest/getting_started/">home page</a></b><br><br>
+- Check if the config files are valid or not (if present report errors):
+
+<blockquote>promtool check config <i>config_file.yml</i></blockquote>
+- Check if the rule files are valid or not (if present report errors):
+
+<blockquote>promtool check rules <i>rules_file.yml</i></blockquote>
+- Pass Prometheus metrics over stdin to check them for consistency and correctness:
+
+<blockquote>curl --silent <i>http://example.com:9090/metrics/</i> | promtool check metrics</blockquote>
+- Unit tests for rules config:
+
+<blockquote>promtool test rules <i>test_file.yml</i></blockquote>

@@ -9,12 +9,12 @@
 - Print to a named printer:
 
 <blockquote>lpr -P <i>printer</i> <i>path/to/file</i></blockquote>
-- Print double sided in portrait:
+- Print either a single page (e.g. 2) or a range of pages (e.g. 2–16):
 
-<blockquote>lpr -o sides=<i>two-sided-long-edge</i> <i>path/to/file</i></blockquote>
-- Print double sided in landscape:
+<blockquote>lpr -o page-ranges=<i>2|2-16</i> <i>path/to/file</i></blockquote>
+- Print double sided either in portrait (long) or in landscape (short):
 
-<blockquote>lpr -o sides=<i>two-sided-short-edge</i> <i>path/to/file</i></blockquote>
+<blockquote>lpr -o sides=<i>two_sided_long_edge|two_sided_short_edge</i> <i>path/to/file</i></blockquote>
 - Set page size (more options may be available depending on setup):
 
 <blockquote>lpr -o media=<i>a4|letter|legal</i> <i>path/to/file</i></blockquote>

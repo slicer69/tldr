@@ -1,29 +1,26 @@
 <b>tar</b><br><br>
 <b>Archiving utility.</b><br><br><b>Often combined with a compression method, such as gzip or bzip.</b><br><br><b>More information: <a href="https://www.gnu.org/software/tar">home page</a></b><br><br>
-- Create an archive from files:
+- [c]reate an archive from [f]iles:
 
 <blockquote>tar cf <i>target.tar</i> <i>file1</i> <i>file2</i> <i>file3</i></blockquote>
-- Create a gzipped archive:
+- [c]reate a g[z]ipped archive from [f]iles:
 
 <blockquote>tar czf <i>target.tar.gz</i> <i>file1</i> <i>file2</i> <i>file3</i></blockquote>
-- Create a gzipped archive from a directory using relative paths:
+- [c]reate a g[z]ipped archive from a directory using relative paths:
 
-<blockquote>tar czf <i>target.tar.gz</i> -C <i>path/to/directory</i> .</blockquote>
-- Extract a (compressed) archive into the current directory:
+<blockquote>tar czf <i>target.tar.gz</i> --directory=<i>path/to/directory</i> .</blockquote>
+- E[x]tract a (compressed) archive [f]ile into the current directory:
 
 <blockquote>tar xf <i>source.tar[.gz|.bz2|.xz]</i></blockquote>
-- Extract a (compressed) archive into the target directory:
+- E[x]tract a (compressed) archive [f]ile into the target directory:
 
-<blockquote>tar xf <i>source.tar[.gz|.bz2|.xz]</i> -C <i>directory</i></blockquote>
-- Create a compressed archive, using archive suffix to determine the compression program:
+<blockquote>tar xf <i>source.tar[.gz|.bz2|.xz]</i> --directory=<i>directory</i></blockquote>
+- [c]reate a compressed archive from [f]iles, using [a]rchive suffix to determine the compression program:
 
 <blockquote>tar caf <i>target.tar.xz</i> <i>file1</i> <i>file2</i> <i>file3</i></blockquote>
-- List the contents of a tar file:
+- Lis[t] the contents of a tar [f]ile [v]erbosely:
 
 <blockquote>tar tvf <i>source.tar</i></blockquote>
-- Extract files matching a pattern:
+- E[x]tract [f]iles matching a pattern:
 
 <blockquote>tar xf <i>source.tar</i> --wildcards "<i>*.html</i>"</blockquote>
-- Extract a specific file without preserving the folder structure:
-
-<blockquote>tar xf <i>source.tar</i> <i>source.tar/path/to/extract</i> --strip-components=<i>depth_to_strip</i></blockquote>

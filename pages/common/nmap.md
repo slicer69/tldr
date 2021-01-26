@@ -4,6 +4,10 @@
 > Some features only activate when Nmap is run with privileges.
 > More information: <https://nmap.org>.
 
+- Check if an IP address is up, and guess the remote host's operating system:
+
+`nmap -O {{ip_or_hostname}}`
+
 - Try to determine whether the specified hosts are up and what are their names:
 
 `nmap -sn {{ip_or_hostname}} {{optional_another_address}}`
@@ -28,6 +32,6 @@
 
 `nmap -sSU {{address_or_addresses}}`
 
-- Perform TLS cipher scan against a host to determine supported ciphers and SSL/TLS protocols:
+- Perform full port, service, version detection scan with all default NSE scripts active against a host to determine weaknesses and info:
 
-`nmap --script ssl-enum-ciphers {{address_or_addresses}} -p 443`
+`nmap -sC -sV {{address_or_addresses}}`

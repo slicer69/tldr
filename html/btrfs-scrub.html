@@ -1,0 +1,20 @@
+<b>btrfs scrub</b><br><br>
+<b>Scrub btrfs filesystems to verify data integrity.</b><br><br><b>It is recommended to run a scrub once a month.</b><br><br><b>More information: <a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-scrub">home page</a></b><br><br>
+- Start a scrub:
+
+<blockquote>sudo btrfs scrub start <i>path/to/btrfs_mount</i></blockquote>
+- Show the status of an ongoing or last completed scrub:
+
+<blockquote>sudo btrfs scrub status <i>path/to/btrfs_mount</i></blockquote>
+- Cancel an ongoing scrub:
+
+<blockquote>sudo btrfs scrub cancel <i>path/to/btrfs_mount</i></blockquote>
+- Resume a previously cancelled scrub:
+
+<blockquote>sudo btrfs scrub resume <i>path/to/btrfs_mount</i></blockquote>
+- Start a scrub, but wait until the scrub finishes before exiting:
+
+<blockquote>sudo btrfs scrub start -B <i>path/to/btrfs_mount</i></blockquote>
+- Start a scrub in quiet mode (does not print errors or statistics):
+
+<blockquote>sudo btrfs scrub start -q <i>path/to/btrfs_mount</i></blockquote>

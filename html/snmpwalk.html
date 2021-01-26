@@ -1,0 +1,17 @@
+<b>snmpwalk</b><br><br>
+<b>SNMP query tool.</b><br><br><b>More information: <a href="https://linux.die.net/man/1/snmpwalk">home page</a></b><br><br>
+- Query the system information of a remote host using SNMPv1 and a community string:
+
+<blockquote>snmpwalk -v1 -c <i>community</i> <i>ip</i></blockquote>
+- Query specific system information on a remote host by OID using SNMPv2 on a specified port:
+
+<blockquote>snmpwalk -v2c -c <i>community</i> <i>ip</i>:<i>port</i> <i>oid</i></blockquote>
+- Query specific system information on a remote host by OID using SNMPv3 and authentication without encryption:
+
+<blockquote>snmpwalk -v3 -l <i>authNoPriv</i> -u <i>username</i> -a <i>MD5|SHA</i> -A <i>passphrase</i> <i>ip</i> <i>oid</i></blockquote>
+- Query specific system information on a remote host by OID using SNMPv3, authentication, and encryption:
+
+<blockquote>snmpwalk -v3 -l <i>authPriv</i> -u <i>username</i> -a <i>MD5|SHA</i> -A <i>auth_passphrase</i> -x <i>DES|AES</i> -X <i>enc_passphrase</i> <i>ip</i> <i>oid</i></blockquote>
+- Query specific system information on a remote host by OID using SNMPv3 without authentication or encryption:
+
+<blockquote>snmpwalk -v3 -l <i>noAuthNoPriv</i> -u <i>username</i> <i>ip</i> <i>oid</i></blockquote>

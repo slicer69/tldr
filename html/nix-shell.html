@@ -1,0 +1,20 @@
+<b>nix-shell</b><br><br>
+<b>Start an interactive shell based on a Nix expression.</b><br><br><b>More information: <a href="https://nixos.org/manual/nix/stable/#sec-nix-shell">home page</a></b><br><br>
+- Start with nix expression in `shell.nix` or `default.nix` in the current directory:
+
+<blockquote>nix-shell</blockquote>
+- Run shell command in non-interactive shell and exit:
+
+<blockquote>nix-shell --run "<i>command</i> <i>command_arguments</i>"</blockquote>
+- Start with expression in `default.nix` in the current directory:
+
+<blockquote>nix-shell <i>default.nix</i></blockquote>
+- Start with packages loaded from nixpkgs:
+
+<blockquote>nix-shell --packages <i>package_name_1</i> <i>package_name_2</i></blockquote>
+- Start with packages loaded from specific nixpkgs revision:
+
+<blockquote>nix-shell --packages <i>package_names</i> -I nixpkgs=<i>https://github.com/NixOS/nixpkgs/archive/nixpkgs_revision.tar.gz</i></blockquote>
+- Evaluate rest of file in specific interpreter, for use in `#!-scripts` (see <a href="https://nixos.org/manual/nix/stable/#use-as-a-interpreter>):
+
+<blockquote>nix-shell -i <i>interpreter</i> --packages <i>package_names</i></blockquote>

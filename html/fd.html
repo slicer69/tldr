@@ -11,7 +11,10 @@
 <blockquote>fd --extension <i>txt</i></blockquote>
 - Find files in a specific directory:
 
-<blockquote>fd <i>pattern</i> <i>path/to/dir</i></blockquote>
+<blockquote>fd <i>pattern</i> <i>path/to/directory</i></blockquote>
 - Include ignored and hidden files in the search:
 
 <blockquote>fd --hidden --no-ignore <i>pattern</i></blockquote>
+- Execute a command on each search result returned:
+
+<blockquote>fd <i>pattern</i> --exec <i>command</i></blockquote>

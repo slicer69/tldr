@@ -1,0 +1,8 @@
+<b>amass track</b><br><br>
+<b>Track differences between enumerations of the same domain.</b><br><br><b>More information: <a href="https://github.com/OWASP/Amass/blob/master/doc/user_guide.md#the-track-subcommand">home page</a></b><br><br>
+- Show the difference between the last two enumerations of the specified domain:
+
+<blockquote>amass track -dir <i>path/to/database_directory</i> -d <i>domain_name</i> -last 2</blockquote>
+- Show the difference between a certain point in time and the last enumeration:
+
+<blockquote>amass track -dir <i>path/to/database_directory</i> -d <i>domain_name</i> -since <i>01/02 15:04:05 2006 MST</i></blockquote>

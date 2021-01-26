@@ -1,0 +1,17 @@
+<b>dumpe2fs</b><br><br>
+<b>Print the super block and blocks group information for ext2/ext3/ext4 filesystems.</b><br><br><b>Unmount the partition before running this command using `umount <i>device</i>`.</b><br><br><b>More information: <a href="https://linux.die.net/man/8/dumpe2fs">home page</a></b><br><br>
+- Display ext2, ext3 and ext4 filesystem information:
+
+<blockquote>dumpe2fs <i>/dev/sdXN</i></blockquote>
+- Display the blocks which are reserved as bad in the filesystem:
+
+<blockquote>dumpe2fs -b <i>/dev/sdXN</i></blockquote>
+- Force display filesystem information even with non-recognisable feature flags:
+
+<blockquote>dumpe2fs -f <i>/dev/sdXN</i></blockquote>
+- Only display the superblock information and not any of the block group descriptor detail information:
+
+<blockquote>dumpe2fs -h <i>/dev/sdXN</i></blockquote>
+- Print the detailed group information block numbers in hexadecimal format:
+
+<blockquote>dumpe2fs -x <i>/dev/sdXN</i></blockquote>

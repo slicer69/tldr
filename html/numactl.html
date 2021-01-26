@@ -1,0 +1,11 @@
+<b>numactl</b><br><br>
+<b>Control NUMA policy for processes or shared memory.</b><br><br><b>More information: <a href="https://man7.org/linux/man-pages/man8/numactl.8.html">home page</a></b><br><br>
+- Run a command on node 0 with memory allocated on node 0 and 1:
+
+<blockquote>numactl --cpunodebind=<i>0</i> --membind=<i>0,1</i> -- <i>command</i> <i>command_arguments</i></blockquote>
+- Run a command on CPUs (cores) 0-4 and 8-12 of the current cpuset:
+
+<blockquote>numactl --physcpubind=<i>+0-4,8-12</i> -- <i>command</i> <i>command_arguments</i></blockquote>
+- Run a command with its memory interleaved on all CPUs:
+
+<blockquote>numactl --interleave=<i>all</i> -- <i>command</i> <i>command_arguments</i></blockquote>

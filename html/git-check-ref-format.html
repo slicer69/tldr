@@ -1,0 +1,11 @@
+<b>git check-ref-format</b><br><br>
+<b>Checks if a given refname is acceptable, and exits with a non-zero status if it is not.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-check-ref-format">home page</a></b><br><br>
+- Check the format of the specified refname:
+
+<blockquote>git check-ref-format <i>refs/head/refname</i></blockquote>
+- Print the name of the last branch checked out:
+
+<blockquote>git check-ref-format --branch @{-1}</blockquote>
+- Normalize a refname:
+
+<blockquote>git check-ref-format --normalize <i>refs/head/refname</i></blockquote>

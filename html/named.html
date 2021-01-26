@@ -1,0 +1,17 @@
+<b>named</b><br><br>
+<b>Execute the DNS (Dynamic Name Service) server daemon that converts host names to IP addresses and vice versa.</b><br><br><b>More information: <a href="https://linux.die.net/man/8/named">home page</a></b><br><br>
+- Read the default configuration file `/etc/named.conf`, read any initial data and listen for queries:
+
+<blockquote>named</blockquote>
+- Read a custom configuration file:
+
+<blockquote>named -c <i>path/to/named.conf</i></blockquote>
+- Use IPv4 or IPv6 only, even if the host machine is capable of utilising other protocols:
+
+<blockquote>named <i>-4|-6</i></blockquote>
+- Listen for queries on a specific port instead of the default port `53`:
+
+<blockquote>named -p <i>port</i></blockquote>
+- Run the server in the foreground and do not daemonize:
+
+<blockquote>named -f</blockquote>

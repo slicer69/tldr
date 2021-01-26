@@ -1,0 +1,17 @@
+<b>schroot</b><br><br>
+<b>Run command or start an interactive shell with a different root directory. More customizable than `chroot`.</b><br><br><b>More information: <a href="https://wiki.debian.org/Schroot">home page</a></b><br><br>
+- Run a command in a specific chroot:
+
+<blockquote>schroot --chroot <i>chroot</i> <i>command</i></blockquote>
+- Run a command with options in a specific chroot:
+
+<blockquote>schroot --chroot <i>chroot</i> <i>command</i> -- <i>command_options</i></blockquote>
+- Run a command in all available chroots:
+
+<blockquote>schroot --all <i>command</i></blockquote>
+- Start an interactive shell with in a specific chroot as a specific user:
+
+<blockquote>schroot --chroot <i>chroot</i> --user <i>user</i></blockquote>
+- List available chroots:
+
+<blockquote>schroot --list</blockquote>

@@ -1,0 +1,11 @@
+<b>sstat</b><br><br>
+<b>View information about running jobs.</b><br><br><b>More information: <a href="https://slurm.schedmd.com/sstat.html">home page</a></b><br><br>
+- Display status information of a comma-separated list of jobs:
+
+<blockquote>sstat --jobs=<i>job_id</i></blockquote>
+- Display job ID, average CPU and average virtual memory size of a comma-separated list of jobs, with pipes as column delimiters:
+
+<blockquote>sstat --parsable --jobs=<i>job_id</i> --format=<i>JobID</i>,<i>AveCPU</i>,<i>AveVMSize</i></blockquote>
+- Display list of fields available:
+
+<blockquote>sstat --helpformat</blockquote>

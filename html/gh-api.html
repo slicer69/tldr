@@ -1,0 +1,26 @@
+<b>gh api</b><br><br>
+<b>Makes authenticated HTTP requests to the GitHub API and prints the response.</b><br><br><b>More information: <a href="https://cli.github.com/manual/gh_api">home page</a></b><br><br>
+- Display the subcommand help:
+
+<blockquote>gh api --help</blockquote>
+- Display the releases for the current repository in JSON format:
+
+<blockquote>gh api repos/:owner/:repo/releases</blockquote>
+- Create a reaction for a specific issue:
+
+<blockquote>gh api --header <i>Accept:application/vnd.github.squirrel-girl-preview+json</i> --raw-field '<i>content=+1</i>' <i>repos/:owner/:repo/issues/123/reactions</i></blockquote>
+- Display the result of a GraphQL query in JSON format:
+
+<blockquote>gh api graphql --field <i>name=':repo'</i> --raw-field '<i>query</i>'</blockquote>
+- Send a request using a custom HTTP method:
+
+<blockquote>gh api --method <i>POST</i> <i>endpoint</i></blockquote>
+- Include the HTTP response headers in the output:
+
+<blockquote>gh api --include <i>endpoint</i></blockquote>
+- Do not print the response body:
+
+<blockquote>gh api --silent <i>endpoint</i></blockquote>
+- Send a request to a specific GitHub Enterprise Server:
+
+<blockquote>gh api --hostname <i>github.example.com</i> <i>endpoint</i></blockquote>

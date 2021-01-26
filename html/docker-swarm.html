@@ -1,0 +1,23 @@
+<b>docker swarm</b><br><br>
+<b>A container orchestration tool.</b><br><br><b>More information: <a href="https://docs.docker.com/engine/swarm/">home page</a></b><br><br>
+- Initialize a swarm cluster:
+
+<blockquote>docker swarm init</blockquote>
+- Display the token to join a manager or a worker:
+
+<blockquote>docker swarm join-token <i>worker|manager</i></blockquote>
+- Join a new node to the cluster:
+
+<blockquote>docker swarm join --token <i>token</i> <i>manager_node_url:2377</i></blockquote>
+- Remove a worker from the swarm (run inside the worker node):
+
+<blockquote>docker swarm leave</blockquote>
+- Display the current CA certificate in PEM format:
+
+<blockquote>docker swarm ca</blockquote>
+- Rotate the current CA certificate and display the new certificate:
+
+<blockquote>docker swarm ca --rotate</blockquote>
+- Change the valid period for node certificates:
+
+<blockquote>docker swarm update --cert-expiry <i>hours</i>h<i>minutes</i>m<i>seconds</i>s</blockquote>

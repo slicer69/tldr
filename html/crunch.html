@@ -1,0 +1,26 @@
+<b>crunch</b><br><br>
+<b>Wordlist generator.</b><br><br><b>More information: <a href="https://sourceforge.net/projects/crunch-wordlist/">home page</a></b><br><br>
+- Output a list of words of length 1 to 3 with only lowercase characters:
+
+<blockquote>crunch <i>1</i> <i>3</i></blockquote>
+- Output a list of hexadecimal words of length 8:
+
+<blockquote>crunch <i>8</i> <i>8</i> <i>0123456789abcdef</i></blockquote>
+- Output a list of all permutations of abc (lengths are not processed):
+
+<blockquote>crunch <i>1</i> <i>1</i> -p <i>abc</i></blockquote>
+- Output a list of all permutations of the given strings (lengths are not processed):
+
+<blockquote>crunch <i>1</i> <i>1</i> -p <i>abc</i> <i>def</i> <i>ghi</i></blockquote>
+- Output a list of words generated according to the given pattern and a maximum number of duplicate letters:
+
+<blockquote>crunch <i>5</i> <i>5</i> <i>abcde123</i> -t <i>@@@12</i> -d 2@</blockquote>
+- Write a list of words in chunk files of a given size, starting with the given string:
+
+<blockquote>crunch <i>3</i> <i>5</i> -o <i>START</i> -b <i>10kb</i> -s <i>abc</i></blockquote>
+- Write a list of words stopping with the given string and inverting the wordlist:
+
+<blockquote>crunch <i>1</i> <i>5</i> -o <i>START</i> -e <i>abcde</i> -i</blockquote>
+- Write a list of words in compressed chunk files with a specified number of words:
+
+<blockquote>crunch <i>1</i> <i>5</i> -o <i>START</i> -c <i>1000</i> -z <i>gzip|bzip2|lzma|7z</i></blockquote>
