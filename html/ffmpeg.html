@@ -6,7 +6,7 @@
 - Convert frames from a video or GIF into individual numbered images:
 
 <blockquote>ffmpeg -i <i>video.mpg|video.gif</i> <i>frame_%d.png</i></blockquote>
-- Combine numbered images (frame_1.jpg, frame_2.jpg, etc) into a video or GIF:
+- Combine numbered images (`frame_1.jpg`, `frame_2.jpg`, etc) into a video or GIF:
 
 <blockquote>ffmpeg -i <i>frame_%d.jpg</i> -f image2 <i>video.mpg|video.gif</i></blockquote>
 - Quickly extract a single frame from a video at time mm:ss and save it as a 128x128 resolution image:

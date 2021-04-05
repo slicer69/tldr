@@ -1,0 +1,26 @@
+<b>pacman --query</b><br><br>
+<b>Arch Linux package manager utility.</b><br><br><b>More information: <a href="https://man.archlinux.org/man/pacman.8">home page</a></b><br><br>
+- List installed packages and versions:
+
+<blockquote>pacman --query</blockquote>
+- List only packages and versions that were explicitly installed:
+
+<blockquote>pacman --query --explicit</blockquote>
+- Find which package owns a file:
+
+<blockquote>pacman --query --owns <i>filename</i></blockquote>
+- Display information about an installed package:
+
+<blockquote>pacman --query --info <i>package_name</i></blockquote>
+- List files owned by a package:
+
+<blockquote>pacman --query --list <i>package_name</i></blockquote>
+- List orphan packages (installed as dependencies but not required by any package):
+
+<blockquote>pacman --query --unrequired --deps --quiet</blockquote>
+- List installed packages not found in the repositories:
+
+<blockquote>pacman --query --foreign</blockquote>
+- List outdated packages:
+
+<blockquote>pacman --query --upgrades</blockquote>

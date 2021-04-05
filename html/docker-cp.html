@@ -1,0 +1,11 @@
+<b>docker cp</b><br><br>
+<b>Copy files or directories between host and container filesystems.</b><br><br><b>More information: <a href="https://docs.docker.com/engine/reference/commandline/cp">home page</a></b><br><br>
+- Copy a file or directory from the host to a container:
+
+<blockquote>docker cp <i>path/to/file_or_directory_on_host</i> <i>container_name</i>:<i>path/to/file_or_directory_in_container</i></blockquote>
+- Copy a file or directory from a container to the host:
+
+<blockquote>docker cp <i>container_name</i>:<i>path/to/file_or_directory_in_container</i> <i>path/to/file_or_directory_on_host</i></blockquote>
+- Copy a file or directory from the host to a container, following symlinks (copies the symlinked files directly, not the symlinks themselves):
+
+<blockquote>docker cp --follow-link <i>path/to/symlink_on_host</i> <i>container_name</i>:<i>path/to/file_or_directory_in_container</i></blockquote>

@@ -8,7 +8,7 @@
 <blockquote>gdalbuildvrt -input_file_list <i>path/to/list.txt</i> <i>path/to/output.vrt</i></blockquote>
 - Make a RGB virtual mosaic from 3 single-band input files:
 
-<blockquote>gdalbuildvrt -separate <i>path/to/rgb.vrt</i>  <i>path/to/red.tif}] <i>path/to/green.tif</i> <i>path/to/blue.tif</i></blockquote>
+<blockquote>gdalbuildvrt -separate <i>path/to/rgb.vrt</i> <i>path/to/red.tif</i> <i>path/to/green.tif</i> <i>path/to/blue.tif</i></blockquote>
 - Make a virtual mosaic with blue background colour (RGB: 0 0 255):
 
 <blockquote>gdalbuildvrt -hidenodata -vrtnodata "<i>0 0 255</i>" <i>path/to/output.vrt</i> <i>path/to/input_directory/*.tif</i></blockquote>

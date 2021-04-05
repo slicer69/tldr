@@ -1,12 +1,13 @@
 # scrot
 
 > Screen capture utility.
+> More information: <https://github.com/resurrecting-open-source-projects/scrot>.
 
 - Capture a screenshot and save it to the current directory with the current date as the filename:
 
 `scrot`
 
-- Capture a screenshot and save it as "capture.png":
+- Capture a screenshot and save it as `capture.png`:
 
 `scrot {{capture.png}}`
 

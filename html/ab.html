@@ -1,17 +1,17 @@
 <b>ab</b><br><br>
-<b>Apache Benchmarking tool. The simplest tool to perform a load testing.</b><br><br><b>More information: <a href="https://httpd.apache.org/docs/2.4/programs/ab.html">home page</a></b><br><br>
+<b>Apache HTTP server benchmarking tool.</b><br><br><b>More information: <a href="https://httpd.apache.org/docs/current/programs/ab.html">home page</a></b><br><br>
 - Execute 100 HTTP GET requests to a given URL:
 
 <blockquote>ab -n <i>100</i> <i>url</i></blockquote>
-- Execute 100 HTTP GET requests, processing up to 10 requests concurrently, to given URL:
+- Execute 100 HTTP GET requests, in concurrent batches of 10, to a URL:
 
 <blockquote>ab -n <i>100</i> -c <i>10</i> <i>url</i></blockquote>
-- Use keep alive:
+- Execute 100 HTTP POST requests to a URL, using a JSON payload from a file:
+
+<blockquote>ab -n <i>100</i> -T <i>application/json</i> -p <i>path/to/file.json</i> <i>url</i></blockquote>
+- Use HTTP [K]eep Alive, i.e. perform multiple requests within one HTTP session:
 
 <blockquote>ab -k <i>url</i></blockquote>
 - Set the maximum number of seconds to spend for benchmarking:
 
 <blockquote>ab -t <i>60</i> <i>url</i></blockquote>
-- Execute 100 HTTP POST requests to a given URL, using a JSON payload from a file:
-
-<blockquote>ab -n <i>100</i> -T <i>application/json</i> -p <i>data.json</i> <i>url</i></blockquote>

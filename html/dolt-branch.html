@@ -1,0 +1,26 @@
+<b>dolt branch</b><br><br>
+<b>Manage Dolt branches.</b><br><br><b>More information: <a href="https://github.com/dolthub/dolt">home page</a></b><br><br>
+- List local branches (current branch is highlighted by `*`):
+
+<blockquote>dolt branch</blockquote>
+- List all local and remote branches:
+
+<blockquote>dolt branch --all</blockquote>
+- Create a new branch based on the current branch:
+
+<blockquote>dolt branch <i>branch_name</i></blockquote>
+- Create a new branch with the specified commit as the latest:
+
+<blockquote>dolt branch <i>branch_name</i> <i>commit</i></blockquote>
+- Rename a branch:
+
+<blockquote>dolt branch --move <i>branch_name1</i> <i>branch_name2</i></blockquote>
+- Duplicate a branch:
+
+<blockquote>dolt branch --copy <i>branch_name1</i> <i>branch_name2</i></blockquote>
+- Delete a branch:
+
+<blockquote>dolt branch --delete <i>branch_name</i></blockquote>
+- Display the name of the current branch:
+
+<blockquote>dolt branch --show-current</blockquote>

@@ -1,0 +1,17 @@
+<b>btrfs device</b><br><br>
+<b>Manage devices in a btrfs filesystem.</b><br><br><b>More information: <a href="https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-device">home page</a></b><br><br>
+- Add one or more devices to a btrfs filesystem:
+
+<blockquote>sudo btrfs device add <i>path/to/block_device1</i> [<i>path/to/block_device2</i>] <i>path/to/btrfs_filesystem</i></blockquote>
+- Remove a device from a btrfs filesystem:
+
+<blockquote>sudo btrfs device remove <i>path/to/device|device_id</i> [<i">home page</a>..</i>]</blockquote>
+- Display error statistics:
+
+<blockquote>sudo btrfs device stats <i>path/to/btrfs_filesystem</i></blockquote>
+- Scan all disks and inform the kernel of all detected btrfs filesystems:
+
+<blockquote>sudo btrfs device scan --all-devices</blockquote>
+- Display detailed per-disk allocation statistics:
+
+<blockquote>sudo btrfs device usage <i>path/to/btrfs_filesystem</i></blockquote>

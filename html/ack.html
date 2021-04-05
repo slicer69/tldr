@@ -1,23 +1,26 @@
 <b>ack</b><br><br>
-<b>A search tool like grep, optimized for programmers.</b><br><br><b>More information: <a href="https://beyondgrep.com/documentation/">home page</a></b><br><br>
-- Find files containing "foo":
+<b>A search tool like grep, optimized for developers.</b><br><br><b>See also: `rg`, which is much faster.</b><br><br><b>More information: <a href="https://beyondgrep.com/documentation">home page</a></b><br><br>
+- Search for files containing a string or regular expression in the current directory recursively:
 
-<blockquote>ack <i>foo</i></blockquote>
-- Find files of a specific type:
+<blockquote>ack "<i>search_pattern</i>"</blockquote>
+- Search for a case-insensitive pattern:
 
-<blockquote>ack --ruby <i>foo</i></blockquote>
-- Count the total number of matches for the term "foo":
+<blockquote>ack --ignore-case "<i>search_pattern</i>"</blockquote>
+- Search for lines matching a pattern, printing [o]nly the matched text and not the rest of the line:
 
-<blockquote>ack -ch <i>foo</i></blockquote>
-- Show the file names containing "foo" and number of matches in each file:
+<blockquote>ack -o "<i>search_pattern</i>"</blockquote>
+- Limit search to files of a specific type:
 
-<blockquote>ack -cl <i>foo</i></blockquote>
-- Search a file for a specified string:
+<blockquote>ack --type=<i>ruby</i> "<i>search_pattern</i></blockquote>
+- Do not search in files of a specific type:
 
-<blockquote>ack bar "<i>foo bar</i>" <i>path/to/file</i></blockquote>
-- Search a file for the specified regex pattern:
+<blockquote>ack --type=no<i>ruby</i> "<i>search_pattern</i></blockquote>
+- Count the total number of matches found:
 
-<blockquote>ack bar "<i>[bB]ar \d+</i>" <i>path/to/file</i></blockquote>
-- List all valid types:
+<blockquote>ack --count --no-filename "<i>search_pattern</i>"</blockquote>
+- Print the file names and the number of matches for each file only:
+
+<blockquote>ack --count --files-with-matches "<i>search_pattern</i>"</blockquote>
+- List all values that can be used with `--type`:
 
 <blockquote>ack --help-types</blockquote>

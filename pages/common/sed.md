@@ -1,6 +1,7 @@
 # sed
 
 > Edit text in a scriptable manner.
+> More information: <https://man.archlinux.org/man/sed.1>.
 
 - Replace the first occurrence of a regular expression in each line of a file, and print the result:
 
@@ -30,6 +31,6 @@
 
 `sed -e 's/{{find}}/{{replace}}/' -e 's/{{find}}/{{replace}}/' {{filename}}`
 
-- Replace separator / by any other character not used in the find or replace patterns, e.g., #:
+- Replace separator `/` by any other character not used in the find or replace patterns, e.g., `#`:
 
 `sed 's#{{find}}#{{replace}}#' {{filename}}`

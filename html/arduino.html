@@ -1,0 +1,20 @@
+<b>arduino</b><br><br>
+<b>Arduino Studio - Integrated Development Environment for the Arduino platform.</b><br><br><b>More information: <a href="https://github.com/arduino/Arduino/blob/master/build/shared/manpage.adoc">home page</a></b><br><br>
+- Build a sketch:
+
+<blockquote>arduino --verify <i>path/to/file.ino</i></blockquote>
+- Build and upload a sketch:
+
+<blockquote>arduino --upload <i>path/to/file.ino</i></blockquote>
+- Build and upload a sketch to an Arduino Nano with an Atmega328p CPU, connected on port `/dev/ttyACM0`:
+
+<blockquote>arduino --board <i>arduino:avr:nano:cpu=atmega328p</i> --port <i>/dev/ttyACM0</i> --upload <i>path/to/file.ino</i></blockquote>
+- Set the preference `name` to a given `value`:
+
+<blockquote>arduino --pref <i>name</i>=<i>value</i></blockquote>
+- Build a sketch, put the build results in the build directory, and reuse any previous build results in that directory:
+
+<blockquote>arduino --pref build.path=<i>path/to/build_directory</i> --verify <i>path/to/file.ino</i></blockquote>
+- Save any (changed) preferences to `preferences.txt`:
+
+<blockquote>arduino --save-prefs</blockquote>

@@ -1,14 +1,14 @@
 <b>base64</b><br><br>
-<b>Encode or decode file or standard input to/from Base64, to standard output.</b><br><br>
+<b>Encode or decode file or standard input to/from Base64, to standard output.</b><br><br><b>More information: <a href="https://www.gnu.org/software/coreutils/base64">home page</a></b><br><br>
 - Encode a file:
 
 <blockquote>base64 <i>filename</i></blockquote>
 - Decode a file:
 
-<blockquote>base64 -d <i>filename</i></blockquote>
-- Encode from `stdin`:
+<blockquote>base64 --decode <i>filename</i></blockquote>
+- Encode from stdin:
 
 <blockquote><i>somecommand</i> | base64</blockquote>
-- Decode from `stdin`:
+- Decode from stdin:
 
-<blockquote><i>somecommand</i> | base64 -d</blockquote>
+<blockquote><i>somecommand</i> | base64 --decode</blockquote>

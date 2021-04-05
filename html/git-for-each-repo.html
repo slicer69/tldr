@@ -1,0 +1,8 @@
+<b>git for-each-repo</b><br><br>
+<b>Run a Git command on a list of repositories.</b><br><br><b>Note: this command is experimental and may change.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-for-each-repo">home page</a></b><br><br>
+- Run maintenance on each of a list of repositories stored in the `maintenance.repo` user configuration variable:
+
+<blockquote>git for-each-repo --config=<i>maintenance.repo</i> <i>maintenance run</i></blockquote>
+- Run `git pull` on each repository listed in a global configuration variable:
+
+<blockquote>git for-each-repo --config=<i>global_configuration_variable</i> <i>pull</i></blockquote>

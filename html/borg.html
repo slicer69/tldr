@@ -9,7 +9,7 @@
 - List all archives in a repository:
 
 <blockquote>borg list <i>path/to/repo_directory</i></blockquote>
-- Extract a specific directory from the "Monday" archive in a remote repository, excluding all *.ext files:
+- Extract a specific directory from the "Monday" archive in a remote repository, excluding all `*.ext` files:
 
 <blockquote>borg extract <i>user</i>@<i>host</i>:<i>path/to/repo_directory</i>::<i>Monday</i> <i>path/to/target_directory</i> --exclude '<i>*.ext</i>'</blockquote>
 - Prune a repository by deleting all archives older than 7 days, listing changes:

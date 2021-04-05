@@ -1,0 +1,20 @@
+<b>pueue add</b><br><br>
+<b>Enqueue a task for execution.</b><br><br><b>More information: <a href="https://github.com/Nukesor/pueue">home page</a></b><br><br>
+- Add any command to the default queue:
+
+<blockquote>pueue add <i>command</i></blockquote>
+- Pass a list of flags or arguments to a command when enqueuing:
+
+<blockquote>pueue add -- <i>command --arg -f</i></blockquote>
+- Add a command but do not start it if it's the first in a queue:
+
+<blockquote>pueue add --stashed -- <i>rsync --archive --compress /local/directory /remote/directory</i></blockquote>
+- Add a command to a group and start it immediately, see `pueue group` to manage groups:
+
+<blockquote>pueue add --immediate --group "<i>CPU_intensive</i>" -- <i>ffmpeg -i input.mp4 frame_%d.png</i></blockquote>
+- Add a command and start it after commands 9 and 12 finish successfully:
+
+<blockquote>pueue add --after <i>9</i> <i>12</i> --group "<i>torrents</i>" -- <i>transmission-cli torrent_file.torrent</i></blockquote>
+- Add a command with a label after some delay has passed, see `pueue enqueue` for valid datetime formats:
+
+<blockquote>pueue add --label "<i>compressing large file</i>" --delay "<i>wednesday 10:30pm</i>" -- "<i>7z a compressed_file.7z large_file.xml</i>"</blockquote>

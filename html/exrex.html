@@ -1,0 +1,26 @@
+<b>exrex</b><br><br>
+<b>Generate all/random matching strings for a regular expression.</b><br><br><b>It can also simplify regular expressions.</b><br><br><b>More information: <a href="https://github.com/asciimoo/exrex">home page</a></b><br><br>
+- Generate all possible strings that match a regular expression:
+
+<blockquote>exrex '<i>regular_expression</i>'</blockquote>
+- Generate a random string that matches a regular expression:
+
+<blockquote>exrex --random '<i>regular_expression</i>'</blockquote>
+- Generate at most 100 strings that match a regular expression:
+
+<blockquote>exrex --max-number <i>100</i> '<i>regular_expression</i>'</blockquote>
+- Generate all possible strings that match a regular expression, joined together by a custom delimiter string:
+
+<blockquote>exrex --delimiter "<i>, </i>" '<i>regular_expression</i>'</blockquote>
+- Print count of all possible strings that match a regular expression:
+
+<blockquote>exrex --count '<i>regular_expression</i>'</blockquote>
+- Simplify a regular expression:
+
+<blockquote>exrex --simplify '<i>ab|ac</i>'</blockquote>
+- Print eyes:
+
+<blockquote>exrex '<i>[oO0](_)[oO0]</i>'</blockquote>
+- Print a boat:
+
+<blockquote>exrex '<i>( {20}(\| *\\|-{22}|\|)|\.={50}| ( ){0,5}\\\.| {12}~{39})</i>'</blockquote>

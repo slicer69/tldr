@@ -1,0 +1,11 @@
+<b>mkfs.btrfs</b><br><br>
+<b>Create a btrfs filesystem.</b><br><br><b>Defaults to `raid1`, which specifies 2 copies of a given data block spread across 2 different devices.</b><br><br><b>More information: <a href="https://btrfs.wiki.kernel.org/index.php/Manpage/mkfs.btrfs">home page</a></b><br><br>
+- Create a btrfs filesystem on a single device:
+
+<blockquote>sudo mkfs.btrfs --metadata single --data single <i>/dev/sda</i></blockquote>
+- Create a btrfs filesystem on multiple devices with raid1:
+
+<blockquote>sudo mkfs.btrfs --metadata raid1 --data raid1 <i>/dev/sda</i> <i>/dev/sdb</i> <i>/dev/sdN</i></blockquote>
+- Set a label for the filesystem:
+
+<blockquote>sudo mkfs.btrfs --label "<i>label</i>" <i>/dev/sda</i> [<i>/dev/sdN</i>]</blockquote>

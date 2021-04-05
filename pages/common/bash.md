@@ -1,7 +1,7 @@
 # bash
 
-> Bourne-Again SHell.
-> `sh`-compatible command line interpreter.
+> Bourne-Again SHell, an `sh`-compatible command line interpreter.
+> See also `histexpand` for history expansion.
 > More information: <https://gnu.org/software/bash>.
 
 - Start interactive shell:
@@ -24,7 +24,7 @@
 
 `bash -e {{file.sh}}`
 
-- Run commands from `stdin`:
+- Run commands from stdin:
 
 `bash -s`
 

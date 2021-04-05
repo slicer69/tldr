@@ -12,7 +12,7 @@
 - Output the first element in a JSON file:
 
 <blockquote>jq '.[0]' <i>file.json</i></blockquote>
-- Output the value of a given key of each element in a JSON text from `stdin`:
+- Output the value of a given key of each element in a JSON text from stdin:
 
 <blockquote>cat <i>file.json</i> | jq 'map(.<i>key_name</i>)'</blockquote>
 - Output the value of multiple keys as a new JSON object (assuming the input JSON has the keys `key_name` and `other_key_name`):

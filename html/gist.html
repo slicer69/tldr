@@ -8,16 +8,16 @@
 <blockquote>gist <i>file.txt</i> <i>file2.txt</i></blockquote>
 - Create a private gist with a description:
 
-<blockquote>gist -p -d "<i>A meaningful description</i>" <i>file.txt</i> </blockquote>
-- Read contents from `stdin` and create a gist from it:
+<blockquote>gist --private --description "<i>A meaningful description</i>" <i>file.txt</i> </blockquote>
+- Read contents from stdin and create a gist from it:
 
 <blockquote><i>echo "hello world"</i> | gist</blockquote>
 - List your public and private gists:
 
-<blockquote>gist -l</blockquote>
-- List all gists for the currently logged in user:
+<blockquote>gist --list</blockquote>
+- List all public gists for any user:
 
-<blockquote>gist -l <i>username</i></blockquote>
-- Use the id from the gist URL to modify or include a file:
+<blockquote>gist --list <i>username</i></blockquote>
+- Update a gist using the id from URL:
 
-<blockquote>gist -u <i>GIST_ID</i> <i>file.txt</i></blockquote>
+<blockquote>gist --update <i>GIST_ID</i> <i>file.txt</i></blockquote>

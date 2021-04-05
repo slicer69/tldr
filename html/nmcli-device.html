@@ -1,5 +1,5 @@
 <b>nmcli device</b><br><br>
-<b>Hardware device management with NetworkManager.</b><br><br>
+<b>Hardware device management with NetworkManager.</b><br><br><b>More information: <a href="https://man.archlinux.org/man/nmcli.1">home page</a></b><br><br>
 - Print the statuses of all network interfaces:
 
 <blockquote>nmcli device status</blockquote>
@@ -9,3 +9,6 @@
 - Connect to the Wi-Fi network with a specified name and password:
 
 <blockquote>nmcli device wifi connect <i>ssid</i> password <i>password</i></blockquote>
+- Print password and QR code for the current Wi-Fi network:
+
+<blockquote>nmcli device wifi show-password</blockquote>

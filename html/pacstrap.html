@@ -1,0 +1,26 @@
+<b>pacstrap</b><br><br>
+<b>Install packages using Pacman to the specified new root directory.</b><br><br><b>More information: <a href="https://man.archlinux.org/man/pacstrap.8">home page</a></b><br><br>
+- Install the `base` package, Linux kernel and firmware for common hardware:
+
+<blockquote>pacstrap <i>path/to/new/root</i> <i>base</i> <i>linux</i> <i>linux-firmware</i></blockquote>
+- Install the `base` package, Linux LTS kernel and `base-devel` build tools:
+
+<blockquote>pacstrap <i>path/to/new/root</i> <i>base</i> <i>base-devel</i> <i>linux-lts</i></blockquote>
+- Install packages without copy the host's mirrorlist to the target:
+
+<blockquote>pacstrap -M <i>path/to/new/root</i> <i>packages</i></blockquote>
+- Use an alternate configuration file for Pacman:
+
+<blockquote>pacstrap -C <i>path/to/pacman.conf</i> <i>path/to/new/root</i> <i>packages</i></blockquote>
+- Install packages using the package cache on the host instead of on the target:
+
+<blockquote>pacstrap -c <i>path/to/new/root</i> <i>packages</i></blockquote>
+- Install packages without copy the host's pacman keyring to the target:
+
+<blockquote>pacstrap -G <i>path/to/new/root</i> <i>packages</i></blockquote>
+- Install packages in interactive mode (prompts for confirmation):
+
+<blockquote>pacstrap -i <i>path/to/new/root</i> <i>packages</i></blockquote>
+- Install packages using package files:
+
+<blockquote>pacstrap -U <i>path/to/new/root</i> <i>path/to/package1</i> <i>path/to/package2</i></blockquote>

@@ -1,6 +1,6 @@
 <b>bedtools</b><br><br>
 <b>A swiss-army knife of tools for genomic-analysis tasks.</b><br><br><b>Used to intersect, group, convert and count data in BAM, BED, GFF/GTF, VCF format.</b><br><br><b>More information: <a href="https://bedtools.readthedocs.io/en/latest/">home page</a></b><br><br>
-- Intersect two files with respect to the sequences' strand and save the result to <i>path/to/output_file</i>:
+- Intersect two files with respect to the sequences' strand and save the result to <i>`path/to/output_file`</i>:
 
 <blockquote>bedtools intersect -a <i>path/to/file_1</i> -b <i>path/to/file_2</i> -s > <i>path/to/output_file</i></blockquote>
 - Intersect two files with a left outer join, i.e. report each feature from <i>file_1</i> and NULL if no overlap with <i>file_2</i>:
@@ -9,7 +9,7 @@
 - Using more efficient algorithm to intersect two pre-sorted files:
 
 <blockquote>bedtools intersect -a <i>path/to/file_1</i> -b <i>path/to/file_2</i> -sorted > <i>path/to/output_file</i></blockquote>
-- Group file <i>path/to/file</i> based on the first three and the fifth column and summarize the sixth column by summing it up:
+- Group file <i>`path/to/file`</i> based on the first three and the fifth column and summarize the sixth column by summing it up:
 
 <blockquote>bedtools groupby -i <i>path/to/file</i> -c 1-3,5 -g 6 -o sum</blockquote>
 - Convert bam-formatted file to a bed-formatted one:

@@ -1,0 +1,14 @@
+<b>smbget</b><br><br>
+<b>`wget`-like utility for downloading files from SMB servers.</b><br><br><b>More information: <a href="https://www.samba.org/samba/docs/current/man-html/smbget.1.html">home page</a></b><br><br>
+- Download a file from a server:
+
+<blockquote>smbget <i>smb://server/share/file</i></blockquote>
+- Download a share or directory recursively:
+
+<blockquote>smbget --recursive <i>smb://server/share</i></blockquote>
+- Connect with a username and password:
+
+<blockquote>smbget <i>smb://server/share/file</i> --user <i>username%password</i></blockquote>
+- Require encrypted transfers:
+
+<blockquote>smbget <i>smb://server/share/file</i> --encrypt</blockquote>

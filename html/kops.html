@@ -6,7 +6,7 @@
 - Create a new ssh public key:
 
 <blockquote>kops create secret sshpublickey <i>key_name</i> -i <i>~/.ssh/id_rsa.pub</i></blockquote>
-- Export the cluster configurations into the ~/.kube/config file:
+- Export the cluster configuration to the `~/.kube/config` file:
 
 <blockquote>kops export kubecfg <i>cluster_name</i></blockquote>
 - Get the cluster configuration as yaml:

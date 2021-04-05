@@ -5,4 +5,10 @@
 <blockquote>hostnamectl</blockquote>
 - Set the hostname of the computer:
 
-<blockquote>sudo hostnamectl set-hostname "<i>some_hostname</i>"</blockquote>
+<blockquote>sudo hostnamectl set-hostname "<i>hostname</i>"</blockquote>
+- Set a pretty hostname for the computer:
+
+<blockquote>sudo hostnamectl set-hostname --static "<i>hostname.example.com</i>" && sudo hostnamectl set-hostname --pretty "<i>hostname</i>"</blockquote>
+- Reset hostname to its default value:
+
+<blockquote>sudo hostnamectl set-hostname --pretty ""</blockquote>

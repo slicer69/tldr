@@ -1,0 +1,20 @@
+<b>pngcheck</b><br><br>
+<b>Print detailed information about and verify PNG, JNG, and MNG files.</b><br><br><b>More information: <a href="http://www.libpng.org/pub/png/apps/pngcheck.html">home page</a></b><br><br>
+- Print a summary for an image (width, height, and color depth):
+
+<blockquote>pngcheck <i>image.png</i></blockquote>
+- Print information for an image with [c]olorized output:
+
+<blockquote>pngcheck -c <i>image.png</i></blockquote>
+- Print [v]erbose information for an image:
+
+<blockquote>pngcheck -cvt <i>image.png</i></blockquote>
+- Receive an image from stdin and display detailed information:
+
+<blockquote>cat <i>path/to/image.png</i> | pngcheck -cvt</blockquote>
+- [s]earch for PNGs within a specific file and display information about them:
+
+<blockquote>pngcheck -s <i>image.png</i></blockquote>
+- Search for PNGs within another file and e[x]tract them:
+
+<blockquote>pngcheck -x <i>image.png</i></blockquote>

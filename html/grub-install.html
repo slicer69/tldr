@@ -1,0 +1,11 @@
+<b>grub-install</b><br><br>
+<b>Install GRUB to a device.</b><br><br><b>More information: <a href="https://www.gnu.org/software/grub/manual/grub/html_node/Installing-GRUB-using-grub_002dinstall.html">home page</a></b><br><br>
+- Install GRUB on a BIOS system:
+
+<blockquote>grub-install --target=<i>i386-pc</i> <i>path/to/device</i></blockquote>
+- Install GRUB on an UEFI system:
+
+<blockquote>grub-install --target=<i>x86_64-efi</i> --efi-directory=<i>path/to/efi_directory</i> --bootloader-id=<i>GRUB</i></blockquote>
+- Install GRUB pre-loading specific modules:
+
+<blockquote>grub-install --target=<i>x86_64-efi</i> --efi-directory=<i>path/to/efi_directory</i> --modules="<i>part_gpt part_msdos</i>"</blockquote>

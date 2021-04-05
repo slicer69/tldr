@@ -1,0 +1,26 @@
+<b>history expansion</b><br><br>
+<b>Reuse and expand the shell history in bash or zsh.</b><br><br><b>More information: <a href="https://www.gnu.org/software/bash/manual/html_node/History-Interaction.html">home page</a></b><br><br>
+- Run the previous command:
+
+<blockquote>!!</blockquote>
+- Run the previous command as root:
+
+<blockquote>sudo !!</blockquote>
+- Run a command with the last argument of the previous command:
+
+<blockquote><i>command</i> !$</blockquote>
+- Run a command with the first argument of the previous command:
+
+<blockquote><i>command</i> !^</blockquote>
+- Run the command `n` lines back in the history:
+
+<blockquote>!-<i>n</i></blockquote>
+- Run the most recent command starting with `string`:
+
+<blockquote>!<i>string</i></blockquote>
+- Run the previous command, replacing `string1` with `string2`:
+
+<blockquote>^<i>string1</i>^<i>string2</i>^</blockquote>
+- Perform a history expansion, but print the command that would be run instead of actually running it:
+
+<blockquote><i>!-n</i>:p</blockquote>

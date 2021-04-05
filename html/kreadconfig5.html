@@ -1,0 +1,11 @@
+<b>kreadconfig5</b><br><br>
+<b>Read KConfig entries for KDE Plasma.</b><br><br><b>More information: <a href="https://userbase.kde.org/KDE_System_Administration/Configuration_Files">home page</a></b><br><br>
+- Read a key from the global configuration:
+
+<blockquote>kreadconfig5 --group <i>group_name</i> --key <i>key_name</i></blockquote>
+- Read a key from a specific configuration file:
+
+<blockquote>kwriteconfig5 --file <i>path/to/file</i> --group <i>group_name</i> --key <i>key_name</i></blockquote>
+- Check if systemd is used to start the Plasma session:
+
+<blockquote>kreadconfig5 --file <i>startkderc</i> --group <i>General</i> --key <i>systemdBoot</i></blockquote>

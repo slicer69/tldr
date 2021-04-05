@@ -6,12 +6,12 @@
 - Show a table listing known EXIF tags and whether each one exists in an image:
 
 <blockquote>exif --list-tags --no-fixup <i>image.jpg</i></blockquote>
-- Extract the image thumbnail into the file thumbnail.jpg:
+- Extract the image thumbnail into the file `thumbnail.jpg`:
 
 <blockquote>exif --extract-thumbnail --output=<i>thumbnail.jpg</i> <i>image.jpg</i></blockquote>
 - Show the raw contents of the "Model" tag in the given image:
 
 <blockquote>exif --ifd=<i>0</i> --tag=<i>Model</i> --machine-readable <i>image.jpg</i></blockquote>
-- Change the value of the "Artist" tag to John Smith and save to new.jpg:
+- Change the value of the "Artist" tag to John Smith and save to `new.jpg`:
 
 <blockquote>exif --output=<i>new.jpg</i> --ifd=<i>0</i> --tag="<i>Artist</i>" --set-value="<i>John Smith</i>" --no-fixup <i>image.jpg</i></blockquote>

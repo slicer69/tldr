@@ -1,0 +1,17 @@
+<b>rankmirrors</b><br><br>
+<b>Rank a list of Pacman mirrors by connection and opening speed.</b><br><br><b>Writes the new mirrorlist to stdout.</b><br><br><b>More information: <a href="https://wiki.archlinux.org/index.php/mirrors">home page</a></b><br><br>
+- Rank a mirror list:
+
+<blockquote>rankmirrors <i>/etc/pacman.d/mirrorlist</i></blockquote>
+- Output only a given number of the top ranking servers:
+
+<blockquote>rankmirrors -n <i>number</i> <i>/etc/pacman.d/mirrorlist</i></blockquote>
+- Be verbose when generating the mirrorlist:
+
+<blockquote>rankmirrors -v <i>/etc/pacman.d/mirrorlist</i></blockquote>
+- Test only a specific URL:
+
+<blockquote>rankmirrors --url <i>url</i></blockquote>
+- Output only the response times instead of a full mirrorlist:
+
+<blockquote>rankmirrors --times <i>/etc/pacman.d/mirrorlist</i></blockquote>

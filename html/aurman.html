@@ -1,0 +1,26 @@
+<b>aurman</b><br><br>
+<b>An Arch Linux utility to build and install packages from the Arch User Repository.</b><br><br><b>See also `pacman`.</b><br><br><b>More information: <a href="https://github.com/polygamma/aurman">home page</a></b><br><br>
+- Synchronize and update all packages:
+
+<blockquote>aurman --sync --refresh --sysupgrade</blockquote>
+- Synchronize and update all packages without show changes of `PKGBUILD` files:
+
+<blockquote>aurman --sync --refresh --sysupgrade --noedit</blockquote>
+- Install a new package:
+
+<blockquote>aurman --sync <i>package_name</i></blockquote>
+- Install a new package without show changes of `PKGBUILD` files:
+
+<blockquote>aurman --sync --noedit <i>package_name</i></blockquote>
+- Install a new package without prompting:
+
+<blockquote>aurman --sync --noedit --noconfirm <i>package_name</i></blockquote>
+- Search the package database for a keyword from the official repositories and AUR:
+
+<blockquote>aurman --sync --search <i>keyword</i></blockquote>
+- Remove a package and its dependencies:
+
+<blockquote>aurman --remove --recursive --nosave <i>package_name</i></blockquote>
+- Clear the package cache (use two `--clean` flags to clean all packages):
+
+<blockquote>aurman --sync --clean</blockquote>

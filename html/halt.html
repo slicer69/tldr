@@ -1,11 +1,17 @@
 <b>halt</b><br><br>
-<b>Halt, power-off or reboot the machine.</b><br><br><b>More information: <a href="https://www.freedesktop.org/software/systemd/man/halt.html">home page</a></b><br><br>
-- Halt the machine:
+<b>Halt the system.</b><br><br><b>More information: <a href="https://www.man7.org/linux/man-pages/man8/halt.8.html">home page</a></b><br><br>
+- Halt the system:
 
 <blockquote>halt</blockquote>
-- Power the machine off:
+- Power off the system (same as `poweroff`):
 
 <blockquote>halt --poweroff</blockquote>
-- Reboot the machine:
+- Reboot the system (same as `reboot`):
 
 <blockquote>halt --reboot</blockquote>
+- Halt immediately without contacting the system manager:
+
+<blockquote>halt --force --force</blockquote>
+- Write the wtmp shutdown entry without halting the system:
+
+<blockquote>halt --wtmp-only</blockquote>

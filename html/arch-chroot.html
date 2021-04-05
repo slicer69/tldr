@@ -1,0 +1,14 @@
+<b>arch-chroot</b><br><br>
+<b>Enhanced `chroot` command to help in the Arch Linux installation process.</b><br><br><b>More information: <a href="https://man.archlinux.org/man/arch-chroot.8">home page</a></b><br><br>
+- Start an interactive shell (`bash`, by default) in a new root directory:
+
+<blockquote>arch-chroot <i>path/to/new/root</i></blockquote>
+- Specify the user (other than the current user) to run the shell as:
+
+<blockquote>arch-chroot -u <i>user</i> <i>path/to/new/root</i></blockquote>
+- Run a custom command (instead of the default `bash`) in the new root directory:
+
+<blockquote>arch-chroot <i>path/to/new/root</i> <i>command</i> <i>command_arguments</i></blockquote>
+- Specify the shell, other than the default `bash` (in this case, the `zsh` package should have been installed in the target system):
+
+<blockquote>arch-chroot <i>path/to/new/root</i> <i>zsh</i></blockquote>

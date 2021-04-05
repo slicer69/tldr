@@ -2,10 +2,10 @@
 <b>Remote control utility for transmission-daemon and transmission.</b><br><br><b>More information: <a href="https://transmissionbt.com">home page</a></b><br><br>
 - Add a torrent file or magnet link to Transmission and download to a specified directory:
 
-<blockquote>transmission-remote <i>hostname</i> -a <i>torrent|url</i> -w <i>path/to/download_directory</i></blockquote>
+<blockquote>transmission-remote <i>hostname</i> -a <i>torrent|url</i> -w <i>/path/to/download_directory</i></blockquote>
 - Change the default download directory:
 
-<blockquote>transmission-remote <i>hostname</i> -w <i>path/to/download_directory</i></blockquote>
+<blockquote>transmission-remote <i>hostname</i> -w <i>/path/to/download_directory</i></blockquote>
 - List all torrents:
 
 <blockquote>transmission-remote <i>hostname</i> --list</blockquote>
@@ -20,4 +20,4 @@
 <blockquote>transmission-remote <i>hostname</i> -t <i>all</i> --stop</blockquote>
 - Move torrents 1-10 and 15-20 to a new directory (which will be created if it does not exist):
 
-<blockquote>transmission-remote <i>hostname</i> -t "<i>1-10,15-20</i>" --move <i>path/to/new_directory</i></blockquote>
+<blockquote>transmission-remote <i>hostname</i> -t "<i>1-10,15-20</i>" --move <i>/path/to/new_directory</i></blockquote>

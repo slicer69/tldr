@@ -1,8 +1,20 @@
 <b>cmake</b><br><br>
-<b>Cross-platform build system generator.</b><br><br><b>It generates Makefiles, Visual Studio projects or others, depending on the target system.</b><br><br><b>More information: <a href="https://cmake.org/cmake/help/latest/manual/cmake.1.html">home page</a></b><br><br>
-- Generate a Makefile and use it to compile a project in the same directory as the source:
+<b>Cross-platform build automation system, that generates recipes for native build systems.</b><br><br><b>More information: <a href="https://cmake.org/cmake/help/latest/manual/cmake.1.html">home page</a></b><br><br>
+- Generate a build recipe in the current directory with `CMakeLists.txt` from a project directory:
 
-<blockquote>cmake && make</blockquote>
-- Generate a Makefile and use it to compile a project in a separate "build" directory (out-of-source build):
+<blockquote>cmake <i>path/to/project_directory</i></blockquote>
+- Generate a build recipe, with build type set to `Release` with CMake variable:
 
-<blockquote>cmake -H. -B <i>build</i> && make -C <i>build</i></blockquote>
+<blockquote>cmake <i>path/to/project_directory</i> -D <i>CMAKE_BUILD_TYPE=Release</i></blockquote>
+- Use a generated recipe in a given directory to build artifacts:
+
+<blockquote>cmake --build <i>path/to/build_directory</i></blockquote>
+- Install the build artifacts into `/usr/local/` and strip debugging symbols:
+
+<blockquote>cmake --install <i>path/to/build_directory</i> --strip</blockquote>
+- Install the build artifacts using the custom prefix for paths:
+
+<blockquote>cmake --install <i>path/to/build_directory</i> --strip --prefix <i>path/to/directory</i></blockquote>
+- Run a custom build target:
+
+<blockquote>cmake --build <i>path/to/build_directory</i> --target <i>target_name</i></blockquote>

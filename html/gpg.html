@@ -1,23 +1,23 @@
 <b>gpg</b><br><br>
 <b>GNU Privacy Guard.</b><br><br><b>See `gpg2` for GNU Privacy Guard 2.</b><br><br><b>More information: <a href="https://gnupg.org">home page</a></b><br><br>
-- Sign doc.txt without encryption (writes output to doc.txt.asc):
+- Sign `doc.txt` without encryption (writes output to `doc.txt.asc`):
 
 <blockquote>gpg --clearsign <i>doc.txt</i></blockquote>
-- Encrypt doc.txt for alice@example.com (output to doc.txt.gpg):
+- Encrypt `doc.txt` for alice@example.com (output to `doc.txt.gpg`):
 
 <blockquote>gpg --encrypt --recipient <i>alice@example.com</i> <i>doc.txt</i></blockquote>
-- Encrypt doc.txt with only a passphrase (output to doc.txt.gpg):
+- Encrypt `doc.txt` with only a passphrase (output to `doc.txt.gpg`):
 
 <blockquote>gpg --symmetric <i>doc.txt</i></blockquote>
-- Decrypt doc.txt.gpg (output to `stdout`):
+- Decrypt `doc.txt.gpg` (output to stdout):
 
 <blockquote>gpg --decrypt <i>doc.txt.gpg</i></blockquote>
 - Import a public key:
 
 <blockquote>gpg --import <i>public.gpg</i></blockquote>
-- Export public key for alice@example.com (output to `stdout`):
+- Export public key for alice@example.com (output to stdout):
 
 <blockquote>gpg --export --armor <i>alice@example.com</i></blockquote>
-- Export private key for alice@example.com (output to `stdout`):
+- Export private key for alice@example.com (output to stdout):
 
 <blockquote>gpg --export-secret-keys --armor <i>alice@example.com</i></blockquote>

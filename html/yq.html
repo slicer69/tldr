@@ -18,9 +18,9 @@
 - Set (or overwrite) a key to a value in a file (v3):
 
 <blockquote>yq write --inplace <i>path/to/file.yaml</i> '<i>key</i>' '<i>value</i>'</blockquote>
-- Merge two files and print to `stdout` (v4+):
+- Merge two files and print to stdout (v4+):
 
 <blockquote>yq eval-all 'select(filename == "<i>path/to/file1.yaml</i>") * select(filename == "<i>path/to/file2.yaml</i>")' <i>path/to/file1.yaml</i> <i>path/to/file2.yaml</i></blockquote>
-- Merge two files and print to `stdout` (v3):
+- Merge two files and print to stdout (v3):
 
 <blockquote>yq merge <i>path/to/file1.yaml</i> <i>path/to/file2.yaml</i> --colors</blockquote>

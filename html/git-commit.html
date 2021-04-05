@@ -2,13 +2,16 @@
 <b>Commit files to the repository.</b><br><br><b>More information: <a href="https://git-scm.com/docs/git-commit">home page</a></b><br><br>
 - Commit staged files to the repository with a message:
 
-<blockquote>git commit -m <i>message</i></blockquote>
+<blockquote>git commit -m "<i>message</i>"</blockquote>
+- Commit staged files with a message read from a file:
+
+<blockquote>git commit --file <i>path/to/commit_message_file</i></blockquote>
 - Auto stage all modified files and commit with a message:
 
-<blockquote>git commit -a -m <i>message</i></blockquote>
+<blockquote>git commit -a -m "<i>message</i>"</blockquote>
 - Update the last commit by adding the currently staged changes, changing the commit's hash:
 
 <blockquote>git commit --amend</blockquote>
 - Commit only specific (already staged) files:
 
-<blockquote>git commit <i>path/to/my/file1</i> <i>path/to/my/file2</i></blockquote>
+<blockquote>git commit <i>path/to/file1</i> <i>path/to/file2</i></blockquote>

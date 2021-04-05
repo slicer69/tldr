@@ -1,0 +1,14 @@
+<b>wg</b><br><br>
+<b>Manage the configuration of WireGuard interfaces.</b><br><br><b>More information: <a href="https://www.wireguard.com/quickstart/">home page</a></b><br><br>
+- Check status of currently active interfaces:
+
+<blockquote>sudo wg</blockquote>
+- Print a new private key:
+
+<blockquote>wg genkey</blockquote>
+- Print a new public key:
+
+<blockquote>echo <i>private_key</i> | wg pubkey</blockquote>
+- Generate a public and private key:
+
+<blockquote>wg genkey | tee <i>privatekey.txt</i> | wg pubkey > <i>publickey.txt</i></blockquote>

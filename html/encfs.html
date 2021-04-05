@@ -1,0 +1,14 @@
+<b>encfs</b><br><br>
+<b>Mounts or creates encrypted virtual filesystems.</b><br><br><b>See also `fusermount`, which can unmount filesystems mounted by this command.</b><br><br><b>More information: <a href="https://github.com/vgough/encfs">home page</a></b><br><br>
+- Initialize or mount an encrypted filesystem:
+
+<blockquote>encfs <i>/path/to/cipher_dir</i> <i>/path/to/mount_point</i></blockquote>
+- Initialize an encrypted filesystem with standard settings:
+
+<blockquote>encfs --standard <i>/path/to/cipher_dir</i> <i>/path/to/mount_point</i></blockquote>
+- Run encfs in the foreground instead of spawning a daemon:
+
+<blockquote>encfs -f <i>/path/to/cipher_dir</i> <i>/path/to/mount_point</i></blockquote>
+- Mount an encrypted snapshot of a plain directory:
+
+<blockquote>encfs --reverse <i>path/to/plain_dir</i> <i>path/to/cipher_dir</i></blockquote>

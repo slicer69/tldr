@@ -1,11 +1,14 @@
 <b>pkill</b><br><br>
-<b>Signal process by name.</b><br><br><b>Mostly used for stopping processes.</b><br><br>
+<b>Signal process by name.</b><br><br><b>Mostly used for stopping processes.</b><br><br><b>More information: <a href="https://www.man7.org/linux/man-pages/man1/pkill.1.html">home page</a></b><br><br>
 - Kill all processes which match:
 
-<blockquote>pkill -9 <i>process_name</i></blockquote>
+<blockquote>pkill -9 "<i>process_name</i>"</blockquote>
 - Kill all processes which match their full command instead of just the process name:
 
-<blockquote>pkill -9 -f "<i>command_name</i>"</blockquote>
+<blockquote>pkill -9 --full "<i>command_name</i>"</blockquote>
 - Send SIGUSR1 signal to processes which match:
 
-<blockquote>pkill -USR1 <i>process_name</i></blockquote>
+<blockquote>pkill -USR1 "<i>process_name</i>"</blockquote>
+- Kill the main `firefox` process to close the browser:
+
+<blockquote>pkill --oldest "<i>firefox</i>"</blockquote>

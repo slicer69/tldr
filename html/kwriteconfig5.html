@@ -1,0 +1,23 @@
+<b>kwriteconfig5</b><br><br>
+<b>Write KConfig entries for KDE Plasma.</b><br><br><b>More information: <a href="https://userbase.kde.org/KDE_System_Administration/Configuration_Files">home page</a></b><br><br>
+- Display help:
+
+<blockquote>kwriteconfig5 --help</blockquote>
+- Set a global configuration key:
+
+<blockquote>kwriteconfig5 --group <i>group_name</i> --key <i>key</i> <i>value</i></blockquote>
+- Set a key in a specific configuration file:
+
+<blockquote>kwriteconfig5 --file <i>path/to/file</i> --group <i>group_name</i> --key <i>key</i> <i>value</i></blockquote>
+- Delete a key:
+
+<blockquote>kwriteconfig5 --group <i>group_name</i> --key <i>key</i> --delete</blockquote>
+- Use systemd to start the Plasma session when available:
+
+<blockquote>kwriteconfig5 --file <i>startkderc</i> --group <i>General</i> --key <i>systemdBoot</i> <i>true</i></blockquote>
+- Hide the title bar when a window is maximized (like Ubuntu):
+
+<blockquote>kwriteconfig5 --file <i>~/.config/kwinrc</i> --group <i>Windows</i> --key <i>BorderlessMaximizedWindows</i> <i>true</i></blockquote>
+- Configure KRunner to open with the Meta (Command/Windows) global hotkey:
+
+<blockquote>kwriteconfig5 --file <i>~/.config/kwinrc</i> --group <i>ModifierOnlyShortcuts</i> --key <i>Meta</i> <i>"org.kde.kglobalaccel,/component/krunner_desktop,org.kde.kglobalaccel.Component,invokeShortcut,_launch"</i></blockquote>

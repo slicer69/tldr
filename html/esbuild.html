@@ -1,0 +1,26 @@
+<b>esbuild</b><br><br>
+<b>JavaScript bundler and minifier built for speed.</b><br><br><b>More information: <a href="https://esbuild.github.io/">home page</a></b><br><br>
+- Bundle a JavaScript application and print to stdout:
+
+<blockquote>esbuild --bundle <i>path/to/file.js</i></blockquote>
+- Bundle a JSX application from stdin:
+
+<blockquote>esbuild --bundle --outfile=<i>path/to/out.js</i> < <i>path/to/file.jsx</i></blockquote>
+- Bundle and minify a JSX application with source maps in `production` mode:
+
+<blockquote>esbuild --bundle --define:<i>process.env.NODE_ENV=\"production\"</i> --minify --sourcemap <i>path/to/file.js</i></blockquote>
+- Bundle a JSX application for a comma-separated list of browsers:
+
+<blockquote>esbuild --bundle --minify --sourcemap --target=<i>chrome58,firefox57,safari11,edge16</i> <i>path/to/file.jsx</i></blockquote>
+- Bundle a JavaScript application for a specific node version:
+
+<blockquote>esbuild --bundle --platform=<i>node</i> --target=<i>node12</i> <i>path/to/file.js</i></blockquote>
+- Bundle a JavaScript application enabling JSX syntax in `.js` files:
+
+<blockquote>esbuild --bundle app.js --loader:<i">home page</a>js=jsx</i> <i>path/to/file.js</i></blockquote>
+- Bundle and serve JavaScript application on an HTTP server:
+
+<blockquote>esbuild --bundle --serve=<i>port</i> --outfile=<i>index.js</i> <i>path/to/file.js</i></blockquote>
+- Bundle a list of files to an output directory:
+
+<blockquote>esbuild --bundle --outdir=<i>path/to/output_directory</i> <i>path/to/file1</i> <i>path/to/file2</i></blockquote>

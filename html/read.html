@@ -6,9 +6,6 @@
 - Store each of the next lines you enter as values of an array:
 
 <blockquote>read -a <i>array</i></blockquote>
-- Enable backspace and GNU readline hotkeys when entering input with read:
-
-<blockquote>read -e <i>variable</i></blockquote>
 - Specify the number of maximum characters to be read:
 
 <blockquote>read -n <i>character_count</i> <i>variable</i></blockquote>
@@ -24,3 +21,6 @@
 - Do not echo typed characters (silent mode):
 
 <blockquote>read -s <i>variable</i></blockquote>
+- Read stdin and perform an action on every line:
+
+<blockquote>while read line; do echo "$line"; done</blockquote>

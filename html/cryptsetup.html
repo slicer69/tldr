@@ -3,7 +3,7 @@
 - Initialize a LUKS volume (overwrites all data on the partition):
 
 <blockquote>cryptsetup luksFormat <i>/dev/sda1</i></blockquote>
-- Open a LUKS volume and create a decrypted mapping at /dev/mapper/<i>target</i>:
+- Open a LUKS volume and create a decrypted mapping at `/dev/mapper/<i>target</i>`:
 
 <blockquote>cryptsetup luksOpen <i>/dev/sda1</i> <i>target</i></blockquote>
 - Remove an existing mapping:

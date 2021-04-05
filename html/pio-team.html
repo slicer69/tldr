@@ -1,0 +1,26 @@
+<b>pio team</b><br><br>
+<b>Manage PlatformIO teams.</b><br><br><b>More information: <a href="https://docs.platformio.org/en/latest/core/userguide/team/">home page</a></b><br><br>
+- Create a new team with the specified description:
+
+<blockquote>pio team create --description <i>description</i> <i>organization_name</i>:<i>team_name</i></blockquote>
+- Delete a team:
+
+<blockquote>pio team destroy <i>organization_name</i>:<i>team_name</i></blockquote>
+- Add a new user to a team:
+
+<blockquote>pio team add <i>organization_name</i>:<i>team_name</i> <i>username</i></blockquote>
+- Remove a user from a team:
+
+<blockquote>pio team remove <i>organization_name</i>:<i>team_name</i> <i>username</i></blockquote>
+- List all teams that the user is part of and their members:
+
+<blockquote>pio team list</blockquote>
+- List all teams in an organization:
+
+<blockquote>pio team list <i>organization_name</i></blockquote>
+- Rename a team:
+
+<blockquote>pio team update --name <i>new_team_name</i> <i>organization_name</i>:<i>team_name</i></blockquote>
+- Change the description of a team:
+
+<blockquote>pio team update --description <i>new_description</i> <i>organization_name</i>:<i>team_name</i></blockquote>

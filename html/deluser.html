@@ -1,11 +1,14 @@
 <b>deluser</b><br><br>
-<b>Remove a user account or remove a user from a group.</b><br><br>
+<b>Delete a user from the system.</b><br><br><b>Note: all commands must be executed as root.</b><br><br><b>More information: <a href="https://manpages.debian.org/adduser/deluser.8.html">home page</a></b><br><br>
 - Remove a user:
 
-<blockquote>deluser <i>name</i></blockquote>
-- Remove a user along with their home directory and mail spool:
+<blockquote>deluser <i>username</i></blockquote>
+- Remove a user and their home directory:
 
-<blockquote>deluser -r <i>name</i></blockquote>
-- Remove a user from a group:
+<blockquote>deluser --remove-home <i>username</i></blockquote>
+- Remove a user and their home, but backup their files into a `.tar.gz` file in the specified directory:
 
-<blockquote>deluser <i>name</i> <i>group</i></blockquote>
+<blockquote>deluser --backup-to <i>path/to/backup_directory</i> --remove-home <i>username</i></blockquote>
+- Remove a user, and all files owned by them:
+
+<blockquote>deluser --remove-all-files <i>username</i></blockquote>

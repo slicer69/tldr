@@ -1,0 +1,20 @@
+<b>spectre-meltdown-checker</b><br><br>
+<b>Spectre and Meltdown mitigation detection tool.</b><br><br><b>More information: <a href="https://manned.org/spectre-meltdown-checker.1">home page</a></b><br><br>
+- Check the currently running kernel for Spectre or Meltdown:
+
+<blockquote>sudo spectre-meltdown-checker</blockquote>
+- Check the currently running kernel and show an explanation of the actions to take in order to mitigate a vulnerability:
+
+<blockquote>sudo spectre-meltdown-checker --explain</blockquote>
+- Check for specific variants (defaults to all):
+
+<blockquote>sudo spectre-meltdown-checker --variant <i>1|2|3|3a|4|l1tf|msbds|mfbds|mlpds|mdsum|taa|mcespc|srbds</i></blockquote>
+- Display output using a specific output format:
+
+<blockquote>sudo spectre-meltdown-checker --batch <i>text|json|nrpe|prometheus|short</i></blockquote>
+- Don't use the `/sys` interface even if present:
+
+<blockquote>sudo spectre-meltdown-checker --no-sysfs</blockquote>
+- Check a non-running kernel:
+
+<blockquote>sudo spectre-meltdown-checker --kernel <i>path/to/kernel_file</i></blockquote>

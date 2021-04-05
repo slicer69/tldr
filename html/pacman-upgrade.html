@@ -1,0 +1,20 @@
+<b>pacman --upgrade</b><br><br>
+<b>Arch Linux package manager utility.</b><br><br><b>More information: <a href="https://man.archlinux.org/man/pacman.8">home page</a></b><br><br>
+- Display help:
+
+<blockquote>pacman --upgrade --help</blockquote>
+- Install one or more packages from files:
+
+<blockquote>sudo pacman --upgrade <i>path/to/package1.pkg.tar.zst</i> <i>path/to/package2.pkg.tar.zst</i></blockquote>
+- Install a package without prompting:
+
+<blockquote>sudo pacman --upgrade --noconfirm <i>path/to/package.pkg.tar.zst</i></blockquote>
+- Overwrite conflicting files during a package installation:
+
+<blockquote>sudo pacman --upgrade --overwrite <i>path/to/file</i> <i>path/to/package.pkg.tar.zst</i></blockquote>
+- Install a package, skipping the dependency version checks:
+
+<blockquote>sudo pacman --upgrade --nodeps <i>path/to/package.pkg.tar.zst</i></blockquote>
+- List packages that would be affected (does not install any packages):
+
+<blockquote>pacman --query --print <i>path/to/package.pkg.tar.zst</i></blockquote>

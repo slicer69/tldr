@@ -1,0 +1,17 @@
+<b>arduino-builder</b><br><br>
+<b>A command line tool for compiling arduino sketches.</b><br><br><b>DEPRECATION WARNING: This tool is being phased out in favor of `arduino`.</b><br><br><b>More information: <a href="https://github.com/arduino/arduino-builder">home page</a></b><br><br>
+- Compile a sketch:
+
+<blockquote>arduino-builder -compile <i>path/to/sketch.ino</i></blockquote>
+- Specify the debug level (1 to 10, defaults to 5):
+
+<blockquote>arduino-builder -debug-level <i>level</i></blockquote>
+- Specify a custom build directory:
+
+<blockquote>arduino-builder -build-path <i>path/to/build_directory</i></blockquote>
+- Use a build option file, instead of specifying `--hardware`, `--tools`, etc. manually every time:
+
+<blockquote>arduino-builder -build-options-file <i>path/to/build.options.json</i></blockquote>
+- Enable verbose mode:
+
+<blockquote>arduino-builder -verbose <i>true</i></blockquote>

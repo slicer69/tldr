@@ -9,7 +9,7 @@
 - Consume messages as a Kafka consumer group:
 
 <blockquote>kafkacat -G <i>group_id</i> <i>topic</i> -b <i>brokers</i></blockquote>
-- Publish message by reading from `stdin`:
+- Publish message by reading from stdin:
 
 <blockquote> echo <i>message</i> | kafkacat -P -t <i>topic</i> -b <i>brokers</i></blockquote>
 - Publish messages by reading from a file:

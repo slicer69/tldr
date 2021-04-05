@@ -1,11 +1,14 @@
 <b>dig</b><br><br>
-<b>DNS Lookup utility.</b><br><br>
+<b>DNS Lookup utility.</b><br><br><b>More information: <a href="https://manpages.debian.org/dnsutils/dig.1.html">home page</a></b><br><br>
 - Lookup the IP(s) associated with a hostname (A records):
 
 <blockquote>dig +short <i>example.com</i></blockquote>
-- Lookup the mail server(s) associated with a given domain name (MX record):
+- Get a detailed answer for a given domain (A records):
 
-<blockquote>dig +short <i>example.com</i> MX</blockquote>
+<blockquote>dig +noall +answer <i>example.com</i></blockquote>
+- Query a specific DNS record type associated with a given domain name:
+
+<blockquote>dig +short <i>example.com</i> <i>A|MX|TXT|CNAME|NS</i></blockquote>
 - Get all types of records for a given domain name:
 
 <blockquote>dig <i>example.com</i> ANY</blockquote>

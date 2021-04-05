@@ -1,0 +1,26 @@
+<b>qdbus</b><br><br>
+<b>Inter-Process Communication (IPC) and Remote Procedure Calling (RPC) mechanism originally developed for Linux.</b><br><br><b>More information: <a href="https://doc.qt.io/qt-5/qtdbus-index.html">home page</a></b><br><br>
+- List available service names:
+
+<blockquote>qdbus</blockquote>
+- List object paths for a specific service:
+
+<blockquote>qdbus <i>service_name</i></blockquote>
+- List methods, signals and properties available on a specific object:
+
+<blockquote>qdbus <i>service_name</i> <i>/path/to/object</i></blockquote>
+- Execute a specific method passing arguments and display the returned value:
+
+<blockquote>qdbus <i>service_name</i> <i>/path/to/object</i> <i>method_name</i> <i>argument1</i> <i>argument2</i></blockquote>
+- Display the current brightness value in a KDE Plasma session:
+
+<blockquote>qdbus <i>org.kde.Solid.PowerManagement</i> <i>/org/kde/Solid/PowerManagement/Actions/BrightnessControl</i> <i>org.kde.Solid.PowerManagement.Actions.BrightnessControl.brightness</i></blockquote>
+- Set a specific brightness to a KDE Plasma session:
+
+<blockquote>qdbus <i>org.kde.Solid.PowerManagement</i> <i>/org/kde/Solid/PowerManagement/Actions/BrightnessControl</i> <i>org.kde.Solid.PowerManagement.Actions.BrightnessControl.setBrightness</i> <i>5000</i></blockquote>
+- Invoke volume up shortcut in a KDE Plasma session:
+
+<blockquote>qdbus <i>org.kde.kglobalaccel</i> <i>/component/kmix</i> <i>invokeShortcut</i> "<i>increase_volume</i>"</blockquote>
+- Display help:
+
+<blockquote>qdbus --help</blockquote>

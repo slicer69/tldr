@@ -1,14 +1,14 @@
 <b>base32</b><br><br>
-<b>Encode or decode file or standard input to/from Base32, to standard output.</b><br><br>
+<b>Encode or decode file or standard input to/from Base32, to standard output.</b><br><br><b>More information: <a href="https://www.gnu.org/software/coreutils/base32">home page</a></b><br><br>
 - Encode a file:
 
 <blockquote>base32 <i>filename</i></blockquote>
 - Decode a file:
 
-<blockquote>base32 -d <i>filename</i></blockquote>
-- Encode from `stdin`:
+<blockquote>base32 --decode <i>filename</i></blockquote>
+- Encode from stdin:
 
 <blockquote><i>somecommand</i> | base32</blockquote>
-- Decode from `stdin`:
+- Decode from stdin:
 
-<blockquote><i>somecommand</i> | base32 -d</blockquote>
+<blockquote><i>somecommand</i> | base32 --decode</blockquote>

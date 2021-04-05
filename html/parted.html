@@ -3,24 +3,24 @@
 - List partitions on all block devices:
 
 <blockquote>sudo parted --list</blockquote>
-- Start to manipulate disk partition:
+- Start interactive mode with the specified disk selected:
 
 <blockquote>sudo parted <i>/dev/sdX</i></blockquote>
-- Create a new partition table of label-type directly, label-type can be gpt, msdos etc:
+- Create a new partition table of the specified label-type:
 
-<blockquote>sudo parted --script <i>/dev/sdX</i> mklabel <i>gpt</i></blockquote>
-- Show disk partition information in interactive mode:
+<blockquote>sudo parted --script <i>/dev/sdX</i> mklabel <i>aix|amiga|bsd|dvh|gpt|loop|mac|msdos|pc98|sun</i></blockquote>
+- Show partition information in interactive mode:
 
 <blockquote>print</blockquote>
 - Select a disk in interactive mode:
 
 <blockquote>select <i>/dev/sdX</i></blockquote>
-- Interactively create a 16GB partition with a given filesystem:
+- Create a 16GB partition with the specified filesystem in interactive mode:
 
-<blockquote>mkpart <i>primary|logical|extended</i> <i>filesystem</i> <i>0%</i> <i>16G</i></blockquote>
-- Resize partition size:
+<blockquote>mkpart <i>primary|logical|extended</i> <i>btrfs|ext2|ext3|ext4|fat16|fat32|hfs|hfs+|linux-swap|ntfs|reiserfs|udf|xfs</i> <i>0%</i> <i>16G</i></blockquote>
+- Resize a partition in interactive mode:
 
 <blockquote>resizepart <i>/dev/sdXN</i> <i>end_position_of_partition</i></blockquote>
-- Remove partition:
+- Remove a partition in interactive mode:
 
 <blockquote>rm <i>/dev/sdXN</i></blockquote>

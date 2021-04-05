@@ -9,10 +9,10 @@
 - Permanently move the interface into the block zone, effectively blocking all communication:
 
 <blockquote>firewall-cmd --permanent --zone=<i>block</i> --change-interface=<i>enp1s0</i></blockquote>
-- Permanently open the port for a service in the specified zone (like port `443` when in the `public` zone):
+- Permanently open the port for a service in the specified zone (like port 443 when in the `public` zone):
 
 <blockquote>firewall-cmd --permanent --zone=<i>public</i> --add-service=<i>https</i></blockquote>
-- Permanently close the port for a service in the specified zone (like port `80` when in the `public` zone):
+- Permanently close the port for a service in the specified zone (like port 80 when in the `public` zone):
 
 <blockquote>firewall-cmd --permanent --zone=<i>public</i> --remove-service=<i>http</i></blockquote>
 - Permanently open two arbitrary ports in the specified zone:

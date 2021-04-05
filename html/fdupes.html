@@ -6,9 +6,15 @@
 - Search multiple directories:
 
 <blockquote>fdupes <i>directory1</i> <i>directory2</i></blockquote>
-- Search all directories recursively:
+- Search a directory recursively:
 
 <blockquote>fdupes -r <i>directory</i></blockquote>
 - Search multiple directories, one recursively:
 
 <blockquote>fdupes <i>directory1</i> -R <i>directory2</i></blockquote>
+- Search recursively for duplicates and display interactive prompt to pick which ones to keep, deleting the others:
+
+<blockquote>fdupes -rd <i>directory</i></blockquote>
+- Search recursively and delete duplicates without prompting:
+
+<blockquote>fdupes -rdN <i>directory</i></blockquote>

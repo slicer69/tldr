@@ -1,20 +1,20 @@
 <b>if</b><br><br>
-<b>Simple shell conditional.</b><br><br>
-- Echo a different thing depending on a command's success:
+<b>Simple shell conditional.</b><br><br><b>See also: `test`, `[`.</b><br><br>
+- Execute two different commands based on a condition:
 
-<blockquote><i>command</i> && echo "success" || echo "failure"</blockquote>
-- Full if syntax:
+<blockquote>if <i>command</i>; then <i>echo "true"</i>; else <i>echo "false"</i>; fi</blockquote>
+- Check if a variable is defined:
 
-<blockquote>if <i>condition</i>; then echo "true"; else echo "false"; fi</blockquote>
-- List available if conditions:
+<blockquote>if [[ -n "<i>$VARIABLE</i>" ]]; then <i>echo "defined"</i>; else <i>echo "not defined"</i>; fi</blockquote>
+- Check if a file exists:
 
-<blockquote>help test</blockquote>
-- Test if a given variable is empty:
+<blockquote>if [[ -f "<i>path/to/file</i>" ]]; then <i>echo "true"</i>; else <i>echo "false"</i>; fi</blockquote>
+- Check if a directory exists:
 
-<blockquote>if [[ -z $GIT_BRANCH ]]; then echo "true"; else echo "false"; fi</blockquote>
-- Test if a file exists:
+<blockquote>if [[ -d "<i>path/to/directory</i>" ]]; then <i>echo "true"</i>; else <i>echo "false"</i>; fi</blockquote>
+- Check if a file or directory exists:
 
-<blockquote>if [[ -e <i>filename</i> ]]; then echo "true"; else echo "false"; fi</blockquote>
-- If directory not exists:
+<blockquote>if [[ -e "<i>path/to/file_or_directory</i>" ]]; then <i>echo "true"</i>; else <i>echo "false"</i>; fi</blockquote>
+- List all possible conditions (`test` is an alias to `[`; both are commonly used with `if`):
 
-<blockquote>if [[ ! -d <i>path/to/directory</i> ]]; then echo "true"; else echo "false"; fi</blockquote>
+<blockquote>man [</blockquote>

@@ -1,5 +1,5 @@
 <b>paru</b><br><br>
-<b>An AUR helper and pacman wrapper.</b><br><br><b>More information: <a href="https://github.com/morganamilo/paru">home page</a></b><br><br>
+<b>An AUR helper and pacman wrapper.</b><br><br><b>More information: <a href="https://github.com/Morganamilo/paru">home page</a></b><br><br>
 - Interactively search for and install a package:
 
 <blockquote>paru <i>package_name_or_seach_term</i></blockquote>
@@ -12,6 +12,9 @@
 - Get information about a package:
 
 <blockquote>paru -Si <i>package_name</i></blockquote>
-- Show statistics for installed packages and system health:
+- Download `PKGBUILD` and other package source files from the AUR or ABS:
 
-<blockquote>paru -P --stats</blockquote>
+<blockquote>paru --getpkgbuild <i>package_name</i></blockquote>
+- Display the `PKGBUILD` file of a package:
+
+<blockquote>paru --getpkgbuild --print <i>package_name</i></blockquote>

@@ -1,0 +1,23 @@
+<b>pacman --remove</b><br><br>
+<b>Arch Linux package manager utility.</b><br><br><b>More information: <a href="https://man.archlinux.org/man/pacman.8">home page</a></b><br><br>
+- Display help for this subcommand:
+
+<blockquote>pacman --remove --help</blockquote>
+- Remove a package and its dependencies:
+
+<blockquote>sudo pacman --remove --recursive <i>package_name</i></blockquote>
+- Remove a package and both its dependencies and configuration files:
+
+<blockquote>sudo pacman --remove --recursive --nosave <i>package_name</i></blockquote>
+- Remove a package without prompting:
+
+<blockquote>sudo pacman --remove --noconfirm <i>package_name</i></blockquote>
+- Remove orphan packages (installed as dependencies but not required by any package):
+
+<blockquote>sudo pacman --remove --recursive --nosave $(pacman --query --unrequired --deps --quiet)</blockquote>
+- Remove a package and all packages that depend on it:
+
+<blockquote>sudo pacman --remove --cascade <i>package_name</i></blockquote>
+- List packages that would be affected (does not remove any packages):
+
+<blockquote>pacman --remove --print <i>package_name</i></blockquote>

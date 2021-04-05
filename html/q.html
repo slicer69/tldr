@@ -1,15 +1,15 @@
 <b>q</b><br><br>
 <b>Execute SQL-like queries on .csv and .tsv files.</b><br><br><b>More information: <a href="https://harelba.github.io/q">home page</a></b><br><br>
-- Query .csv file by specifying the delimiter as ',':
+- Query `.csv` file by specifying the delimiter as ',':
 
 <blockquote>q -d',' "SELECT * from <i>path/to/file</i>"</blockquote>
-- Query .tsv file:
+- Query `.tsv` file:
 
 <blockquote>q -t "SELECT * from <i>path/to/file</i>"</blockquote>
 - Query file with header row:
 
 <blockquote>q -d<i>delimiter</i> -H "SELECT * from <i>path/to/file</i>"</blockquote>
-- Read data from stdin; '-' in the query represents the data from `stdin`:
+- Read data from stdin; '-' in the query represents the data from stdin:
 
 <blockquote><i>output</i> | q "select * from -"</blockquote>
 - Join two files (aliased as `f1` and `f2` in the example) on column `c1`, a common column:

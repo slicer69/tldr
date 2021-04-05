@@ -1,0 +1,26 @@
+<b>bundletool</b><br><br>
+<b>Command-line tool to manipulate Android Application Bundles.</b><br><br><b>More information: <a href="https://developer.android.com/studio/command-line/bundletool">home page</a></b><br><br>
+- Display help for a subcommand:
+
+<blockquote>bundletool help <i>subcommand</i></blockquote>
+- Generate APKs from an application bundle (prompts for keystore password):
+
+<blockquote>bundletool build-apks --bundle=<i>path/to/bundle.aab</i> --ks=<i>path/to/key.keystore</i> --ks-key-alias=<i>key_alias</i> --output=<i>path/to/file.apks</i></blockquote>
+- Generate APKs from an application bundle giving the keystore password:
+
+<blockquote>bundletool build-apks --bundle=<i>path/to/bundle.aab</i> --ks=<i>path/to/key.keystore</i> --ks-key-alias=<i>key_alias</i> –ks-pass=<i>pass:the_password</i> --output=<i>path/to/file.apks</i></blockquote>
+- Generate APKs including only one single APK for universal usage:
+
+<blockquote>bundletool build-apks --bundle=<i>path/to/bundle.aab</i> --mode=<i>universal</i> --ks=<i>path/to/key.keystore</i> --ks-key-alias=<i>key_alias</i> --output=<i>path/to/file.apks</i></blockquote>
+- Install the right combination of APKs to an emulator or device:
+
+<blockquote>bundletool install-apks --apks=<i>path/to/file.apks</i></blockquote>
+- Estimate the download size of an application:
+
+<blockquote>bundletool get-size total --apks=<i>path/to/file.apks</i></blockquote>
+- Generate a device specification JSON file for an emulator or device:
+
+<blockquote>bundletool get-device-spec --output=<i>path/to/file.json</i></blockquote>
+- Verify a bundle and display detailed information about it:
+
+<blockquote>bundletool validate --bundle=<i>path/to/bundle.aab</i></blockquote>

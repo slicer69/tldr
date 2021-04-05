@@ -1,26 +1,26 @@
 <b>grep</b><br><br>
-<b>Matches patterns in input text.</b><br><br><b>Supports simple patterns and regular expressions.</b><br><br>
+<b>Find patterns in files using regular expressions.</b><br><br><b>More information: <a href="https://man7.org/linux/man-pages/man1/grep.1.html">home page</a></b><br><br>
 - Search for a pattern within a file:
 
-<blockquote>grep <i>search_pattern</i> <i>path/to/file</i></blockquote>
-- Search for an exact string:
+<blockquote>grep "<i>search_pattern</i>" <i>path/to/file</i></blockquote>
+- Search for an exact string (disables regular expressions):
 
-<blockquote>grep -F <i>exact_string</i> <i>path/to/file</i></blockquote>
-- Search for a pattern [R]ecursively in the current directory, showing matching line [n]umbers, [I]gnoring non-text files:
+<blockquote>grep --fixed-strings "<i>exact_string</i>" <i>path/to/file</i></blockquote>
+- Search for a pattern in all files recursively in a directory, showing line numbers of matches, ignoring binary files:
 
-<blockquote>grep -RIn <i>search_pattern</i> .</blockquote>
-- Use extended regular expressions (supporting `?`, `+`, `{}`, `()` and `|`), in case-insensitive mode:
+<blockquote>grep --recursive --line-number --binary-files=<i>without-match</i> "<i>search_pattern</i>" <i>path/to/directory</i></blockquote>
+- Use extended regular expressions (supports `?`, `+`, `{}`, `()` and `|`), in case-insensitive mode:
 
-<blockquote>grep -Ei <i>search_pattern</i> <i>path/to/file</i></blockquote>
-- Print 3 lines of [C]ontext around, [B]efore, or [A]fter each match:
+<blockquote>grep --extended-regexp --ignore-case "<i>search_pattern</i>" <i>path/to/file</i></blockquote>
+- Print 3 lines of context around, before, or after each match:
 
-<blockquote>grep -<i>C|B|A</i> 3 <i>search_pattern</i> <i>path/to/file</i></blockquote>
-- Print file name with the corresponding line number for each match:
+<blockquote>grep --<i>context|before-context|after-context</i>=<i>3</i> "<i>search_pattern</i>" <i>path/to/file</i></blockquote>
+- Print file name and line number for each match:
 
-<blockquote>grep -Hn <i>search_pattern</i> <i>path/to/file</i></blockquote>
-- Use the standard input instead of a file:
+<blockquote>grep --with-filename --line-number "<i>search_pattern</i>" <i>path/to/file</i></blockquote>
+- Search for lines matching a pattern, printing only the matched text:
 
-<blockquote>cat <i>path/to/file</i> | grep <i>search_pattern</i></blockquote>
-- Invert match for excluding specific strings:
+<blockquote>grep --only-matching "<i>search_pattern</i>" <i>path/to/file</i></blockquote>
+- Search stdin for lines that do not match a pattern:
 
-<blockquote>grep -v <i>search_pattern</i></blockquote>
+<blockquote>cat <i>path/to/file</i> | grep --invert-match "<i>search_pattern</i>"</blockquote>

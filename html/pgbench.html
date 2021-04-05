@@ -1,0 +1,8 @@
+<b>pgbench</b><br><br>
+<b>Run a benchmark test on PostgreSQL.</b><br><br><b>More information: <a href="https://www.postgresql.org/docs/10/pgbench.html">home page</a></b><br><br>
+- Initialize a database with a scale factor of 50 times the default size:
+
+<blockquote>pgbench --initialize --scale=<i>50</i> <i>database_name</i></blockquote>
+- Benchmark a database with 10 clients, 2 worker threads, and 10,000 transactions per client:
+
+<blockquote>pgbench --client=<i>10</i> --jobs=<i>2</i> --transactions=<i>10000</i> <i>database_name</i></blockquote>

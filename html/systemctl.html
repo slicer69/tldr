@@ -5,16 +5,16 @@
 <blockquote>systemctl --failed</blockquote>
 - Start/Stop/Restart/Reload a service:
 
-<blockquote>systemctl start/stop/restart/reload <i>unit</i></blockquote>
+<blockquote>systemctl <i>start|stop|restart|reload</i> <i>unit</i></blockquote>
 - Show the status of a unit:
 
 <blockquote>systemctl status <i>unit</i></blockquote>
 - Enable/Disable a unit to be started on bootup:
 
-<blockquote>systemctl enable/disable <i>unit</i></blockquote>
-- Mask/Unmask a unit, prevent it to be started on bootup:
+<blockquote>systemctl <i>enable|disable</i> <i>unit</i></blockquote>
+- Mask/Unmask a unit to prevent enablement and manual activation:
 
-<blockquote>systemctl mask/unmask <i>unit</i></blockquote>
+<blockquote>systemctl <i>mask|unmask</i> <i>unit</i></blockquote>
 - Reload systemd, scanning for new or changed units:
 
 <blockquote>systemctl daemon-reload</blockquote>

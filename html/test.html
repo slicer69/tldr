@@ -1,17 +1,17 @@
 <b>test</b><br><br>
-<b>Evaluate condition.</b><br><br><b>If it is true, returns 0 exit status, otherwise returns 1.</b><br><br>
-- Test if given variable is equal to given string:
+<b>Evaluate condition.</b><br><br><b>Returns 0 if the condition evaluates to true, 1 if it evaluates to false.</b><br><br><b>More information: <a href="https://www.gnu.org/software/coreutils/test">home page</a></b><br><br>
+- Test if a given variable is equal to a given string:
 
-<blockquote>test $MY_VAR == '/bin/zsh'</blockquote>
-- Test if given variable is empty:
+<blockquote>test "<i>$MY_VAR</i>" == "<i>/bin/zsh</i>"</blockquote>
+- Test if a given variable is empty:
 
-<blockquote>test -z $GIT_BRANCH</blockquote>
-- Test if file exists:
+<blockquote>test -z "<i>$GIT_BRANCH</i>"</blockquote>
+- Test if a file exists:
 
-<blockquote>test -e <i>filename</i></blockquote>
-- Test if directory not exists:
+<blockquote>test -f "<i>path/to/file_or_directory</i>"</blockquote>
+- Test if a directory does not exist:
 
-<blockquote>test ! -d <i>path/to/directory</i></blockquote>
+<blockquote>test ! -d "<i>path/to/directory</i>"</blockquote>
 - If-else statement:
 
-<blockquote>test <i>condition</i> && echo "true" || echo "false"</blockquote>
+<blockquote>test <i>condition</i> && <i>echo "true"</i> || <i>echo "false"</i></blockquote>

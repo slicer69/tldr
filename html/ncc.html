@@ -1,0 +1,20 @@
+<b>ncc</b><br><br>
+<b>Compile a Node.js application into a single file.</b><br><br><b>Supports TypeScript, binary addons and dynamic requires.</b><br><br><b>More information: <a href="https://github.com/vercel/ncc">home page</a></b><br><br>
+- Bundle a Node.js application:
+
+<blockquote>ncc build <i>path/to/file.js</i></blockquote>
+- Bundle and minify a Node.js application:
+
+<blockquote>ncc build --minify <i>path/to/file.js</i></blockquote>
+- Bundle and minify a Node.js application and generate source maps:
+
+<blockquote>ncc build --source-map <i>path/to/file.js</i></blockquote>
+- Automatically recompile on changes to source files:
+
+<blockquote>ncc build --watch <i>path/to/file.js</i></blockquote>
+- Bundle a Node.js application into a temporary directory and run it for testing:
+
+<blockquote>ncc run <i>path/to/file.js</i></blockquote>
+- Clean the `ncc` cache:
+
+<blockquote>ncc clean cache</blockquote>

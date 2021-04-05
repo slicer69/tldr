@@ -12,3 +12,12 @@
 - View a repository in the web browser:
 
 <blockquote>gh repo view <i>repository</i> --web</blockquote>
+- List repositories owned by a specific user or organization (if the owner is not set, the default owner will be the currently logged in user):
+
+<blockquote>gh repo list <i>owner</i></blockquote>
+- List only non-forks repositories:
+
+<blockquote>gh repo list <i>owner</i> --non-forks</blockquote>
+- List repositories with a specific primary coding language:
+
+<blockquote>gh repo list <i>owner</i> --language <i>language_name</i></blockquote>

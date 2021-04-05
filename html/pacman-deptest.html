@@ -1,0 +1,14 @@
+<b>pacman --deptest</b><br><br>
+<b>Check each dependency specified and return a list of dependencies that are not currently satisfied on the system.</b><br><br><b>More information: <a href="https://man.archlinux.org/man/pacman.8">home page</a></b><br><br>
+- Print the package names of the dependencies that aren't installed:
+
+<blockquote>pacman --deptest <i>package_name1</i> <i>package_name2</i></blockquote>
+- Check if the installed package satisfies the given minimum version:
+
+<blockquote>pacman --deptest "<i>bash>=5</i>"</blockquote>
+- Check if a later version of a package is installed:
+
+<blockquote>pacman --deptest "<i>bash>5</i>"</blockquote>
+- Display help:
+
+<blockquote>pacman --deptest --help</blockquote>

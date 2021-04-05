@@ -1,0 +1,23 @@
+<b>dolt commit</b><br><br>
+<b>Commit staged changes to tables.</b><br><br><b>More information: <a href="https://docs.dolthub.com/interfaces/cli#dolt-commit">home page</a></b><br><br>
+- Commit all staged changes, opening the editor specified by `$EDITOR` to enter the commit message:
+
+<blockquote>dolt commit</blockquote>
+- Commit all staged changes with the specified message:
+
+<blockquote>dolt commit --message "<i>commit_message</i>"</blockquote>
+- Stage all unstaged changes to tables before committing:
+
+<blockquote>dolt commit --all</blockquote>
+- Use the specified ISO 8601 commit date (defaults to current date and time):
+
+<blockquote>dolt commit --date "<i>2021-12-31T00:00:00</i>"</blockquote>
+- Use the specified author for the commit:
+
+<blockquote>dolt commit --author "<i>author_name</i> <<i>author_email</i>>"</blockquote>
+- Allow creating an empty commit, with no changes:
+
+<blockquote>dolt commit --allow-empty</blockquote>
+- Ignore foreign key warnings:
+
+<blockquote>dolt commit --force</blockquote>

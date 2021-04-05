@@ -1,11 +1,11 @@
 <b>pgrep</b><br><br>
-<b>Find or signal process by name.</b><br><br>
+<b>Find or signal processes by name.</b><br><br><b>More information: <a href="https://www.man7.org/linux/man-pages/man1/pkill.1.html">home page</a></b><br><br>
 - Return PIDs of any running processes with a matching command string:
 
 <blockquote>pgrep <i>process_name</i></blockquote>
-- Search full command line with parameters instead of just the process name:
+- Search for processes including their command line options:
 
-<blockquote>pgrep -f "<i>process_name</i> <i>parameter</i>"</blockquote>
-- Search for process run by a specific user:
+<blockquote>pgrep --full "<i>process_name</i> <i>parameter</i>"</blockquote>
+- Search for processes run by a specific user:
 
-<blockquote>pgrep -u root <i>process_name</i></blockquote>
+<blockquote>pgrep --euid root <i>process_name</i></blockquote>

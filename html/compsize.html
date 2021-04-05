@@ -1,0 +1,11 @@
+<b>compsize</b><br><br>
+<b>Calculate the compression ratio of a set of files on a btrfs filesystem.</b><br><br><b>See also `btrfs filesystem` for recompressing a file by defragmenting it.</b><br><br><b>More information: <a href="https://github.com/kilobyte/compsize">home page</a></b><br><br>
+- Calculate the current compression ratio for a file or directory:
+
+<blockquote>sudo compsize <i>path/to/file_or_directory</i></blockquote>
+- Don't traverse filesystem boundaries:
+
+<blockquote>sudo compsize --one-file-system <i>path/to/file_or_directory</i></blockquote>
+- Show raw byte counts instead of human-readable sizes:
+
+<blockquote>sudo compsize --bytes <i>path/to/file_or_directory</i></blockquote>

@@ -1,0 +1,11 @@
+<b>yapf</b><br><br>
+<b>Python style guide checker.</b><br><br><b>More information: <a href="https://github.com/google/yapf">home page</a></b><br><br>
+- Display a diff of the changes that would be made, without making them (dry-run):
+
+<blockquote>yapf --diff <i>path/to/file</i></blockquote>
+- Format the file in-place and display a diff of the changes:
+
+<blockquote>yapf --diff --in-place <i>path/to/file</i></blockquote>
+- Recursively format all Python files in a directory, concurrently:
+
+<blockquote>yapf --recursive --in-place --style <i>pep8</i> --parallel <i>path/to/directory</i></blockquote>

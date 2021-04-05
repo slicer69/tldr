@@ -1,0 +1,20 @@
+<b>wol</b><br><br>
+<b>Client for sending Wake-on-LAN magic packets.</b><br><br><b>More information: <a href="https://sourceforge.net/projects/wake-on-lan/">home page</a></b><br><br>
+- Send a WoL packet to a device:
+
+<blockquote>wol <i>mac_address</i></blockquote>
+- Send a WoL packet to a device in another subnet based on its IP:
+
+<blockquote>wol --ipaddr=<i>ip_address</i> <i>mac_address</i></blockquote>
+- Send a WoL packet to a device in another subnet based on its hostname:
+
+<blockquote>wol --host=<i>hostname</i> <i>mac_address</i></blockquote>
+- Send a WoL packet to a specific port on a host:
+
+<blockquote>wol --port=<i>port_number</i> <i>mac_address</i></blockquote>
+- Read hardware addresses, IP addresses/hostnames, optional ports and SecureON passwords from a file:
+
+<blockquote>wol --file=<i>path/to/file</i></blockquote>
+- Turn on verbose output:
+
+<blockquote>wol --verbose <i>mac_address</i></blockquote>

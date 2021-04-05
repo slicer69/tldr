@@ -1,0 +1,20 @@
+<b>pueue enqueue</b><br><br>
+<b>Enqueue stashed tasks.</b><br><br><b>See also: `pueue stash`.</b><br><br><b>More information: <a href="https://github.com/Nukesor/pueue">home page</a></b><br><br>
+- Enqueue multiple stashed tasks at once:
+
+<blockquote>pueue enqueue <i>task_id</i> <i>task_id</i></blockquote>
+- Enqueue a stashed task after 60 seconds:
+
+<blockquote>pueue enqueue --delay <i>60</i> <i>task_id</i></blockquote>
+- Enqueue a stashed task next Wednesday:
+
+<blockquote>pueue enqueue --delay <i>wednesday</i> <i>task_id</i></blockquote>
+- Enqueue a stashed task after four months:
+
+<blockquote>pueue enqueue --delay "4 months" <i>task_id</i></blockquote>
+- Enqueue a stashed task on 2021-02-19:
+
+<blockquote>pueue enqueue --delay <i>2021-02-19</i> <i>task_id</i></blockquote>
+- List all available date/time formats:
+
+<blockquote>pueue enqueue --help</blockquote>

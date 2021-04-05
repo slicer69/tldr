@@ -1,0 +1,17 @@
+<b>pueue pause</b><br><br>
+<b>Pause running tasks or groups.</b><br><br><b>See also: `pueue start`.</b><br><br><b>More information: <a href="https://github.com/Nukesor/pueue">home page</a></b><br><br>
+- Pause all tasks in the default group:
+
+<blockquote>pueue pause</blockquote>
+- Pause a running task:
+
+<blockquote>pueue pause <i>task_id</i></blockquote>
+- Pause a running task and stop all its direct children:
+
+<blockquote>pueue pause --children <i>task_id</i></blockquote>
+- Pause all tasks in a group and prevent it from starting new tasks:
+
+<blockquote>pueue pause --group <i>group_name</i></blockquote>
+- Pause all tasks and prevent all groups from starting new tasks:
+
+<blockquote>pueue pause --all</blockquote>

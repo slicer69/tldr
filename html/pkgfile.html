@@ -1,0 +1,26 @@
+<b>pkgfile</b><br><br>
+<b>Tool for searching files from packages in the official repositories on arch-based systems.</b><br><br><b>See also `pacman files`.</b><br><br><b>More information: <a href="https://wiki.archlinux.org/index.php/Pkgfile">home page</a></b><br><br>
+- Synchronize the pkgfile database:
+
+<blockquote>sudo pkgfile --update</blockquote>
+- Search for a package that owns a specific file:
+
+<blockquote>pkgfile <i>filename</i></blockquote>
+- List all files provided by a package:
+
+<blockquote>pkgfile --list <i>package_name</i></blockquote>
+- List only files in the `bin` directory provided by a package:
+
+<blockquote>pkgfile --list --binaries <i>package_name</i></blockquote>
+- Search for a package that owns a specific file using case insensitive matching:
+
+<blockquote>pkgfile --ignorecase <i>filename</i></blockquote>
+- Search for a package that owns a specific file in the `bin` directory:
+
+<blockquote>pkgfile --binary <i>filename</i></blockquote>
+- Search for a package that owns a specific file, displaying the package version:
+
+<blockquote>pkgfile --verbose <i>filename</i></blockquote>
+- Search for a package that owns a specific file in a specific repository:
+
+<blockquote>pkgfile --repo <i>repository_name</i> <i>filename</i></blockquote>

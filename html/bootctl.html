@@ -1,0 +1,20 @@
+<b>bootctl</b><br><br>
+<b>Control EFI firmware boot settings and manage boot loader.</b><br><br><b>More information: <a href="https://man.archlinux.org/man/bootctl.1">home page</a></b><br><br>
+- Show information about the system firmware and the bootloaders:
+
+<blockquote>sudo bootctl status</blockquote>
+- Set a flag to boot into the system firmware on the next boot (similar to `sudo systemctl reboot --firmware-setup`):
+
+<blockquote>sudo bootctl reboot-to-firmware true</blockquote>
+- Specify the path to the EFI system partition (defaults to `/efi/`, `/boot/` or `/boot/efi`):
+
+<blockquote>sudo bootctl --esp-path=<i>/path/to/efi_system_partition/</i></blockquote>
+- Show all available bootloader entries:
+
+<blockquote>sudo bootctl list</blockquote>
+- Install `systemd-boot` into the EFI system partition:
+
+<blockquote>sudo bootctl install</blockquote>
+- Remove all installed versions of `systemd-boot` from the EFI system partition:
+
+<blockquote>sudo bootctl remove</blockquote>

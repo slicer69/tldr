@@ -1,0 +1,26 @@
+<b>mkinitcpio</b><br><br>
+<b>Generates initial ramdisk environments for booting the Linux kernel based on the specified preset(s).</b><br><br><b>More information: <a href="https://man.archlinux.org/man/mkinitcpio.8">home page</a></b><br><br>
+- Perform a dry run (print what would be done without actually doing it):
+
+<blockquote>mkinitcpio</blockquote>
+- Generate a ramdisk environment based on the `linux` preset:
+
+<blockquote>mkinitcpio --preset <i>linux</i></blockquote>
+- Generate a ramdisk environment based on the `linux-lts` preset:
+
+<blockquote>mkinitcpio --preset <i>linux-lts</i></blockquote>
+- Generate ramdisk environments based on all existing presets (used to regenerate all the initramfs images after a change in `/etc/mkinitcpio.conf`):
+
+<blockquote>mkinitcpio --allpresets</blockquote>
+- Generate an initramfs image using an alternative configuration file:
+
+<blockquote>mkinitcpio --config <i>path/to/mkinitcpio.conf</i> --generate <i>path/to/initramfs.img</i></blockquote>
+- Generate an initramfs image for a kernel other than the one currently running (the installed kernel releases can be found in `/usr/lib/modules/`):
+
+<blockquote>mkinitcpio --kernel <i>kernel_version</i> --generate <i>path/to/initramfs.img</i></blockquote>
+- List all available hooks:
+
+<blockquote>mkinitcpio --listhooks</blockquote>
+- Display help for a specific hook:
+
+<blockquote>mkinitcpio --hookhelp <i>hook_name</i></blockquote>
