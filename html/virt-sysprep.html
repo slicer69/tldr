@@ -1,0 +1,14 @@
+<b>virt-sysprep</b><br><br>
+<b>Reset, unconfigure, or customize a virtual machine image.</b><br><br><b>More information: <a href="https://manned.org/virt-sysprep">home page</a></b><br><br>
+- List all supported operations (enabled operations are indicated with asterisks):
+
+<blockquote>virt-sysprep --list-operations</blockquote>
+- Run all enabled operations but don't actually apply the changes:
+
+<blockquote>virt-sysprep --domain <i>vm_name</i> --dry-run</blockquote>
+- Run only the specified operations:
+
+<blockquote>virt-sysprep --domain <i>vm_name</i> --operations <i>operation1,operation2,...</i></blockquote>
+- Generate a new `/etc/machine-id` file and enable customizations to be able to change the host name to avoid network conflicts:
+
+<blockquote>virt-sysprep --domain <i>vm_name</i> --enable <i>customizations</i> --hostname <i>host_name</i> --operation <i>machine-id</i></blockquote>

@@ -1,0 +1,26 @@
+<b>homectl</b><br><br>
+<b>Create, remove, change or inspect home directories using the systemd-homed service.</b><br><br><b>More information: <a href="https://man.archlinux.org/man/homectl.1">home page</a></b><br><br>
+- List user accounts and their associated home directories:
+
+<blockquote>homectl list</blockquote>
+- Create a user account and their associated home directory:
+
+<blockquote>sudo homectl create <i>username</i></blockquote>
+- Remove a specific user and the associated home directory:
+
+<blockquote>sudo homectl remove <i>username</i></blockquote>
+- Change the password for a specific user:
+
+<blockquote>sudo homectl passwd <i>username</i></blockquote>
+- Run a shell or a command with access to a specific home directory:
+
+<blockquote>sudo homectl with <i>username</i> -- <i>command</i> <i>command_arguments</i></blockquote>
+- Lock or unlock a specific home directory:
+
+<blockquote>sudo homectl <i>lock|unlock</i> <i>username</i></blockquote>
+- Change the disk space assigned to a specific home directory to 100 GiB:
+
+<blockquote>sudo homectl resize <i>username</i> <i>100G</i></blockquote>
+- Display help:
+
+<blockquote>homectl --help</blockquote>

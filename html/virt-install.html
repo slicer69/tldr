@@ -2,4 +2,4 @@
 <b>Create virtual machines with libvirt and begin OS installation.</b><br><br><b>More information: <a href="https://virt-manager.org/">home page</a></b><br><br>
 - Create a virtual machine with 1 GiB RAM and 12 GiB storage and start Debian installation:
 
-<blockquote>virt-install --memory <i>1024</i> --disk path=<i>path/to/image.qcow2</i>,size=<i>12</i> --cdrom <i>path/to/debian.iso</i></blockquote>
+<blockquote>virt-install --name <i>vm_name</i> --memory <i>1024</i> --disk path=<i>path/to/image.qcow2</i>,size=<i>12</i> --cdrom <i>path/to/debian.iso</i></blockquote>

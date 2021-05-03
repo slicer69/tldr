@@ -1,14 +1,23 @@
 <b>shellcheck</b><br><br>
-<b>Shell script static analysis tool.</b><br><br><b>More information: <a href="https://www.shellcheck.net/">home page</a></b><br><br>
+<b>Shell script static analysis tool.</b><br><br><b>Check shell scripts for errors, usage of deprecated/insecure features, and bad practices.</b><br><br><b>More information: <a href="https://www.shellcheck.net">home page</a></b><br><br>
 - Check a shell script:
 
-<blockquote>shellcheck <i>file.sh</i></blockquote>
-- Override script's shebang:
+<blockquote>shellcheck <i>path/to/script.sh</i></blockquote>
+- Check a shell script interpreting it as the specified shell dialect (overrides the shebang at the top of the script):
 
-<blockquote>shellcheck --shell <i>sh|bash|ksh</i> <i>file.sh</i></blockquote>
-- Ignore certain errors:
+<blockquote>shellcheck --shell <i>sh|bash|dash|ksh</i> <i>path/to/script.sh</i></blockquote>
+- Ignore one or more error types:
 
-<blockquote>shellcheck --exclude <i>SC1009</i> <i>file.sh</i></blockquote>
-- Ignore multiple errors:
+<blockquote>shellcheck --exclude <i>SC1009,SC1073</i> <i>path/to/script.sh</i></blockquote>
+- Also check any sourced shell scripts:
 
-<blockquote>shellcheck --exclude <i>SC1009,SC1073</i> <i>file.sh</i></blockquote>
+<blockquote>shellcheck --checked-sourced <i>path/to/script.sh</i></blockquote>
+- Display output in the specified format (defaults to `tty`):
+
+<blockquote>shellcheck --format <i>tty|checkstyle|diff|gcc|json|json1|quiet</i> <i>path/to/script.sh</i></blockquote>
+- Enable one or more optional checks:
+
+<blockquote>shellcheck --enable=<i>add-default-case|avoid-nullary-conditions</i></blockquote>
+- List all available optional checks that are disabled by default:
+
+<blockquote>shellcheck --list-optional</blockquote>

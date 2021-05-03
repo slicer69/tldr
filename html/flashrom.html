@@ -1,0 +1,17 @@
+<b>flashrom</b><br><br>
+<b>Read, write, verify and erase flash chips.</b><br><br><b>More information: <a href="https://manned.org/flashrom">home page</a></b><br><br>
+- Probe the chip, ensuring the wiring is correct:
+
+<blockquote>flashrom --programmer <i>programmer</i></blockquote>
+- Read flash and save it to a file:
+
+<blockquote>flashrom -p <i>programmer</i> --read <i>path/to/file</i></blockquote>
+- Write a file to the flash:
+
+<blockquote>flashrom -p <i>programmer</i> --write <i>path/to/file</i></blockquote>
+- Verify the flash against a file:
+
+<blockquote>flashrom -p <i>programmer</i> --verify <i>path/to/file</i></blockquote>
+- Probe the chip using RaspberryPi:
+
+<blockquote>flashrom -p <i>linux_spi:dev=/dev/spidev0.0</i></blockquote>

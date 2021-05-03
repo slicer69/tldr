@@ -15,10 +15,10 @@
 - Assume good network connection and speed up execution:
 
 <blockquote>nmap -T4 <i>address_or_addresses</i></blockquote>
-- Scan a specific list of ports (use -p- for all ports 1-65535):
+- Scan a specific list of ports (use `-p-` for all ports `1-65535`):
 
 <blockquote>nmap -p <i>port1,port2,…,portN</i> <i>address_or_addresses</i></blockquote>
-- Perform TCP and UDP scanning (use -sU for UDP only, -sZ for SCTP, -sO for IP):
+- Perform TCP and UDP scanning (use `-sU` for UDP only, `-sZ` for SCTP, `-sO` for IP):
 
 <blockquote>nmap -sSU <i>address_or_addresses</i></blockquote>
 - Perform full port, service, version detection scan with all default NSE scripts active against a host to determine weaknesses and info:

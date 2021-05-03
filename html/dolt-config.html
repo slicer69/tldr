@@ -1,0 +1,20 @@
+<b>dolt config</b><br><br>
+<b>Read and write local (per repository) and global (per user) Dolt configuration variables.</b><br><br><b>More information: <a href="https://docs.dolthub.com/interfaces/cli#dolt-config">home page</a></b><br><br>
+- List all local and global configuration options and their values:
+
+<blockquote>dolt config --list</blockquote>
+- Display the value of a local or global configuration variable:
+
+<blockquote>dolt config --get <i>name</i></blockquote>
+- Modify the value of a local configuration variable, creating it if does not exist:
+
+<blockquote>dolt config --add <i>name</i> <i>value</i></blockquote>
+- Modify the value of a global configuration variable, creating it if does not exist:
+
+<blockquote>dolt config --global --add <i>name</i> <i>value</i></blockquote>
+- Delete a local configuration variable:
+
+<blockquote>dolt config --unset <i>name</i></blockquote>
+- Delete a global configuration variable:
+
+<blockquote>dolt config --global --unset <i>name</i></blockquote>

@@ -1,0 +1,11 @@
+<b>uuencode</b><br><br>
+<b>Encode binary files into ASCII for transport via mediums that only support simple ASCII encoding.</b><br><br><b>More information: <a href="https://manned.org/uuencode">home page</a></b><br><br>
+- Encode a file and print the result to stdout:
+
+<blockquote>uuencode <i>path/to/input_file</i> <i>output_file_name_after_decoding</i></blockquote>
+- Encode a file and and write the result to a file:
+
+<blockquote>uuencode -o <i>path/to/output_file</i> <i>path/to/input_file</i> <i>output_file_name_after_decoding</i></blockquote>
+- Encode a file using Base64 instead of the default uuencode encoding and and write the result to a file:
+
+<blockquote>uuencode -m -o <i>path/to/output_file</i> <i>path/to/input_file</i> <i>output_file_name_after_decoding</i></blockquote>

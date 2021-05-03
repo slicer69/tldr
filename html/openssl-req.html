@@ -3,6 +3,6 @@
 - Generate a certificate signing request to be sent to a certificate authority:
 
 <blockquote>openssl req -new -sha256 -key <i>filename.key</i> -out <i>filename.csr</i></blockquote>
-- Generate a self-signed certificate and a corresponding keypair, storing both in a file:
+- Generate a self-signed certificate and a corresponding key-pair, storing both in a file:
 
 <blockquote>openssl req -new -x509 -newkey <i>rsa</i>:<i>4096</i> -keyout <i>filename.key</i> -out <i>filename.cert</i> -subj "<i>/C=XX/CN=foobar</i>" -days <i>365</i></blockquote>

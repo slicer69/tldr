@@ -1,0 +1,26 @@
+<b>gh workflow</b><br><br>
+<b>List, view, and run GitHub Actions workflows.</b><br><br><b>More information: <a href="https://cli.github.com/manual/gh_workflow">home page</a></b><br><br>
+- Interactively select a workflow to view the latest jobs for:
+
+<blockquote>gh workflow view</blockquote>
+- View a specific workflow in the default browser:
+
+<blockquote>gh workflow view <i>id|workflow_name|filename.yml</i> --web</blockquote>
+- Display the YAML definition of a specific workflow:
+
+<blockquote>gh workflow view <i>id|workflow_name|filename.yml</i> --yaml</blockquote>
+- Display the YAML definition for a specific Git branch or tag:
+
+<blockquote>gh workflow view <i>id|workflow_name|filename.yml</i> --ref <i>branch_or_tag_name</i> --yaml</blockquote>
+- List workflow files (use `--all` to include disabled workflows):
+
+<blockquote>gh workflow list</blockquote>
+- Run a manual workflow with parameters:
+
+<blockquote>gh workflow run <i>id|workflow_name|filename.yml</i> --raw-field <i>param1</i>=<i>value1</i> --raw-field <i>param2</i>=<i>value2</i></blockquote>
+- Run a manual workflow using a specific branch or tag with JSON parameters from stdin:
+
+<blockquote>echo '<i>{"param1":"value1", "param2":"value2"</i>}' | gh workflow run <i>id|workflow_name|filename.yml</i> --ref <i>branch_or_tag_name</i></blockquote>
+- Enable or disable a specific workflow:
+
+<blockquote>gh workflow <i>enable|disable</i> <i>id|workflow_name|filename.yml</i></blockquote>

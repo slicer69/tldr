@@ -1,9 +1,9 @@
 <b>tar</b><br><br>
 <b>Archiving utility.</b><br><br><b>Often combined with a compression method, such as gzip or bzip2.</b><br><br><b>More information: <a href="https://www.gnu.org/software/tar">home page</a></b><br><br>
-- [c]reate an archive from [f]iles:
+- [c]reate an archive and write it to a [f]ile:
 
 <blockquote>tar cf <i>target.tar</i> <i>file1</i> <i>file2</i> <i>file3</i></blockquote>
-- [c]reate a g[z]ipped archive from [f]iles:
+- [c]reate a g[z]ipped archive and write it to a [f]ile:
 
 <blockquote>tar czf <i>target.tar.gz</i> <i>file1</i> <i>file2</i> <i>file3</i></blockquote>
 - [c]reate a g[z]ipped archive from a directory using relative paths:
@@ -15,12 +15,12 @@
 - E[x]tract a (compressed) archive [f]ile into the target directory:
 
 <blockquote>tar xf <i>source.tar[.gz|.bz2|.xz]</i> --directory=<i>directory</i></blockquote>
-- [c]reate a compressed archive from [f]iles, using [a]rchive suffix to determine the compression program:
+- [c]reate a compressed archive and write it to a [f]ile, using [a]rchive suffix to determine the compression program:
 
 <blockquote>tar caf <i>target.tar.xz</i> <i>file1</i> <i>file2</i> <i>file3</i></blockquote>
 - Lis[t] the contents of a tar [f]ile [v]erbosely:
 
 <blockquote>tar tvf <i>source.tar</i></blockquote>
-- E[x]tract [f]iles matching a pattern:
+- E[x]tract files matching a pattern from an archive [f]ile:
 
 <blockquote>tar xf <i>source.tar</i> --wildcards "<i>*.html</i>"</blockquote>

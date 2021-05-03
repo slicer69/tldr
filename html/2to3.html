@@ -1,20 +1,23 @@
 <b>2to3</b><br><br>
-<b>Automated Python 2 to 3 code translation.</b><br><br><b>More information: <a href="https://docs.python.org/3/library/2to3.html">home page</a></b><br><br>
-- Display changes that would be performed:
+<b>Automated Python 2 to 3 code conversion.</b><br><br><b>More information: <a href="https://docs.python.org/3/library/2to3.html">home page</a></b><br><br>
+- Display the changes that would be performed without performing them (dry-run):
 
 <blockquote>2to3 <i>path/to/file.py</i></blockquote>
 - Convert a Python 2 file to Python 3:
 
 <blockquote>2to3 --write <i>path/to/file.py</i></blockquote>
-- Convert a specified Python 2 feature to Python 3:
+- Convert specific Python 2 language features to Python 3:
 
-<blockquote>2to3 --write <i>file.py</i> --fix=<i>raw_input</i> --fix=<i>print</i></blockquote>
-- Convert all features except *raw_input* the specified ones to Python 3:
+<blockquote>2to3 --write <i>path/to/file.py</i> --fix=<i>raw_input</i> --fix=<i>print</i></blockquote>
+- Convert all Python 2 language features except the specified ones to Python 3:
 
-<blockquote>2to3 --nofix=<i>raw_input</i> --fix=<i>print</i> example.py</blockquote>
-- Display the list of available transformation features:
+<blockquote>2to3 --write <i>path/to/file.py</i> --nofix=<i>has_key</i> --nofix=<i>isinstance</i></blockquote>
+- Display a list of all available language features that can be converted from Python 2 to Python 3:
 
 <blockquote>2to3 --list-fixes</blockquote>
-- Convert an entire directory:
+- Convert all Python 2 files in a directory to Python 3:
 
-<blockquote>2to3 --output-dir=<i>path/to/code_python3_version</i> --write-unchanged-files --nobackups <i>path/to/code_python2_version</i></blockquote>
+<blockquote>2to3 --output-dir=<i>path/to/python3_directory</i> --write-unchanged-files --nobackups <i>path/to/python2_directory</i></blockquote>
+- Run 2to3 with multiple threads:
+
+<blockquote>2to3 --processes=<i>4</i> --output-dir=<i>path/to/python3_directory</i> --write --nobackups --no-diff <i>path/to/python2_directory</i></blockquote>

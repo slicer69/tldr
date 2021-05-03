@@ -1,0 +1,26 @@
+<b>xxh</b><br><br>
+<b>Bring your shell with all of your customizations through SSH sessions.</b><br><br><b>Note: xxh does not install anything into system directories on the target machine; removing `~/.xxh` will clear all traces of xxh on the target machine.</b><br><br><b>More information: <a href="https://github.com/xxh/xxh">home page</a></b><br><br>
+- Connect to a host and run the current shell:
+
+<blockquote>xxh "<i>host</i>"</blockquote>
+- Install the current shell into the target machine without prompting:
+
+<blockquote>xxh "<i>host</i>" ++install</blockquote>
+- Run the specified shell on the target machine:
+
+<blockquote>xxh "<i>host</i>" ++shell <i>xonsh|zsh|fish|bash|osquery</i></blockquote>
+- Use a specific xxh configuration directory on the target machine:
+
+<blockquote>xxh "<i>host</i>" ++host-xxh-home <i>~/.xxh</i></blockquote>
+- Use the specified configuration file on the host machine:
+
+<blockquote>xxh "<i>host</i>" ++xxh-config <i>~/.config/xxh/config.xxhc</i></blockquote>
+- Specify a password to use for the SSH connection:
+
+<blockquote>xxh "<i>host</i>" ++password "<i>password</i>"</blockquote>
+- Install an xxh package on the target machine:
+
+<blockquote>xxh "<i>host</i>" ++install-xxh-packages <i>package</i></blockquote>
+- Set an environment variable for the shell process on the target machine:
+
+<blockquote>xxh "<i>host</i>" ++env <i>name</i>=<i>value</i></blockquote>

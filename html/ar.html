@@ -1,17 +1,17 @@
 <b>ar</b><br><br>
-<b>Create, modify, and extract from archives (.a, .so, .o).</b><br><br>
+<b>Create, modify, and extract from archives (`.a`, `.so`, `.o`).</b><br><br><b>More information: <a href="https://manned.org/ar">home page</a></b><br><br>
 - Extract all members from an archive:
 
-<blockquote>ar -x <i>libfoo.a</i></blockquote>
+<blockquote>ar -x <i>path/to/file.a</i></blockquote>
 - List the members of an archive:
 
-<blockquote>ar -t <i>libfoo.a</i></blockquote>
+<blockquote>ar -t <i>path/to/file.a</i></blockquote>
 - Replace or add files to an archive:
 
-<blockquote>ar -r <i>libfoo.a</i> <i>foo.o</i> <i>bar.o</i> <i>baz.o</i></blockquote>
+<blockquote>ar -r <i>path/to/file.a</i> <i>path/to/file1.o</i> <i>path/to/file2.o</i></blockquote>
 - Insert an object file index (equivalent to using `ranlib`):
 
-<blockquote>ar -s <i>libfoo.a</i></blockquote>
+<blockquote>ar -s <i>path/to/file.a</i></blockquote>
 - Create an archive with files and an accompanying object file index:
 
-<blockquote>ar -rs <i>libfoo.a</i> <i>foo.o</i> <i>bar.o</i> <i>baz.o</i></blockquote>
+<blockquote>ar -rs <i>path/to/file.a</i> <i>path/to/file1.o</i> <i>path/to/file2.o</i></blockquote>

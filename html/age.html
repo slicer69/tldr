@@ -1,0 +1,20 @@
+<b>age</b><br><br>
+<b>A simple, modern and secure file encryption tool.</b><br><br><b>More information: <a href="https://age-encryption.org">home page</a></b><br><br>
+- Generate an encrypted file that can be decrypted with a passphrase:
+
+<blockquote>age --passphrase --output <i>path/to/encrypted_file</i> <i>path/to/unencrypted_file</i></blockquote>
+- Generate a key pair, saving the private key to an unencrypted file and printing the public key to stdout:
+
+<blockquote>age-keygen --output <i>path/to/file</i></blockquote>
+- Encrypt a file with one or more public keys that are entered as literals:
+
+<blockquote>age --recipient <i>public_key_1</i> --recipient <i>public_key_2</i> <i>path/to/unencrypted_file</i> --output <i>path/to/encrypted_file</i></blockquote>
+- Encrypt a file with one or more public keys that are specified in a recipients file:
+
+<blockquote>age --recipients-file <i>path/to/recipients_file</i> <i>path/to/unencrypted_file</i> --output <i>path/to/encrypted_file</i></blockquote>
+- Decrypt a file with a passphrase:
+
+<blockquote>age --decrypt --output <i>path/to/decrypted_file</i> <i>path/to/encrypted_file</i></blockquote>
+- Decrypt a file with a private key file:
+
+<blockquote>age --decrypt --identity <i>path/to/private_key_file</i> --output <i>path/to/decrypted_file</i> <i>path/to/encrypted_file</i></blockquote>

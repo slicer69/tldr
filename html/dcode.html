@@ -1,0 +1,14 @@
+<b>dcode</b><br><br>
+<b>Recursively detect and decode strings, supporting hex, decimal, binary, base64, URL, FromChar encodings, Caesar ciphers, and MD5, SHA1, and SHA2 hashes.</b><br><br><b>Warning: uses 3rd-party web services for MD5, SHA1 and SHA2 hash lookups. For sensitive data, use `-s` to avoid these services.</b><br><br><b>More information: <a href="https://github.com/s0md3v/Decodify">home page</a></b><br><br>
+- Recursively detect and decode a string:
+
+<blockquote>dcode "<i>NjM3YTQyNzQ1YTQ0NGUzMg==</i>"</blockquote>
+- Rotate a string by the specified offset:
+
+<blockquote>dcode -rot <i>11</i> "<i>spwwz hzcwo</i>"</blockquote>
+- Rotate a string by all 26 possible offsets:
+
+<blockquote>dcode -rot <i>all</i> "<i>bpgkta xh qtiitg iwpc sr</i>"</blockquote>
+- Reverse a string:
+
+<blockquote>dcode -rev "<i>hello world</i>"</blockquote>

@@ -1,11 +1,14 @@
 <b>apt-file</b><br><br>
-<b>Search for files in apt packages, including ones not yet installed.</b><br><br>
+<b>Search for files in apt packages, including ones not yet installed.</b><br><br><b>More information: <a href="https://manpages.debian.org/latest/apt-file/apt-file.1.html">home page</a></b><br><br>
 - Update the metadata database:
 
 <blockquote>sudo apt update</blockquote>
 - Search for packages that contain the specified file or path:
 
-<blockquote>apt-file search <i>part/of/filename</i></blockquote>
+<blockquote>apt-file <i>search|find</i> <i>part/of/filename</i></blockquote>
 - List the contents of a specific package:
 
-<blockquote>apt-file list <i>package_name</i></blockquote>
+<blockquote>apt-file <i>show|list</i> <i>package_name</i></blockquote>
+- Search for packages that match the regular expresssion given in `pattern`:
+
+<blockquote>apt-file <i>search|find</i> --regexp <i>pattern</i></blockquote>

@@ -1,14 +1,14 @@
 <b>bc</b><br><br>
-<b>Calculator.</b><br><br>
-- Run calculator in interactive mode using the standard math library:
+<b>An arbitrary precision calculator language.</b><br><br><b>More information: <a href="https://manned.org/bc">home page</a></b><br><br>
+- Start `bc` in interactive mode using the standard math library:
 
 <blockquote>bc -l</blockquote>
 - Calculate the result of an expression:
 
 <blockquote>bc <<< "(1 + 2) * 2 ^ 2"</blockquote>
-- Calculate expression and force number of decimal places to 10:
+- Calculate the result of an expression and force the number of decimal places to 10:
 
 <blockquote>bc <<< "scale=10; 5 / 3"</blockquote>
-- Calculate expression with sine and cosine using mathlib:
+- Calculate the result of an expression with sine and cosine using `mathlib`:
 
 <blockquote>bc -l <<< "s(1) + c(1)"</blockquote>

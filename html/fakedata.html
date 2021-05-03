@@ -1,0 +1,17 @@
+<b>fakedata</b><br><br>
+<b>Generate fake data using a large variety of generators.</b><br><br><b>More information: <a href="https://github.com/lucapette/fakedata">home page</a></b><br><br>
+- List all valid generators:
+
+<blockquote>fakedata --generators</blockquote>
+- Generate data using one or more generators:
+
+<blockquote>fakedata <i>generator1</i> <i>generator2</i></blockquote>
+- Generate data with a specific output format:
+
+<blockquote>fakedata --format <i>csv|tab|sql</i> <i>generator</i></blockquote>
+- Generate a given number of data items (defaults to 10):
+
+<blockquote>fakedata --limit <i>n</i> <i>generator</i></blockquote>
+- Generate data using a custom output template (the first letter of generator names must be capitalized):
+
+<blockquote>echo "<i>\{\{Generator\}\</i>}" | fakedata</blockquote>

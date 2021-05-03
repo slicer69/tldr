@@ -1,20 +1,23 @@
 <b>fish</b><br><br>
-<b>The Friendly Interactive SHell.</b><br><br><b>A command-line interpreter designed to be user friendly.</b><br><br><b>More information: <a href="https://fishshell.com">home page</a></b><br><br>
-- Start interactive shell:
+<b>The Friendly Interactive SHell, a command-line interpreter designed to be user friendly.</b><br><br><b>More information: <a href="https://fishshell.com">home page</a></b><br><br>
+- Start an interactive shell session:
 
 <blockquote>fish</blockquote>
-- Execute a command:
+- Execute a command and then exit:
 
 <blockquote>fish -c "<i>command</i>"</blockquote>
-- Run commands from a file:
+- Execute a script:
 
-<blockquote>fish <i>file.fish</i></blockquote>
-- Check a file for syntax errors:
+<blockquote>fish <i>path/to/script.fish</i></blockquote>
+- Check a script for syntax errors:
 
-<blockquote>fish --no-execute <i>file.fish</i></blockquote>
+<blockquote>fish --no-execute <i>path/to/script.fish</i></blockquote>
+- Start an interactive shell session in private mode, where the shell does not access old history or save new history:
+
+<blockquote>fish --private</blockquote>
 - Display version information and exit:
 
 <blockquote>fish --version</blockquote>
-- Set and export environmental variables that persist across restarts:
+- Set and export environmental variables that persist across shell restarts (from within the shell only):
 
 <blockquote>set -Ux <i>variable_name</i> <i>variable_value</i></blockquote>

@@ -1,0 +1,17 @@
+<b>minisign</b><br><br>
+<b>A dead simple tool to sign files and verify signatures.</b><br><br><b>More information: <a href="https://jedisct1.github.io/minisign/">home page</a></b><br><br>
+- Generate a new keypair at the default location:
+
+<blockquote>minisign -G</blockquote>
+- Sign a file:
+
+<blockquote>minisign -Sm <i>path/to/file</i></blockquote>
+- Sign a file, adding a trusted (signed) and an untrusted (unsigned) comment in the signature:
+
+<blockquote>minisign -Sm <i>path/to/file</i> -c "<i>Untrusted comment</i>" -t "<i>Trusted comment</i>"</blockquote>
+- Verify a file and the trusted comments in its signature using the specified public key file:
+
+<blockquote>minisign -Vm <i>path/to/file</i> -p <i>path/to/publickey.pub</i></blockquote>
+- Verify a file and the trusted comments in its signature, specifying a public key as a Base64 encoded literal:
+
+<blockquote>minisign -Vm <i>path/to/file</i> -P "<i>public_key_base64</i>"</blockquote>

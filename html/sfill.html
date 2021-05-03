@@ -1,0 +1,17 @@
+<b>sfill</b><br><br>
+<b>Securely overwrite the free space and inodes of the partition where the specified directory resides.</b><br><br><b>More information: <a href="https://manned.org/sfill">home page</a></b><br><br>
+- Overwrite free space and inodes of a disk with 38 writes (slow but secure):
+
+<blockquote>sfill <i>/path/to/mounted_disk_directory</i></blockquote>
+- Overwrite free space and inodes of a disk with 6 writes (fast but less secure) and show status:
+
+<blockquote>sfill -l -v <i>/path/to/mounted_disk_directory</i></blockquote>
+- Overwrite free space and inodes of a disk with 1 write (very fast but insecure) and show status:
+
+<blockquote>sfill -ll -v <i>/path/to/mounted_disk_directory</i></blockquote>
+- Overwrite only free space of a disk:
+
+<blockquote>sfill -I <i>/path/to/mounted_disk_directory</i></blockquote>
+- Overwrite only free inodes of a disk:
+
+<blockquote>sfill -i <i>/path/to/mounted_disk_directory</i></blockquote>

@@ -1,0 +1,23 @@
+<b>ip route</b><br><br>
+<b>IP Routing table management subcommand.</b><br><br><b>More information: <a href="https://manned.org/ip-route">home page</a></b><br><br>
+- Display the routing table:
+
+<blockquote>ip route <i>show|list</i></blockquote>
+- Add a default route using gateway forwarding:
+
+<blockquote>sudo ip route add default via <i>gateway_ip</i></blockquote>
+- Add a default route using `eth0`:
+
+<blockquote>sudo ip route add default dev <i>eth0</i></blockquote>
+- Add a static route:
+
+<blockquote>sudo ip route add <i>destination_ip</i> via <i>gateway_ip</i> dev <i>eth0</i></blockquote>
+- Delete a static route:
+
+<blockquote>sudo ip route del <i>destination_ip</i> dev <i>eth0</i></blockquote>
+- Change or replace a static route:
+
+<blockquote>sudo ip route <i>change|replace</i> <i>destination_ip</i> via <i>gateway_ip</i> dev <i>eth0</i></blockquote>
+- Show which route will be used by the kernel to reach an IP address:
+
+<blockquote>ip route get <i>destination_ip</i></blockquote>

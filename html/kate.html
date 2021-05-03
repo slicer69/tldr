@@ -1,0 +1,23 @@
+<b>kate</b><br><br>
+<b>KDE Text Editor.</b><br><br><b>More information: <a href="https://kate-editor.org/">home page</a></b><br><br>
+- Launch Kate and open specific files:
+
+<blockquote>kate <i>path/to/file1</i> <i>path/to/file2</i></blockquote>
+- Open a remote document in Kate:
+
+<blockquote>kate <i>https://example.com/path/to/file</i></blockquote>
+- Launch Kate, creating a new instance even if one is already open:
+
+<blockquote>kate --new</blockquote>
+- Open a file in Kate with the cursor at the specific line:
+
+<blockquote>kate --line <i>line_number</i> <i>path/to/file</i></blockquote>
+- Open a file in Kate with the cursor at the specific line and column:
+
+<blockquote>kate --line <i>line_number</i> --column <i>column_number</i> <i>path/to/file</i></blockquote>
+- Launch Kate, creating a new temporary file with contents read from stdin:
+
+<blockquote>cat <i>path/to/file</i> | kate --stdin</blockquote>
+- Display help:
+
+<blockquote>kate --help</blockquote>

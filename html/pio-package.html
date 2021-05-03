@@ -1,0 +1,26 @@
+<b>pio package</b><br><br>
+<b>Manage packages in the registry.</b><br><br><b>Packages can only be removed within 72 hours (3 days) from the date that they are published.</b><br><br><b>More information: <a href="https://docs.platformio.org/en/latest/core/userguide/package/">home page</a></b><br><br>
+- Create a package tarball from the current directory:
+
+<blockquote>pio package pack --output <i>path/to/package.tar.gz</i></blockquote>
+- Create and publish a package tarball from the current directory:
+
+<blockquote>pio package publish</blockquote>
+- Publish the current directory and restrict public access to it:
+
+<blockquote>pio package publish --private</blockquote>
+- Publish a package:
+
+<blockquote>pio package publish <i>path/to/package.tar.gz</i></blockquote>
+- Publish a package with a custom release date (UTC):
+
+<blockquote>pio package publish <i>path/to/package.tar.gz</i> --released-at "<i>2021-04-08 21:15:38</i>"</blockquote>
+- Remove all versions of a published package from the registry:
+
+<blockquote>pio package unpublish <i>package_name</i></blockquote>
+- Remove a specific version of a published package from the registry:
+
+<blockquote>pio package unpublish <i>package_name</i>@<i>version</i></blockquote>
+- Undo the removal, putting all versions or a specific version of the package back into the registry:
+
+<blockquote>pio package unpublish --undo <i>package_name</i>@<i>version</i></blockquote>

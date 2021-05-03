@@ -1,0 +1,20 @@
+<b>tracepath</b><br><br>
+<b>Trace the path to a network host discovering MTU along this path.</b><br><br><b>More information: <a href="https://manned.org/tracepath">home page</a></b><br><br>
+- A preferred way to trace the path to a host:
+
+<blockquote>tracepath -p <i>33434</i> <i>host</i></blockquote>
+- Specify the initial destination port, useful with non-standard firewall settings:
+
+<blockquote>tracepath -p <i>destination_port</i> <i>host</i> </blockquote>
+- Print both hostnames and numerical IP addresses:
+
+<blockquote>tracepath -b <i>host</i></blockquote>
+- Specify a maximum TTL (number of hops):
+
+<blockquote>tracepath -m <i>max_hops</i> <i>host</i></blockquote>
+- Specify the initial packet length (defaults to 65535 for IPv4 and 128000 for IPv6):
+
+<blockquote>tracepath -l <i>packet_length</i> <i>host</i></blockquote>
+- Use only IPv6 addresses:
+
+<blockquote>tracepath -6 <i>host</i></blockquote>

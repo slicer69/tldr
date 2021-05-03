@@ -18,3 +18,6 @@
 - Execute a command using a custom inventory file:
 
 <blockquote>ansible <i>group</i> -i <i>inventory_file</i> -m command -a '<i>my_command</i>'</blockquote>
+- List the groups in an inventory:
+
+<blockquote>ansible localhost -m debug -a '<i>var=groups.keys()</i>'</blockquote>

@@ -1,0 +1,17 @@
+<b>xh</b><br><br>
+<b>Friendly and fast tool for sending HTTP requests.</b><br><br><b>More information: <a href="https://github.com/ducaale/xh">home page</a></b><br><br>
+- Send a GET request:
+
+<blockquote>xh <i>httpbin.org/get</i></blockquote>
+- Send a POST request with a JSON body (key-value pairs are added to a top-level JSON object - e.g. `{"name": "john", "age": 25}`):
+
+<blockquote>xh post <i>httpbin.org/post</i> <i>name=john</i> <i>age:=25</i></blockquote>
+- Send a GET request with query parameters (e.g. `first_param=5&second_param=true`):
+
+<blockquote>xh get <i>httpbin.org/get</i> <i>first_param==5</i> <i>second_param==true</i></blockquote>
+- Send a GET request with a custom header:
+
+<blockquote>xh get <i>httpbin.org/get</i> <i>header-name:header-value</i></blockquote>
+- Make a GET request and save the response body to a file:
+
+<blockquote>xh --download <i>httpbin.org/json</i> --output <i>path/to/file</i></blockquote>

@@ -1,11 +1,23 @@
 <b>7zr</b><br><br>
-<b>A file archiver with high compression ratio.</b><br><br><b>A standalone version of `7z` that only supports .7z files.</b><br><br><b>More information: <a href="https://www.7-zip.org/">home page</a></b><br><br>
-- Archive a file or directory:
+<b>File archiver with a high compression ratio.</b><br><br><b>Similar to `7z` except that it only supports `.7z` files.</b><br><br><b>More information: <a href="https://www.7-zip.org">home page</a></b><br><br>
+- [a]rchive a file or directory:
 
-<blockquote>7zr a <i>archived.7z</i> <i>path/to/file_or_directory</i></blockquote>
-- Extract an existing 7z file with original directory structure:
+<blockquote>7zr a <i>path/to/archive.7z</i> <i>path/to/file_or_directory</i></blockquote>
+- Encrypt an existing archive (including file names):
 
-<blockquote>7zr x <i>archived.7z</i></blockquote>
-- List the contents of an archive file:
+<blockquote>7zr a <i>path/to/encrypted.7z</i> -p<i>password</i> -mhe=on <i>path/to/archive.7z</i></blockquote>
+- E[x]tract an archive preserving the original directory structure:
 
-<blockquote>7zr l <i>archived.7z</i></blockquote>
+<blockquote>7zr x <i>path/to/archive.7z</i></blockquote>
+- E[x]tract an archive to a specific directory:
+
+<blockquote>7zr x <i>path/to/archive.7z</i> -o<i>path/to/output</i></blockquote>
+- E[x]tract an archive to stdout:
+
+<blockquote>7zr x <i>path/to/archive.7z</i> -so</blockquote>
+- [l]ist the contents of an archive:
+
+<blockquote>7zr l <i>path/to/archive.7z</i></blockquote>
+- List available archive types:
+
+<blockquote>7zr i</blockquote>

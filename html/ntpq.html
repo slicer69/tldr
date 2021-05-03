@@ -1,0 +1,17 @@
+<b>ntpq</b><br><br>
+<b>Query the Network Time Protocol (NTP) daemon.</b><br><br><b>More information: <a href="https://www.eecis.udel.edu/~mills/ntp/html/ntpq.html">home page</a></b><br><br>
+- Start `ntpq` in interactive mode:
+
+<blockquote>ntpq --interactive</blockquote>
+- Print a list of NTP peers:
+
+<blockquote>ntpq --peers</blockquote>
+- Print a list of NTP peers without resolving hostnames from IP addresses:
+
+<blockquote>ntpq --numeric --peers</blockquote>
+- Use `ntpq` in debugging mode:
+
+<blockquote>ntpq --debug-level</blockquote>
+- Print NTP system variables values:
+
+<blockquote>ntpq --command=<i>rv</i></blockquote>

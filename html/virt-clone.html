@@ -1,0 +1,8 @@
+<b>virt-clone</b><br><br>
+<b>Clone a libvirt virtual machine.</b><br><br><b>More information: <a href="https://manned.org/virt-clone">home page</a></b><br><br>
+- Clone a virtual machine and automatically generate a new name, storage path, and MAC address:
+
+<blockquote>virt-clone --original <i>vm_name</i> --auto-clone</blockquote>
+- Clone a virtual machine and specify the new name, storage path, and MAC address:
+
+<blockquote>virt-clone --original <i>vm_name</i> --name <i>new_vm_name</i> --file <i>path/to/new_storage</i> --mac <i>ff:ff:ff:ff:ff:ff|RANDOM</i></blockquote>

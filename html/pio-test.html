@@ -1,0 +1,20 @@
+<b>pio test</b><br><br>
+<b>Run local tests on a PlatformIO project.</b><br><br><b>More information: <a href="https://docs.platformio.org/en/latest/core/userguide/cmd_test.html">home page</a></b><br><br>
+- Run all tests in all environments of the current PlatformIO project:
+
+<blockquote>pio test</blockquote>
+- Test only specific environments:
+
+<blockquote>pio test --environment <i>environment1</i> --environment <i>environment2</i></blockquote>
+- Run only tests whose name matches a specific glob pattern:
+
+<blockquote>pio test --filter "<i>pattern</i>"</blockquote>
+- Ignore tests whose name matches a specific glob pattern:
+
+<blockquote>pio test --ignore "<i>pattern</i>"</blockquote>
+- Specify a port for firmware uploading:
+
+<blockquote>pio test --upload-port <i>upload_port</i></blockquote>
+- Specify a custom configuration file for running the tests:
+
+<blockquote>pio test --project-conf <i>path/to/platformio.ini</i></blockquote>

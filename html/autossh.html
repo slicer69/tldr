@@ -1,20 +1,20 @@
 <b>autossh</b><br><br>
-<b>Runs, monitors and restarts SSH connections.</b><br><br><b>Auto-reconnects to keep port forwarding tunnels up. Accepts all ssh flags.</b><br><br><b>More information: <a href="https://harding.motd.ca/autossh">home page</a></b><br><br>
-- Open an SSH session, restarting when a monitoring port fails return data:
+<b>Run, monitor and restart SSH connections.</b><br><br><b>Auto-reconnects to keep port forwarding tunnels up. Accepts all `ssh` flags.</b><br><br><b>More information: <a href="https://www.harding.motd.ca/autossh">home page</a></b><br><br>
+- Start an SSH session, restarting when a monitoring port fails to return data:
 
-<blockquote>autossh -M <i>monitor_port</i> <i>ssh_command</i></blockquote>
-- Open an SSH session which forwards a local port to a remote one, restarting if necessary:
+<blockquote>autossh -M <i>monitor_port</i> "<i>ssh_command</i>"</blockquote>
+- Forward a local port to a remote one, restarting when necessary:
 
 <blockquote>autossh -M <i>monitor_port</i> -L <i>local_port</i>:localhost:<i>remote_port</i> <i>user</i>@<i>host</i></blockquote>
-- Fork before executing ssh (runs in the background) and don't open a remote shell:
+- Fork `autossh` into the background before executing `ssh` and don't open a remote shell:
 
-<blockquote>autossh -f -M <i>monitor_port</i> -N <i>ssh_command</i></blockquote>
-- Run autossh in the background, with no monitoring port, instead relying on SSH keep-alives every 10 seconds to detect failure:
+<blockquote>autossh -f -M <i>monitor_port</i> -N "<i>ssh_command</i>"</blockquote>
+- Run in the background, with no monitoring port, and instead send SSH keep-alive packets every 10 seconds to detect failure:
 
-<blockquote>autossh -f -M 0 -N -o "ServerAliveInterval 10" -o "ServerAliveCountMax 3" <i>ssh_command</i></blockquote>
-- Run autossh in the background, with no monitoring port, no remote shell, exiting if the port forward fails:
+<blockquote>autossh -f -M 0 -N -o "ServerAliveInterval 10" -o "ServerAliveCountMax 3" "<i>ssh_command</i>"</blockquote>
+- Run in the background, with no monitoring port and no remote shell, exiting if the port forward fails:
 
 <blockquote>autossh -f -M 0 -N -o "ServerAliveInterval 10" -o "ServerAliveCountMax 3" -o ExitOnForwardFailure=yes -L <i>local_port</i>:localhost:<i>remote_port</i> <i>user</i>@<i>host</i></blockquote>
-- Run autossh in the background with debug output logged to a file and ssh verbose output logged to a second file:
+- Run in the background, logging `autossh` debug output and `ssh` verbose output to files:
 
-<blockquote>AUTOSSH_DEBUG=1 AUTOSSH_LOGFILE=<i>log_file</i> autossh -f -M <i>monitor_port</i> -v -E <i>ssh_log_file</i> <i>ssh_command</i></blockquote>
+<blockquote>AUTOSSH_DEBUG=1 AUTOSSH_LOGFILE=<i>path/to/autossh_log_file.log</i> autossh -f -M <i>monitor_port</i> -v -E <i>path/to/ssh_log_file.log</i> <i>ssh_command</i></blockquote>

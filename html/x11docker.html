@@ -1,0 +1,17 @@
+<b>x11docker</b><br><br>
+<b>Securely run GUI applications and desktop UIs in Docker containers.</b><br><br><b>See also `xephyr`.</b><br><br><b>More information: <a href="https://github.com/mviereck/x11docker">home page</a></b><br><br>
+- Launch VLC in a container:
+
+<blockquote>x11docker --pulseaudio --share=<i>$HOME/Videos</i> <i>jess/vlc</i></blockquote>
+- Launch Xfce in a window:
+
+<blockquote>x11docker --desktop <i>x11docker/xfce</i></blockquote>
+- Launch GNOME in a window:
+
+<blockquote>x11docker --desktop --gpu --init=<i>systemd</i> <i>x11docker/gnome</i></blockquote>
+- Launch KDE Plasma in a window:
+
+<blockquote>x11docker --desktop --gpu --init=<i>systemd</i> <i>x11docker/kde-plasma</i></blockquote>
+- Display help:
+
+<blockquote>x11docker --help</blockquote>

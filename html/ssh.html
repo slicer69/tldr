@@ -12,9 +12,9 @@
 - Run a command on a remote server:
 
 <blockquote>ssh <i>remote_host</i> <i>command -with -flags</i></blockquote>
-- SSH tunneling: Dynamic port forwarding (SOCKS proxy on localhost:9999):
+- SSH tunneling: Dynamic port forwarding (SOCKS proxy on localhost:1080):
 
-<blockquote>ssh -D <i>9999</i> -C <i>username</i>@<i>remote_host</i></blockquote>
+<blockquote>ssh -D <i>1080</i> <i>username</i>@<i>remote_host</i></blockquote>
 - SSH tunneling: Forward a specific port (localhost:9999 to example.org:80) along with disabling pseudo-[t]ty allocation and executio[n] of remote commands:
 
 <blockquote>ssh -L <i>9999</i>:<i>example.org</i>:<i>80</i> -N -T <i>username</i>@<i>remote_host</i></blockquote>

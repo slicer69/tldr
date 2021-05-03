@@ -1,26 +1,26 @@
 <b>7z</b><br><br>
-<b>A file archiver with high compression ratio.</b><br><br><b>More information: <a href="https://www.7-zip.org/">home page</a></b><br><br>
-- Archive a file or directory:
+<b>File archiver with a high compression ratio.</b><br><br><b>More information: <a href="https://www.7-zip.org">home page</a></b><br><br>
+- [a]rchive a file or directory:
 
-<blockquote>7z a <i>archived.7z</i> <i>path/to/file_or_directory</i></blockquote>
-- Encrypt an existing archive (including headers):
+<blockquote>7z a <i>path/to/archive.7z</i> <i>path/to/file_or_directory</i></blockquote>
+- Encrypt an existing archive (including filenames):
 
-<blockquote>7z a <i>encrypted.7z</i> -p<i>password</i> -mhe=on <i>archived.7z</i></blockquote>
-- Extract an existing 7z file with original directory structure:
+<blockquote>7z a <i>path/to/encrypted.7z</i> -p<i>password</i> -mhe=on <i>path/to/archive.7z</i></blockquote>
+- E[x]tract an archive preserving the original directory structure:
 
-<blockquote>7z x <i>archived.7z</i></blockquote>
-- Extract an archive with user-defined output path:
+<blockquote>7z x <i>path/to/archive.7z</i></blockquote>
+- E[x]tract an archive to a specific directory:
 
-<blockquote>7z x <i>archived.7z</i> -o<i>path/to/output</i></blockquote>
-- Extract an archive to stdout:
+<blockquote>7z x <i>path/to/archive.7z</i> -o<i>path/to/output</i></blockquote>
+- E[x]tract an archive to stdout:
 
-<blockquote>7z x <i>archived.7z</i> -so</blockquote>
-- Archive using a specific archive type:
+<blockquote>7z x <i>path/to/archive.7z</i> -so</blockquote>
+- [a]rchive using a specific archive type:
 
-<blockquote>7z a -t<i>zip|gzip|bzip2|tar</i> <i>archived.7z</i> <i>path/to/file_or_directory</i></blockquote>
+<blockquote>7z a -t<i>7z|zip|gzip|bzip2|lzip</i> <i>path/to/archive.7z</i> <i>path/to/file_or_directory</i></blockquote>
+- [l]ist the contents of an archive:
+
+<blockquote>7z l <i>path/to/archive.7z</i></blockquote>
 - List available archive types:
 
 <blockquote>7z i</blockquote>
-- List the contents of an archive file:
-
-<blockquote>7z l <i>archived.7z</i></blockquote>

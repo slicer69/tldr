@@ -1,14 +1,20 @@
 <b>rbash</b><br><br>
-<b>Restricted Bash shell.</b><br><br><b>Similar to the `bash` shell with some restrictions like changing directories with `cd`, setting/unsetting of PATH, ENV variables and others.</b><br><br>
-- Start rbash:
+<b>Restricted Bash shell, equivalent to `bash --restricted`.</b><br><br><b>Does not permit changing the working directory, redirecting command output, or modifying environment variables, among other things.</b><br><br><b>See also `histexpand` for history expansion.</b><br><br><b>More information: <a href="https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell">home page</a></b><br><br>
+- Start an interactive shell session:
 
 <blockquote>rbash</blockquote>
-- Execute a command:
+- Execute a command and then exit:
 
 <blockquote>rbash -c "<i>command</i>"</blockquote>
-- Run commands from a file:
+- Execute a script:
 
-<blockquote>rbash <i>file.sh</i></blockquote>
-- Print the version information of rbash:
+<blockquote>rbash <i>path/to/script.sh</i></blockquote>
+- Execute a script, printing each command before executing it:
 
-<blockquote>rbash --version</blockquote>
+<blockquote>rbash -x <i>path/to/script.sh</i></blockquote>
+- Execute commands from a script, stopping at the first error:
+
+<blockquote>rbash -e <i>path/to/script.sh</i></blockquote>
+- Read and execute commands from stdin:
+
+<blockquote>rbash -s</blockquote>

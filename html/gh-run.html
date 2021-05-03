@@ -1,0 +1,26 @@
+<b>gh run</b><br><br>
+<b>View, run and watch recent GitHub Actions workflow runs.</b><br><br><b>More information: <a href="https://cli.github.com/manual/gh_run">home page</a></b><br><br>
+- Interactively select a run to see information about the jobs:
+
+<blockquote>gh run view</blockquote>
+- Display information about a specific run:
+
+<blockquote>gh run view <i>workflow_run_number</i></blockquote>
+- Display information about the steps of a job:
+
+<blockquote>gh run view --job=<i>job_number</i></blockquote>
+- Display the log of a job:
+
+<blockquote>gh run view --job=<i>job_number</i> --log</blockquote>
+- Check a specific workflow and exit with a non-zero status if the run failed:
+
+<blockquote>gh run view <i>workflow_run_number</i> --exit-status && <i>echo "run pending or passed"</i></blockquote>
+- Interactively select an active run and wait until it's done:
+
+<blockquote>gh run watch</blockquote>
+- Display the jobs for a run and wait until it's done:
+
+<blockquote>gh run watch <i>workflow_run_number</i></blockquote>
+- Re-run a specific workflow:
+
+<blockquote>gh run rerun <i>workflow_run_number</i></blockquote>

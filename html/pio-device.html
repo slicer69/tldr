@@ -1,0 +1,23 @@
+<b>pio device</b><br><br>
+<b>Manage and monitor PlatformIO devices.</b><br><br><b>More information: <a href="https://docs.platformio.org/en/latest/core/userguide/device/">home page</a></b><br><br>
+- List all available serial ports:
+
+<blockquote>pio device list</blockquote>
+- List all available logical devices:
+
+<blockquote>pio device list --logical</blockquote>
+- Start an interactive device monitor:
+
+<blockquote>pio device monitor</blockquote>
+- Start an interactive device monitor and listen to a specific port:
+
+<blockquote>pio device monitor --port <i>/dev/ttyUSBX</i></blockquote>
+- Start an interactive device monitor and set a specific baud rate (defaults to 9600):
+
+<blockquote>pio device monitor --baud <i>57600</i></blockquote>
+- Start an interactive device monitor and set a specific EOL character (defults to `CRLF`):
+
+<blockquote>pio device monitor --eol <i>CRLF|CR|LF</i></blockquote>
+- Go to the menu of the interactive device monitor:
+
+<blockquote>Ctrl + T</blockquote>
